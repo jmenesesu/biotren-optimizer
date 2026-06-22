@@ -1,7 +1,9 @@
-"""Extrae salidas reales y automotor asignado por servicio (PDF 2-410, dia laboral).
+"""Extrae salidas reales y automotor por servicio (PDF 2-410, dia laboral).
 
-Por cada servicio: hora de salida en la estacion de origen (por sentido) y el
-automotor asignado (SFE 1, SFE B1, UT 1, ...), leido de la fila bajo 'Tren'.
+Cada pagina tiene DOS tablas apiladas (un sentido arriba, otro abajo), cada una
+con su propia fila 'Tren'. Por eso se procesa por tabla: cada fila de origen se
+empareja con la fila de servicios de su misma tabla (la fila 'Tren' inmediatamente
+superior), y el automotor con esa misma tabla.
 
 Salida:
     datos/clean/salidas_reales.csv  (linea, sentido, servicio, salida_min, unidad)
@@ -21,8 +23,12 @@ SERV = re.compile(r"^20\d{3}$")
 UNIDAD = re.compile(r"^(SFE|UT)$")
 NUMUN = re.compile(r"^(B?\d{1,2})$")
 
+# estacion de origen por (linea, sentido)
 ORIGEN = {("L2", "CC->CW"): "CONCEP", ("L2", "CW->CC"): "CORONEL",
           ("L1", "TH->LJ"): "MERCADO", ("L1", "LJ->TH"): "LAJA"}
+PREF = {"CONCEP": ("L2", "CC->CW"), "CORONEL": ("L2", "CW->CC"),
+        "MERCADO": ("L1", "TH->LJ"), "LAJA": ("L1", "LJ->TH"),
+        "SAN ROSENDO": ("L1", "LJ->TH")}
 
 
 def _hms(t):
@@ -43,31 +49,18 @@ def _rows(words, tol=3):
     return R
 
 
-def _serv_row(R):
-    return max(R, key=lambda r: len([w for w in r if SERV.fullmatch(w["text"])]))
+def _es_tren_row(r):
+    return len([w for w in r if SERV.fullmatch(w["text"])]) >= 5
 
 
-def _servicios(R):
-    sr = _serv_row(R)
-    return sorted([(w["text"], (w["x0"] + w["x1"]) / 2) for w in sr if SERV.fullmatch(w["text"])],
-                  key=lambda x: x[1]), sr[0]["top"]
+def _servs(r):
+    return sorted([(w["text"], (w["x0"] + w["x1"]) / 2) for w in r if SERV.fullmatch(w["text"])],
+                  key=lambda x: x[1])
 
 
-def _unidades(R, sy, servs):
-    """Empareja unidad (SFE n / UT n) con el servicio por columna."""
-    out = {}
-    for r in R:
-        if not (0 < r[0]["top"] - sy < 30):
-            continue
-        toks = r
-        for i, w in enumerate(toks):
-            if UNIDAD.fullmatch(w["text"]) and i + 1 < len(toks) and NUMUN.fullmatch(toks[i + 1]["text"]):
-                etiqueta = f"{w['text']} {toks[i+1]['text']}"
-                xc = (w["x0"] + toks[i + 1]["x1"]) / 2
-                serv = min(servs, key=lambda s: abs(s[1] - xc))
-                if abs(serv[1] - xc) < 35:
-                    out[serv[0]] = etiqueta
-    return out
+def _match_col(xc, servs, tol=30):
+    s = min(servs, key=lambda v: abs(v[1] - xc))
+    return s[0] if abs(s[1] - xc) < tol else None
 
 
 def _salidas_pagina(pg, linea):
@@ -80,25 +73,48 @@ def _salidas_pagina(pg, linea):
     if linea == "L1" and "LAJA-TALCAHUANO" not in texto:
         return []
     R = _rows(words)
-    servs, sy = _servicios(R)
-    if not servs:
+    # filas 'Tren' con su y
+    tren_rows = [(r[0]["top"], _servs(r)) for r in R if _es_tren_row(r)]
+    tren_rows.sort()
+    if not tren_rows:
         return []
-    unidades = _unidades(R, sy, servs)
+    ys = [y for y, _ in tren_rows] + [1e9]
+
     out = []
-    for (l, sent), origen in ORIGEN.items():
-        if l != linea:
-            continue
-        for r in R:
+    for ti, (ytren, servs) in enumerate(tren_rows):
+        y0, y1 = ytren, ys[ti + 1]
+        region = [r for r in R if y0 - 1 <= r[0]["top"] < y1]
+        # unidad: fila con SFE/UT dentro de la region, cercana al Tren
+        unidades = {}
+        for r in region:
+            if 0 < r[0]["top"] - ytren < 30:
+                for i, w in enumerate(r):
+                    if UNIDAD.fullmatch(w["text"]) and i + 1 < len(r) and NUMUN.fullmatch(r[i + 1]["text"]):
+                        xc = (w["x0"] + r[i + 1]["x1"]) / 2
+                        sv = _match_col(xc, servs, 35)
+                        if sv:
+                            unidades[sv] = f"{w['text']} {r[i+1]['text']}"
+        # origen = primera estacion de la tabla (fila superior con horarios cuya
+        # etiqueta coincide con un origen conocido de la linea). Evita tomar la
+        # estacion DESTINO (que aparece al fondo de la misma tabla).
+        prefijos = {p: sent for (p, (l, sent)) in PREF.items() if l == linea}
+        cand = []
+        for r in region:
             etiqueta = "".join(w["text"].upper() for w in r if w["x0"] < 150)
-            if not etiqueta.startswith(origen):
-                continue
-            for t in [w for w in r if TIME.fullmatch(w["text"]) and w["x0"] > 150]:
-                xc = (t["x0"] + t["x1"]) / 2
-                serv = min(servs, key=lambda s: abs(s[1] - xc))
-                if abs(serv[1] - xc) < 30:
-                    out.append({"linea": linea, "sentido": sent, "servicio": serv[0],
-                                "salida_min": _hms(t["text"]),
-                                "unidad": unidades.get(serv[0], "")})
+            pref = next((p for p in prefijos if etiqueta.startswith(p)), None)
+            tiempos = [w for w in r if TIME.fullmatch(w["text"]) and w["x0"] > 150]
+            if pref and tiempos:
+                cand.append((r[0]["top"], prefijos[pref], tiempos))
+        if not cand:
+            continue
+        cand.sort(key=lambda x: x[0])
+        _, sent, tiempos = cand[0]          # la tabla superior = origen
+        for t in tiempos:
+            xc = (t["x0"] + t["x1"]) / 2
+            sv = _match_col(xc, servs, 30)
+            if sv:
+                out.append({"linea": linea, "sentido": sent, "servicio": sv,
+                            "salida_min": _hms(t["text"]), "unidad": unidades.get(sv, "")})
     return out
 
 
@@ -116,8 +132,12 @@ def parse():
 
 if __name__ == "__main__":
     df = parse()
-    print(f"Salidas: {len(df)} | con unidad asignada: {(df['unidad']!='').sum()}")
-    print(df.groupby(["linea", "sentido"])["servicio"].count().to_string())
-    print("\nUnidades distintas:", sorted(u for u in df['unidad'].unique() if u))
-    print("\nEjemplo L2 CC->CW:")
-    print(df[(df.linea=='L2')&(df.sentido=='CC->CW')][['servicio','salida_min','unidad']].head(8).to_string(index=False))
+    print(f"Salidas: {len(df)} | con unidad: {(df['unidad']!='').sum()}")
+    print(df.groupby(["linea", "sentido"])["servicio"].nunique().to_string())
+    # chequeo: servicios que aparecen en ambos sentidos (no deberia haber)
+    for linea in ["L2", "L1"]:
+        g = df[df.linea == linea]
+        dup = g[g.duplicated("servicio", keep=False)]
+        print(f"{linea}: servicios en ambos sentidos = {dup['servicio'].nunique()} (debe ser 0)")
+    print("\nEjemplo L2 CC->CW:", df[(df.linea=='L2')&(df.sentido=='CC->CW')]['servicio'].head(5).tolist())
+    print("Ejemplo L2 CW->CC:", df[(df.linea=='L2')&(df.sentido=='CW->CC')]['servicio'].head(5).tolist())

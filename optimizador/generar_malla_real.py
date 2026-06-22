@@ -45,7 +45,7 @@ def generar():
             for _, r in sub.iterrows():
                 for s, c in zip(orden, cum):
                     filas.append({
-                        "linea": linea, "tren_id": f"{linea}-{r.servicio}",
+                        "linea": linea, "tren_id": f"{linea}-{sentido}-{r.servicio}",
                         "sentido": sentido, "estacion": s,
                         "dist_km": round(distkm[s], 3),
                         "hora_min": round(r.salida_min + c, 2),

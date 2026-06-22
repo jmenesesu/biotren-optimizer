@@ -1,8 +1,10 @@
 {
   "linea": "L2",
-  "trenes": 62,
-  "eventos_espera": 1,
-  "espera_total_min": 1.5,
-  "esperas_via_unica": 1,
-  "clearing_min": 1.5
+  "trenes": 104,
+  "eventos_espera": 17,
+  "espera_total_min": 140.3,
+  "esperas_via_unica": 17,
+  "clearing_min": 1.5,
+  "cambio_cabina_min": 3.0,
+  "nota_cabina": "El cambio de cabina (3 min) es restriccion de rotacion en el anden (ya reflejada en los horarios del itinerario), no ocupa el canton de via unica."
 }
