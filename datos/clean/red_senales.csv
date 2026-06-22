@@ -1,0 +1,265 @@
+corredor,nombre,x,y,tipo,principal,lado
+K05-CC,Concepción,3760.0,1410.0,Principal/Distante,True,right
+K05-CC,Concepción,3760.0,1430.0,Principal/Distante,True,left
+K05-CC,Concepción,3345.0,1410.0,Distante 2 asp.,False,right
+K05-CC,Concepción,3345.0,1430.0,Distante 2 asp.,False,left
+K05-CC,Concepción,5170.0,1490.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,6240.0,1255.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,5170.0,1510.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,5225.0,1470.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,4665.0,1410.0,Principal 2 asp.,True,left
+K05-CC,Concepción,4885.0,1430.0,Principal 2 asp.,True,right
+K05-CC,Concepción,4920.0,1410.0,Distante,False,left
+K05-CC,Concepción,4860.0,1470.0,Principal 2 asp.,True,right
+K05-CC,Concepción,4940.0,1490.0,Distante,False,right
+K05-CC,Concepción,4665.0,1450.0,Principal 2 asp.,True,right
+K05-CC,Concepción,5285.0,1430.0,Principal/Distante 3 asp.,True,left
+K05-CC,Concepción,5285.0,1410.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,5640.0,1450.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,6825.0,1665.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,6825.0,1665.0,Distante 2 asp.,False,left
+K05-CC,Concepción,7385.0,1430.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,7385.0,1410.0,Principal/Distante 3 asp.,True,left
+K05-CC,Concepción,8695.0,1410.0,Principal/Distante 3 asp.,True,left
+K05-CC,Concepción,8695.0,1410.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,8695.0,1430.0,Principal/Distante 3 asp.,True,right
+K05-CC,Concepción,8695.0,1430.0,Principal/Distante 3 asp.,True,left
+K05-CC,Concepción,6240.0,1255.0,Principal,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,120.0,2735.0,Distante 2 asp.,False,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,825.0,2490.0,Distante 2 asp.,False,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1611.0,2490.0,Distante,False,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1585.0,2510.0,Distante,False,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1665.0,2510.0,Principal 2 asp.,True,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1665.0,2490.0,Principal 2 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1005.0,2490.0,Principal/Distante 3 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1240.0,2490.0,Principal 2 asp.,True,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1240.0,2510.0,Principal 2 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,315.0,2275.0,Distante 2 asp.,False,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,315.0,2255.0,Distante 2 asp.,False,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,135.0,2255.0,Principal/Distante 3 asp.,True,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,135.0,2275.0,Principal/Distante 3 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,730.0,2480.0,Principal,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,400.0,2480.0,Principal,True,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1620.0,2255.0,Principal/Distante 3 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1620.0,2275.0,Principal/Distante 3 asp.,True,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1440.0,2255.0,Distante 2 asp.,False,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,1440.0,2275.0,Distante 2 asp.,False,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,130.0,2020.0,Principal 2 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,700.0,2020.0,Principal/Distante 3 asp.,True,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,700.0,2040.0,Principal/Distante 3 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,330.0,2040.0,Principal 2 asp.,True,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,130.0,2040.0,Principal 2 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,130.0,2000.0,Principal 2 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,370.0,2020.0,Principal 2 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,330.0,2000.0,Principal 2 asp.,True,right
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,885.0,2020.0,Distante 2 asp.,False,left
+K-04-OH-ZW-CV_1,Chiguayante–La Leonera,885.0,2040.0,Distante 2 asp.,False,right
+K-06-EZ-TH_1,El Arenal–Mercado,1645.0,290.0,Principal/Distante 3 asp.,True,left
+K-06-EZ-TH_1,El Arenal–Mercado,565.0,560.0,Principal/Distante 3 asp.,True,left
+K-06-EZ-TH_1,El Arenal–Mercado,565.0,560.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,565.0,580.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,565.0,580.0,Principal/Distante 3 asp.,True,left
+K-06-EZ-TH_1,El Arenal–Mercado,380.0,250.0,Principal/Distante 3 asp.,True,left
+K-06-EZ-TH_1,El Arenal–Mercado,380.0,250.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,380.0,270.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,380.0,270.0,Principal/Distante 3 asp.,True,left
+K-06-EZ-TH_1,El Arenal–Mercado,920.0,270.0,Principal/Distante 3 asp.,True,left
+K-06-EZ-TH_1,El Arenal–Mercado,920.0,250.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,1280.0,290.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,1310.0,270.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,1290.0,250.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,1200.0,290.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,570.0,0.0,Principal/Distante 3 asp.,True,right
+K-06-EZ-TH_1,El Arenal–Mercado,110.0,0.0,Principal/Distante 3 asp.,True,right
+K02-TL-UN,Talcamávida–Unihue,5110.0,4425.0,Principal,True,right
+K02-TL-UN,Talcamávida–Unihue,5110.0,4405.0,Principal,True,left
+K02-TL-UN,Talcamávida–Unihue,2910.0,4405.0,Distante 2 asp.,False,right
+K02-TL-UN,Talcamávida–Unihue,3725.0,4405.0,Principal/Distante,True,right
+K02-TL-UN,Talcamávida–Unihue,4400.0,4405.0,Principal,True,left
+K02-TL-UN,Talcamávida–Unihue,4400.0,4425.0,Principal,True,right
+K02-TL-UN,Talcamávida–Unihue,4575.0,4405.0,Distante,False,left
+K02-TL-UN,Talcamávida–Unihue,4575.0,4425.0,Distante,False,right
+K02-TL-UN,Talcamávida–Unihue,6015.0,4405.0,Principal/Distante,True,right
+K02-TL-UN,Talcamávida–Unihue,90.0,4020.0,Distante 2 asp.,False,left
+K02-TL-UN,Talcamávida–Unihue,2630.0,4020.0,Distante 2 asp.,False,left
+K02-TL-UN,Talcamávida–Unihue,4850.0,4020.0,Principal,True,left
+K02-TL-UN,Talcamávida–Unihue,4850.0,4000.0,Principal,True,left
+K02-TL-UN,Talcamávida–Unihue,3965.0,4020.0,Principal,True,left
+K02-TL-UN,Talcamávida–Unihue,3965.0,4000.0,Principal,True,left
+K02-TL-UN,Talcamávida–Unihue,3410.0,4020.0,Principal/Distante,True,left
+K02-TL-UN,Talcamávida–Unihue,5375.0,4020.0,Principal/Distante,True,left
+K02-TL-UN,Talcamávida–Unihue,6175.0,4020.0,Distante 2 asp.,False,right
+K01-BU-GO,Buenuraqui–Gomero,4200.0,5060.0,Principal/Distante,True,right
+K01-BU-GO,Buenuraqui–Gomero,7045.0,5475.0,Principal,True,left
+K01-BU-GO,Buenuraqui–Gomero,6920.0,5455.0,Distante,False,right
+K01-BU-GO,Buenuraqui–Gomero,5955.0,5455.0,Principal,True,left
+K01-BU-GO,Buenuraqui–Gomero,7045.0,5455.0,Principal,True,left
+K01-BU-GO,Buenuraqui–Gomero,6920.0,5475.0,Distante,False,right
+K01-BU-GO,Buenuraqui–Gomero,5955.0,5475.0,Principal,True,left
+K01-BU-GO,Buenuraqui–Gomero,5545.0,5455.0,Principal/Distante,True,left
+K01-BU-GO,Buenuraqui–Gomero,4470.0,5455.0,Distante 2 asp.,False,left
+K01-BU-GO,Buenuraqui–Gomero,7990.0,5080.0,Distante 2 asp.,False,right
+K01-BU-GO,Buenuraqui–Gomero,7555.0,5455.0,Principal/Distante,True,left
+K01-BU-GO,Buenuraqui–Gomero,480.0,5060.0,Distante 2 asp.,False,left
+K01-BU-GO,Buenuraqui–Gomero,3425.0,5060.0,Distante 2 asp.,False,left
+K01-BU-GO,Buenuraqui–Gomero,4790.0,5040.0,Principal,True,left
+K01-BU-GO,Buenuraqui–Gomero,5185.0,5080.0,Principal,True,right
+K01-BU-GO,Buenuraqui–Gomero,5185.0,5060.0,Principal,True,left
+K01-BU-GO,Buenuraqui–Gomero,5790.0,5060.0,Distante,False,right
+K01-BU-GO,Buenuraqui–Gomero,5790.0,5080.0,Distante,False,left
+K01-BU-GO,Buenuraqui–Gomero,6120.0,5060.0,Principal,True,right
+K01-BU-GO,Buenuraqui–Gomero,6120.0,5080.0,Principal,True,left
+K01-BU-GO,Buenuraqui–Gomero,6595.0,5080.0,Principal/Distante,True,right
+K03-QU-HQ,Quilacoya–Hualqui,5635.0,3385.0,Principal/Distante,True,left
+K03-QU-HQ,Quilacoya–Hualqui,7445.0,3020.0,Principal 2 asp.,True,left
+K03-QU-HQ,Quilacoya–Hualqui,7445.0,3000.0,Principal 2 asp.,True,right
+K03-QU-HQ,Quilacoya–Hualqui,6460.0,3385.0,Distante 2 asp.,False,right
+K03-QU-HQ,Quilacoya–Hualqui,3750.0,3385.0,Principal/Distante,True,left
+K03-QU-HQ,Quilacoya–Hualqui,3000.0,3385.0,Distante 2 asp.,False,left
+K03-QU-HQ,Quilacoya–Hualqui,4225.0,3385.0,Principal,True,right
+K03-QU-HQ,Quilacoya–Hualqui,4205.0,3365.0,Principal,True,left
+K03-QU-HQ,Quilacoya–Hualqui,5090.0,3385.0,Principal,True,left
+K03-QU-HQ,Quilacoya–Hualqui,5090.0,3365.0,Principal,True,right
+K03-QU-HQ,Quilacoya–Hualqui,6575.0,3020.0,Principal 2 asp.,True,right
+K03-QU-HQ,Quilacoya–Hualqui,6120.0,3000.0,Principal/Distante 3 asp.,True,right
+K03-QU-HQ,Quilacoya–Hualqui,5645.0,3000.0,Distante 2 asp.,False,right
+K03-QU-HQ,Quilacoya–Hualqui,7795.0,3000.0,Principal/Distante 3 asp.,True,right
+K03-QU-HQ,Quilacoya–Hualqui,6575.0,3000.0,Principal 2 asp.,True,left
+K03-QU-HQ,Quilacoya–Hualqui,6970.0,3000.0,Distante,False,right
+K03-QU-HQ,Quilacoya–Hualqui,6970.0,3020.0,Distante,False,left
+L01-BB-LM,Biobío–Lomas Coloradas,1355.0,6435.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,2750.0,6415.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,3125.0,6415.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2850.0,6435.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2110.0,6435.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2110.0,6415.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2155.0,6395.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2755.0,6395.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,3200.0,6435.0,Principal 2 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,3745.0,6435.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,3745.0,6415.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,1355.0,6415.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,395.0,6415.0,Distante 2 asp.,False,left
+L01-BB-LM,Biobío–Lomas Coloradas,4430.0,6435.0,Distante 2 asp.,False,right
+L01-BB-LM,Biobío–Lomas Coloradas,4430.0,6415.0,Distante 2 asp.,False,left
+L01-BB-LM,Biobío–Lomas Coloradas,7130.0,6435.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,6450.0,6435.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,6450.0,6415.0,Principal 2 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,5300.0,6435.0,Distante 2 asp.,False,left
+L01-BB-LM,Biobío–Lomas Coloradas,5300.0,6415.0,Distante 2 asp.,False,right
+L01-BB-LM,Biobío–Lomas Coloradas,5965.0,6435.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,5965.0,6415.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,6630.0,6435.0,Principal 2 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,6630.0,6415.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,7130.0,6415.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,7800.0,6415.0,Distante 2 asp.,False,left
+L01-BB-LM,Biobío–Lomas Coloradas,7800.0,6435.0,Distante 2 asp.,False,right
+L01-BB-LM,Biobío–Lomas Coloradas,7920.0,6415.0,Distante 2 asp.,False,right
+L01-BB-LM,Biobío–Lomas Coloradas,7920.0,6435.0,Distante 2 asp.,False,left
+L01-BB-LM,Biobío–Lomas Coloradas,2370.0,6020.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,565.0,6040.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,565.0,6020.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2595.0,6020.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2595.0,6040.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,3285.0,6020.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,3285.0,6040.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,1640.0,6000.0,Principal 2 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,1625.0,6020.0,Principal 2 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,1255.0,6040.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2395.0,6000.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,3950.0,6020.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,3950.0,6020.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,3950.0,6040.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,3950.0,6040.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,6300.0,6020.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,6300.0,6020.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,6300.0,6040.0,Principal/Distante 3 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,6300.0,6040.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,395.0,6435.0,Distante 2 asp.,False,right
+L01-BB-LM,Biobío–Lomas Coloradas,2145.0,6375.0,Principal 2 asp.,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2850.0,6415.0,Principal/Distante 3 asp.,True,left
+L01-BB-LM,Biobío–Lomas Coloradas,2450.0,6395.0,Principal,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2450.0,6375.0,Principal,True,right
+L01-BB-LM,Biobío–Lomas Coloradas,2485.0,6395.0,Principal,True,right
+L02-ES-CW,Escuadrón–Coronel,2635.0,7040.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,6635.0,7460.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,5945.0,7460.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,965.0,7060.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,6870.0,7440.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,5040.0,7460.0,Distante 2 asp.,False,left
+L02-ES-CW,Escuadrón–Coronel,600.0,7440.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,600.0,7440.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,600.0,7460.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,600.0,7460.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,2975.0,7460.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,1265.0,7460.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,1265.0,7440.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,3590.0,7440.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,3590.0,7460.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,1880.0,7420.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,1890.0,7440.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,1825.0,7460.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,2860.0,7440.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,2870.0,7420.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,5280.0,7440.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,4255.0,7440.0,Distante 2 asp.,False,left
+L02-ES-CW,Escuadrón–Coronel,4255.0,7460.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,4625.0,7440.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,6635.0,7440.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,5695.0,7460.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,7495.0,7440.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,7495.0,7460.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,5350.0,7420.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,5945.0,7440.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,6870.0,7460.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,295.0,7080.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,295.0,7080.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,295.0,7060.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,8240.0,7480.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,8495.0,7480.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,1805.0,7020.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,3290.0,7040.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,965.0,7080.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,2055.0,7060.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,1875.0,7060.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,2060.0,7040.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,1885.0,7080.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,2070.0,7020.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,1780.0,7040.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,4425.0,7000.0,Principal,True,right
+L02-ES-CW,Escuadrón–Coronel,4850.0,7040.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,4805.0,7020.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,4805.0,7000.0,Principal,True,left
+L02-ES-CW,Escuadrón–Coronel,4155.0,7040.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,4155.0,7020.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,4155.0,7060.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,3290.0,7060.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,2260.0,7060.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,2055.0,7080.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,4030.0,7060.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,3795.0,7040.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,5085.0,7060.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,5550.0,7060.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,6245.0,7060.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,6655.0,7040.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,6935.0,7060.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,7355.0,7060.0,Principal 2 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,7075.0,7040.0,Principal 2 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,7440.0,7060.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,6540.0,7060.0,Principal/Distante 3 asp.,True,left
+L02-ES-CW,Escuadrón–Coronel,1780.0,7060.0,Principal/Distante 3 asp.,True,right
+L02-ES-CW,Escuadrón–Coronel,8040.0,7060.0,Distante 2 asp.,False,right
+L02-ES-CW,Escuadrón–Coronel,5945.0,7060.0,Distante 2 asp.,False,left
+L02-ES-CW,Escuadrón–Coronel,5085.0,7040.0,Principal 2 asp.,True,right
+L03-LT-IV,Lota–Chivilingo,4640.0,8385.0,Principal,True,left
+L03-LT-IV,Lota–Chivilingo,4640.0,8385.0,Principal,True,right
+L03-LT-IV,Lota–Chivilingo,6040.0,8000.0,Principal,True,right
+L03-LT-IV,Lota–Chivilingo,6040.0,8000.0,Principal,True,left
+L03-LT-IV,Lota–Chivilingo,1740.0,8385.0,Principal/Distante 3 asp.,True,left
+L03-LT-IV,Lota–Chivilingo,1175.0,8385.0,Distante 2 asp.,False,right
+L03-LT-IV,Lota–Chivilingo,2700.0,8385.0,Principal/Distante 3 asp.,True,right
+L03-LT-IV,Lota–Chivilingo,3335.0,8385.0,Distante 2 asp.,False,left
+L03-LT-IV,Lota–Chivilingo,2215.0,8405.0,Principal 2 asp.,True,right
+L03-LT-IV,Lota–Chivilingo,2215.0,8385.0,Principal 2 asp.,True,left
+L03-LT-IV,Lota–Chivilingo,2350.0,8385.0,Principal/Distante 3 asp.,True,right
+L03-LT-IV,Lota–Chivilingo,2350.0,8405.0,Principal/Distante 3 asp.,True,left

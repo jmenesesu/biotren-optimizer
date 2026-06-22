@@ -219,10 +219,13 @@ with tabs[3]:
 # ---------- Red ----------
 with tabs[4]:
     st.subheader("Red de infraestructura (esquema por corredor)")
-    arcos = load("red_arcos.csv"); est = load("red_estaciones.csv")
+    arcos = load("red_arcos.csv"); est = load("red_estaciones.csv"); sen = load("red_senales.csv")
     if arcos.empty:
         st.info("Falta red_arcos.csv.")
     else:
+        col1, col2 = st.columns(2)
+        ver_sig = col1.checkbox("Mostrar señales (OpenTrack)", value=True)
+        solo_ppal = col2.checkbox("Solo señales principales (límites de cantón)", value=False)
         xs, ys = [], []
         for _, r in arcos.iterrows():
             xs += [r.x1, r.x2, None]; ys += [r.y1, r.y2, None]
@@ -234,12 +237,27 @@ with tabs[4]:
                                      marker=dict(color="#C00000", size=7), text=est["label"],
                                      textposition="top center", textfont=dict(size=8),
                                      hoverinfo="text", showlegend=False))
+        if ver_sig and not sen.empty:
+            sg = sen[sen["principal"]] if solo_ppal else sen
+            for principal, color, nm in [(True, "#2E7D32", "Señal principal"),
+                                         (False, "#FF8C00", "Señal distante")]:
+                d = sg[sg["principal"] == principal]
+                if not d.empty:
+                    fig.add_trace(go.Scatter(x=d["x"], y=d["y"], mode="markers",
+                                             marker=dict(color=color, size=5, symbol="triangle-up"),
+                                             name=nm, hovertext=d["tipo"], hoverinfo="text"))
         anns = [dict(x=g[["x1", "x2"]].min().min(), y=g["y1"].median(), text=n, showarrow=False,
                      xanchor="right", font=dict(color="#C00000", size=11))
                 for n, g in arcos.groupby("nombre")] if "nombre" in arcos.columns else []
         fig.update_layout(height=820, margin=dict(l=10, r=10, t=10, b=10),
-                          yaxis=dict(visible=False), xaxis=dict(visible=False), annotations=anns)
+                          yaxis=dict(visible=False), xaxis=dict(visible=False), annotations=anns,
+                          legend=dict(orientation="h", y=1.02))
         st.plotly_chart(fig, use_container_width=True)
+        if not sen.empty:
+            st.caption(f"Señales OpenTrack: {len(sen)} ({int(sen['principal'].sum())} principales). "
+                       "Un cantón (block) es el tramo entre dos señales PRINCIPALES consecutivas. "
+                       "OpenTrack exporta las señales, no los cantones como objeto; estos se derivan "
+                       "de las señales principales.")
 
 # ---------- Mapa ----------
 with tabs[5]:

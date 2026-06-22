@@ -78,6 +78,22 @@ def parse():
             lo, hi = yranges[c]
             est.append({"corredor": c, "label": s.get("label"),
                         "x": float(p.get("x")), "y": (float(p.get("y")) - lo) + offset.get(c, 0)})
+    # SEÑALES reales del OTML (element -> leaf -> posicion), encuadradas por corredor
+    TIPO = {"1": "Principal", "24": "Principal 2 asp.", "25": "Principal/Distante 3 asp.",
+            "27": "Distante 2 asp.", "3": "Distante", "2": "Principal/Distante"}
+    PRINCIPAL = {"1", "24", "25", "2"}   # señales principales = limites de canton
+    sig = []
+    for sg in r.findall(".//signal"):
+        el = sg.get("element")
+        p = place(el)
+        if p is None:
+            continue
+        c, x, y = p
+        sig.append({"corredor": c, "nombre": NOMBRE_CORR.get(c, c), "x": x, "y": y,
+                    "tipo": TIPO.get(sg.get("type"), f"tipo {sg.get('type')}"),
+                    "principal": sg.get("type") in PRINCIPAL, "lado": sg.get("side", "")})
+    pd.DataFrame(sig).to_csv(CLEAN / "red_senales.csv", index=False)
+
     pd.DataFrame(arcos).to_csv(CLEAN / "red_arcos.csv", index=False)
     pd.DataFrame(est).to_csv(CLEAN / "red_estaciones.csv", index=False)
     return pd.DataFrame(arcos), pd.DataFrame(est), corr_list
@@ -85,5 +101,7 @@ def parse():
 
 if __name__ == "__main__":
     arcos, est, corr_list = parse()
-    print(f"Arcos: {len(arcos)} | Estaciones: {len(est)} | Corredores: {len(corr_list)}")
+    import pandas as _pd
+    sg=_pd.read_csv(CLEAN/"red_senales.csv")
+    print(f"Arcos: {len(arcos)} | Estaciones: {len(est)} | Señales: {len(sg)} ({int(sg.principal.sum())} principales) | Corredores: {len(corr_list)}")
     print(arcos.groupby("nombre")["x1"].count().to_string())
