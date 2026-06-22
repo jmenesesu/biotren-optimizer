@@ -1,9 +1,20 @@
 {
-  "linea": "L2",
-  "trenes": 100,
-  "esperas_via_unica": 30,
-  "espera_total_min": 117.4,
-  "espera_max_min": 6.0,
-  "clearing_min": 1.5,
-  "fuente": "horarios_limpios"
+  "L2": {
+    "linea": "L2",
+    "trenes": 100,
+    "esperas_via_unica": 30,
+    "espera_total_min": 117.4,
+    "espera_max_min": 6.0,
+    "clearing_min": 1.5,
+    "fuente": "horarios_limpios"
+  },
+  "L1": {
+    "linea": "L1",
+    "trenes": 55,
+    "esperas_via_unica": 5,
+    "espera_total_min": 32.4,
+    "espera_max_min": 14.5,
+    "clearing_min": 1.5,
+    "fuente": "horarios_limpios"
+  }
 }

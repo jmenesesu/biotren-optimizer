@@ -136,14 +136,15 @@ def tab_marey(linea, top, bottom):
                "automotor (continua); equipo vacío punteado. Carga: gris segmentado. Banda roja = vía única.")
     marey(linea, ARCH_MALLA[fuente], f"{linea} — {fuente.lower()}", con_carga=True)
     if fuente == "Simulada (fixed-block)":
-        res = load_json("sim_resumen.json")
-        if res and res.get("linea") == linea:
-            c1, c2, c3 = st.columns(3)
+        res = load_json("sim_resumen.json").get(linea, {})
+        if res and res.get("trenes", 0) > 0:
+            c1, c2, c3, c4 = st.columns(4)
             c1.metric("Trenes simulados", res.get("trenes", 0))
             c2.metric("Esperas en vía única", res.get("esperas_via_unica", 0))
             c3.metric("Espera total (min)", res.get("espera_total_min", 0))
-        elif linea != "L2":
-            st.info("Simulación por ahora solo para L2.")
+            c4.metric("Espera máx (min)", res.get("espera_max_min", 0))
+        else:
+            st.info(f"Sin simulación disponible para {linea}.")
 
 
 def _hhmm(x):

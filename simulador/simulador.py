@@ -5,11 +5,12 @@ de los cantones de VIA UNICA: un solo tren a la vez; si esta ocupado, el tren
 espera en la estacion de entrada (cruzamiento) y su programacion se desplaza.
 La doble via se modela con multiples blocks (los trenes se siguen libremente).
 El cambio de cabina es restriccion de rotacion en el anden (ya en los horarios).
+Corre L2 y L1; los cantones provienen de las señales reales (bloques.py).
 
 Salida:
     datos/clean/malla_sim.csv   (linea, tren_id, sentido, unidad, equipo_vacio,
                                  estacion, dist_km, hora_min)
-    datos/clean/sim_eventos.csv ; datos/clean/sim_resumen.json
+    datos/clean/sim_eventos.csv ; datos/clean/sim_resumen.json (por linea)
 """
 import json
 import sys
@@ -36,7 +37,7 @@ def _t_en_dist(seq, d):
     return None
 
 
-def simular(linea="L2"):
+def simular(linea):
     hl = pd.read_csv(CLEAN / "horarios_limpios.csv")
     blo = pd.read_csv(CLEAN / "bloques.csv")
     eje = eje_L2() if linea == "L2" else eje_L1()
@@ -46,7 +47,7 @@ def simular(linea="L2"):
     H = H.dropna(subset=["dist_km"])
     singles = blo[(blo.linea == linea) & (blo.tipo == "single")][["block_id", "dist_lo", "dist_hi"]]
     if H.empty:
-        return pd.DataFrame(), pd.DataFrame(), {}
+        return pd.DataFrame(), pd.DataFrame(), {"linea": linea, "trenes": 0}
 
     trenes = []
     for (sent, serv), g in H.groupby(["sentido", "servicio"]):
@@ -99,17 +100,32 @@ def simular(linea="L2"):
                               "unidad": tr["uni"], "equipo_vacio": tr["vac"], "estacion": r["estacion"],
                               "dist_km": round(r["dist_km"], 3), "hora_min": round(r["salida_min"], 2)})
     df = pd.DataFrame(filas)
-    df.to_csv(CLEAN / "malla_sim.csv", index=False)
-    ev = pd.DataFrame(eventos); ev.to_csv(CLEAN / "sim_eventos.csv", index=False)
+    ev = pd.DataFrame(eventos)
     resumen = {"linea": linea, "trenes": len(trenes), "esperas_via_unica": len(ev),
                "espera_total_min": round(ev["espera_min"].sum(), 1) if len(ev) else 0.0,
                "espera_max_min": round(ev["espera_min"].max(), 1) if len(ev) else 0.0,
                "clearing_min": CLEARING_MIN, "fuente": "horarios_limpios"}
-    with open(CLEAN / "sim_resumen.json", "w", encoding="utf-8") as fh:
-        json.dump(resumen, fh, ensure_ascii=False, indent=2)
     return df, ev, resumen
 
 
+def main():
+    dfs, evs, resumenes = [], [], {}
+    for linea in ["L2", "L1"]:
+        df, ev, res = simular(linea)
+        if not df.empty:
+            dfs.append(df)
+        if not ev.empty:
+            evs.append(ev)
+        resumenes[linea] = res
+    malla = pd.concat(dfs, ignore_index=True) if dfs else pd.DataFrame()
+    malla.to_csv(CLEAN / "malla_sim.csv", index=False)
+    eventos = pd.concat(evs, ignore_index=True) if evs else pd.DataFrame(
+        columns=["linea", "tren_id", "canton", "espera_min", "hora", "estacion_espera"])
+    eventos.to_csv(CLEAN / "sim_eventos.csv", index=False)
+    with open(CLEAN / "sim_resumen.json", "w", encoding="utf-8") as fh:
+        json.dump(resumenes, fh, ensure_ascii=False, indent=2)
+    return resumenes
+
+
 if __name__ == "__main__":
-    df, ev, res = simular("L2")
-    print(json.dumps(res, ensure_ascii=False, indent=2))
+    print(json.dumps(main(), ensure_ascii=False, indent=2))
