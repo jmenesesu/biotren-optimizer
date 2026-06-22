@@ -27,6 +27,7 @@ PASOS = [
     ("Via unica y conflictos", "optimizador/via_unica.py"),
     ("Bloques (cantones)", "simulador/bloques.py"),
     ("Simulacion fixed-block L2", "simulador/simulador.py"),
+    ("Timetabling anti-cruces (Etapa 2)", "optimizador/timetabling.py"),
 ]
 
 

@@ -1,0 +1,28 @@
+{
+  "L2": {
+    "linea": "L2",
+    "estado": "Optimal",
+    "trenes": 100,
+    "pares_restringidos": 184,
+    "cruzamientos_antes": 30,
+    "cruzamientos_despues": 0,
+    "desviacion_total_min": 89,
+    "trenes_reprogramados": 40,
+    "desfase_max_min": 9,
+    "delta_permitido": 12,
+    "clearing_min": 1.5
+  },
+  "L1": {
+    "linea": "L1",
+    "estado": "Optimal",
+    "trenes": 55,
+    "pares_restringidos": 31,
+    "cruzamientos_antes": 3,
+    "cruzamientos_despues": 0,
+    "desviacion_total_min": 6,
+    "trenes_reprogramados": 4,
+    "desfase_max_min": 3,
+    "delta_permitido": 12,
+    "clearing_min": 1.5
+  }
+}

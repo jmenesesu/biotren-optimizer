@@ -127,7 +127,7 @@ def marey(linea, archivo, titulo, con_carga=False):
 
 
 ARCH_MALLA = {"Itinerario actual": "malla_real.csv", "Simulada (fixed-block)": "malla_sim.csv",
-              "Optimizada": "malla_marey.csv"}
+              "Reprogramada (sin cruces)": "malla_opt.csv", "Óptima (frecuencias)": "malla_marey.csv"}
 
 
 def tab_marey(linea, top, bottom):
@@ -145,6 +145,17 @@ def tab_marey(linea, top, bottom):
             c4.metric("Espera máx (min)", res.get("espera_max_min", 0))
         else:
             st.info(f"Sin simulación disponible para {linea}.")
+    if fuente == "Reprogramada (sin cruces)":
+        res = load_json("opt_resumen.json").get(linea, {})
+        if res:
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("Cruzamientos antes", res.get("cruzamientos_antes", 0))
+            c2.metric("Cruzamientos después", res.get("cruzamientos_despues", 0))
+            c3.metric("Trenes reprogramados", res.get("trenes_reprogramados", 0))
+            c4.metric("Desfase máx (min)", res.get("desfase_max_min", 0))
+            st.caption("Optimizador de timetabling: desplaza salidas (mín. desviación, "
+                       f"≤ ±{res.get('delta_permitido', 0)} min) para eliminar cruzamientos en "
+                       "vía única. Tiempos de recorrido tomados de horarios_limpios.")
 
 
 def _hhmm(x):
