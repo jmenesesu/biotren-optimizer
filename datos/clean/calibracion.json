@@ -1,0 +1,11 @@
+{
+  "linea": "L2",
+  "sentido": "CC->CW",
+  "vehiculo_ref": "SFE-100 normal (AW3)",
+  "factor_velocidad_comercial": 0.5,
+  "tiempo_tecnico_min": 36.81,
+  "tiempo_itinerario_min": 37.58,
+  "suplemento_residual": 0.021,
+  "error_medio_abs": 0.0205,
+  "nota": "Tiempo comercial = motor(velocidad_via * factor). Suplemento residual aplicable sobre el tiempo tecnico calibrado. Coeficientes Davis y deceleracion del motor son supuestos; recalibrar con mediciones reales o contra OpenTrack."
+}

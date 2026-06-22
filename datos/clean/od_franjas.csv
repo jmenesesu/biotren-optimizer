@@ -1,0 +1,1785 @@
+origen,destino,franja,viajes
+Hualqui,La Leonera,05-10,8.0
+Hualqui,Manquimávida,05-10,21.0
+Hualqui,Pedro Medina,05-10,25.0
+Hualqui,Chiguayante,05-10,23.0
+Hualqui,Concepción,05-10,241.0
+Hualqui,Mall,05-10,18.0
+Hualqui,Lzo. Arenas,05-10,20.0
+Hualqui,UTF Santa María,05-10,37.0
+Hualqui,Los Cóndores,05-10,17.0
+Hualqui,Higueras,05-10,24.0
+Hualqui,El Arenal,05-10,13.0
+Hualqui,Mercado,05-10,15.0
+Hualqui,Juan Pablo II,05-10,18.0
+Hualqui,Diagonal Bio Bio,05-10,4.0
+Hualqui,Alborada,05-10,2.0
+Hualqui,Costa Mar,05-10,6.0
+Hualqui,El Parque,05-10,10.0
+Hualqui,Lomas Coloradas,05-10,4.0
+Hualqui,Cdal. Raúl Silva Henríquez,05-10,1.0
+Hualqui,Hito Galvarino,05-10,4.0
+Hualqui,Los Canelos,05-10,9.0
+Hualqui,Huinca,05-10,3.0
+Hualqui,Coronel,05-10,1.0
+La Leonera,Hualqui,05-10,4.0
+La Leonera,Manquimávida,05-10,5.0
+La Leonera,Pedro Medina,05-10,4.0
+La Leonera,Chiguayante,05-10,4.0
+La Leonera,Concepción,05-10,132.0
+La Leonera,Mall,05-10,13.0
+La Leonera,Lzo. Arenas,05-10,18.0
+La Leonera,UTF Santa María,05-10,32.0
+La Leonera,Los Cóndores,05-10,22.0
+La Leonera,Higueras,05-10,21.0
+La Leonera,El Arenal,05-10,15.0
+La Leonera,Mercado,05-10,13.0
+La Leonera,Juan Pablo II,05-10,25.0
+La Leonera,Diagonal Bio Bio,05-10,11.0
+La Leonera,Alborada,05-10,5.0
+La Leonera,Costa Mar,05-10,2.0
+La Leonera,El Parque,05-10,22.0
+La Leonera,Lomas Coloradas,05-10,15.0
+La Leonera,Cdal. Raúl Silva Henríquez,05-10,3.0
+La Leonera,Hito Galvarino,05-10,6.0
+La Leonera,Los Canelos,05-10,3.0
+La Leonera,Huinca,05-10,2.0
+La Leonera,Cristo Redentor,05-10,3.0
+La Leonera,Laguna Quiñenco,05-10,3.0
+La Leonera,Coronel,05-10,5.0
+Manquimávida,Hualqui,05-10,2.0
+Manquimávida,La Leonera,05-10,2.0
+Manquimávida,Manquimávida,05-10,2.0
+Manquimávida,Pedro Medina,05-10,5.0
+Manquimávida,Chiguayante,05-10,8.0
+Manquimávida,Concepción,05-10,157.0
+Manquimávida,Mall,05-10,14.0
+Manquimávida,Lzo. Arenas,05-10,26.0
+Manquimávida,UTF Santa María,05-10,25.0
+Manquimávida,Los Cóndores,05-10,11.0
+Manquimávida,Higueras,05-10,17.0
+Manquimávida,El Arenal,05-10,8.0
+Manquimávida,Mercado,05-10,15.0
+Manquimávida,Juan Pablo II,05-10,19.0
+Manquimávida,Diagonal Bio Bio,05-10,6.0
+Manquimávida,Alborada,05-10,2.0
+Manquimávida,Costa Mar,05-10,2.0
+Manquimávida,El Parque,05-10,5.0
+Manquimávida,Lomas Coloradas,05-10,4.0
+Manquimávida,Cdal. Raúl Silva Henríquez,05-10,1.0
+Manquimávida,Hito Galvarino,05-10,3.0
+Manquimávida,Los Canelos,05-10,4.0
+Manquimávida,Huinca,05-10,3.0
+Manquimávida,Laguna Quiñenco,05-10,1.0
+Manquimávida,Coronel,05-10,8.0
+Pedro Medina,Hualqui,05-10,1.0
+Pedro Medina,Manquimávida,05-10,4.0
+Pedro Medina,Concepción,05-10,54.0
+Pedro Medina,Mall,05-10,11.0
+Pedro Medina,Lzo. Arenas,05-10,7.0
+Pedro Medina,UTF Santa María,05-10,14.0
+Pedro Medina,Los Cóndores,05-10,12.0
+Pedro Medina,Higueras,05-10,19.0
+Pedro Medina,El Arenal,05-10,8.0
+Pedro Medina,Mercado,05-10,10.0
+Pedro Medina,Juan Pablo II,05-10,11.0
+Pedro Medina,Diagonal Bio Bio,05-10,2.0
+Pedro Medina,Costa Mar,05-10,8.0
+Pedro Medina,El Parque,05-10,5.0
+Pedro Medina,Lomas Coloradas,05-10,7.0
+Pedro Medina,Cdal. Raúl Silva Henríquez,05-10,4.0
+Pedro Medina,Hito Galvarino,05-10,4.0
+Pedro Medina,Los Canelos,05-10,4.0
+Pedro Medina,Huinca,05-10,2.0
+Pedro Medina,Cristo Redentor,05-10,1.0
+Pedro Medina,Laguna Quiñenco,05-10,3.0
+Pedro Medina,Coronel,05-10,3.0
+Chiguayante,Hualqui,05-10,4.0
+Chiguayante,La Leonera,05-10,4.0
+Chiguayante,Manquimávida,05-10,15.0
+Chiguayante,Pedro Medina,05-10,1.0
+Chiguayante,Chiguayante,05-10,3.0
+Chiguayante,Concepción,05-10,94.0
+Chiguayante,Mall,05-10,11.0
+Chiguayante,Lzo. Arenas,05-10,11.0
+Chiguayante,UTF Santa María,05-10,22.0
+Chiguayante,Los Cóndores,05-10,9.0
+Chiguayante,Higueras,05-10,27.0
+Chiguayante,El Arenal,05-10,11.0
+Chiguayante,Mercado,05-10,24.0
+Chiguayante,Juan Pablo II,05-10,10.0
+Chiguayante,Diagonal Bio Bio,05-10,9.0
+Chiguayante,Alborada,05-10,2.0
+Chiguayante,Costa Mar,05-10,7.0
+Chiguayante,El Parque,05-10,6.0
+Chiguayante,Lomas Coloradas,05-10,8.0
+Chiguayante,Cdal. Raúl Silva Henríquez,05-10,2.0
+Chiguayante,Hito Galvarino,05-10,3.0
+Chiguayante,Los Canelos,05-10,6.0
+Chiguayante,Huinca,05-10,2.0
+Chiguayante,Cristo Redentor,05-10,2.0
+Chiguayante,Laguna Quiñenco,05-10,3.0
+Chiguayante,Coronel,05-10,11.0
+Concepción,Hualqui,05-10,11.0
+Concepción,La Leonera,05-10,9.0
+Concepción,Manquimávida,05-10,18.0
+Concepción,Pedro Medina,05-10,11.0
+Concepción,Chiguayante,05-10,15.0
+Concepción,Concepción,05-10,27.0
+Concepción,Mall,05-10,18.0
+Concepción,Lzo. Arenas,05-10,7.0
+Concepción,UTF Santa María,05-10,20.0
+Concepción,Los Cóndores,05-10,8.0
+Concepción,Higueras,05-10,53.0
+Concepción,El Arenal,05-10,12.0
+Concepción,Mercado,05-10,11.0
+Concepción,Juan Pablo II,05-10,21.0
+Concepción,Diagonal Bio Bio,05-10,9.0
+Concepción,Alborada,05-10,17.0
+Concepción,Costa Mar,05-10,37.0
+Concepción,El Parque,05-10,65.0
+Concepción,Lomas Coloradas,05-10,73.0
+Concepción,Cdal. Raúl Silva Henríquez,05-10,38.0
+Concepción,Hito Galvarino,05-10,66.0
+Concepción,Los Canelos,05-10,111.0
+Concepción,Huinca,05-10,58.0
+Concepción,Cristo Redentor,05-10,47.0
+Concepción,Laguna Quiñenco,05-10,56.0
+Concepción,Coronel,05-10,208.0
+Mall,Hualqui,05-10,3.0
+Mall,La Leonera,05-10,6.0
+Mall,Manquimávida,05-10,7.0
+Mall,Pedro Medina,05-10,5.0
+Mall,Chiguayante,05-10,5.0
+Mall,Concepción,05-10,14.0
+Mall,Mall,05-10,1.0
+Mall,Lzo. Arenas,05-10,3.0
+Mall,UTF Santa María,05-10,8.0
+Mall,Los Cóndores,05-10,1.0
+Mall,Higueras,05-10,10.0
+Mall,El Arenal,05-10,10.0
+Mall,Mercado,05-10,7.0
+Mall,Juan Pablo II,05-10,6.0
+Mall,Diagonal Bio Bio,05-10,5.0
+Mall,Alborada,05-10,1.0
+Mall,Costa Mar,05-10,7.0
+Mall,El Parque,05-10,17.0
+Mall,Lomas Coloradas,05-10,9.0
+Mall,Cdal. Raúl Silva Henríquez,05-10,2.0
+Mall,Hito Galvarino,05-10,8.0
+Mall,Los Canelos,05-10,7.0
+Mall,Huinca,05-10,6.0
+Mall,Cristo Redentor,05-10,1.0
+Mall,Laguna Quiñenco,05-10,8.0
+Mall,Coronel,05-10,14.0
+Lzo. Arenas,Hualqui,05-10,1.0
+Lzo. Arenas,La Leonera,05-10,3.0
+Lzo. Arenas,Manquimávida,05-10,3.0
+Lzo. Arenas,Chiguayante,05-10,3.0
+Lzo. Arenas,Concepción,05-10,14.0
+Lzo. Arenas,Mall,05-10,4.0
+Lzo. Arenas,UTF Santa María,05-10,2.0
+Lzo. Arenas,Los Cóndores,05-10,8.0
+Lzo. Arenas,Higueras,05-10,19.0
+Lzo. Arenas,El Arenal,05-10,12.0
+Lzo. Arenas,Mercado,05-10,12.0
+Lzo. Arenas,Juan Pablo II,05-10,3.0
+Lzo. Arenas,Diagonal Bio Bio,05-10,3.0
+Lzo. Arenas,Alborada,05-10,1.0
+Lzo. Arenas,Costa Mar,05-10,1.0
+Lzo. Arenas,El Parque,05-10,1.0
+Lzo. Arenas,Lomas Coloradas,05-10,4.0
+Lzo. Arenas,Hito Galvarino,05-10,1.0
+Lzo. Arenas,Los Canelos,05-10,11.0
+Lzo. Arenas,Cristo Redentor,05-10,2.0
+Lzo. Arenas,Coronel,05-10,6.0
+UTF Santa María,Hualqui,05-10,4.0
+UTF Santa María,La Leonera,05-10,5.0
+UTF Santa María,Manquimávida,05-10,4.0
+UTF Santa María,Pedro Medina,05-10,2.0
+UTF Santa María,Chiguayante,05-10,5.0
+UTF Santa María,Concepción,05-10,32.0
+UTF Santa María,Mall,05-10,1.0
+UTF Santa María,Lzo. Arenas,05-10,2.0
+UTF Santa María,UTF Santa María,05-10,1.0
+UTF Santa María,Los Cóndores,05-10,6.0
+UTF Santa María,Higueras,05-10,26.0
+UTF Santa María,El Arenal,05-10,5.0
+UTF Santa María,Mercado,05-10,12.0
+UTF Santa María,Juan Pablo II,05-10,4.0
+UTF Santa María,Diagonal Bio Bio,05-10,6.0
+UTF Santa María,Alborada,05-10,1.0
+UTF Santa María,Costa Mar,05-10,1.0
+UTF Santa María,El Parque,05-10,5.0
+UTF Santa María,Lomas Coloradas,05-10,6.0
+UTF Santa María,Cdal. Raúl Silva Henríquez,05-10,4.0
+UTF Santa María,Hito Galvarino,05-10,7.0
+UTF Santa María,Los Canelos,05-10,5.0
+UTF Santa María,Huinca,05-10,3.0
+UTF Santa María,Cristo Redentor,05-10,1.0
+UTF Santa María,Laguna Quiñenco,05-10,4.0
+UTF Santa María,Coronel,05-10,12.0
+Los Cóndores,Hualqui,05-10,11.0
+Los Cóndores,La Leonera,05-10,5.0
+Los Cóndores,Manquimávida,05-10,12.0
+Los Cóndores,Pedro Medina,05-10,7.0
+Los Cóndores,Chiguayante,05-10,9.0
+Los Cóndores,Concepción,05-10,117.0
+Los Cóndores,Mall,05-10,6.0
+Los Cóndores,Lzo. Arenas,05-10,10.0
+Los Cóndores,UTF Santa María,05-10,18.0
+Los Cóndores,Higueras,05-10,4.0
+Los Cóndores,El Arenal,05-10,4.0
+Los Cóndores,Mercado,05-10,2.0
+Los Cóndores,Juan Pablo II,05-10,15.0
+Los Cóndores,Diagonal Bio Bio,05-10,2.0
+Los Cóndores,Alborada,05-10,8.0
+Los Cóndores,El Parque,05-10,9.0
+Los Cóndores,Lomas Coloradas,05-10,9.0
+Los Cóndores,Cdal. Raúl Silva Henríquez,05-10,2.0
+Los Cóndores,Hito Galvarino,05-10,8.0
+Los Cóndores,Los Canelos,05-10,16.0
+Los Cóndores,Huinca,05-10,3.0
+Los Cóndores,Cristo Redentor,05-10,2.0
+Los Cóndores,Laguna Quiñenco,05-10,3.0
+Los Cóndores,Coronel,05-10,20.0
+Higueras,La Leonera,05-10,3.0
+Higueras,Manquimávida,05-10,2.0
+Higueras,Pedro Medina,05-10,2.0
+Higueras,Chiguayante,05-10,3.0
+Higueras,Concepción,05-10,51.0
+Higueras,Mall,05-10,5.0
+Higueras,Lzo. Arenas,05-10,11.0
+Higueras,UTF Santa María,05-10,7.0
+Higueras,Los Cóndores,05-10,2.0
+Higueras,El Arenal,05-10,2.0
+Higueras,Mercado,05-10,9.0
+Higueras,Juan Pablo II,05-10,11.0
+Higueras,Diagonal Bio Bio,05-10,3.0
+Higueras,Alborada,05-10,2.0
+Higueras,Costa Mar,05-10,4.0
+Higueras,El Parque,05-10,5.0
+Higueras,Lomas Coloradas,05-10,4.0
+Higueras,Cdal. Raúl Silva Henríquez,05-10,3.0
+Higueras,Hito Galvarino,05-10,4.0
+Higueras,Los Canelos,05-10,6.0
+Higueras,Huinca,05-10,2.0
+Higueras,Cristo Redentor,05-10,1.0
+Higueras,Laguna Quiñenco,05-10,3.0
+Higueras,Coronel,05-10,8.0
+El Arenal,Hualqui,05-10,2.0
+El Arenal,La Leonera,05-10,3.0
+El Arenal,Manquimávida,05-10,5.0
+El Arenal,Chiguayante,05-10,2.0
+El Arenal,Concepción,05-10,49.0
+El Arenal,Mall,05-10,6.0
+El Arenal,Lzo. Arenas,05-10,7.0
+El Arenal,UTF Santa María,05-10,9.0
+El Arenal,Los Cóndores,05-10,1.0
+El Arenal,Higueras,05-10,3.0
+El Arenal,Mercado,05-10,1.0
+El Arenal,Juan Pablo II,05-10,8.0
+El Arenal,Diagonal Bio Bio,05-10,1.0
+El Arenal,Alborada,05-10,1.0
+El Arenal,Costa Mar,05-10,3.0
+El Arenal,El Parque,05-10,6.0
+El Arenal,Lomas Coloradas,05-10,2.0
+El Arenal,Cdal. Raúl Silva Henríquez,05-10,1.0
+El Arenal,Hito Galvarino,05-10,3.0
+El Arenal,Los Canelos,05-10,2.0
+El Arenal,Huinca,05-10,1.0
+El Arenal,Cristo Redentor,05-10,3.0
+El Arenal,Laguna Quiñenco,05-10,1.0
+El Arenal,Coronel,05-10,12.0
+Mercado,Hualqui,05-10,1.0
+Mercado,La Leonera,05-10,2.0
+Mercado,Manquimávida,05-10,2.0
+Mercado,Pedro Medina,05-10,1.0
+Mercado,Chiguayante,05-10,4.0
+Mercado,Concepción,05-10,23.0
+Mercado,Mall,05-10,10.0
+Mercado,Lzo. Arenas,05-10,3.0
+Mercado,UTF Santa María,05-10,5.0
+Mercado,Higueras,05-10,3.0
+Mercado,El Arenal,05-10,2.0
+Mercado,Juan Pablo II,05-10,7.0
+Mercado,Diagonal Bio Bio,05-10,1.0
+Mercado,Alborada,05-10,2.0
+Mercado,Costa Mar,05-10,2.0
+Mercado,El Parque,05-10,5.0
+Mercado,Lomas Coloradas,05-10,6.0
+Mercado,Cdal. Raúl Silva Henríquez,05-10,1.0
+Mercado,Hito Galvarino,05-10,1.0
+Mercado,Los Canelos,05-10,2.0
+Mercado,Huinca,05-10,2.0
+Mercado,Laguna Quiñenco,05-10,1.0
+Mercado,Coronel,05-10,8.0
+Juan Pablo II,Hualqui,05-10,5.0
+Juan Pablo II,Manquimávida,05-10,2.0
+Juan Pablo II,Pedro Medina,05-10,4.0
+Juan Pablo II,Chiguayante,05-10,3.0
+Juan Pablo II,Concepción,05-10,30.0
+Juan Pablo II,Mall,05-10,2.0
+Juan Pablo II,UTF Santa María,05-10,4.0
+Juan Pablo II,Higueras,05-10,5.0
+Juan Pablo II,El Arenal,05-10,3.0
+Juan Pablo II,Mercado,05-10,6.0
+Juan Pablo II,Juan Pablo II,05-10,2.0
+Juan Pablo II,Diagonal Bio Bio,05-10,6.0
+Juan Pablo II,Alborada,05-10,3.0
+Juan Pablo II,Costa Mar,05-10,7.0
+Juan Pablo II,El Parque,05-10,12.0
+Juan Pablo II,Lomas Coloradas,05-10,27.0
+Juan Pablo II,Cdal. Raúl Silva Henríquez,05-10,11.0
+Juan Pablo II,Hito Galvarino,05-10,24.0
+Juan Pablo II,Los Canelos,05-10,24.0
+Juan Pablo II,Huinca,05-10,15.0
+Juan Pablo II,Cristo Redentor,05-10,11.0
+Juan Pablo II,Laguna Quiñenco,05-10,10.0
+Juan Pablo II,Coronel,05-10,44.0
+Diagonal Bio Bio,Hualqui,05-10,1.0
+Diagonal Bio Bio,La Leonera,05-10,5.0
+Diagonal Bio Bio,Manquimávida,05-10,1.0
+Diagonal Bio Bio,Pedro Medina,05-10,3.0
+Diagonal Bio Bio,Chiguayante,05-10,11.0
+Diagonal Bio Bio,Concepción,05-10,69.0
+Diagonal Bio Bio,Mall,05-10,9.0
+Diagonal Bio Bio,Lzo. Arenas,05-10,2.0
+Diagonal Bio Bio,UTF Santa María,05-10,12.0
+Diagonal Bio Bio,Los Cóndores,05-10,10.0
+Diagonal Bio Bio,Higueras,05-10,7.0
+Diagonal Bio Bio,El Arenal,05-10,5.0
+Diagonal Bio Bio,Mercado,05-10,6.0
+Diagonal Bio Bio,Juan Pablo II,05-10,6.0
+Diagonal Bio Bio,Diagonal Bio Bio,05-10,3.0
+Diagonal Bio Bio,Alborada,05-10,7.0
+Diagonal Bio Bio,Costa Mar,05-10,24.0
+Diagonal Bio Bio,El Parque,05-10,17.0
+Diagonal Bio Bio,Lomas Coloradas,05-10,49.0
+Diagonal Bio Bio,Cdal. Raúl Silva Henríquez,05-10,15.0
+Diagonal Bio Bio,Hito Galvarino,05-10,23.0
+Diagonal Bio Bio,Los Canelos,05-10,37.0
+Diagonal Bio Bio,Huinca,05-10,20.0
+Diagonal Bio Bio,Cristo Redentor,05-10,12.0
+Diagonal Bio Bio,Laguna Quiñenco,05-10,16.0
+Diagonal Bio Bio,Coronel,05-10,54.0
+Alborada,Hualqui,05-10,2.0
+Alborada,La Leonera,05-10,1.0
+Alborada,Pedro Medina,05-10,3.0
+Alborada,Concepción,05-10,94.0
+Alborada,Mall,05-10,3.0
+Alborada,Lzo. Arenas,05-10,2.0
+Alborada,UTF Santa María,05-10,4.0
+Alborada,Los Cóndores,05-10,2.0
+Alborada,Higueras,05-10,5.0
+Alborada,El Arenal,05-10,4.0
+Alborada,Mercado,05-10,2.0
+Alborada,Juan Pablo II,05-10,25.0
+Alborada,Diagonal Bio Bio,05-10,38.0
+Alborada,Alborada,05-10,2.0
+Alborada,Costa Mar,05-10,4.0
+Alborada,El Parque,05-10,3.0
+Alborada,Lomas Coloradas,05-10,13.0
+Alborada,Cdal. Raúl Silva Henríquez,05-10,2.0
+Alborada,Hito Galvarino,05-10,4.0
+Alborada,Los Canelos,05-10,16.0
+Alborada,Huinca,05-10,7.0
+Alborada,Cristo Redentor,05-10,8.0
+Alborada,Laguna Quiñenco,05-10,3.0
+Alborada,Coronel,05-10,17.0
+Costa Mar,Hualqui,05-10,3.0
+Costa Mar,La Leonera,05-10,7.0
+Costa Mar,Manquimávida,05-10,2.0
+Costa Mar,Pedro Medina,05-10,9.0
+Costa Mar,Chiguayante,05-10,9.0
+Costa Mar,Concepción,05-10,464.0
+Costa Mar,Mall,05-10,34.0
+Costa Mar,Lzo. Arenas,05-10,25.0
+Costa Mar,UTF Santa María,05-10,30.0
+Costa Mar,Los Cóndores,05-10,11.0
+Costa Mar,Higueras,05-10,23.0
+Costa Mar,El Arenal,05-10,15.0
+Costa Mar,Mercado,05-10,18.0
+Costa Mar,Juan Pablo II,05-10,100.0
+Costa Mar,Diagonal Bio Bio,05-10,96.0
+Costa Mar,Alborada,05-10,2.0
+Costa Mar,Costa Mar,05-10,3.0
+Costa Mar,El Parque,05-10,15.0
+Costa Mar,Lomas Coloradas,05-10,47.0
+Costa Mar,Cdal. Raúl Silva Henríquez,05-10,8.0
+Costa Mar,Hito Galvarino,05-10,25.0
+Costa Mar,Los Canelos,05-10,53.0
+Costa Mar,Huinca,05-10,32.0
+Costa Mar,Cristo Redentor,05-10,26.0
+Costa Mar,Laguna Quiñenco,05-10,31.0
+Costa Mar,Coronel,05-10,76.0
+El Parque,La Leonera,05-10,1.0
+El Parque,Manquimávida,05-10,1.0
+El Parque,Chiguayante,05-10,2.0
+El Parque,Concepción,05-10,130.0
+El Parque,Mall,05-10,4.0
+El Parque,Lzo. Arenas,05-10,2.0
+El Parque,UTF Santa María,05-10,2.0
+El Parque,Los Cóndores,05-10,4.0
+El Parque,Higueras,05-10,4.0
+El Parque,El Arenal,05-10,3.0
+El Parque,Mercado,05-10,3.0
+El Parque,Juan Pablo II,05-10,29.0
+El Parque,Diagonal Bio Bio,05-10,38.0
+El Parque,Costa Mar,05-10,1.0
+El Parque,El Parque,05-10,2.0
+El Parque,Lomas Coloradas,05-10,8.0
+El Parque,Cdal. Raúl Silva Henríquez,05-10,3.0
+El Parque,Hito Galvarino,05-10,4.0
+El Parque,Los Canelos,05-10,9.0
+El Parque,Huinca,05-10,10.0
+El Parque,Cristo Redentor,05-10,5.0
+El Parque,Laguna Quiñenco,05-10,4.0
+El Parque,Coronel,05-10,30.0
+Lomas Coloradas,Hualqui,05-10,3.0
+Lomas Coloradas,La Leonera,05-10,3.0
+Lomas Coloradas,Manquimávida,05-10,9.0
+Lomas Coloradas,Pedro Medina,05-10,3.0
+Lomas Coloradas,Chiguayante,05-10,9.0
+Lomas Coloradas,Concepción,05-10,831.0
+Lomas Coloradas,Mall,05-10,21.0
+Lomas Coloradas,Lzo. Arenas,05-10,8.0
+Lomas Coloradas,UTF Santa María,05-10,16.0
+Lomas Coloradas,Los Cóndores,05-10,7.0
+Lomas Coloradas,Higueras,05-10,24.0
+Lomas Coloradas,El Arenal,05-10,10.0
+Lomas Coloradas,Mercado,05-10,15.0
+Lomas Coloradas,Juan Pablo II,05-10,151.0
+Lomas Coloradas,Diagonal Bio Bio,05-10,100.0
+Lomas Coloradas,Alborada,05-10,6.0
+Lomas Coloradas,Costa Mar,05-10,20.0
+Lomas Coloradas,El Parque,05-10,13.0
+Lomas Coloradas,Lomas Coloradas,05-10,7.0
+Lomas Coloradas,Cdal. Raúl Silva Henríquez,05-10,4.0
+Lomas Coloradas,Hito Galvarino,05-10,23.0
+Lomas Coloradas,Los Canelos,05-10,26.0
+Lomas Coloradas,Huinca,05-10,32.0
+Lomas Coloradas,Cristo Redentor,05-10,24.0
+Lomas Coloradas,Laguna Quiñenco,05-10,33.0
+Lomas Coloradas,Coronel,05-10,73.0
+Cdal. Raúl Silva Henríquez,Hualqui,05-10,2.0
+Cdal. Raúl Silva Henríquez,La Leonera,05-10,5.0
+Cdal. Raúl Silva Henríquez,Pedro Medina,05-10,2.0
+Cdal. Raúl Silva Henríquez,Chiguayante,05-10,5.0
+Cdal. Raúl Silva Henríquez,Concepción,05-10,507.0
+Cdal. Raúl Silva Henríquez,Mall,05-10,20.0
+Cdal. Raúl Silva Henríquez,Lzo. Arenas,05-10,16.0
+Cdal. Raúl Silva Henríquez,UTF Santa María,05-10,16.0
+Cdal. Raúl Silva Henríquez,Los Cóndores,05-10,12.0
+Cdal. Raúl Silva Henríquez,Higueras,05-10,16.0
+Cdal. Raúl Silva Henríquez,El Arenal,05-10,8.0
+Cdal. Raúl Silva Henríquez,Mercado,05-10,16.0
+Cdal. Raúl Silva Henríquez,Juan Pablo II,05-10,113.0
+Cdal. Raúl Silva Henríquez,Diagonal Bio Bio,05-10,98.0
+Cdal. Raúl Silva Henríquez,Alborada,05-10,9.0
+Cdal. Raúl Silva Henríquez,Costa Mar,05-10,17.0
+Cdal. Raúl Silva Henríquez,El Parque,05-10,17.0
+Cdal. Raúl Silva Henríquez,Lomas Coloradas,05-10,26.0
+Cdal. Raúl Silva Henríquez,Cdal. Raúl Silva Henríquez,05-10,4.0
+Cdal. Raúl Silva Henríquez,Hito Galvarino,05-10,14.0
+Cdal. Raúl Silva Henríquez,Los Canelos,05-10,40.0
+Cdal. Raúl Silva Henríquez,Huinca,05-10,12.0
+Cdal. Raúl Silva Henríquez,Cristo Redentor,05-10,18.0
+Cdal. Raúl Silva Henríquez,Laguna Quiñenco,05-10,24.0
+Cdal. Raúl Silva Henríquez,Coronel,05-10,63.0
+Hito Galvarino,Hualqui,05-10,1.0
+Hito Galvarino,Chiguayante,05-10,2.0
+Hito Galvarino,Concepción,05-10,306.0
+Hito Galvarino,Mall,05-10,15.0
+Hito Galvarino,Lzo. Arenas,05-10,4.0
+Hito Galvarino,UTF Santa María,05-10,5.0
+Hito Galvarino,Los Cóndores,05-10,1.0
+Hito Galvarino,Higueras,05-10,5.0
+Hito Galvarino,El Arenal,05-10,2.0
+Hito Galvarino,Mercado,05-10,8.0
+Hito Galvarino,Juan Pablo II,05-10,32.0
+Hito Galvarino,Diagonal Bio Bio,05-10,21.0
+Hito Galvarino,Alborada,05-10,5.0
+Hito Galvarino,Costa Mar,05-10,15.0
+Hito Galvarino,El Parque,05-10,6.0
+Hito Galvarino,Lomas Coloradas,05-10,8.0
+Hito Galvarino,Cdal. Raúl Silva Henríquez,05-10,4.0
+Hito Galvarino,Hito Galvarino,05-10,1.0
+Hito Galvarino,Los Canelos,05-10,17.0
+Hito Galvarino,Huinca,05-10,5.0
+Hito Galvarino,Cristo Redentor,05-10,4.0
+Hito Galvarino,Laguna Quiñenco,05-10,7.0
+Hito Galvarino,Coronel,05-10,19.0
+Los Canelos,La Leonera,05-10,2.0
+Los Canelos,Manquimávida,05-10,1.0
+Los Canelos,Pedro Medina,05-10,4.0
+Los Canelos,Chiguayante,05-10,4.0
+Los Canelos,Concepción,05-10,792.0
+Los Canelos,Mall,05-10,23.0
+Los Canelos,Lzo. Arenas,05-10,13.0
+Los Canelos,UTF Santa María,05-10,16.0
+Los Canelos,Los Cóndores,05-10,11.0
+Los Canelos,Higueras,05-10,12.0
+Los Canelos,El Arenal,05-10,8.0
+Los Canelos,Mercado,05-10,20.0
+Los Canelos,Juan Pablo II,05-10,121.0
+Los Canelos,Diagonal Bio Bio,05-10,59.0
+Los Canelos,Alborada,05-10,15.0
+Los Canelos,Costa Mar,05-10,46.0
+Los Canelos,El Parque,05-10,24.0
+Los Canelos,Lomas Coloradas,05-10,59.0
+Los Canelos,Cdal. Raúl Silva Henríquez,05-10,9.0
+Los Canelos,Hito Galvarino,05-10,40.0
+Los Canelos,Los Canelos,05-10,8.0
+Los Canelos,Huinca,05-10,3.0
+Los Canelos,Cristo Redentor,05-10,15.0
+Los Canelos,Laguna Quiñenco,05-10,37.0
+Los Canelos,Coronel,05-10,74.0
+Huinca,Hualqui,05-10,1.0
+Huinca,La Leonera,05-10,2.0
+Huinca,Pedro Medina,05-10,2.0
+Huinca,Chiguayante,05-10,1.0
+Huinca,Concepción,05-10,520.0
+Huinca,Mall,05-10,13.0
+Huinca,Lzo. Arenas,05-10,8.0
+Huinca,UTF Santa María,05-10,12.0
+Huinca,Los Cóndores,05-10,4.0
+Huinca,Higueras,05-10,10.0
+Huinca,El Arenal,05-10,3.0
+Huinca,Mercado,05-10,8.0
+Huinca,Juan Pablo II,05-10,74.0
+Huinca,Diagonal Bio Bio,05-10,47.0
+Huinca,Alborada,05-10,4.0
+Huinca,Costa Mar,05-10,22.0
+Huinca,El Parque,05-10,27.0
+Huinca,Lomas Coloradas,05-10,35.0
+Huinca,Cdal. Raúl Silva Henríquez,05-10,12.0
+Huinca,Hito Galvarino,05-10,34.0
+Huinca,Los Canelos,05-10,11.0
+Huinca,Huinca,05-10,8.0
+Huinca,Cristo Redentor,05-10,6.0
+Huinca,Laguna Quiñenco,05-10,27.0
+Huinca,Coronel,05-10,32.0
+Cristo Redentor,Hualqui,05-10,1.0
+Cristo Redentor,La Leonera,05-10,4.0
+Cristo Redentor,Pedro Medina,05-10,1.0
+Cristo Redentor,Chiguayante,05-10,8.0
+Cristo Redentor,Concepción,05-10,898.0
+Cristo Redentor,Mall,05-10,26.0
+Cristo Redentor,Lzo. Arenas,05-10,13.0
+Cristo Redentor,UTF Santa María,05-10,24.0
+Cristo Redentor,Los Cóndores,05-10,5.0
+Cristo Redentor,Higueras,05-10,14.0
+Cristo Redentor,El Arenal,05-10,7.0
+Cristo Redentor,Mercado,05-10,13.0
+Cristo Redentor,Juan Pablo II,05-10,115.0
+Cristo Redentor,Diagonal Bio Bio,05-10,76.0
+Cristo Redentor,Alborada,05-10,16.0
+Cristo Redentor,Costa Mar,05-10,54.0
+Cristo Redentor,El Parque,05-10,45.0
+Cristo Redentor,Lomas Coloradas,05-10,67.0
+Cristo Redentor,Cdal. Raúl Silva Henríquez,05-10,12.0
+Cristo Redentor,Hito Galvarino,05-10,48.0
+Cristo Redentor,Los Canelos,05-10,45.0
+Cristo Redentor,Huinca,05-10,14.0
+Cristo Redentor,Cristo Redentor,05-10,9.0
+Cristo Redentor,Laguna Quiñenco,05-10,23.0
+Cristo Redentor,Coronel,05-10,44.0
+Laguna Quiñenco,Hualqui,05-10,1.0
+Laguna Quiñenco,La Leonera,05-10,4.0
+Laguna Quiñenco,Manquimávida,05-10,2.0
+Laguna Quiñenco,Pedro Medina,05-10,2.0
+Laguna Quiñenco,Chiguayante,05-10,3.0
+Laguna Quiñenco,Concepción,05-10,715.0
+Laguna Quiñenco,Mall,05-10,16.0
+Laguna Quiñenco,Lzo. Arenas,05-10,10.0
+Laguna Quiñenco,UTF Santa María,05-10,12.0
+Laguna Quiñenco,Los Cóndores,05-10,8.0
+Laguna Quiñenco,Higueras,05-10,15.0
+Laguna Quiñenco,El Arenal,05-10,4.0
+Laguna Quiñenco,Mercado,05-10,5.0
+Laguna Quiñenco,Juan Pablo II,05-10,67.0
+Laguna Quiñenco,Diagonal Bio Bio,05-10,38.0
+Laguna Quiñenco,Alborada,05-10,9.0
+Laguna Quiñenco,Costa Mar,05-10,47.0
+Laguna Quiñenco,El Parque,05-10,37.0
+Laguna Quiñenco,Lomas Coloradas,05-10,46.0
+Laguna Quiñenco,Cdal. Raúl Silva Henríquez,05-10,4.0
+Laguna Quiñenco,Hito Galvarino,05-10,42.0
+Laguna Quiñenco,Los Canelos,05-10,46.0
+Laguna Quiñenco,Huinca,05-10,19.0
+Laguna Quiñenco,Cristo Redentor,05-10,13.0
+Laguna Quiñenco,Laguna Quiñenco,05-10,2.0
+Laguna Quiñenco,Coronel,05-10,13.0
+Coronel,Hualqui,05-10,5.0
+Coronel,La Leonera,05-10,5.0
+Coronel,Manquimávida,05-10,2.0
+Coronel,Pedro Medina,05-10,7.0
+Coronel,Chiguayante,05-10,2.0
+Coronel,Concepción,05-10,1028.0
+Coronel,Mall,05-10,24.0
+Coronel,Lzo. Arenas,05-10,4.0
+Coronel,UTF Santa María,05-10,26.0
+Coronel,Los Cóndores,05-10,4.0
+Coronel,Higueras,05-10,13.0
+Coronel,El Arenal,05-10,3.0
+Coronel,Mercado,05-10,7.0
+Coronel,Juan Pablo II,05-10,93.0
+Coronel,Diagonal Bio Bio,05-10,43.0
+Coronel,Alborada,05-10,6.0
+Coronel,Costa Mar,05-10,35.0
+Coronel,El Parque,05-10,18.0
+Coronel,Lomas Coloradas,05-10,22.0
+Coronel,Cdal. Raúl Silva Henríquez,05-10,10.0
+Coronel,Hito Galvarino,05-10,18.0
+Coronel,Los Canelos,05-10,23.0
+Coronel,Huinca,05-10,12.0
+Coronel,Cristo Redentor,05-10,19.0
+Coronel,Laguna Quiñenco,05-10,7.0
+Coronel,Coronel,05-10,2.0
+Hualqui,Hualqui,10-16,3.0
+Hualqui,La Leonera,10-16,1.0
+Hualqui,Chiguayante,10-16,3.0
+Hualqui,Concepción,10-16,46.0
+Hualqui,Mall,10-16,6.0
+Hualqui,Lzo. Arenas,10-16,3.0
+Hualqui,UTF Santa María,10-16,9.0
+Hualqui,Los Cóndores,10-16,3.0
+Hualqui,Higueras,10-16,6.0
+Hualqui,El Arenal,10-16,2.0
+Hualqui,Mercado,10-16,6.0
+Hualqui,Costa Mar,10-16,3.0
+Hualqui,El Parque,10-16,2.0
+Hualqui,Cdal. Raúl Silva Henríquez,10-16,1.0
+Hualqui,Los Canelos,10-16,1.0
+Hualqui,Coronel,10-16,3.0
+La Leonera,Hualqui,10-16,1.0
+La Leonera,La Leonera,10-16,1.0
+La Leonera,Manquimávida,10-16,1.0
+La Leonera,Concepción,10-16,13.0
+La Leonera,Mall,10-16,5.0
+La Leonera,UTF Santa María,10-16,7.0
+La Leonera,Higueras,10-16,6.0
+La Leonera,El Arenal,10-16,1.0
+La Leonera,Mercado,10-16,5.0
+La Leonera,Juan Pablo II,10-16,2.0
+La Leonera,Costa Mar,10-16,1.0
+La Leonera,Lomas Coloradas,10-16,2.0
+La Leonera,Los Canelos,10-16,1.0
+La Leonera,Cristo Redentor,10-16,1.0
+La Leonera,Coronel,10-16,4.0
+Manquimávida,Hualqui,10-16,1.0
+Manquimávida,La Leonera,10-16,1.0
+Manquimávida,Pedro Medina,10-16,2.0
+Manquimávida,Chiguayante,10-16,1.0
+Manquimávida,Concepción,10-16,19.0
+Manquimávida,Mall,10-16,6.0
+Manquimávida,Lzo. Arenas,10-16,2.0
+Manquimávida,UTF Santa María,10-16,2.0
+Manquimávida,Los Cóndores,10-16,2.0
+Manquimávida,Higueras,10-16,3.0
+Manquimávida,El Arenal,10-16,1.0
+Manquimávida,Mercado,10-16,2.0
+Manquimávida,Costa Mar,10-16,1.0
+Manquimávida,El Parque,10-16,1.0
+Manquimávida,Lomas Coloradas,10-16,1.0
+Manquimávida,Cristo Redentor,10-16,1.0
+Manquimávida,Laguna Quiñenco,10-16,1.0
+Manquimávida,Coronel,10-16,1.0
+Pedro Medina,Concepción,10-16,7.0
+Pedro Medina,Mall,10-16,1.0
+Pedro Medina,Lzo. Arenas,10-16,1.0
+Pedro Medina,UTF Santa María,10-16,3.0
+Pedro Medina,Los Cóndores,10-16,2.0
+Pedro Medina,Higueras,10-16,2.0
+Pedro Medina,Mercado,10-16,2.0
+Pedro Medina,Diagonal Bio Bio,10-16,1.0
+Pedro Medina,Cdal. Raúl Silva Henríquez,10-16,1.0
+Pedro Medina,Coronel,10-16,3.0
+Chiguayante,Chiguayante,10-16,2.0
+Chiguayante,Concepción,10-16,4.0
+Chiguayante,Mall,10-16,1.0
+Chiguayante,UTF Santa María,10-16,9.0
+Chiguayante,Los Cóndores,10-16,2.0
+Chiguayante,Higueras,10-16,2.0
+Chiguayante,El Arenal,10-16,2.0
+Chiguayante,Mercado,10-16,3.0
+Chiguayante,Juan Pablo II,10-16,2.0
+Chiguayante,Diagonal Bio Bio,10-16,1.0
+Chiguayante,Alborada,10-16,1.0
+Chiguayante,Costa Mar,10-16,1.0
+Chiguayante,Lomas Coloradas,10-16,3.0
+Chiguayante,Los Canelos,10-16,1.0
+Chiguayante,Laguna Quiñenco,10-16,1.0
+Chiguayante,Coronel,10-16,1.0
+Concepción,Hualqui,10-16,3.0
+Concepción,La Leonera,10-16,13.0
+Concepción,Manquimávida,10-16,8.0
+Concepción,Pedro Medina,10-16,5.0
+Concepción,Chiguayante,10-16,2.0
+Concepción,Concepción,10-16,77.0
+Concepción,Mall,10-16,101.0
+Concepción,Lzo. Arenas,10-16,4.0
+Concepción,UTF Santa María,10-16,2.0
+Concepción,Los Cóndores,10-16,6.0
+Concepción,Higueras,10-16,8.0
+Concepción,El Arenal,10-16,6.0
+Concepción,Mercado,10-16,8.0
+Concepción,Juan Pablo II,10-16,22.0
+Concepción,Diagonal Bio Bio,10-16,22.0
+Concepción,Alborada,10-16,14.0
+Concepción,Costa Mar,10-16,104.0
+Concepción,El Parque,10-16,52.0
+Concepción,Lomas Coloradas,10-16,262.0
+Concepción,Cdal. Raúl Silva Henríquez,10-16,158.0
+Concepción,Hito Galvarino,10-16,140.0
+Concepción,Los Canelos,10-16,349.0
+Concepción,Huinca,10-16,227.0
+Concepción,Cristo Redentor,10-16,373.0
+Concepción,Laguna Quiñenco,10-16,330.0
+Concepción,Coronel,10-16,408.0
+Mall,Hualqui,10-16,4.0
+Mall,La Leonera,10-16,3.0
+Mall,Manquimávida,10-16,8.0
+Mall,Pedro Medina,10-16,1.0
+Mall,Chiguayante,10-16,4.0
+Mall,Concepción,10-16,52.0
+Mall,Mall,10-16,5.0
+Mall,Lzo. Arenas,10-16,2.0
+Mall,UTF Santa María,10-16,1.0
+Mall,Higueras,10-16,2.0
+Mall,El Arenal,10-16,2.0
+Mall,Mercado,10-16,6.0
+Mall,Juan Pablo II,10-16,3.0
+Mall,Diagonal Bio Bio,10-16,4.0
+Mall,Alborada,10-16,4.0
+Mall,Costa Mar,10-16,17.0
+Mall,El Parque,10-16,10.0
+Mall,Lomas Coloradas,10-16,21.0
+Mall,Cdal. Raúl Silva Henríquez,10-16,11.0
+Mall,Hito Galvarino,10-16,5.0
+Mall,Los Canelos,10-16,16.0
+Mall,Huinca,10-16,4.0
+Mall,Cristo Redentor,10-16,10.0
+Mall,Laguna Quiñenco,10-16,15.0
+Mall,Coronel,10-16,17.0
+Lzo. Arenas,Hualqui,10-16,2.0
+Lzo. Arenas,La Leonera,10-16,1.0
+Lzo. Arenas,Concepción,10-16,6.0
+Lzo. Arenas,Mall,10-16,2.0
+Lzo. Arenas,Lzo. Arenas,10-16,2.0
+Lzo. Arenas,Higueras,10-16,1.0
+Lzo. Arenas,Mercado,10-16,1.0
+Lzo. Arenas,Juan Pablo II,10-16,1.0
+Lzo. Arenas,Alborada,10-16,1.0
+Lzo. Arenas,El Parque,10-16,1.0
+Lzo. Arenas,Cdal. Raúl Silva Henríquez,10-16,2.0
+Lzo. Arenas,Coronel,10-16,1.0
+UTF Santa María,Hualqui,10-16,6.0
+UTF Santa María,La Leonera,10-16,7.0
+UTF Santa María,Manquimávida,10-16,1.0
+UTF Santa María,Pedro Medina,10-16,2.0
+UTF Santa María,Chiguayante,10-16,8.0
+UTF Santa María,Concepción,10-16,15.0
+UTF Santa María,Mall,10-16,1.0
+UTF Santa María,Lzo. Arenas,10-16,1.0
+UTF Santa María,UTF Santa María,10-16,4.0
+UTF Santa María,Los Cóndores,10-16,3.0
+UTF Santa María,Higueras,10-16,2.0
+UTF Santa María,El Arenal,10-16,4.0
+UTF Santa María,Mercado,10-16,4.0
+UTF Santa María,Juan Pablo II,10-16,2.0
+UTF Santa María,Alborada,10-16,1.0
+UTF Santa María,Costa Mar,10-16,4.0
+UTF Santa María,El Parque,10-16,5.0
+UTF Santa María,Lomas Coloradas,10-16,4.0
+UTF Santa María,Cdal. Raúl Silva Henríquez,10-16,3.0
+UTF Santa María,Hito Galvarino,10-16,1.0
+UTF Santa María,Los Canelos,10-16,1.0
+UTF Santa María,Huinca,10-16,3.0
+UTF Santa María,Cristo Redentor,10-16,10.0
+UTF Santa María,Laguna Quiñenco,10-16,4.0
+UTF Santa María,Coronel,10-16,12.0
+Los Cóndores,Hualqui,10-16,1.0
+Los Cóndores,Manquimávida,10-16,1.0
+Los Cóndores,Pedro Medina,10-16,4.0
+Los Cóndores,Chiguayante,10-16,4.0
+Los Cóndores,Concepción,10-16,23.0
+Los Cóndores,Mall,10-16,2.0
+Los Cóndores,Lzo. Arenas,10-16,2.0
+Los Cóndores,Mercado,10-16,2.0
+Los Cóndores,Diagonal Bio Bio,10-16,2.0
+Los Cóndores,Alborada,10-16,1.0
+Los Cóndores,Costa Mar,10-16,2.0
+Los Cóndores,El Parque,10-16,8.0
+Los Cóndores,Lomas Coloradas,10-16,1.0
+Los Cóndores,Hito Galvarino,10-16,1.0
+Los Cóndores,Los Canelos,10-16,2.0
+Los Cóndores,Cristo Redentor,10-16,1.0
+Los Cóndores,Coronel,10-16,1.0
+Higueras,Hualqui,10-16,1.0
+Higueras,La Leonera,10-16,2.0
+Higueras,Manquimávida,10-16,8.0
+Higueras,Pedro Medina,10-16,2.0
+Higueras,Chiguayante,10-16,4.0
+Higueras,Concepción,10-16,18.0
+Higueras,Mall,10-16,5.0
+Higueras,Lzo. Arenas,10-16,4.0
+Higueras,UTF Santa María,10-16,2.0
+Higueras,Higueras,10-16,2.0
+Higueras,El Arenal,10-16,1.0
+Higueras,Mercado,10-16,5.0
+Higueras,Juan Pablo II,10-16,1.0
+Higueras,Costa Mar,10-16,2.0
+Higueras,El Parque,10-16,2.0
+Higueras,Lomas Coloradas,10-16,1.0
+Higueras,Hito Galvarino,10-16,2.0
+Higueras,Los Canelos,10-16,2.0
+Higueras,Laguna Quiñenco,10-16,3.0
+Higueras,Coronel,10-16,6.0
+El Arenal,Hualqui,10-16,1.0
+El Arenal,Manquimávida,10-16,1.0
+El Arenal,Chiguayante,10-16,2.0
+El Arenal,Concepción,10-16,17.0
+El Arenal,Mall,10-16,3.0
+El Arenal,Lzo. Arenas,10-16,1.0
+El Arenal,UTF Santa María,10-16,3.0
+El Arenal,Mercado,10-16,1.0
+El Arenal,Alborada,10-16,1.0
+El Arenal,Costa Mar,10-16,2.0
+El Arenal,Lomas Coloradas,10-16,1.0
+El Arenal,Cdal. Raúl Silva Henríquez,10-16,2.0
+El Arenal,Cristo Redentor,10-16,1.0
+El Arenal,Coronel,10-16,1.0
+Mercado,Hualqui,10-16,2.0
+Mercado,La Leonera,10-16,1.0
+Mercado,Manquimávida,10-16,2.0
+Mercado,Pedro Medina,10-16,1.0
+Mercado,Chiguayante,10-16,3.0
+Mercado,Concepción,10-16,11.0
+Mercado,Lzo. Arenas,10-16,1.0
+Mercado,UTF Santa María,10-16,1.0
+Mercado,Higueras,10-16,3.0
+Mercado,Diagonal Bio Bio,10-16,2.0
+Mercado,Costa Mar,10-16,1.0
+Mercado,El Parque,10-16,1.0
+Mercado,Lomas Coloradas,10-16,1.0
+Mercado,Cdal. Raúl Silva Henríquez,10-16,1.0
+Mercado,Hito Galvarino,10-16,1.0
+Mercado,Los Canelos,10-16,1.0
+Mercado,Huinca,10-16,2.0
+Mercado,Cristo Redentor,10-16,2.0
+Mercado,Coronel,10-16,6.0
+Juan Pablo II,Hualqui,10-16,1.0
+Juan Pablo II,La Leonera,10-16,1.0
+Juan Pablo II,Manquimávida,10-16,1.0
+Juan Pablo II,Chiguayante,10-16,3.0
+Juan Pablo II,Concepción,10-16,19.0
+Juan Pablo II,Mall,10-16,1.0
+Juan Pablo II,Los Cóndores,10-16,1.0
+Juan Pablo II,Higueras,10-16,1.0
+Juan Pablo II,Juan Pablo II,10-16,1.0
+Juan Pablo II,Diagonal Bio Bio,10-16,2.0
+Juan Pablo II,Alborada,10-16,7.0
+Juan Pablo II,Costa Mar,10-16,16.0
+Juan Pablo II,El Parque,10-16,12.0
+Juan Pablo II,Lomas Coloradas,10-16,35.0
+Juan Pablo II,Cdal. Raúl Silva Henríquez,10-16,20.0
+Juan Pablo II,Hito Galvarino,10-16,6.0
+Juan Pablo II,Los Canelos,10-16,27.0
+Juan Pablo II,Huinca,10-16,12.0
+Juan Pablo II,Cristo Redentor,10-16,16.0
+Juan Pablo II,Laguna Quiñenco,10-16,18.0
+Juan Pablo II,Coronel,10-16,26.0
+Diagonal Bio Bio,Hualqui,10-16,1.0
+Diagonal Bio Bio,Concepción,10-16,19.0
+Diagonal Bio Bio,Mall,10-16,4.0
+Diagonal Bio Bio,Lzo. Arenas,10-16,1.0
+Diagonal Bio Bio,UTF Santa María,10-16,2.0
+Diagonal Bio Bio,Los Cóndores,10-16,2.0
+Diagonal Bio Bio,Mercado,10-16,1.0
+Diagonal Bio Bio,Juan Pablo II,10-16,4.0
+Diagonal Bio Bio,Diagonal Bio Bio,10-16,9.0
+Diagonal Bio Bio,Alborada,10-16,10.0
+Diagonal Bio Bio,Costa Mar,10-16,38.0
+Diagonal Bio Bio,El Parque,10-16,7.0
+Diagonal Bio Bio,Lomas Coloradas,10-16,37.0
+Diagonal Bio Bio,Cdal. Raúl Silva Henríquez,10-16,11.0
+Diagonal Bio Bio,Hito Galvarino,10-16,6.0
+Diagonal Bio Bio,Los Canelos,10-16,15.0
+Diagonal Bio Bio,Huinca,10-16,12.0
+Diagonal Bio Bio,Cristo Redentor,10-16,15.0
+Diagonal Bio Bio,Laguna Quiñenco,10-16,7.0
+Diagonal Bio Bio,Coronel,10-16,24.0
+Alborada,Chiguayante,10-16,2.0
+Alborada,Concepción,10-16,20.0
+Alborada,Mall,10-16,4.0
+Alborada,UTF Santa María,10-16,1.0
+Alborada,Juan Pablo II,10-16,5.0
+Alborada,Diagonal Bio Bio,10-16,5.0
+Alborada,Alborada,10-16,1.0
+Alborada,Costa Mar,10-16,2.0
+Alborada,El Parque,10-16,3.0
+Alborada,Lomas Coloradas,10-16,8.0
+Alborada,Cdal. Raúl Silva Henríquez,10-16,3.0
+Alborada,Hito Galvarino,10-16,2.0
+Alborada,Los Canelos,10-16,6.0
+Alborada,Huinca,10-16,3.0
+Alborada,Cristo Redentor,10-16,7.0
+Alborada,Laguna Quiñenco,10-16,4.0
+Alborada,Coronel,10-16,8.0
+Costa Mar,Manquimávida,10-16,1.0
+Costa Mar,Concepción,10-16,149.0
+Costa Mar,Mall,10-16,14.0
+Costa Mar,Lzo. Arenas,10-16,2.0
+Costa Mar,UTF Santa María,10-16,1.0
+Costa Mar,Los Cóndores,10-16,3.0
+Costa Mar,Higueras,10-16,1.0
+Costa Mar,Mercado,10-16,1.0
+Costa Mar,Juan Pablo II,10-16,17.0
+Costa Mar,Diagonal Bio Bio,10-16,22.0
+Costa Mar,Alborada,10-16,1.0
+Costa Mar,Costa Mar,10-16,14.0
+Costa Mar,El Parque,10-16,10.0
+Costa Mar,Lomas Coloradas,10-16,48.0
+Costa Mar,Cdal. Raúl Silva Henríquez,10-16,17.0
+Costa Mar,Hito Galvarino,10-16,12.0
+Costa Mar,Los Canelos,10-16,38.0
+Costa Mar,Huinca,10-16,35.0
+Costa Mar,Cristo Redentor,10-16,46.0
+Costa Mar,Laguna Quiñenco,10-16,52.0
+Costa Mar,Coronel,10-16,51.0
+El Parque,La Leonera,10-16,1.0
+El Parque,Pedro Medina,10-16,1.0
+El Parque,Chiguayante,10-16,3.0
+El Parque,Concepción,10-16,71.0
+El Parque,Mall,10-16,3.0
+El Parque,UTF Santa María,10-16,1.0
+El Parque,Los Cóndores,10-16,4.0
+El Parque,Higueras,10-16,1.0
+El Parque,Juan Pablo II,10-16,10.0
+El Parque,Diagonal Bio Bio,10-16,3.0
+El Parque,Alborada,10-16,2.0
+El Parque,Costa Mar,10-16,6.0
+El Parque,El Parque,10-16,2.0
+El Parque,Lomas Coloradas,10-16,18.0
+El Parque,Cdal. Raúl Silva Henríquez,10-16,7.0
+El Parque,Hito Galvarino,10-16,4.0
+El Parque,Los Canelos,10-16,13.0
+El Parque,Huinca,10-16,7.0
+El Parque,Cristo Redentor,10-16,7.0
+El Parque,Laguna Quiñenco,10-16,15.0
+El Parque,Coronel,10-16,11.0
+Lomas Coloradas,La Leonera,10-16,2.0
+Lomas Coloradas,Pedro Medina,10-16,1.0
+Lomas Coloradas,Chiguayante,10-16,1.0
+Lomas Coloradas,Concepción,10-16,303.0
+Lomas Coloradas,Mall,10-16,27.0
+Lomas Coloradas,UTF Santa María,10-16,2.0
+Lomas Coloradas,Los Cóndores,10-16,1.0
+Lomas Coloradas,Higueras,10-16,2.0
+Lomas Coloradas,El Arenal,10-16,1.0
+Lomas Coloradas,Mercado,10-16,1.0
+Lomas Coloradas,Juan Pablo II,10-16,51.0
+Lomas Coloradas,Diagonal Bio Bio,10-16,40.0
+Lomas Coloradas,Alborada,10-16,5.0
+Lomas Coloradas,Costa Mar,10-16,32.0
+Lomas Coloradas,El Parque,10-16,19.0
+Lomas Coloradas,Lomas Coloradas,10-16,6.0
+Lomas Coloradas,Cdal. Raúl Silva Henríquez,10-16,22.0
+Lomas Coloradas,Hito Galvarino,10-16,9.0
+Lomas Coloradas,Los Canelos,10-16,26.0
+Lomas Coloradas,Huinca,10-16,16.0
+Lomas Coloradas,Cristo Redentor,10-16,16.0
+Lomas Coloradas,Laguna Quiñenco,10-16,16.0
+Lomas Coloradas,Coronel,10-16,45.0
+Cdal. Raúl Silva Henríquez,Concepción,10-16,225.0
+Cdal. Raúl Silva Henríquez,Mall,10-16,6.0
+Cdal. Raúl Silva Henríquez,Lzo. Arenas,10-16,1.0
+Cdal. Raúl Silva Henríquez,UTF Santa María,10-16,3.0
+Cdal. Raúl Silva Henríquez,Los Cóndores,10-16,1.0
+Cdal. Raúl Silva Henríquez,Higueras,10-16,1.0
+Cdal. Raúl Silva Henríquez,Mercado,10-16,3.0
+Cdal. Raúl Silva Henríquez,Juan Pablo II,10-16,33.0
+Cdal. Raúl Silva Henríquez,Diagonal Bio Bio,10-16,21.0
+Cdal. Raúl Silva Henríquez,Alborada,10-16,4.0
+Cdal. Raúl Silva Henríquez,Costa Mar,10-16,26.0
+Cdal. Raúl Silva Henríquez,El Parque,10-16,8.0
+Cdal. Raúl Silva Henríquez,Lomas Coloradas,10-16,8.0
+Cdal. Raúl Silva Henríquez,Cdal. Raúl Silva Henríquez,10-16,8.0
+Cdal. Raúl Silva Henríquez,Hito Galvarino,10-16,3.0
+Cdal. Raúl Silva Henríquez,Los Canelos,10-16,8.0
+Cdal. Raúl Silva Henríquez,Huinca,10-16,10.0
+Cdal. Raúl Silva Henríquez,Cristo Redentor,10-16,5.0
+Cdal. Raúl Silva Henríquez,Laguna Quiñenco,10-16,8.0
+Cdal. Raúl Silva Henríquez,Coronel,10-16,21.0
+Hito Galvarino,Concepción,10-16,162.0
+Hito Galvarino,Mall,10-16,5.0
+Hito Galvarino,UTF Santa María,10-16,2.0
+Hito Galvarino,Los Cóndores,10-16,1.0
+Hito Galvarino,Higueras,10-16,3.0
+Hito Galvarino,Juan Pablo II,10-16,8.0
+Hito Galvarino,Diagonal Bio Bio,10-16,11.0
+Hito Galvarino,Costa Mar,10-16,13.0
+Hito Galvarino,El Parque,10-16,3.0
+Hito Galvarino,Lomas Coloradas,10-16,3.0
+Hito Galvarino,Cdal. Raúl Silva Henríquez,10-16,2.0
+Hito Galvarino,Hito Galvarino,10-16,2.0
+Hito Galvarino,Los Canelos,10-16,3.0
+Hito Galvarino,Huinca,10-16,6.0
+Hito Galvarino,Cristo Redentor,10-16,7.0
+Hito Galvarino,Laguna Quiñenco,10-16,13.0
+Hito Galvarino,Coronel,10-16,7.0
+Los Canelos,La Leonera,10-16,1.0
+Los Canelos,Manquimávida,10-16,1.0
+Los Canelos,Concepción,10-16,449.0
+Los Canelos,Mall,10-16,20.0
+Los Canelos,Los Cóndores,10-16,1.0
+Los Canelos,Higueras,10-16,2.0
+Los Canelos,Mercado,10-16,4.0
+Los Canelos,Juan Pablo II,10-16,43.0
+Los Canelos,Diagonal Bio Bio,10-16,22.0
+Los Canelos,Alborada,10-16,1.0
+Los Canelos,Costa Mar,10-16,52.0
+Los Canelos,El Parque,10-16,11.0
+Los Canelos,Lomas Coloradas,10-16,21.0
+Los Canelos,Cdal. Raúl Silva Henríquez,10-16,11.0
+Los Canelos,Hito Galvarino,10-16,5.0
+Los Canelos,Los Canelos,10-16,11.0
+Los Canelos,Huinca,10-16,4.0
+Los Canelos,Cristo Redentor,10-16,13.0
+Los Canelos,Laguna Quiñenco,10-16,23.0
+Los Canelos,Coronel,10-16,51.0
+Huinca,Concepción,10-16,325.0
+Huinca,Mall,10-16,6.0
+Huinca,UTF Santa María,10-16,3.0
+Huinca,Los Cóndores,10-16,2.0
+Huinca,Higueras,10-16,1.0
+Huinca,Mercado,10-16,1.0
+Huinca,Juan Pablo II,10-16,42.0
+Huinca,Diagonal Bio Bio,10-16,22.0
+Huinca,Alborada,10-16,3.0
+Huinca,Costa Mar,10-16,46.0
+Huinca,El Parque,10-16,6.0
+Huinca,Lomas Coloradas,10-16,21.0
+Huinca,Cdal. Raúl Silva Henríquez,10-16,7.0
+Huinca,Hito Galvarino,10-16,6.0
+Huinca,Los Canelos,10-16,7.0
+Huinca,Huinca,10-16,9.0
+Huinca,Cristo Redentor,10-16,11.0
+Huinca,Laguna Quiñenco,10-16,18.0
+Huinca,Coronel,10-16,33.0
+Cristo Redentor,La Leonera,10-16,2.0
+Cristo Redentor,Manquimávida,10-16,1.0
+Cristo Redentor,Concepción,10-16,535.0
+Cristo Redentor,Mall,10-16,15.0
+Cristo Redentor,UTF Santa María,10-16,3.0
+Cristo Redentor,Higueras,10-16,5.0
+Cristo Redentor,Mercado,10-16,2.0
+Cristo Redentor,Juan Pablo II,10-16,53.0
+Cristo Redentor,Diagonal Bio Bio,10-16,20.0
+Cristo Redentor,Alborada,10-16,5.0
+Cristo Redentor,Costa Mar,10-16,59.0
+Cristo Redentor,El Parque,10-16,11.0
+Cristo Redentor,Lomas Coloradas,10-16,16.0
+Cristo Redentor,Cdal. Raúl Silva Henríquez,10-16,9.0
+Cristo Redentor,Hito Galvarino,10-16,14.0
+Cristo Redentor,Los Canelos,10-16,16.0
+Cristo Redentor,Huinca,10-16,14.0
+Cristo Redentor,Cristo Redentor,10-16,9.0
+Cristo Redentor,Laguna Quiñenco,10-16,18.0
+Cristo Redentor,Coronel,10-16,58.0
+Laguna Quiñenco,Hualqui,10-16,1.0
+Laguna Quiñenco,Pedro Medina,10-16,1.0
+Laguna Quiñenco,Concepción,10-16,413.0
+Laguna Quiñenco,Mall,10-16,18.0
+Laguna Quiñenco,UTF Santa María,10-16,3.0
+Laguna Quiñenco,Higueras,10-16,1.0
+Laguna Quiñenco,Mercado,10-16,3.0
+Laguna Quiñenco,Juan Pablo II,10-16,30.0
+Laguna Quiñenco,Diagonal Bio Bio,10-16,10.0
+Laguna Quiñenco,Alborada,10-16,4.0
+Laguna Quiñenco,Costa Mar,10-16,53.0
+Laguna Quiñenco,El Parque,10-16,11.0
+Laguna Quiñenco,Lomas Coloradas,10-16,26.0
+Laguna Quiñenco,Cdal. Raúl Silva Henríquez,10-16,6.0
+Laguna Quiñenco,Hito Galvarino,10-16,6.0
+Laguna Quiñenco,Los Canelos,10-16,24.0
+Laguna Quiñenco,Huinca,10-16,14.0
+Laguna Quiñenco,Cristo Redentor,10-16,26.0
+Laguna Quiñenco,Laguna Quiñenco,10-16,5.0
+Laguna Quiñenco,Coronel,10-16,24.0
+Coronel,Hualqui,10-16,1.0
+Coronel,Manquimávida,10-16,1.0
+Coronel,Pedro Medina,10-16,1.0
+Coronel,Chiguayante,10-16,1.0
+Coronel,Concepción,10-16,634.0
+Coronel,Mall,10-16,19.0
+Coronel,UTF Santa María,10-16,8.0
+Coronel,Los Cóndores,10-16,3.0
+Coronel,Higueras,10-16,4.0
+Coronel,El Arenal,10-16,1.0
+Coronel,Mercado,10-16,1.0
+Coronel,Juan Pablo II,10-16,64.0
+Coronel,Diagonal Bio Bio,10-16,27.0
+Coronel,Alborada,10-16,9.0
+Coronel,Costa Mar,10-16,51.0
+Coronel,El Parque,10-16,26.0
+Coronel,Lomas Coloradas,10-16,31.0
+Coronel,Cdal. Raúl Silva Henríquez,10-16,14.0
+Coronel,Hito Galvarino,10-16,11.0
+Coronel,Los Canelos,10-16,46.0
+Coronel,Huinca,10-16,34.0
+Coronel,Cristo Redentor,10-16,49.0
+Coronel,Laguna Quiñenco,10-16,46.0
+Coronel,Coronel,10-16,9.0
+Hualqui,Hualqui,16-24,3.0
+Hualqui,La Leonera,16-24,4.0
+Hualqui,Manquimávida,16-24,3.0
+Hualqui,Pedro Medina,16-24,1.0
+Hualqui,Chiguayante,16-24,2.0
+Hualqui,Concepción,16-24,29.0
+Hualqui,Mall,16-24,7.0
+Hualqui,Lzo. Arenas,16-24,6.0
+Hualqui,UTF Santa María,16-24,10.0
+Hualqui,Los Cóndores,16-24,3.0
+Hualqui,Higueras,16-24,3.0
+Hualqui,El Arenal,16-24,4.0
+Hualqui,Mercado,16-24,2.0
+Hualqui,Juan Pablo II,16-24,4.0
+Hualqui,Diagonal Bio Bio,16-24,4.0
+Hualqui,Alborada,16-24,3.0
+Hualqui,Costa Mar,16-24,1.0
+Hualqui,El Parque,16-24,3.0
+Hualqui,Lomas Coloradas,16-24,3.0
+Hualqui,Cdal. Raúl Silva Henríquez,16-24,3.0
+Hualqui,Hito Galvarino,16-24,1.0
+Hualqui,Los Canelos,16-24,1.0
+Hualqui,Huinca,16-24,1.0
+Hualqui,Cristo Redentor,16-24,4.0
+Hualqui,Laguna Quiñenco,16-24,1.0
+Hualqui,Coronel,16-24,1.0
+La Leonera,Hualqui,16-24,20.0
+La Leonera,La Leonera,16-24,2.0
+La Leonera,Pedro Medina,16-24,2.0
+La Leonera,Chiguayante,16-24,4.0
+La Leonera,Concepción,16-24,27.0
+La Leonera,Mall,16-24,7.0
+La Leonera,Lzo. Arenas,16-24,5.0
+La Leonera,UTF Santa María,16-24,11.0
+La Leonera,Los Cóndores,16-24,9.0
+La Leonera,Higueras,16-24,4.0
+La Leonera,El Arenal,16-24,5.0
+La Leonera,Mercado,16-24,7.0
+La Leonera,Juan Pablo II,16-24,3.0
+La Leonera,Diagonal Bio Bio,16-24,4.0
+La Leonera,Alborada,16-24,2.0
+La Leonera,Costa Mar,16-24,7.0
+La Leonera,El Parque,16-24,2.0
+La Leonera,Lomas Coloradas,16-24,6.0
+La Leonera,Cdal. Raúl Silva Henríquez,16-24,5.0
+La Leonera,Los Canelos,16-24,3.0
+La Leonera,Huinca,16-24,6.0
+La Leonera,Cristo Redentor,16-24,6.0
+La Leonera,Laguna Quiñenco,16-24,1.0
+La Leonera,Coronel,16-24,3.0
+Manquimávida,Hualqui,16-24,53.0
+Manquimávida,La Leonera,16-24,3.0
+Manquimávida,Manquimávida,16-24,2.0
+Manquimávida,Pedro Medina,16-24,2.0
+Manquimávida,Chiguayante,16-24,5.0
+Manquimávida,Concepción,16-24,22.0
+Manquimávida,Mall,16-24,6.0
+Manquimávida,Lzo. Arenas,16-24,6.0
+Manquimávida,UTF Santa María,16-24,6.0
+Manquimávida,Los Cóndores,16-24,11.0
+Manquimávida,Higueras,16-24,4.0
+Manquimávida,El Arenal,16-24,5.0
+Manquimávida,Mercado,16-24,5.0
+Manquimávida,Juan Pablo II,16-24,1.0
+Manquimávida,Diagonal Bio Bio,16-24,3.0
+Manquimávida,Alborada,16-24,3.0
+Manquimávida,Costa Mar,16-24,2.0
+Manquimávida,Lomas Coloradas,16-24,6.0
+Manquimávida,Cdal. Raúl Silva Henríquez,16-24,1.0
+Manquimávida,Los Canelos,16-24,2.0
+Manquimávida,Huinca,16-24,1.0
+Manquimávida,Cristo Redentor,16-24,1.0
+Manquimávida,Laguna Quiñenco,16-24,3.0
+Manquimávida,Coronel,16-24,1.0
+Pedro Medina,Hualqui,16-24,90.0
+Pedro Medina,La Leonera,16-24,2.0
+Pedro Medina,Manquimávida,16-24,3.0
+Pedro Medina,Pedro Medina,16-24,5.0
+Pedro Medina,Chiguayante,16-24,1.0
+Pedro Medina,Concepción,16-24,16.0
+Pedro Medina,Mall,16-24,2.0
+Pedro Medina,Lzo. Arenas,16-24,2.0
+Pedro Medina,UTF Santa María,16-24,5.0
+Pedro Medina,Los Cóndores,16-24,6.0
+Pedro Medina,Higueras,16-24,5.0
+Pedro Medina,El Arenal,16-24,5.0
+Pedro Medina,Mercado,16-24,5.0
+Pedro Medina,Juan Pablo II,16-24,5.0
+Pedro Medina,Diagonal Bio Bio,16-24,1.0
+Pedro Medina,Alborada,16-24,4.0
+Pedro Medina,Costa Mar,16-24,10.0
+Pedro Medina,El Parque,16-24,1.0
+Pedro Medina,Lomas Coloradas,16-24,3.0
+Pedro Medina,Cdal. Raúl Silva Henríquez,16-24,5.0
+Pedro Medina,Los Canelos,16-24,5.0
+Pedro Medina,Huinca,16-24,2.0
+Pedro Medina,Cristo Redentor,16-24,1.0
+Pedro Medina,Laguna Quiñenco,16-24,1.0
+Pedro Medina,Coronel,16-24,5.0
+Chiguayante,Hualqui,16-24,65.0
+Chiguayante,La Leonera,16-24,7.0
+Chiguayante,Manquimávida,16-24,6.0
+Chiguayante,Pedro Medina,16-24,1.0
+Chiguayante,Chiguayante,16-24,7.0
+Chiguayante,Concepción,16-24,10.0
+Chiguayante,Mall,16-24,11.0
+Chiguayante,Lzo. Arenas,16-24,3.0
+Chiguayante,UTF Santa María,16-24,13.0
+Chiguayante,Los Cóndores,16-24,15.0
+Chiguayante,Higueras,16-24,8.0
+Chiguayante,El Arenal,16-24,4.0
+Chiguayante,Mercado,16-24,9.0
+Chiguayante,Juan Pablo II,16-24,5.0
+Chiguayante,Diagonal Bio Bio,16-24,12.0
+Chiguayante,Costa Mar,16-24,8.0
+Chiguayante,El Parque,16-24,6.0
+Chiguayante,Lomas Coloradas,16-24,7.0
+Chiguayante,Cdal. Raúl Silva Henríquez,16-24,5.0
+Chiguayante,Los Canelos,16-24,6.0
+Chiguayante,Huinca,16-24,1.0
+Chiguayante,Cristo Redentor,16-24,3.0
+Chiguayante,Laguna Quiñenco,16-24,3.0
+Chiguayante,Coronel,16-24,2.0
+Concepción,Hualqui,16-24,387.0
+Concepción,La Leonera,16-24,128.0
+Concepción,Manquimávida,16-24,151.0
+Concepción,Pedro Medina,16-24,50.0
+Concepción,Chiguayante,16-24,98.0
+Concepción,Concepción,16-24,87.0
+Concepción,Mall,16-24,93.0
+Concepción,Lzo. Arenas,16-24,14.0
+Concepción,UTF Santa María,16-24,49.0
+Concepción,Los Cóndores,16-24,150.0
+Concepción,Higueras,16-24,47.0
+Concepción,El Arenal,16-24,53.0
+Concepción,Mercado,16-24,36.0
+Concepción,Juan Pablo II,16-24,65.0
+Concepción,Diagonal Bio Bio,16-24,124.0
+Concepción,Alborada,16-24,128.0
+Concepción,Costa Mar,16-24,515.0
+Concepción,El Parque,16-24,141.0
+Concepción,Lomas Coloradas,16-24,986.0
+Concepción,Cdal. Raúl Silva Henríquez,16-24,752.0
+Concepción,Hito Galvarino,16-24,436.0
+Concepción,Los Canelos,16-24,1255.0
+Concepción,Huinca,16-24,685.0
+Concepción,Cristo Redentor,16-24,1071.0
+Concepción,Laguna Quiñenco,16-24,951.0
+Concepción,Coronel,16-24,959.0
+Mall,Hualqui,16-24,71.0
+Mall,La Leonera,16-24,35.0
+Mall,Manquimávida,16-24,36.0
+Mall,Pedro Medina,16-24,20.0
+Mall,Chiguayante,16-24,32.0
+Mall,Concepción,16-24,70.0
+Mall,Mall,16-24,5.0
+Mall,Lzo. Arenas,16-24,1.0
+Mall,UTF Santa María,16-24,5.0
+Mall,Los Cóndores,16-24,13.0
+Mall,Higueras,16-24,10.0
+Mall,El Arenal,16-24,9.0
+Mall,Mercado,16-24,7.0
+Mall,Juan Pablo II,16-24,7.0
+Mall,Diagonal Bio Bio,16-24,13.0
+Mall,Alborada,16-24,17.0
+Mall,Costa Mar,16-24,63.0
+Mall,El Parque,16-24,14.0
+Mall,Lomas Coloradas,16-24,75.0
+Mall,Cdal. Raúl Silva Henríquez,16-24,55.0
+Mall,Hito Galvarino,16-24,19.0
+Mall,Los Canelos,16-24,66.0
+Mall,Huinca,16-24,33.0
+Mall,Cristo Redentor,16-24,42.0
+Mall,Laguna Quiñenco,16-24,50.0
+Mall,Coronel,16-24,59.0
+Lzo. Arenas,Hualqui,16-24,31.0
+Lzo. Arenas,La Leonera,16-24,17.0
+Lzo. Arenas,Manquimávida,16-24,20.0
+Lzo. Arenas,Pedro Medina,16-24,13.0
+Lzo. Arenas,Chiguayante,16-24,14.0
+Lzo. Arenas,Concepción,16-24,9.0
+Lzo. Arenas,Mall,16-24,3.0
+Lzo. Arenas,Lzo. Arenas,16-24,5.0
+Lzo. Arenas,UTF Santa María,16-24,5.0
+Lzo. Arenas,Los Cóndores,16-24,12.0
+Lzo. Arenas,Higueras,16-24,8.0
+Lzo. Arenas,El Arenal,16-24,7.0
+Lzo. Arenas,Mercado,16-24,6.0
+Lzo. Arenas,Juan Pablo II,16-24,1.0
+Lzo. Arenas,Diagonal Bio Bio,16-24,1.0
+Lzo. Arenas,Alborada,16-24,2.0
+Lzo. Arenas,Costa Mar,16-24,11.0
+Lzo. Arenas,El Parque,16-24,4.0
+Lzo. Arenas,Lomas Coloradas,16-24,8.0
+Lzo. Arenas,Cdal. Raúl Silva Henríquez,16-24,9.0
+Lzo. Arenas,Hito Galvarino,16-24,3.0
+Lzo. Arenas,Los Canelos,16-24,10.0
+Lzo. Arenas,Huinca,16-24,2.0
+Lzo. Arenas,Cristo Redentor,16-24,10.0
+Lzo. Arenas,Laguna Quiñenco,16-24,3.0
+Lzo. Arenas,Coronel,16-24,3.0
+UTF Santa María,Hualqui,16-24,24.0
+UTF Santa María,La Leonera,16-24,21.0
+UTF Santa María,Manquimávida,16-24,12.0
+UTF Santa María,Pedro Medina,16-24,12.0
+UTF Santa María,Chiguayante,16-24,22.0
+UTF Santa María,Concepción,16-24,21.0
+UTF Santa María,Mall,16-24,2.0
+UTF Santa María,Lzo. Arenas,16-24,4.0
+UTF Santa María,UTF Santa María,16-24,2.0
+UTF Santa María,Los Cóndores,16-24,9.0
+UTF Santa María,Higueras,16-24,2.0
+UTF Santa María,El Arenal,16-24,5.0
+UTF Santa María,Mercado,16-24,3.0
+UTF Santa María,Juan Pablo II,16-24,2.0
+UTF Santa María,Diagonal Bio Bio,16-24,2.0
+UTF Santa María,Alborada,16-24,5.0
+UTF Santa María,Costa Mar,16-24,17.0
+UTF Santa María,El Parque,16-24,1.0
+UTF Santa María,Lomas Coloradas,16-24,12.0
+UTF Santa María,Cdal. Raúl Silva Henríquez,16-24,18.0
+UTF Santa María,Hito Galvarino,16-24,2.0
+UTF Santa María,Los Canelos,16-24,10.0
+UTF Santa María,Huinca,16-24,9.0
+UTF Santa María,Cristo Redentor,16-24,8.0
+UTF Santa María,Laguna Quiñenco,16-24,8.0
+UTF Santa María,Coronel,16-24,8.0
+Los Cóndores,Hualqui,16-24,23.0
+Los Cóndores,La Leonera,16-24,33.0
+Los Cóndores,Manquimávida,16-24,18.0
+Los Cóndores,Pedro Medina,16-24,11.0
+Los Cóndores,Chiguayante,16-24,16.0
+Los Cóndores,Concepción,16-24,31.0
+Los Cóndores,Mall,16-24,8.0
+Los Cóndores,Lzo. Arenas,16-24,10.0
+Los Cóndores,UTF Santa María,16-24,5.0
+Los Cóndores,Los Cóndores,16-24,2.0
+Los Cóndores,Higueras,16-24,1.0
+Los Cóndores,El Arenal,16-24,1.0
+Los Cóndores,Mercado,16-24,3.0
+Los Cóndores,Juan Pablo II,16-24,5.0
+Los Cóndores,Diagonal Bio Bio,16-24,8.0
+Los Cóndores,Alborada,16-24,1.0
+Los Cóndores,Costa Mar,16-24,14.0
+Los Cóndores,El Parque,16-24,4.0
+Los Cóndores,Lomas Coloradas,16-24,17.0
+Los Cóndores,Cdal. Raúl Silva Henríquez,16-24,7.0
+Los Cóndores,Los Canelos,16-24,7.0
+Los Cóndores,Huinca,16-24,3.0
+Los Cóndores,Cristo Redentor,16-24,5.0
+Los Cóndores,Laguna Quiñenco,16-24,8.0
+Los Cóndores,Coronel,16-24,1.0
+Higueras,Hualqui,16-24,31.0
+Higueras,La Leonera,16-24,22.0
+Higueras,Manquimávida,16-24,23.0
+Higueras,Pedro Medina,16-24,23.0
+Higueras,Chiguayante,16-24,31.0
+Higueras,Concepción,16-24,73.0
+Higueras,Mall,16-24,16.0
+Higueras,Lzo. Arenas,16-24,12.0
+Higueras,UTF Santa María,16-24,12.0
+Higueras,Los Cóndores,16-24,6.0
+Higueras,Higueras,16-24,1.0
+Higueras,El Arenal,16-24,3.0
+Higueras,Mercado,16-24,6.0
+Higueras,Juan Pablo II,16-24,8.0
+Higueras,Diagonal Bio Bio,16-24,8.0
+Higueras,Alborada,16-24,7.0
+Higueras,Costa Mar,16-24,17.0
+Higueras,El Parque,16-24,2.0
+Higueras,Lomas Coloradas,16-24,19.0
+Higueras,Cdal. Raúl Silva Henríquez,16-24,11.0
+Higueras,Hito Galvarino,16-24,6.0
+Higueras,Los Canelos,16-24,15.0
+Higueras,Huinca,16-24,4.0
+Higueras,Cristo Redentor,16-24,18.0
+Higueras,Laguna Quiñenco,16-24,11.0
+Higueras,Coronel,16-24,9.0
+El Arenal,Hualqui,16-24,22.0
+El Arenal,La Leonera,16-24,9.0
+El Arenal,Manquimávida,16-24,9.0
+El Arenal,Pedro Medina,16-24,6.0
+El Arenal,Chiguayante,16-24,14.0
+El Arenal,Concepción,16-24,31.0
+El Arenal,Mall,16-24,7.0
+El Arenal,Lzo. Arenas,16-24,9.0
+El Arenal,UTF Santa María,16-24,7.0
+El Arenal,Los Cóndores,16-24,6.0
+El Arenal,Higueras,16-24,2.0
+El Arenal,Juan Pablo II,16-24,4.0
+El Arenal,Diagonal Bio Bio,16-24,4.0
+El Arenal,Alborada,16-24,2.0
+El Arenal,Costa Mar,16-24,9.0
+El Arenal,El Parque,16-24,3.0
+El Arenal,Lomas Coloradas,16-24,5.0
+El Arenal,Cdal. Raúl Silva Henríquez,16-24,5.0
+El Arenal,Hito Galvarino,16-24,3.0
+El Arenal,Los Canelos,16-24,6.0
+El Arenal,Huinca,16-24,2.0
+El Arenal,Cristo Redentor,16-24,3.0
+El Arenal,Laguna Quiñenco,16-24,8.0
+El Arenal,Coronel,16-24,3.0
+Mercado,Hualqui,16-24,22.0
+Mercado,La Leonera,16-24,21.0
+Mercado,Manquimávida,16-24,24.0
+Mercado,Pedro Medina,16-24,16.0
+Mercado,Chiguayante,16-24,38.0
+Mercado,Concepción,16-24,60.0
+Mercado,Mall,16-24,18.0
+Mercado,Lzo. Arenas,16-24,14.0
+Mercado,UTF Santa María,16-24,13.0
+Mercado,Los Cóndores,16-24,10.0
+Mercado,Higueras,16-24,10.0
+Mercado,Mercado,16-24,3.0
+Mercado,Juan Pablo II,16-24,6.0
+Mercado,Diagonal Bio Bio,16-24,8.0
+Mercado,Alborada,16-24,3.0
+Mercado,Costa Mar,16-24,22.0
+Mercado,Lomas Coloradas,16-24,11.0
+Mercado,Cdal. Raúl Silva Henríquez,16-24,22.0
+Mercado,Hito Galvarino,16-24,5.0
+Mercado,Los Canelos,16-24,16.0
+Mercado,Huinca,16-24,8.0
+Mercado,Cristo Redentor,16-24,11.0
+Mercado,Laguna Quiñenco,16-24,12.0
+Mercado,Coronel,16-24,9.0
+Juan Pablo II,Hualqui,16-24,21.0
+Juan Pablo II,La Leonera,16-24,14.0
+Juan Pablo II,Manquimávida,16-24,13.0
+Juan Pablo II,Pedro Medina,16-24,8.0
+Juan Pablo II,Chiguayante,16-24,7.0
+Juan Pablo II,Concepción,16-24,39.0
+Juan Pablo II,Mall,16-24,2.0
+Juan Pablo II,Lzo. Arenas,16-24,3.0
+Juan Pablo II,UTF Santa María,16-24,6.0
+Juan Pablo II,Los Cóndores,16-24,3.0
+Juan Pablo II,Higueras,16-24,12.0
+Juan Pablo II,El Arenal,16-24,8.0
+Juan Pablo II,Mercado,16-24,6.0
+Juan Pablo II,Juan Pablo II,16-24,6.0
+Juan Pablo II,Diagonal Bio Bio,16-24,11.0
+Juan Pablo II,Alborada,16-24,17.0
+Juan Pablo II,Costa Mar,16-24,99.0
+Juan Pablo II,El Parque,16-24,16.0
+Juan Pablo II,Lomas Coloradas,16-24,127.0
+Juan Pablo II,Cdal. Raúl Silva Henríquez,16-24,96.0
+Juan Pablo II,Hito Galvarino,16-24,40.0
+Juan Pablo II,Los Canelos,16-24,98.0
+Juan Pablo II,Huinca,16-24,54.0
+Juan Pablo II,Cristo Redentor,16-24,77.0
+Juan Pablo II,Laguna Quiñenco,16-24,59.0
+Juan Pablo II,Coronel,16-24,75.0
+Diagonal Bio Bio,Hualqui,16-24,7.0
+Diagonal Bio Bio,La Leonera,16-24,11.0
+Diagonal Bio Bio,Manquimávida,16-24,2.0
+Diagonal Bio Bio,Pedro Medina,16-24,7.0
+Diagonal Bio Bio,Chiguayante,16-24,9.0
+Diagonal Bio Bio,Concepción,16-24,33.0
+Diagonal Bio Bio,Mall,16-24,3.0
+Diagonal Bio Bio,UTF Santa María,16-24,6.0
+Diagonal Bio Bio,Los Cóndores,16-24,4.0
+Diagonal Bio Bio,Higueras,16-24,1.0
+Diagonal Bio Bio,El Arenal,16-24,3.0
+Diagonal Bio Bio,Mercado,16-24,1.0
+Diagonal Bio Bio,Juan Pablo II,16-24,4.0
+Diagonal Bio Bio,Diagonal Bio Bio,16-24,12.0
+Diagonal Bio Bio,Alborada,16-24,31.0
+Diagonal Bio Bio,Costa Mar,16-24,100.0
+Diagonal Bio Bio,El Parque,16-24,26.0
+Diagonal Bio Bio,Lomas Coloradas,16-24,111.0
+Diagonal Bio Bio,Cdal. Raúl Silva Henríquez,16-24,70.0
+Diagonal Bio Bio,Hito Galvarino,16-24,20.0
+Diagonal Bio Bio,Los Canelos,16-24,66.0
+Diagonal Bio Bio,Huinca,16-24,40.0
+Diagonal Bio Bio,Cristo Redentor,16-24,56.0
+Diagonal Bio Bio,Laguna Quiñenco,16-24,50.0
+Diagonal Bio Bio,Coronel,16-24,37.0
+Alborada,Hualqui,16-24,3.0
+Alborada,La Leonera,16-24,5.0
+Alborada,Manquimávida,16-24,5.0
+Alborada,Pedro Medina,16-24,2.0
+Alborada,Concepción,16-24,35.0
+Alborada,Mall,16-24,5.0
+Alborada,UTF Santa María,16-24,3.0
+Alborada,Los Cóndores,16-24,6.0
+Alborada,Higueras,16-24,1.0
+Alborada,El Arenal,16-24,2.0
+Alborada,Juan Pablo II,16-24,6.0
+Alborada,Diagonal Bio Bio,16-24,15.0
+Alborada,Alborada,16-24,2.0
+Alborada,Costa Mar,16-24,7.0
+Alborada,El Parque,16-24,1.0
+Alborada,Lomas Coloradas,16-24,32.0
+Alborada,Cdal. Raúl Silva Henríquez,16-24,27.0
+Alborada,Hito Galvarino,16-24,11.0
+Alborada,Los Canelos,16-24,12.0
+Alborada,Huinca,16-24,11.0
+Alborada,Cristo Redentor,16-24,19.0
+Alborada,Laguna Quiñenco,16-24,7.0
+Alborada,Coronel,16-24,11.0
+Costa Mar,Hualqui,16-24,7.0
+Costa Mar,La Leonera,16-24,8.0
+Costa Mar,Manquimávida,16-24,2.0
+Costa Mar,Pedro Medina,16-24,7.0
+Costa Mar,Chiguayante,16-24,5.0
+Costa Mar,Concepción,16-24,144.0
+Costa Mar,Mall,16-24,16.0
+Costa Mar,Lzo. Arenas,16-24,3.0
+Costa Mar,UTF Santa María,16-24,10.0
+Costa Mar,Los Cóndores,16-24,8.0
+Costa Mar,Higueras,16-24,2.0
+Costa Mar,El Arenal,16-24,5.0
+Costa Mar,Mercado,16-24,5.0
+Costa Mar,Juan Pablo II,16-24,23.0
+Costa Mar,Diagonal Bio Bio,16-24,45.0
+Costa Mar,Alborada,16-24,9.0
+Costa Mar,Costa Mar,16-24,22.0
+Costa Mar,El Parque,16-24,8.0
+Costa Mar,Lomas Coloradas,16-24,94.0
+Costa Mar,Cdal. Raúl Silva Henríquez,16-24,66.0
+Costa Mar,Hito Galvarino,16-24,26.0
+Costa Mar,Los Canelos,16-24,110.0
+Costa Mar,Huinca,16-24,67.0
+Costa Mar,Cristo Redentor,16-24,107.0
+Costa Mar,Laguna Quiñenco,16-24,126.0
+Costa Mar,Coronel,16-24,85.0
+El Parque,Hualqui,16-24,17.0
+El Parque,La Leonera,16-24,16.0
+El Parque,Manquimávida,16-24,8.0
+El Parque,Pedro Medina,16-24,5.0
+El Parque,Chiguayante,16-24,5.0
+El Parque,Concepción,16-24,123.0
+El Parque,Mall,16-24,32.0
+El Parque,Lzo. Arenas,16-24,4.0
+El Parque,UTF Santa María,16-24,7.0
+El Parque,Los Cóndores,16-24,12.0
+El Parque,Higueras,16-24,8.0
+El Parque,El Arenal,16-24,5.0
+El Parque,Mercado,16-24,5.0
+El Parque,Juan Pablo II,16-24,19.0
+El Parque,Diagonal Bio Bio,16-24,32.0
+El Parque,Alborada,16-24,9.0
+El Parque,Costa Mar,16-24,28.0
+El Parque,El Parque,16-24,4.0
+El Parque,Lomas Coloradas,16-24,25.0
+El Parque,Cdal. Raúl Silva Henríquez,16-24,29.0
+El Parque,Hito Galvarino,16-24,11.0
+El Parque,Los Canelos,16-24,27.0
+El Parque,Huinca,16-24,29.0
+El Parque,Cristo Redentor,16-24,50.0
+El Parque,Laguna Quiñenco,16-24,56.0
+El Parque,Coronel,16-24,28.0
+Lomas Coloradas,Hualqui,16-24,2.0
+Lomas Coloradas,La Leonera,16-24,14.0
+Lomas Coloradas,Manquimávida,16-24,5.0
+Lomas Coloradas,Pedro Medina,16-24,6.0
+Lomas Coloradas,Chiguayante,16-24,5.0
+Lomas Coloradas,Concepción,16-24,199.0
+Lomas Coloradas,Mall,16-24,18.0
+Lomas Coloradas,Lzo. Arenas,16-24,3.0
+Lomas Coloradas,UTF Santa María,16-24,7.0
+Lomas Coloradas,Los Cóndores,16-24,5.0
+Lomas Coloradas,Higueras,16-24,6.0
+Lomas Coloradas,El Arenal,16-24,5.0
+Lomas Coloradas,Mercado,16-24,2.0
+Lomas Coloradas,Juan Pablo II,16-24,50.0
+Lomas Coloradas,Diagonal Bio Bio,16-24,67.0
+Lomas Coloradas,Alborada,16-24,35.0
+Lomas Coloradas,Costa Mar,16-24,97.0
+Lomas Coloradas,El Parque,16-24,10.0
+Lomas Coloradas,Lomas Coloradas,16-24,16.0
+Lomas Coloradas,Cdal. Raúl Silva Henríquez,16-24,42.0
+Lomas Coloradas,Hito Galvarino,16-24,19.0
+Lomas Coloradas,Los Canelos,16-24,103.0
+Lomas Coloradas,Huinca,16-24,53.0
+Lomas Coloradas,Cristo Redentor,16-24,78.0
+Lomas Coloradas,Laguna Quiñenco,16-24,70.0
+Lomas Coloradas,Coronel,16-24,52.0
+Cdal. Raúl Silva Henríquez,La Leonera,16-24,3.0
+Cdal. Raúl Silva Henríquez,Manquimávida,16-24,3.0
+Cdal. Raúl Silva Henríquez,Pedro Medina,16-24,1.0
+Cdal. Raúl Silva Henríquez,Chiguayante,16-24,2.0
+Cdal. Raúl Silva Henríquez,Concepción,16-24,110.0
+Cdal. Raúl Silva Henríquez,Mall,16-24,12.0
+Cdal. Raúl Silva Henríquez,Lzo. Arenas,16-24,1.0
+Cdal. Raúl Silva Henríquez,UTF Santa María,16-24,1.0
+Cdal. Raúl Silva Henríquez,Los Cóndores,16-24,3.0
+Cdal. Raúl Silva Henríquez,Higueras,16-24,5.0
+Cdal. Raúl Silva Henríquez,Mercado,16-24,3.0
+Cdal. Raúl Silva Henríquez,Juan Pablo II,16-24,40.0
+Cdal. Raúl Silva Henríquez,Diagonal Bio Bio,16-24,22.0
+Cdal. Raúl Silva Henríquez,Alborada,16-24,8.0
+Cdal. Raúl Silva Henríquez,Costa Mar,16-24,36.0
+Cdal. Raúl Silva Henríquez,El Parque,16-24,4.0
+Cdal. Raúl Silva Henríquez,Lomas Coloradas,16-24,20.0
+Cdal. Raúl Silva Henríquez,Cdal. Raúl Silva Henríquez,16-24,12.0
+Cdal. Raúl Silva Henríquez,Hito Galvarino,16-24,9.0
+Cdal. Raúl Silva Henríquez,Los Canelos,16-24,32.0
+Cdal. Raúl Silva Henríquez,Huinca,16-24,24.0
+Cdal. Raúl Silva Henríquez,Cristo Redentor,16-24,32.0
+Cdal. Raúl Silva Henríquez,Laguna Quiñenco,16-24,23.0
+Cdal. Raúl Silva Henríquez,Coronel,16-24,30.0
+Hito Galvarino,Hualqui,16-24,8.0
+Hito Galvarino,La Leonera,16-24,4.0
+Hito Galvarino,Manquimávida,16-24,3.0
+Hito Galvarino,Pedro Medina,16-24,5.0
+Hito Galvarino,Concepción,16-24,151.0
+Hito Galvarino,Mall,16-24,14.0
+Hito Galvarino,Lzo. Arenas,16-24,2.0
+Hito Galvarino,UTF Santa María,16-24,5.0
+Hito Galvarino,Los Cóndores,16-24,7.0
+Hito Galvarino,Higueras,16-24,6.0
+Hito Galvarino,El Arenal,16-24,3.0
+Hito Galvarino,Mercado,16-24,1.0
+Hito Galvarino,Juan Pablo II,16-24,34.0
+Hito Galvarino,Diagonal Bio Bio,16-24,23.0
+Hito Galvarino,Alborada,16-24,11.0
+Hito Galvarino,Costa Mar,16-24,43.0
+Hito Galvarino,El Parque,16-24,10.0
+Hito Galvarino,Lomas Coloradas,16-24,28.0
+Hito Galvarino,Cdal. Raúl Silva Henríquez,16-24,12.0
+Hito Galvarino,Hito Galvarino,16-24,4.0
+Hito Galvarino,Los Canelos,16-24,29.0
+Hito Galvarino,Huinca,16-24,31.0
+Hito Galvarino,Cristo Redentor,16-24,52.0
+Hito Galvarino,Laguna Quiñenco,16-24,42.0
+Hito Galvarino,Coronel,16-24,28.0
+Los Canelos,Hualqui,16-24,5.0
+Los Canelos,La Leonera,16-24,6.0
+Los Canelos,Manquimávida,16-24,7.0
+Los Canelos,Pedro Medina,16-24,2.0
+Los Canelos,Chiguayante,16-24,6.0
+Los Canelos,Concepción,16-24,283.0
+Los Canelos,Mall,16-24,19.0
+Los Canelos,Lzo. Arenas,16-24,8.0
+Los Canelos,UTF Santa María,16-24,5.0
+Los Canelos,Los Cóndores,16-24,17.0
+Los Canelos,Higueras,16-24,3.0
+Los Canelos,El Arenal,16-24,5.0
+Los Canelos,Mercado,16-24,3.0
+Los Canelos,Juan Pablo II,16-24,45.0
+Los Canelos,Diagonal Bio Bio,16-24,48.0
+Los Canelos,Alborada,16-24,17.0
+Los Canelos,Costa Mar,16-24,90.0
+Los Canelos,El Parque,16-24,19.0
+Los Canelos,Lomas Coloradas,16-24,67.0
+Los Canelos,Cdal. Raúl Silva Henríquez,16-24,62.0
+Los Canelos,Hito Galvarino,16-24,18.0
+Los Canelos,Los Canelos,16-24,26.0
+Los Canelos,Huinca,16-24,21.0
+Los Canelos,Cristo Redentor,16-24,46.0
+Los Canelos,Laguna Quiñenco,16-24,75.0
+Los Canelos,Coronel,16-24,46.0
+Huinca,Hualqui,16-24,4.0
+Huinca,La Leonera,16-24,1.0
+Huinca,Manquimávida,16-24,2.0
+Huinca,Chiguayante,16-24,1.0
+Huinca,Concepción,16-24,165.0
+Huinca,Mall,16-24,16.0
+Huinca,Lzo. Arenas,16-24,1.0
+Huinca,UTF Santa María,16-24,2.0
+Huinca,Los Cóndores,16-24,5.0
+Huinca,Higueras,16-24,1.0
+Huinca,Mercado,16-24,2.0
+Huinca,Juan Pablo II,16-24,33.0
+Huinca,Diagonal Bio Bio,16-24,25.0
+Huinca,Alborada,16-24,12.0
+Huinca,Costa Mar,16-24,40.0
+Huinca,El Parque,16-24,11.0
+Huinca,Lomas Coloradas,16-24,34.0
+Huinca,Cdal. Raúl Silva Henríquez,16-24,21.0
+Huinca,Hito Galvarino,16-24,14.0
+Huinca,Los Canelos,16-24,13.0
+Huinca,Huinca,16-24,6.0
+Huinca,Cristo Redentor,16-24,16.0
+Huinca,Laguna Quiñenco,16-24,36.0
+Huinca,Coronel,16-24,12.0
+Cristo Redentor,La Leonera,16-24,3.0
+Cristo Redentor,Manquimávida,16-24,3.0
+Cristo Redentor,Chiguayante,16-24,4.0
+Cristo Redentor,Concepción,16-24,154.0
+Cristo Redentor,Mall,16-24,15.0
+Cristo Redentor,Lzo. Arenas,16-24,1.0
+Cristo Redentor,UTF Santa María,16-24,3.0
+Cristo Redentor,Los Cóndores,16-24,4.0
+Cristo Redentor,Higueras,16-24,1.0
+Cristo Redentor,El Arenal,16-24,4.0
+Cristo Redentor,Mercado,16-24,2.0
+Cristo Redentor,Juan Pablo II,16-24,19.0
+Cristo Redentor,Diagonal Bio Bio,16-24,20.0
+Cristo Redentor,Alborada,16-24,10.0
+Cristo Redentor,Costa Mar,16-24,54.0
+Cristo Redentor,El Parque,16-24,17.0
+Cristo Redentor,Lomas Coloradas,16-24,39.0
+Cristo Redentor,Cdal. Raúl Silva Henríquez,16-24,26.0
+Cristo Redentor,Hito Galvarino,16-24,19.0
+Cristo Redentor,Los Canelos,16-24,43.0
+Cristo Redentor,Huinca,16-24,19.0
+Cristo Redentor,Cristo Redentor,16-24,15.0
+Cristo Redentor,Laguna Quiñenco,16-24,30.0
+Cristo Redentor,Coronel,16-24,23.0
+Laguna Quiñenco,Hualqui,16-24,1.0
+Laguna Quiñenco,La Leonera,16-24,2.0
+Laguna Quiñenco,Manquimávida,16-24,2.0
+Laguna Quiñenco,Pedro Medina,16-24,2.0
+Laguna Quiñenco,Concepción,16-24,165.0
+Laguna Quiñenco,Mall,16-24,20.0
+Laguna Quiñenco,Lzo. Arenas,16-24,1.0
+Laguna Quiñenco,UTF Santa María,16-24,2.0
+Laguna Quiñenco,Los Cóndores,16-24,6.0
+Laguna Quiñenco,Mercado,16-24,7.0
+Laguna Quiñenco,Juan Pablo II,16-24,20.0
+Laguna Quiñenco,Diagonal Bio Bio,16-24,25.0
+Laguna Quiñenco,Alborada,16-24,6.0
+Laguna Quiñenco,Costa Mar,16-24,74.0
+Laguna Quiñenco,El Parque,16-24,22.0
+Laguna Quiñenco,Lomas Coloradas,16-24,42.0
+Laguna Quiñenco,Cdal. Raúl Silva Henríquez,16-24,35.0
+Laguna Quiñenco,Hito Galvarino,16-24,22.0
+Laguna Quiñenco,Los Canelos,16-24,92.0
+Laguna Quiñenco,Huinca,16-24,40.0
+Laguna Quiñenco,Cristo Redentor,16-24,53.0
+Laguna Quiñenco,Laguna Quiñenco,16-24,10.0
+Laguna Quiñenco,Coronel,16-24,17.0
+Coronel,Hualqui,16-24,4.0
+Coronel,La Leonera,16-24,11.0
+Coronel,Manquimávida,16-24,6.0
+Coronel,Pedro Medina,16-24,9.0
+Coronel,Chiguayante,16-24,8.0
+Coronel,Concepción,16-24,385.0
+Coronel,Mall,16-24,27.0
+Coronel,Lzo. Arenas,16-24,5.0
+Coronel,UTF Santa María,16-24,10.0
+Coronel,Los Cóndores,16-24,16.0
+Coronel,Higueras,16-24,19.0
+Coronel,El Arenal,16-24,8.0
+Coronel,Mercado,16-24,11.0
+Coronel,Juan Pablo II,16-24,70.0
+Coronel,Diagonal Bio Bio,16-24,75.0
+Coronel,Alborada,16-24,20.0
+Coronel,Costa Mar,16-24,102.0
+Coronel,El Parque,16-24,30.0
+Coronel,Lomas Coloradas,16-24,86.0
+Coronel,Cdal. Raúl Silva Henríquez,16-24,80.0
+Coronel,Hito Galvarino,16-24,24.0
+Coronel,Los Canelos,16-24,84.0
+Coronel,Huinca,16-24,55.0
+Coronel,Cristo Redentor,16-24,77.0
+Coronel,Laguna Quiñenco,16-24,54.0
+Coronel,Coronel,16-24,10.0

@@ -1,0 +1,5 @@
+# Dependencias para desplegar la app en Streamlit Community Cloud.
+# La app es autonoma: lee los CSV/JSON de datos/clean (versionados).
+streamlit>=1.30
+pandas>=2.0
+plotly>=5.18

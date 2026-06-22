@@ -1,0 +1,55 @@
+{
+  "estado": "Optimal",
+  "enfoque": "hora de diseno (punta) por franja",
+  "peak_share": {
+    "05-10": 0.3,
+    "10-16": 0.2,
+    "16-24": 0.28
+  },
+  "demanda_punta_total": 12813,
+  "demanda_punta_servida": 12813,
+  "cobertura_pct": 100.0,
+  "flota_total": 16,
+  "flota_pico_usada": 10,
+  "flota_suficiente": true,
+  "limite_electrico_trenes": 25,
+  "ciclo_min": {
+    "L1": 124.0,
+    "L2": 96.0
+  },
+  "oneway_min": {
+    "L1": 56.0,
+    "L2": 42.0
+  },
+  "headway_min_via_unica": {
+    "L1": 25,
+    "L2": 9
+  },
+  "nota": "Demanda de hora punta = demanda de franja * peak_share. Flota dimensionada al pico. peak_share, headway de via unica y limite electrico son supuestos; refinar con datos con marca de tiempo y zonas SER desagregadas.",
+  "sensibilidad_peak_share": [
+    {
+      "peak_share": 0.2,
+      "flota_pico": 8,
+      "cobertura_pct": 100.0,
+      "suficiente_16": true
+    },
+    {
+      "peak_share": 0.3,
+      "flota_pico": 11,
+      "cobertura_pct": 100.0,
+      "suficiente_16": true
+    },
+    {
+      "peak_share": 0.4,
+      "flota_pico": 15,
+      "cobertura_pct": 100.0,
+      "suficiente_16": true
+    },
+    {
+      "peak_share": 0.5,
+      "flota_pico": 15,
+      "cobertura_pct": 97.8,
+      "suficiente_16": false
+    }
+  ]
+}

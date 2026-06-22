@@ -1,0 +1,7 @@
+linea,franja,demanda_punta_enlace_max,servicios_hora,intervalo_min,capacidad_hora,limitado_por_via_unica,trenes_uso,ciclo_min
+L1,05-10,495,1,60.0,780,False,3,124.0
+L1,10-16,97,1,60.0,780,False,3,124.0
+L1,16-24,609,1,60.0,780,False,3,124.0
+L2,05-10,2660,4,15.0,3120,False,7,96.0
+L2,10-16,843,2,30.0,1560,False,4,96.0
+L2,16-24,2916,4,15.0,3120,False,7,96.0
