@@ -17,8 +17,6 @@ PASOS = [
     ("Geo estaciones (KML)", "parsers/parse_geo.py"),
     ("Estaciones maestro (km OpenTrack)", "parsers/estaciones_maestro.py"),
     ("Red topologia (OTML)", "parsers/parse_red_topologia.py"),
-    ("Salidas reales (itinerario)", "parsers/parse_itinerario_real.py"),
-    ("Horarios base (estacion x servicio)", "optimizador/horarios.py"),
     ("ETL Etapa 1: horarios limpios (pax+carga)", "etl/construir.py"),
     ("Validacion del motor (perfil real)", "motor/validar_motor.py"),
     ("Calibracion del motor", "motor/calibrar.py"),

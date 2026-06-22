@@ -1,9 +1,9 @@
 {
   "linea": "L2",
-  "trenes": 104,
+  "trenes": 100,
   "esperas_via_unica": 14,
-  "espera_total_min": 104.0,
-  "espera_max_min": 16.5,
+  "espera_total_min": 98.4,
+  "espera_max_min": 10.5,
   "clearing_min": 1.5,
-  "nota": "Ocupacion del canton de via unica = tiempo de recorrido; cambio de cabina es rotacion en anden (ya en horarios)."
+  "fuente": "horarios_limpios"
 }
