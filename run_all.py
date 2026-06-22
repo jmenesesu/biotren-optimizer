@@ -22,6 +22,7 @@ PASOS = [
     ("Optimizador de capacidad", "optimizador/optimizar_capacidad.py"),
     ("Generar malla optima (Marey)", "optimizador/generar_malla.py"),
     ("Generar malla real (Marey)", "optimizador/generar_malla_real.py"),
+    ("Via unica y conflictos", "optimizador/via_unica.py"),
 ]
 
 

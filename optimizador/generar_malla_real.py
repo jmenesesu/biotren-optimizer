@@ -49,6 +49,7 @@ def generar():
                         "sentido": sentido, "estacion": s,
                         "dist_km": round(distkm[s], 3),
                         "hora_min": round(r.salida_min + c, 2),
+                        "unidad": getattr(r, "unidad", ""),
                     })
     df = pd.DataFrame(filas)
     df.to_csv(CLEAN / "malla_real.csv", index=False)
