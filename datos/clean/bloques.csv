@@ -1,0 +1,41 @@
+linea,block_id,dist_lo,dist_hi,tipo,nombre
+L2,L2-B0,0.0,2.0,single,CONCEPCIÓN → km2.0
+L2,L2-B1,2.0,3.838,double,km2.0 → Juan Pablo II
+L2,L2-B2,3.838,5.569,double,Juan Pablo II → Diagonal Bio Bio
+L2,L2-B3,5.569,7.442,double,Diagonal Bio Bio → Alborada
+L2,L2-B4,7.442,8.339,double,Alborada → Costa Mar
+L2,L2-B5,8.339,9.614,double,Costa Mar → El Parque
+L2,L2-B6,9.614,10.983,double,El Parque → LOMAS COLORADAS
+L2,L2-B7,10.983,13.151,double,LOMAS COLORADAS → Card. Raúl Silva Henriquez
+L2,L2-B8,13.151,18.048,double,Card. Raúl Silva Henriquez → Hito Galvarino
+L2,L2-B9,18.048,21.125,double,Hito Galvarino → Los Canelos
+L2,L2-B10,21.125,22.524,double,Los Canelos → Huinca
+L2,L2-B11,22.524,24.203,double,Huinca → Cristo Redentor
+L2,L2-B12,24.203,26.302,double,Cristo Redentor → Laguna Quiñenco
+L2,L2-B13,26.302,28.4,double,Laguna Quiñenco → CORONEL
+L1,L1-B0,0.0,1.468,single,Mercado → El Arenal
+L1,L1-B1,1.468,1.47,single,El Arenal → km1.5
+L1,L1-B2,1.47,3.487,double,km1.5 → Hospital Las Higueras
+L1,L1-B3,3.487,5.637,double,Hospital Las Higueras → Los Cóndores
+L1,L1-B4,5.637,8.705,double,Los Cóndores → UTF Santa María
+L1,L1-B5,8.705,11.705,double,UTF Santa María → Lorenzo Arenas
+L1,L1-B6,11.705,14.289,double,Lorenzo Arenas → CONCEPCIÓN
+L1,L1-B7,14.289,24.206,double,CONCEPCIÓN → CHIGUAYANTE
+L1,L1-B8,24.206,25.536,double,CHIGUAYANTE → Pedro Medina
+L1,L1-B9,25.536,27.219,double,Pedro Medina → Manquimávida
+L1,L1-B10,27.219,28.64,double,Manquimávida → km28.6
+L1,L1-B11,28.64,28.643,single,km28.6 → LA LEONERA
+L1,L1-B12,28.643,30.908,single,LA LEONERA → OMER HUET
+L1,L1-B13,30.908,35.816,single,OMER HUET → HUALQUI
+L1,L1-B14,35.816,35.82,single,HUALQUI → km35.8
+L1,L1-B15,35.82,46.116,double,km35.8 → QUILACOYA
+L1,L1-B16,46.116,50.436,double,QUILACOYA → San Miguel
+L1,L1-B17,50.436,53.316,double,San Miguel → UNIHUE
+L1,L1-B18,53.316,54.416,double,UNIHUE → Valle Chanco
+L1,L1-B19,54.416,55.516,double,Valle Chanco → Los Acacios
+L1,L1-B20,55.516,59.916,double,Los Acacios → TALCAMÁVIDA
+L1,L1-B21,59.916,67.416,double,TALCAMÁVIDA → GOMERO
+L1,L1-B22,67.416,74.416,double,GOMERO → BUENURAQUI
+L1,L1-B23,74.416,77.816,double,BUENURAQUI → SAN ROSENDO
+L1,L1-B24,77.816,80.416,double,SAN ROSENDO → LAJA
+L1,L1-B25,80.416,80.42,double,LAJA → km80.4

@@ -1,0 +1,8 @@
+{
+  "linea": "L2",
+  "trenes": 62,
+  "eventos_espera": 1,
+  "espera_total_min": 1.5,
+  "esperas_via_unica": 1,
+  "clearing_min": 1.5
+}

@@ -109,20 +109,29 @@ def marey(linea, archivo, titulo, mostrar_via_unica=True, mostrar_conflictos=Tru
     st.plotly_chart(fig, use_container_width=True)
 
 
+ARCH_MALLA = {"Itinerario actual": "malla_real.csv",
+              "Simulada (fixed-block)": "malla_sim.csv",
+              "Optimizada": "malla_marey.csv"}
+
+
 def tab_marey(linea, top, bottom):
-    fuente = st.radio("Malla", ["Itinerario actual", "Optimizada"], horizontal=True, key=f"src_{linea}")
-    archivo = "malla_real.csv" if fuente == "Itinerario actual" else "malla_marey.csv"
+    fuente = st.radio("Malla", list(ARCH_MALLA), horizontal=True, key=f"src_{linea}")
+    archivo = ARCH_MALLA[fuente]
     st.caption(f"Día completo. Distancia: {top} arriba, {bottom} abajo. Color = automotor. "
-               "Banda roja = vía única; ✕ rojo = cruce de trenes opuestos en vía única.")
-    marey(linea, archivo, f"{linea} — {fuente.lower()}",
-          mostrar_conflictos=(fuente == "Itinerario actual"))
-    if fuente == "Itinerario actual":
-        cf = load("conflictos.csv")
-        n = len(cf[cf.linea == linea]) if not cf.empty and "linea" in cf.columns else 0
-        if n:
-            st.warning(f"{n} cruces detectados en vía única en {linea}. Nota: la malla propaga "
-                       "cada tren sin las esperas de cruzamiento, por lo que estos puntos marcan "
-                       "dónde el itinerario fuerza un cruce en vía única (a validar contra desvíos).")
+               "Banda roja = vía única.")
+    marey(linea, archivo, f"{linea} — {fuente.lower()}", mostrar_conflictos=False)
+    if fuente == "Simulada (fixed-block)":
+        res = load_json("sim_resumen.json")
+        if res and res.get("linea") == linea:
+            c1, c2, c3 = st.columns(3)
+            c1.metric("Trenes simulados", res.get("trenes", 0))
+            c2.metric("Esperas en vía única", res.get("esperas_via_unica", 0))
+            c3.metric("Espera total (min)", res.get("espera_total_min", 0))
+            st.caption("Simulación fixed-block: un tren por cantón de vía única; los trenes "
+                       "esperan para cruzar. La doble vía se modela con múltiples blocks (libre). "
+                       "El tiempo de ocupación del cantón puede afinarse (incluir cambio de cabina).")
+        elif linea != "L2":
+            st.info("Simulación implementada por ahora solo para L2.")
 
 
 tabs = st.tabs([

@@ -23,6 +23,8 @@ PASOS = [
     ("Generar malla optima (Marey)", "optimizador/generar_malla.py"),
     ("Generar malla real (Marey)", "optimizador/generar_malla_real.py"),
     ("Via unica y conflictos", "optimizador/via_unica.py"),
+    ("Bloques (cantones)", "simulador/bloques.py"),
+    ("Simulacion fixed-block L2", "simulador/simulador.py"),
 ]
 
 
