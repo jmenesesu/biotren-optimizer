@@ -1,10 +1,7 @@
 """App Streamlit — Biotren / Corto Laja.
 
-Explora los datos limpios, los resultados del optimizador y dos vistas graficas:
-el diagrama de Marey (tiempo-distancia de la malla) y el mapa georreferenciado.
-
-La app es autonoma: lee solo de datos/clean/ (versionado), por lo que funciona en
-Streamlit Community Cloud sin los insumos crudos.
+Datos limpios, optimizacion de capacidad y vistas graficas: diagrama de Marey
+(por linea, dia completo) y mapa georreferenciado. Autonoma: lee datos/clean/.
 
 Uso local:
     streamlit run app/streamlit_app.py
@@ -37,8 +34,45 @@ def load_json(nombre):
     return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
 
 
+def marey(linea, titulo, origen_arriba=True):
+    """Dibuja el diagrama de Marey de una linea (dia completo, ambos sentidos)."""
+    malla = load("malla_marey.csv")
+    if malla.empty or "linea" not in malla.columns:
+        st.info("Falta malla_marey.csv. Genera con: python optimizador/generar_malla.py")
+        return
+    m = malla[malla.linea == linea]
+    if m.empty:
+        st.info(f"Sin malla para {linea}.")
+        return
+    sentidos = list(m["sentido"].unique())
+    cols = {sentidos[0]: "#1F3864", sentidos[1] if len(sentidos) > 1 else "x": "#C00000"}
+    fig = go.Figure()
+    for tid, g in m.groupby("tren_id"):
+        sent = g["sentido"].iloc[0]
+        fig.add_trace(go.Scatter(
+            x=g["hora_min"], y=g["dist_km"], mode="lines",
+            line=dict(color=cols.get(sent, "#808080"), width=1.0),
+            showlegend=False, hovertext=g["estacion"], hoverinfo="text+x"))
+    # estaciones en el eje Y
+    ek = m[["estacion", "dist_km"]].drop_duplicates().sort_values("dist_km")
+    fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"],
+                     autorange="reversed" if origen_arriba else True)
+    # eje X: dia completo con marcas cada 2 h
+    ticks = list(range(0, 1441, 120))
+    fig.update_xaxes(range=[0, 1440], tickvals=ticks,
+                     ticktext=[f"{t//60:02d}:00" for t in ticks])
+    # leyenda manual de sentidos
+    for sent in sentidos:
+        fig.add_trace(go.Scatter(x=[None], y=[None], mode="lines",
+                                 line=dict(color=cols.get(sent), width=2), name=sent))
+    fig.update_layout(height=680, title=titulo, xaxis_title="Hora del día",
+                      yaxis_title="", margin=dict(l=10, r=10, t=50, b=10),
+                      legend=dict(orientation="h", y=1.04, x=0))
+    st.plotly_chart(fig, use_container_width=True)
+
+
 tabs = st.tabs([
-    "Resumen", "Optimización", "Diagrama de Marey", "Mapa",
+    "Resumen", "Optimización", "Marey L2", "Marey L1", "Mapa",
     "Infraestructura", "Material rodante", "Demanda OD", "Perfil de carga",
     "Itinerario", "Trenes de carga",
 ])
@@ -54,6 +88,7 @@ with tabs[0]:
         "Tiempos de itinerario": "itinerario_tiempos.csv",
         "Caminos de carga": "carga_caminos.csv",
         "Malla (Marey)": "malla_marey.csv",
+        "Estaciones geo": "estaciones_geo.csv",
     }
     filas = [{"Dataset": k, "Filas": len(load(v)), "Archivo": v} for k, v in archivos.items()]
     st.dataframe(pd.DataFrame(filas), use_container_width=True, hide_index=True)
@@ -84,37 +119,22 @@ with tabs[1]:
     if not fr.empty:
         st.dataframe(fr, use_container_width=True, hide_index=True)
 
-# ---------------- Diagrama de Marey ----------------
+# ---------------- Marey L2 ----------------
 with tabs[2]:
-    st.subheader("Diagrama de Marey — malla L2 (Concepción ↔ Coronel)")
-    st.caption("Cada línea diagonal es un tren. Eje X: tiempo (min). Eje Y: distancia (km). "
-               "El cruce de líneas de sentidos opuestos indica un cruzamiento.")
-    malla = load("malla_marey.csv")
-    if malla.empty:
-        st.info("Falta malla_marey.csv. Genera con: python optimizador/generar_malla.py")
-    else:
-        fig = go.Figure()
-        colores = {"CC->CW": "#1F3864", "CW->CC": "#C00000"}
-        for tid, g in malla.groupby("tren_id"):
-            sent = g["sentido"].iloc[0]
-            fig.add_trace(go.Scatter(
-                x=g["t_min"], y=g["km"], mode="lines",
-                line=dict(color=colores.get(sent, "#808080"), width=1.2),
-                name=sent, legendgroup=sent, showlegend=False,
-                hovertext=g["estacion"], hoverinfo="text+x+y"))
-        # marcar estaciones en el eje Y
-        est_km = (malla[["estacion", "km"]].drop_duplicates().sort_values("km"))
-        fig.update_yaxes(tickvals=est_km["km"], ticktext=est_km["estacion"])
-        fig.update_layout(height=650, xaxis_title="Tiempo (min)", yaxis_title="",
-                          margin=dict(l=10, r=10, t=30, b=10))
-        # leyenda manual
-        for sent, col in colores.items():
-            fig.add_trace(go.Scatter(x=[None], y=[None], mode="lines",
-                                     line=dict(color=col, width=2), name=sent))
-        st.plotly_chart(fig, use_container_width=True)
+    st.subheader("Diagrama de Marey — Línea 2 (Concepción ↔ Coronel)")
+    st.caption("Día completo. Eje vertical: distancia (Concepción arriba, Coronel abajo). "
+               "Cada línea es un tren; el cruce de colores opuestos = un cruzamiento.")
+    marey("L2", "L2 — malla del día", origen_arriba=True)
+
+# ---------------- Marey L1 ----------------
+with tabs[3]:
+    st.subheader("Diagrama de Marey — Línea 1 (Mercado ↔ Hualqui ↔ Laja)")
+    st.caption("Día completo. Eje vertical: distancia (Mercado arriba, Laja abajo, "
+               "Concepción intermedia). Cada línea es un tren.")
+    marey("L1", "L1 — malla del día", origen_arriba=True)
 
 # ---------------- Mapa ----------------
-with tabs[3]:
+with tabs[4]:
     st.subheader("Mapa georreferenciado de la red")
     geo = load("estaciones_geo.csv")
     if geo.empty or not {"lat", "lon", "linea"}.issubset(geo.columns):
@@ -136,26 +156,25 @@ with tabs[3]:
             height=680, margin=dict(l=0, r=0, t=0, b=0),
             legend=dict(orientation="h", yanchor="bottom", y=0.01, xanchor="left", x=0.01))
         st.plotly_chart(fig, use_container_width=True)
-        st.caption("L1 (azul): Mercado–Concepción–Hualqui. L2 (rojo): Concepción–Coronel.")
-        with st.expander("Ver coordenadas"):
-            st.dataframe(geo, use_container_width=True, hide_index=True)
+        st.caption("L1 (azul): Mercado–Concepción–Hualqui. L2 (rojo): Concepción–Coronel. "
+                   "Corto Laja (Hualqui–Laja) pendiente de coordenadas.")
 
 # ---------------- Infraestructura ----------------
-with tabs[4]:
+with tabs[5]:
     st.subheader("Infraestructura por corredor")
     st.dataframe(load("infra_resumen_corredores.csv"), use_container_width=True, hide_index=True)
     with st.expander("Ver arcos (detalle)"):
         st.dataframe(load("infra_edges.csv"), use_container_width=True, hide_index=True)
 
 # ---------------- Material rodante ----------------
-with tabs[5]:
+with tabs[6]:
     st.subheader("Flota Biotren")
     mr = load("material_rodante.csv")
     if not mr.empty:
         st.dataframe(mr[mr["flota_biotren"]], use_container_width=True, hide_index=True)
 
 # ---------------- Demanda OD ----------------
-with tabs[6]:
+with tabs[7]:
     st.subheader("Demanda OD por franja")
     od = load("od_franjas.csv")
     if not od.empty:
@@ -163,7 +182,7 @@ with tabs[6]:
         st.dataframe(od, use_container_width=True, hide_index=True)
 
 # ---------------- Perfil de carga ----------------
-with tabs[7]:
+with tabs[8]:
     st.subheader("Perfil de carga por servicio")
     perfil = load("perfil_carga.csv")
     if not perfil.empty:
@@ -171,12 +190,12 @@ with tabs[7]:
                      use_container_width=True, hide_index=True)
 
 # ---------------- Itinerario ----------------
-with tabs[8]:
+with tabs[9]:
     st.subheader("Tiempos del itinerario (referencia del motor)")
     st.dataframe(load("itinerario_tiempos.csv"), use_container_width=True, hide_index=True)
 
 # ---------------- Trenes de carga ----------------
-with tabs[9]:
+with tabs[10]:
     st.subheader("Caminos de trenes de carga (restricción fija)")
     st.info("Extracción aproximada por coordenadas; validar contra el PDF.")
     st.dataframe(load("carga_caminos.csv"), use_container_width=True, hide_index=True)

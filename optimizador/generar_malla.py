@@ -1,19 +1,12 @@
-"""Generador de la malla (insumo del diagrama de Marey).
+"""Generador de la malla del dia completo para el diagrama de Marey (L1 y L2).
 
-Construye una tabla tiempo-distancia de los trenes de L2 (Concepcion-Coronel)
-combinando:
-  - posicion kilometrica real de cada estacion (corridor_builder),
-  - tiempos de viaje entre estaciones del itinerario,
-  - la frecuencia optima por franja del optimizador (intervalo).
+Para cada linea genera, a lo largo del dia (segun la frecuencia optima de cada
+franja), los trenes de ambos sentidos sobre un UNICO eje espacial (distancia
+acumulada desde el origen). Asi ambos sentidos comparten el eje y sus cruces
+representan cruzamientos reales.
 
-Cada tren es una secuencia de puntos (tiempo, km). Al graficar km vs tiempo se
-obtiene el diagrama de Marey: cada linea diagonal es un tren; el cruce de lineas
-de sentidos opuestos indica un cruzamiento.
-
-Uso:
-    python optimizador/generar_malla.py
 Salida:
-    datos/clean/malla_marey.csv  (tren_id, linea, sentido, estacion, km, t_min)
+    datos/clean/malla_marey.csv  (linea, tren_id, sentido, estacion, dist_km, hora_min)
 """
 import sys
 from pathlib import Path
@@ -21,74 +14,79 @@ import pandas as pd
 
 REPO = Path(__file__).resolve().parents[1]
 sys.path.append(str(REPO / "parsers"))
-sys.path.append(str(REPO / "motor"))
 from config import CLEAN  # noqa: E402
-from corridor_builder import construir_linea  # noqa: E402
+from ejes_distancia import eje_L1, eje_L2  # noqa: E402
 
-# Ventana a graficar (minutos desde el inicio) y franja de referencia
-VENTANA_MIN = 120         # 2 horas
-FRANJA_REF = "05-10"      # punta manana
+# Ventanas horarias del dia (min desde 00:00) y la franja de demanda asociada
+VENTANAS = [(300, 600, "05-10"), (600, 960, "10-16"), (960, 1440, "16-24")]
+
+# Sentido "creciente en distancia" por linea (desde el origen del eje)
+# L2: CC->CW (Concepcion 0 -> Coronel). L1: TH->LJ (Mercado 0 -> Laja).
+SENTIDO_ITIN = {
+    "L2": {"crece": "CC->CW", "decrece": "CW->CC"},
+    "L1": {"crece": "TH->LJ", "decrece": "LJ->TH"},
+}
 
 
-def _secuencia_estaciones(sentido):
-    """Lista [(estacion, km, t_viaje_s)] incluyendo Concepcion como origen."""
-    perfil, est = construir_linea("L2", "CC->CW")
-    filas = [("CONCEPCIÓN", 0.0, 0)]
-    for _, r in est.iterrows():
-        filas.append((r["estacion"], float(r["km"]), int(r["t_viaje_s"])))
-    if sentido == "CW->CC":
-        # invertir: recorrido desde Coronel (km max) hacia Concepcion
-        km_max = filas[-1][1]
-        inv = []
-        # tiempos de viaje del sentido CW->CC desde el itinerario
-        it = pd.read_csv(CLEAN / "itinerario_tiempos.csv")
-        cw = it[(it.tramo == "L2") & (it.sentido == "CW->CC")].reset_index(drop=True)
-        # construir secuencia inversa de estaciones con km espejados
-        ests_rev = list(reversed(filas))
-        # mapear tiempos de viaje CW->CC por orden
-        tvs = [0] + list(cw["t_viaje_s"]) if len(cw) else [f[2] for f in reversed(filas)]
-        for i, (e, km, _) in enumerate(ests_rev):
-            tv = tvs[i] if i < len(tvs) else 0
-            inv.append((e, km_max - km, int(tv)))
-        return inv
-    return filas
+def _tviaje_map(itin, tramo, sentido):
+    sub = itin[(itin.tramo == tramo) & (itin.sentido == sentido)]
+    return dict(zip(sub["estacion"], sub["t_viaje_s"].fillna(0)))
+
+
+def _intervalo(fr_df, linea, franja):
+    row = fr_df[(fr_df.linea == linea) & (fr_df.franja == franja)]
+    if len(row) and pd.notna(row["intervalo_min"].iloc[0]):
+        return float(row["intervalo_min"].iloc[0])
+    return None
+
+
+def _genera_linea(linea, eje, itin, fr_df, filas):
+    estaciones = list(eje["estacion"])
+    distkm = dict(zip(eje["estacion"], eje["dist_km"]))
+    itn = SENTIDO_ITIN[linea]
+    for sentido_key, orden in [("crece", estaciones), ("decrece", list(reversed(estaciones)))]:
+        sent_itin = itn[sentido_key]
+        tvi = _tviaje_map(itin, linea, sent_itin)
+        # tiempo acumulado a lo largo del recorrido (origen = primera de 'orden')
+        cum = [0.0]
+        for s in orden[1:]:
+            cum.append(cum[-1] + tvi.get(s, 60) / 60.0)
+        # generar salidas por franja
+        tren = 0
+        for ini, fin, franja in VENTANAS:
+            interv = _intervalo(fr_df, linea, franja)
+            if not interv:
+                continue
+            t0 = ini
+            while t0 < fin:
+                tren += 1
+                tid = f"{linea}-{sent_itin}-{tren}"
+                for s, c in zip(orden, cum):
+                    filas.append({
+                        "linea": linea, "tren_id": tid, "sentido": sent_itin,
+                        "estacion": s, "dist_km": round(distkm[s], 3),
+                        "hora_min": round(t0 + c, 2),
+                    })
+                t0 += interv
 
 
 def generar():
-    fr = pd.read_csv(CLEAN / "optim_frecuencias.csv")
-    filas_out = []
-    for sentido in ["CC->CW", "CW->CC"]:
-        seq = _secuencia_estaciones(sentido)
-        # intervalo optimo de la franja de referencia para L2
-        row = fr[(fr.linea == "L2") & (fr.franja == FRANJA_REF)]
-        intervalo = float(row["intervalo_min"].iloc[0]) if len(row) and pd.notna(row["intervalo_min"].iloc[0]) else 15.0
-        # tiempos acumulados a lo largo del recorrido
-        t_acum = []
-        acc = 0.0
-        for i, (e, km, tv) in enumerate(seq):
-            acc += tv / 60.0
-            t_acum.append(acc if i > 0 else 0.0)
-        # generar salidas cada 'intervalo' minutos dentro de la ventana
-        salida = 0.0
-        tren = 0
-        while salida <= VENTANA_MIN:
-            tren += 1
-            tid = f"L2-{sentido}-{tren}"
-            for (e, km, tv), ta in zip(seq, t_acum):
-                filas_out.append({
-                    "tren_id": tid, "linea": "L2", "sentido": sentido,
-                    "estacion": e, "km": round(km, 3), "t_min": round(salida + ta, 2),
-                })
-            salida += intervalo
-    df = pd.DataFrame(filas_out)
+    itin = pd.read_csv(CLEAN / "itinerario_tiempos.csv")
+    fr_df = pd.read_csv(CLEAN / "optim_frecuencias.csv")
+    filas = []
+    _genera_linea("L2", eje_L2(), itin, fr_df, filas)
+    _genera_linea("L1", eje_L1(), itin, fr_df, filas)
+    df = pd.DataFrame(filas)
     df.to_csv(CLEAN / "malla_marey.csv", index=False)
     return df
 
 
 if __name__ == "__main__":
     df = generar()
-    print("Malla generada (diagrama de Marey, L2)")
-    print(f"Filas: {len(df)} | trenes: {df['tren_id'].nunique()} "
-          f"| ventana: {VENTANA_MIN} min | franja: {FRANJA_REF}")
-    print(df.head(16).to_string(index=False))
-    print(f"\nGuardado: {CLEAN/'malla_marey.csv'}")
+    for linea in ["L2", "L1"]:
+        g = df[df.linea == linea]
+        print(f"{linea}: {g['tren_id'].nunique()} trenes/dia, "
+              f"{g['estacion'].nunique()} estaciones, "
+              f"dist 0..{g['dist_km'].max():.1f} km, "
+              f"hora {g['hora_min'].min():.0f}..{g['hora_min'].max():.0f} min")
+    print(f"\nFilas: {len(df)} | Guardado: {CLEAN/'malla_marey.csv'}")
