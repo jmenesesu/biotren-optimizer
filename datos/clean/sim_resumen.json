@@ -1,9 +1,9 @@
 {
   "linea": "L2",
   "trenes": 100,
-  "esperas_via_unica": 48,
-  "espera_total_min": 835.9,
-  "espera_max_min": 47.0,
+  "esperas_via_unica": 30,
+  "espera_total_min": 117.4,
+  "espera_max_min": 6.0,
   "clearing_min": 1.5,
   "fuente": "horarios_limpios"
 }

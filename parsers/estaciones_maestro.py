@@ -101,3 +101,21 @@ if __name__ == "__main__":
                    ("Escuadrón", "L2"), ("Lagunillas", "L2"), ("Coronel", "L2"),
                    ("Hualqui", "L1"), ("Buenuraqui", "L1"), ("Laja", "L1"), ("Mercado", "L1")]:
         print(f"  {nm:14} {ln} -> {resolver_km(nm, ln)}")
+
+
+MAIN_SIG = {"Main Signal", "Main Signal 2 Aspect", "Main/Distant Sig. 3 Asp.",
+            "Main/Distant Signal"}
+
+
+def senales_principales_km(linea):
+    """km (cadena maestra) de las senales PRINCIPALES de la linea, desde Metrolinx.
+    Una senal principal delimita un canton (block)."""
+    e = pd.read_csv(CLEAN / "infra_edges.csv")
+    kms = []
+    for _, r in e.iterrows():
+        if GRUPO_DOC.get(r["document"]) != linea:
+            continue
+        for sig, km in [(r.get("v1_sig"), r.get("v1_km")), (r.get("v2_sig"), r.get("v2_km"))]:
+            if pd.notna(sig) and pd.notna(km) and sig in MAIN_SIG:
+                kms.append(round(float(km), 2))
+    return sorted(set(kms))

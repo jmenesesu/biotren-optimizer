@@ -1,39 +1,107 @@
-linea,block_id,dist_lo,dist_hi,tipo,nombre
-L2,L2-B0,1.0,3.0,single,CONCEPCIÓN → km3.0
-L2,L2-B1,3.0,3.839,double,km3.0 → Juan Pablo II
-L2,L2-B2,3.839,5.571,double,Juan Pablo II → Diagonal Bio Bio
-L2,L2-B3,5.571,7.439,double,Diagonal Bio Bio → Alborada
-L2,L2-B4,7.439,8.635,double,Alborada → Costa Mar
-L2,L2-B5,8.635,9.83,double,Costa Mar → El Parque
-L2,L2-B6,9.83,11.026,double,El Parque → LOMAS COLORADAS
-L2,L2-B7,11.026,13.581,double,LOMAS COLORADAS → Card. Raúl Silva Henriquez
-L2,L2-B8,13.581,16.137,double,Card. Raúl Silva Henriquez → Hito Galvarino
-L2,L2-B9,16.137,18.693,double,Hito Galvarino → Los Canelos
-L2,L2-B10,18.693,21.248,double,Los Canelos → Huinca
-L2,L2-B11,21.248,23.804,double,Huinca → Cristo Redentor
-L2,L2-B12,23.804,25.58,double,Cristo Redentor → Laguna Quiñenco
-L2,L2-B13,25.58,27.355,double,Laguna Quiñenco → CORONEL
-L1,L1-B0,1.6,4.0,double,LAJA → SAN ROSENDO
-L1,L1-B1,4.0,8.467,double,SAN ROSENDO → BUENURAQUI
-L1,L1-B2,8.467,15.324,double,BUENURAQUI → GOMERO
-L1,L1-B3,15.324,22.798,double,GOMERO → TALCAMÁVIDA
-L1,L1-B4,22.798,24.998,double,TALCAMÁVIDA → Los Acacios
-L1,L1-B5,24.998,27.197,double,Los Acacios → Valle Chanco
-L1,L1-B6,27.197,29.397,double,Valle Chanco → UNIHUE
-L1,L1-B7,29.397,32.963,double,UNIHUE → San Miguel
-L1,L1-B8,32.963,36.53,double,San Miguel → QUILACOYA
-L1,L1-B9,36.53,46.917,double,QUILACOYA → HUALQUI
-L1,L1-B10,46.917,46.92,double,HUALQUI → km46.9
-L1,L1-B11,46.92,53.21,single,km46.9 → OMER HUET
-L1,L1-B12,53.21,55.32,single,OMER HUET → LA LEONERA
-L1,L1-B13,55.32,56.983,double,LA LEONERA → Manquimávida
-L1,L1-B14,56.983,58.647,double,Manquimávida → Pedro Medina
-L1,L1-B15,58.647,60.31,double,Pedro Medina → CHIGUAYANTE
-L1,L1-B16,60.31,68.521,double,CHIGUAYANTE → CONCEPCIÓN
-L1,L1-B17,68.521,72.878,double,CONCEPCIÓN → Lorenzo Arenas
-L1,L1-B18,72.878,76.06,double,Lorenzo Arenas → UTF Santa María
-L1,L1-B19,76.06,79.215,double,UTF Santa María → Los Cóndores
-L1,L1-B20,79.215,81.36,double,Los Cóndores → Hospital Las Higueras
-L1,L1-B21,81.36,82.79,double,Hospital Las Higueras → El Arenal
-L1,L1-B22,82.79,84.778,single,El Arenal → Mercado
-L1,L1-B23,84.778,84.78,single,Mercado → km84.8
+linea,block_id,dist_lo,dist_hi,longitud_m,tipo,limite,nombre
+L2,L2-B0,1.0,2.28,1280.0,single,estacion,CONCEPCIÓN → km2.28
+L2,L2-B1,2.28,3.0,720.0,single,señal,km2.28 → km3.00
+L2,L2-B2,3.0,3.37,370.0,double,estacion,km3.00 → km3.37
+L2,L2-B3,3.37,3.38,10.0,double,señal,km3.37 → km3.38
+L2,L2-B4,3.38,3.4,20.0,double,señal,km3.38 → km3.40
+L2,L2-B5,3.4,3.66,260.0,double,señal,km3.40 → km3.66
+L2,L2-B6,3.66,3.76,100.0,double,señal,km3.66 → km3.76
+L2,L2-B7,3.76,3.839,79.0,double,señal,km3.76 → Juan Pablo II
+L2,L2-B8,3.839,4.66,821.0,double,estacion,Juan Pablo II → km4.66
+L2,L2-B9,4.66,5.571,911.0,double,señal,km4.66 → Diagonal Bio Bio
+L2,L2-B10,5.571,6.88,1309.0,double,estacion,Diagonal Bio Bio → km6.88
+L2,L2-B11,6.88,7.439,559.0,double,señal,km6.88 → Alborada
+L2,L2-B12,7.439,8.04,601.0,double,estacion,Alborada → km8.04
+L2,L2-B13,8.04,8.635,595.0,double,señal,km8.04 → Costa Mar
+L2,L2-B14,8.635,9.5,865.0,double,estacion,Costa Mar → km9.50
+L2,L2-B15,9.5,9.83,330.0,double,señal,km9.50 → El Parque
+L2,L2-B16,9.83,11.026,1196.0,double,estacion,El Parque → LOMAS COLORADAS
+L2,L2-B17,11.026,11.3,274.0,double,estacion,LOMAS COLORADAS → km11.30
+L2,L2-B18,11.3,11.33,30.0,double,señal,km11.30 → km11.33
+L2,L2-B19,11.33,11.53,200.0,double,señal,km11.33 → km11.53
+L2,L2-B20,11.53,12.21,680.0,double,señal,km11.53 → km12.21
+L2,L2-B21,12.21,12.88,670.0,double,señal,km12.21 → km12.88
+L2,L2-B22,12.88,13.581,701.0,double,señal,km12.88 → Card. Raúl Silva Henriquez
+L2,L2-B23,13.581,15.24,1659.0,double,estacion,Card. Raúl Silva Henriquez → km15.24
+L2,L2-B24,15.24,16.137,897.0,double,señal,km15.24 → Hito Galvarino
+L2,L2-B25,16.137,17.56,1423.0,double,estacion,Hito Galvarino → km17.56
+L2,L2-B26,17.56,18.23,670.0,double,señal,km17.56 → km18.23
+L2,L2-B27,18.23,18.693,463.0,double,señal,km18.23 → Los Canelos
+L2,L2-B28,18.693,18.84,147.0,double,estacion,Los Canelos → km18.84
+L2,L2-B29,18.84,18.85,10.0,double,señal,km18.84 → km18.85
+L2,L2-B30,18.85,20.55,1700.0,double,señal,km18.85 → km20.55
+L2,L2-B31,20.55,21.248,698.0,double,señal,km20.55 → Huinca
+L2,L2-B32,21.248,22.24,992.0,double,estacion,Huinca → km22.24
+L2,L2-B33,22.24,22.65,410.0,double,señal,km22.24 → km22.65
+L2,L2-B34,22.65,23.6,950.0,double,señal,km22.65 → km23.60
+L2,L2-B35,23.6,23.804,204.0,double,señal,km23.60 → Cristo Redentor
+L2,L2-B36,23.804,23.84,36.0,double,estacion,Cristo Redentor → km23.84
+L2,L2-B37,23.84,24.46,620.0,double,señal,km23.84 → km24.46
+L2,L2-B38,24.46,25.2,740.0,double,señal,km24.46 → km25.20
+L2,L2-B39,25.2,25.45,250.0,double,señal,km25.20 → km25.45
+L2,L2-B40,25.45,25.58,130.0,double,señal,km25.45 → Laguna Quiñenco
+L2,L2-B41,25.58,25.96,380.0,double,estacion,Laguna Quiñenco → km25.96
+L2,L2-B42,25.96,26.62,660.0,double,señal,km25.96 → km26.62
+L2,L2-B43,26.62,27.355,735.0,double,señal,km26.62 → CORONEL
+L2,L2-B44,27.355,27.44,85.0,double,estacion,CORONEL → km27.44
+L1,L1-B0,1.6,4.0,2400.0,double,estacion,LAJA → SAN ROSENDO
+L1,L1-B1,4.0,7.41,3410.0,double,estacion,SAN ROSENDO → km7.41
+L1,L1-B2,7.41,7.81,400.0,double,señal,km7.41 → km7.81
+L1,L1-B3,7.81,8.467,657.0,double,señal,km7.81 → BUENURAQUI
+L1,L1-B4,8.467,8.9,433.0,double,estacion,BUENURAQUI → km8.90
+L1,L1-B5,8.9,14.16,5260.0,double,señal,km8.90 → km14.16
+L1,L1-B6,14.16,14.75,590.0,double,señal,km14.16 → km14.75
+L1,L1-B7,14.75,15.14,390.0,double,señal,km14.75 → km15.14
+L1,L1-B8,15.14,15.324,184.0,double,señal,km15.14 → GOMERO
+L1,L1-B9,15.324,16.08,756.0,double,estacion,GOMERO → km16.08
+L1,L1-B10,16.08,16.56,480.0,double,señal,km16.08 → km16.56
+L1,L1-B11,16.56,21.79,5230.0,double,señal,km16.56 → km21.79
+L1,L1-B12,21.79,22.46,670.0,double,señal,km21.79 → km22.46
+L1,L1-B13,22.46,22.798,338.0,double,señal,km22.46 → TALCAMÁVIDA
+L1,L1-B14,22.798,23.17,372.0,double,estacion,TALCAMÁVIDA → km23.17
+L1,L1-B15,23.17,24.998,1828.0,double,señal,km23.17 → Los Acacios
+L1,L1-B16,24.998,27.197,2199.0,double,estacion,Los Acacios → Valle Chanco
+L1,L1-B17,27.197,28.42,1223.0,double,estacion,Valle Chanco → km28.42
+L1,L1-B18,28.42,28.98,560.0,double,señal,km28.42 → km28.98
+L1,L1-B19,28.98,29.397,417.0,double,señal,km28.98 → UNIHUE
+L1,L1-B20,29.397,29.86,463.0,double,estacion,UNIHUE → km29.86
+L1,L1-B21,29.86,32.963,3103.0,double,señal,km29.86 → San Miguel
+L1,L1-B22,32.963,35.77,2807.0,double,estacion,San Miguel → km35.77
+L1,L1-B23,35.77,36.25,480.0,double,señal,km35.77 → km36.25
+L1,L1-B24,36.25,36.53,280.0,double,señal,km36.25 → QUILACOYA
+L1,L1-B25,36.53,37.14,610.0,double,estacion,QUILACOYA → km37.14
+L1,L1-B26,37.14,37.69,550.0,double,señal,km37.14 → km37.69
+L1,L1-B27,37.69,46.15,8460.0,double,señal,km37.69 → km46.15
+L1,L1-B28,46.15,46.917,767.0,double,señal,km46.15 → HUALQUI
+L1,L1-B29,46.917,46.92,3.0,double,estacion,HUALQUI → km46.92
+L1,L1-B30,46.92,47.83,910.0,single,estacion,km46.92 → km47.83
+L1,L1-B31,47.83,52.8,4970.0,single,señal,km47.83 → km52.80
+L1,L1-B32,52.8,53.21,410.0,single,señal,km52.80 → OMER HUET
+L1,L1-B33,53.21,54.18,970.0,single,estacion,OMER HUET → km54.18
+L1,L1-B34,54.18,55.32,1140.0,single,señal,km54.18 → LA LEONERA
+L1,L1-B35,55.32,56.13,810.0,double,estacion,LA LEONERA → km56.13
+L1,L1-B36,56.13,56.983,853.0,double,señal,km56.13 → Manquimávida
+L1,L1-B37,56.983,58.647,1664.0,double,estacion,Manquimávida → Pedro Medina
+L1,L1-B38,58.647,59.43,783.0,double,estacion,Pedro Medina → km59.43
+L1,L1-B39,59.43,60.31,880.0,double,señal,km59.43 → CHIGUAYANTE
+L1,L1-B40,60.31,61.27,960.0,double,estacion,CHIGUAYANTE → km61.27
+L1,L1-B41,61.27,68.521,7251.0,double,señal,km61.27 → CONCEPCIÓN
+L1,L1-B42,68.521,68.82,299.0,double,estacion,CONCEPCIÓN → km68.82
+L1,L1-B43,68.82,70.29,1470.0,double,señal,km68.82 → km70.29
+L1,L1-B44,70.29,70.34,50.0,double,señal,km70.29 → km70.34
+L1,L1-B45,70.34,70.7,360.0,double,señal,km70.34 → km70.70
+L1,L1-B46,70.7,72.42,1720.0,double,señal,km70.70 → km72.42
+L1,L1-B47,72.42,72.878,458.0,double,señal,km72.42 → Lorenzo Arenas
+L1,L1-B48,72.878,73.73,852.0,double,estacion,Lorenzo Arenas → km73.73
+L1,L1-B49,73.73,76.06,2330.0,double,señal,km73.73 → UTF Santa María
+L1,L1-B50,76.06,77.17,1110.0,double,estacion,UTF Santa María → km77.17
+L1,L1-B51,77.17,79.215,2045.0,double,señal,km77.17 → Los Cóndores
+L1,L1-B52,79.215,80.56,1345.0,double,estacion,Los Cóndores → km80.56
+L1,L1-B53,80.56,81.36,800.0,double,señal,km80.56 → Hospital Las Higueras
+L1,L1-B54,81.36,81.76,400.0,double,estacion,Hospital Las Higueras → km81.76
+L1,L1-B55,81.76,82.57,810.0,double,señal,km81.76 → km82.57
+L1,L1-B56,82.57,82.79,220.0,double,señal,km82.57 → El Arenal
+L1,L1-B57,82.79,83.38,590.0,single,estacion,El Arenal → km83.38
+L1,L1-B58,83.38,83.77,390.0,single,señal,km83.38 → km83.77
+L1,L1-B59,83.77,84.778,1008.0,single,señal,km83.77 → Mercado
+L1,L1-B60,84.778,84.78,2.0,single,estacion,Mercado → km84.78

@@ -59,6 +59,13 @@ def marey(linea, archivo, titulo, con_carga=False):
                           line_width=0, layer="below",
                           annotation_text=f"vía única: {r.nombre}", annotation_position="top left",
                           annotation_font_size=9)
+    # limites de canton (señales) dentro de la via unica
+    blo = load("bloques.csv")
+    if not blo.empty:
+        bl = blo[(blo.linea == linea) & (blo.tipo == "single")]
+        for _, b in bl.iterrows():
+            for y in (b.dist_lo, b.dist_hi):
+                fig.add_hline(y=y, line_width=0.6, line_dash="dot", line_color="rgba(46,125,50,0.5)")
     # PASAJEROS: color por automotor, linea continua
     tiene_unidad = "unidad" in m.columns and m["unidad"].astype(str).str.len().gt(0).any()
     if tiene_unidad:
@@ -258,6 +265,15 @@ with tabs[4]:
                        "Un cantón (block) es el tramo entre dos señales PRINCIPALES consecutivas. "
                        "OpenTrack exporta las señales, no los cantones como objeto; estos se derivan "
                        "de las señales principales.")
+        blo = load("bloques.csv")
+        if not blo.empty:
+            with st.expander("Cantones derivados de las señales (alimentan el simulador)"):
+                ln = st.radio("Línea", ["L2", "L1"], horizontal=True, key="canton_linea")
+                g = blo[blo.linea == ln].copy()
+                st.write(f"{len(g)} cantones — {(g.tipo=='single').sum()} en vía única. "
+                         "Columna 'limite': si el borde inferior viene de una señal real o de una estación.")
+                st.dataframe(g[["block_id", "nombre", "dist_lo", "dist_hi", "longitud_m",
+                                "tipo", "limite"]], use_container_width=True, hide_index=True)
 
 # ---------- Mapa ----------
 with tabs[5]:
