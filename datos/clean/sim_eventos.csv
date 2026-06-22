@@ -1,18 +1,15 @@
-linea,tren_id,canton,espera_min,hora,motivo
-L2,L2-CC->CW-20001,L2-B0,7.5,412.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20003,L2-B0,0.2,417.2,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20009,L2-B0,7.5,452.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20015,L2-B0,6.5,480.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20035,L2-B0,17.5,607.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20037,L2-B0,7.2,612.2,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20041,L2-B0,8.5,638.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20053,L2-B0,8.5,738.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20055,L2-B0,0.2,743.2,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20071,L2-B0,8.5,1008.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20105,L2-B0,1.5,1186.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20109,L2-B0,16.5,1231.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20111,L2-B0,13.5,1243.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20113,L2-B0,18.5,1263.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20115,L2-B0,13.5,1273.5,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20117,L2-B0,3.2,1278.2,cruzamiento/ocupación vía única
-L2,L2-CC->CW-20129,L2-B0,1.5,1371.5,cruzamiento/ocupación vía única
+linea,tren_id,canton,espera_min,hora,estacion_espera
+L2,L2-CC->CW-20001,L2-B0,7.5,405.0,CONCEPCIÓN
+L2,L2-CC->CW-20009,L2-B0,7.5,445.0,CONCEPCIÓN
+L2,L2-CC->CW-20015,L2-B0,6.5,474.0,CONCEPCIÓN
+L2,L2-CC->CW-20035,L2-B0,8.5,590.0,CONCEPCIÓN
+L2,L2-CC->CW-20037,L2-B0,2.5,605.0,CONCEPCIÓN
+L2,L2-CC->CW-20041,L2-B0,8.5,630.0,CONCEPCIÓN
+L2,L2-CC->CW-20053,L2-B0,8.5,730.0,CONCEPCIÓN
+L2,L2-CC->CW-20071,L2-B0,8.5,1000.0,CONCEPCIÓN
+L2,L2-CC->CW-20105,L2-B0,1.5,1185.0,CONCEPCIÓN
+L2,L2-CC->CW-20109,L2-B0,16.5,1215.0,CONCEPCIÓN
+L2,L2-CC->CW-20111,L2-B0,13.5,1230.0,CONCEPCIÓN
+L2,L2-CC->CW-20113,L2-B0,9.5,1245.0,CONCEPCIÓN
+L2,L2-CC->CW-20115,L2-B0,3.5,1260.0,CONCEPCIÓN
+L2,L2-CC->CW-20129,L2-B0,1.5,1370.0,CONCEPCIÓN

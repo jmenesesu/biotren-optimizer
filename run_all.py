@@ -17,6 +17,7 @@ PASOS = [
     ("Geo estaciones (KML)", "parsers/parse_geo.py"),
     ("Red topologia (OTML)", "parsers/parse_red_topologia.py"),
     ("Salidas reales (itinerario)", "parsers/parse_itinerario_real.py"),
+    ("Horarios base (estacion x servicio)", "optimizador/horarios.py"),
     ("Validacion del motor (perfil real)", "motor/validar_motor.py"),
     ("Calibracion del motor", "motor/calibrar.py"),
     ("Optimizador de capacidad", "optimizador/optimizar_capacidad.py"),

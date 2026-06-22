@@ -137,14 +137,14 @@ def tab_marey(linea, top, bottom):
             c3.metric("Espera total (min)", res.get("espera_total_min", 0))
             st.caption("Simulación fixed-block: un tren por cantón de vía única; los trenes "
                        "esperan para cruzar. La doble vía se modela con múltiples blocks (libre). "
-                       "El tiempo de ocupación del cantón puede afinarse (incluir cambio de cabina).")
+                       "Las detenciones se ven como segmentos horizontales en cada estación.")
         elif linea != "L2":
             st.info("Simulación implementada por ahora solo para L2.")
 
 
 tabs = st.tabs([
     "Resumen", "Optimización", "Marey L2", "Marey L1", "Red infraestructura", "Mapa",
-    "Material rodante", "Demanda OD", "Perfil de carga", "Itinerario", "Trenes de carga",
+    "Material rodante", "Demanda OD", "Perfil de carga", "Itinerario", "Trenes de carga", "Horarios",
 ])
 
 with tabs[0]:
@@ -261,3 +261,34 @@ with tabs[10]:
     st.subheader("Caminos de trenes de carga (restricción fija)")
     st.info("Extracción aproximada; validar contra el PDF.")
     st.dataframe(load("carga_caminos.csv"), use_container_width=True, hide_index=True)
+
+
+def _mmss(x):
+    import math
+    if x is None or (isinstance(x, float) and math.isnan(x)):
+        return ""
+    h = int(x // 60) % 24; m = int(round(x % 60))
+    if m == 60:
+        h = (h + 1) % 24; m = 0
+    return f"{h:02d}:{m:02d}"
+
+
+with tabs[11]:
+    st.subheader("Horarios (tabla legible del itinerario)")
+    st.caption("Formato limpio del itinerario (la base de los diagramas). Filas = estaciones "
+               "en orden; columnas = servicio; valor = hora de salida.")
+    hn = load("horarios_nominal.csv")
+    if hn.empty:
+        st.info("Falta horarios_nominal.csv (corre optimizador/horarios.py).")
+    else:
+        cl = st.selectbox("Línea", sorted(hn["linea"].unique()), key="hl")
+        sents = sorted(hn[hn.linea == cl]["sentido"].unique())
+        se = st.selectbox("Sentido", sents, key="hs")
+        d = hn[(hn.linea == cl) & (hn.sentido == se)].copy()
+        d["hora"] = d["salida_min"].map(_mmss)
+        est_order = d.sort_values("orden")["estacion"].drop_duplicates().tolist()
+        piv = d.pivot_table(index="estacion", columns="servicio", values="hora", aggfunc="first")
+        piv = piv.reindex(est_order).reset_index()
+        st.dataframe(piv, use_container_width=True, hide_index=True, height=560)
+        st.caption(f"{d['servicio'].nunique()} servicios · {len(est_order)} estaciones. "
+                   "Descarga con el ícono de la tabla.")
