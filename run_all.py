@@ -15,10 +15,13 @@ PASOS = [
     ("Itinerario", "parsers/parse_itinerary.py"),
     ("Trenes de carga", "parsers/parse_freight.py"),
     ("Geo estaciones (KML)", "parsers/parse_geo.py"),
+    ("Red topologia (OTML)", "parsers/parse_red_topologia.py"),
+    ("Salidas reales (itinerario)", "parsers/parse_itinerario_real.py"),
     ("Validacion del motor (perfil real)", "motor/validar_motor.py"),
     ("Calibracion del motor", "motor/calibrar.py"),
     ("Optimizador de capacidad", "optimizador/optimizar_capacidad.py"),
-    ("Generar malla (Marey)", "optimizador/generar_malla.py"),
+    ("Generar malla optima (Marey)", "optimizador/generar_malla.py"),
+    ("Generar malla real (Marey)", "optimizador/generar_malla_real.py"),
 ]
 
 

@@ -1,10 +1,7 @@
 """App Streamlit — Biotren / Corto Laja.
 
-Datos limpios, optimizacion de capacidad y vistas graficas: diagrama de Marey
-(por linea, dia completo) y mapa georreferenciado. Autonoma: lee datos/clean/.
-
-Uso local:
-    streamlit run app/streamlit_app.py
+Datos limpios, optimizacion, Marey (itinerario actual vs optimizado), red de
+infraestructura y mapa georreferenciado. Autonoma: lee datos/clean/.
 """
 import json
 import sys
@@ -20,7 +17,7 @@ CLEAN = REPO / "datos" / "clean"
 
 st.set_page_config(page_title="Biotren — Optimizador de itinerarios", layout="wide")
 st.title("Biotren / Corto Laja — Modelo de optimización de itinerarios")
-st.caption("Datos limpios, optimización de capacidad y vistas gráficas (malla y mapa).")
+st.caption("Datos limpios, optimización, diagrama de Marey, red de infraestructura y mapa.")
 
 
 @st.cache_data
@@ -30,7 +27,6 @@ def _load_cached(nombre, _mtime):
 
 
 def load(nombre):
-    # mtime en la clave de cache: si el archivo cambia (git push), recarga sola.
     f = CLEAN / nombre
     mt = f.stat().st_mtime if f.exists() else 0.0
     return _load_cached(nombre, mt)
@@ -41,18 +37,15 @@ def load_json(nombre):
     return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
 
 
-def marey(linea, titulo, origen_arriba=True):
-    """Diagrama de Marey de una linea (dia completo, ambos sentidos)."""
-    malla = load("malla_marey.csv")
+def marey(linea, archivo, titulo):
+    malla = load(archivo)
     requeridas = {"linea", "tren_id", "sentido", "estacion", "dist_km", "hora_min"}
     if malla.empty or not requeridas.issubset(malla.columns):
-        st.warning("El archivo malla_marey.csv está en un formato antiguo o falta. "
-                   "Regenera con `python optimizador/generar_malla.py` y vuelve a subirlo "
-                   "(git add datos/clean && git commit && git push).")
+        st.warning(f"Falta o formato antiguo en {archivo}. Regenera y vuelve a subir.")
         return
     m = malla[malla.linea == linea]
     if m.empty:
-        st.info(f"Sin malla para {linea}.")
+        st.info(f"Sin datos para {linea} en {archivo}.")
         return
     sentidos = list(m["sentido"].unique())
     cols = {sentidos[0]: "#1F3864"}
@@ -61,42 +54,44 @@ def marey(linea, titulo, origen_arriba=True):
     fig = go.Figure()
     for tid, g in m.groupby("tren_id"):
         sent = g["sentido"].iloc[0]
-        fig.add_trace(go.Scatter(
-            x=g["hora_min"], y=g["dist_km"], mode="lines",
-            line=dict(color=cols.get(sent, "#808080"), width=1.0),
-            showlegend=False, hovertext=g["estacion"], hoverinfo="text+x"))
+        fig.add_trace(go.Scatter(x=g["hora_min"], y=g["dist_km"], mode="lines",
+                                 line=dict(color=cols.get(sent, "#808080"), width=1.0),
+                                 showlegend=False, hovertext=g["estacion"], hoverinfo="text+x"))
     ek = m[["estacion", "dist_km"]].drop_duplicates().sort_values("dist_km")
-    fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"],
-                     autorange="reversed" if origen_arriba else True)
+    fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"], autorange="reversed")
     ticks = list(range(0, 1441, 120))
-    fig.update_xaxes(range=[0, 1440], tickvals=ticks,
-                     ticktext=[f"{t//60:02d}:00" for t in ticks])
+    fig.update_xaxes(range=[0, 1440], tickvals=ticks, ticktext=[f"{t//60:02d}:00" for t in ticks])
     for sent in sentidos:
         fig.add_trace(go.Scatter(x=[None], y=[None], mode="lines",
                                  line=dict(color=cols.get(sent), width=2), name=sent))
-    fig.update_layout(height=680, title=titulo, xaxis_title="Hora del día",
-                      yaxis_title="", margin=dict(l=10, r=10, t=50, b=10),
+    fig.update_layout(height=680, title=titulo, xaxis_title="Hora del día", yaxis_title="",
+                      margin=dict(l=10, r=10, t=50, b=10),
                       legend=dict(orientation="h", y=1.04, x=0))
     st.plotly_chart(fig, use_container_width=True)
 
 
+def tab_marey(linea, top, bottom):
+    fuente = st.radio("Malla a mostrar", ["Itinerario actual", "Optimizada"],
+                      horizontal=True, key=f"src_{linea}")
+    archivo = "malla_real.csv" if fuente == "Itinerario actual" else "malla_marey.csv"
+    st.caption(f"Día completo. Eje vertical: distancia ({top} arriba, {bottom} abajo). "
+               "Cada línea es un tren; el cruce de colores opuestos = un cruzamiento.")
+    marey(linea, archivo, f"{linea} — {fuente.lower()}")
+
+
 tabs = st.tabs([
-    "Resumen", "Optimización", "Marey L2", "Marey L1", "Mapa",
-    "Infraestructura", "Material rodante", "Demanda OD", "Perfil de carga",
-    "Itinerario", "Trenes de carga",
+    "Resumen", "Optimización", "Marey L2", "Marey L1", "Red infraestructura", "Mapa",
+    "Material rodante", "Demanda OD", "Perfil de carga", "Itinerario", "Trenes de carga",
 ])
 
 with tabs[0]:
     st.subheader("Estado de los insumos")
     archivos = {
-        "Arcos de infraestructura": "infra_edges.csv",
-        "Material rodante": "material_rodante.csv",
-        "OD por franja": "od_franjas.csv",
-        "Perfil de carga": "perfil_carga.csv",
-        "Tiempos de itinerario": "itinerario_tiempos.csv",
-        "Caminos de carga": "carga_caminos.csv",
-        "Malla (Marey)": "malla_marey.csv",
-        "Estaciones geo": "estaciones_geo.csv",
+        "Infraestructura (arcos)": "infra_edges.csv", "Material rodante": "material_rodante.csv",
+        "OD por franja": "od_franjas.csv", "Perfil de carga": "perfil_carga.csv",
+        "Tiempos itinerario": "itinerario_tiempos.csv", "Salidas reales": "salidas_reales.csv",
+        "Malla itinerario actual": "malla_real.csv", "Malla optimizada": "malla_marey.csv",
+        "Estaciones geo": "estaciones_geo.csv", "Red (arcos)": "red_arcos.csv",
     }
     filas = [{"Dataset": k, "Filas": len(load(v)), "Archivo": v} for k, v in archivos.items()]
     st.dataframe(pd.DataFrame(filas), use_container_width=True, hide_index=True)
@@ -106,8 +101,7 @@ with tabs[0]:
 
 with tabs[1]:
     st.subheader("Optimización de capacidad y flota — hora punta")
-    res = load_json("optim_resumen.json")
-    fr = load("optim_frecuencias.csv")
+    res = load_json("optim_resumen.json"); fr = load("optim_frecuencias.csv")
     if res:
         c1, c2, c3 = st.columns(3)
         c1.metric("Cobertura demanda punta", f"{res['cobertura_pct']}%")
@@ -119,8 +113,7 @@ with tabs[1]:
             st.markdown("**Sensibilidad al factor de hora punta:**")
             sdf = pd.DataFrame(sens)
             st.plotly_chart(px.line(sdf, x="peak_share", y="flota_pico", markers=True,
-                                    labels={"peak_share": "Factor de hora punta",
-                                            "flota_pico": "Flota pico necesaria"}),
+                                    labels={"peak_share": "Factor hora punta", "flota_pico": "Flota pico"}),
                             use_container_width=True)
             st.dataframe(sdf, use_container_width=True, hide_index=True)
     if not fr.empty:
@@ -128,46 +121,61 @@ with tabs[1]:
 
 with tabs[2]:
     st.subheader("Diagrama de Marey — Línea 2 (Concepción ↔ Coronel)")
-    st.caption("Día completo. Eje vertical: distancia (Concepción arriba, Coronel abajo). "
-               "Cada línea es un tren; el cruce de colores opuestos = un cruzamiento.")
-    marey("L2", "L2 — malla del día", origen_arriba=True)
+    tab_marey("L2", "Concepción", "Coronel")
 
 with tabs[3]:
     st.subheader("Diagrama de Marey — Línea 1 (Mercado ↔ Hualqui ↔ Laja)")
-    st.caption("Día completo. Eje vertical: distancia (Mercado arriba, Laja abajo, "
-               "Concepción intermedia). Cada línea es un tren.")
-    marey("L1", "L1 — malla del día", origen_arriba=True)
+    tab_marey("L1", "Mercado", "Laja")
 
 with tabs[4]:
+    st.subheader("Red de infraestructura (esquema por corredor)")
+    st.caption("Cada banda es un corredor; las líneas paralelas indican doble vía y los "
+               "ensanchamientos, desvíos/cruzamientos. Esquema de OpenTrack.")
+    arcos = load("red_arcos.csv"); est = load("red_estaciones.csv")
+    if arcos.empty:
+        st.info("Falta red_arcos.csv (corre parsers/parse_red_topologia.py).")
+    else:
+        xs, ys = [], []
+        for _, r in arcos.iterrows():
+            xs += [r.x1, r.x2, None]; ys += [r.y1, r.y2, None]
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=xs, y=ys, mode="lines",
+                                 line=dict(color="#1F3864", width=0.8), hoverinfo="skip", showlegend=False))
+        if not est.empty:
+            fig.add_trace(go.Scatter(x=est["x"], y=est["y"], mode="markers+text",
+                                     marker=dict(color="#C00000", size=7), text=est["label"],
+                                     textposition="top center", textfont=dict(size=8),
+                                     hovertext=est["label"], hoverinfo="text", showlegend=False))
+        anns = []
+        if "nombre" in arcos.columns:
+            for nombre, g in arcos.groupby("nombre"):
+                anns.append(dict(x=g[["x1", "x2"]].min().min(), y=g["y1"].median(),
+                                 text=nombre, showarrow=False, xanchor="right",
+                                 font=dict(color="#C00000", size=11)))
+        fig.update_layout(height=820, margin=dict(l=10, r=10, t=10, b=10),
+                          yaxis=dict(visible=False), xaxis=dict(visible=False), annotations=anns)
+        st.plotly_chart(fig, use_container_width=True)
+
+with tabs[5]:
     st.subheader("Mapa georreferenciado de la red")
     geo = load("estaciones_geo.csv")
     if geo.empty or not {"lat", "lon", "linea"}.issubset(geo.columns):
-        st.info("Falta estaciones_geo.csv con columnas: estacion, linea, orden, lat, lon.")
+        st.info("Falta estaciones_geo.csv.")
     else:
-        if "fuente" in geo.columns and geo["fuente"].astype(str).str.contains("aproximada").any():
-            st.warning("Hay coordenadas aproximadas. Reemplaza por tu archivo GIS real.")
         colores = {"L1": "#1F3864", "L2": "#C00000"}
         fig = go.Figure()
         for linea, g in geo.sort_values(["linea", "orden"]).groupby("linea"):
-            fig.add_trace(go.Scattermapbox(
-                lat=g["lat"], lon=g["lon"], mode="lines+markers",
-                line=dict(width=3, color=colores.get(linea, "#808080")),
-                marker=dict(size=9, color=colores.get(linea, "#808080")),
-                name=linea, text=g["estacion"], hoverinfo="text+name"))
-        fig.update_layout(
-            mapbox_style="open-street-map",
-            mapbox=dict(center=dict(lat=geo["lat"].mean(), lon=geo["lon"].mean()), zoom=10.2),
-            height=680, margin=dict(l=0, r=0, t=0, b=0),
-            legend=dict(orientation="h", yanchor="bottom", y=0.01, xanchor="left", x=0.01))
+            fig.add_trace(go.Scattermapbox(lat=g["lat"], lon=g["lon"], mode="lines+markers",
+                                           line=dict(width=3, color=colores.get(linea, "#808080")),
+                                           marker=dict(size=9, color=colores.get(linea, "#808080")),
+                                           name=linea, text=g["estacion"], hoverinfo="text+name"))
+        fig.update_layout(mapbox_style="open-street-map",
+                          mapbox=dict(center=dict(lat=geo["lat"].mean(), lon=geo["lon"].mean()), zoom=10.2),
+                          height=680, margin=dict(l=0, r=0, t=0, b=0),
+                          legend=dict(orientation="h", y=0.01, x=0.01))
         st.plotly_chart(fig, use_container_width=True)
         st.caption("L1 (azul): Mercado–Concepción–Hualqui. L2 (rojo): Concepción–Coronel. "
                    "Corto Laja (Hualqui–Laja) pendiente de coordenadas.")
-
-with tabs[5]:
-    st.subheader("Infraestructura por corredor")
-    st.dataframe(load("infra_resumen_corredores.csv"), use_container_width=True, hide_index=True)
-    with st.expander("Ver arcos (detalle)"):
-        st.dataframe(load("infra_edges.csv"), use_container_width=True, hide_index=True)
 
 with tabs[6]:
     st.subheader("Flota Biotren")
