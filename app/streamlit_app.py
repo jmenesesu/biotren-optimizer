@@ -24,9 +24,16 @@ st.caption("Datos limpios, optimización de capacidad y vistas gráficas (malla 
 
 
 @st.cache_data
-def load(nombre):
+def _load_cached(nombre, _mtime):
     f = CLEAN / nombre
     return pd.read_csv(f) if f.exists() else pd.DataFrame()
+
+
+def load(nombre):
+    # mtime en la clave de cache: si el archivo cambia (git push), recarga sola.
+    f = CLEAN / nombre
+    mt = f.stat().st_mtime if f.exists() else 0.0
+    return _load_cached(nombre, mt)
 
 
 def load_json(nombre):
@@ -35,7 +42,7 @@ def load_json(nombre):
 
 
 def marey(linea, titulo, origen_arriba=True):
-    """Dibuja el diagrama de Marey de una linea (dia completo, ambos sentidos)."""
+    """Diagrama de Marey de una linea (dia completo, ambos sentidos)."""
     malla = load("malla_marey.csv")
     requeridas = {"linea", "tren_id", "sentido", "estacion", "dist_km", "hora_min"}
     if malla.empty or not requeridas.issubset(malla.columns):
@@ -48,7 +55,9 @@ def marey(linea, titulo, origen_arriba=True):
         st.info(f"Sin malla para {linea}.")
         return
     sentidos = list(m["sentido"].unique())
-    cols = {sentidos[0]: "#1F3864", sentidos[1] if len(sentidos) > 1 else "x": "#C00000"}
+    cols = {sentidos[0]: "#1F3864"}
+    if len(sentidos) > 1:
+        cols[sentidos[1]] = "#C00000"
     fig = go.Figure()
     for tid, g in m.groupby("tren_id"):
         sent = g["sentido"].iloc[0]
@@ -56,15 +65,12 @@ def marey(linea, titulo, origen_arriba=True):
             x=g["hora_min"], y=g["dist_km"], mode="lines",
             line=dict(color=cols.get(sent, "#808080"), width=1.0),
             showlegend=False, hovertext=g["estacion"], hoverinfo="text+x"))
-    # estaciones en el eje Y
     ek = m[["estacion", "dist_km"]].drop_duplicates().sort_values("dist_km")
     fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"],
                      autorange="reversed" if origen_arriba else True)
-    # eje X: dia completo con marcas cada 2 h
     ticks = list(range(0, 1441, 120))
     fig.update_xaxes(range=[0, 1440], tickvals=ticks,
                      ticktext=[f"{t//60:02d}:00" for t in ticks])
-    # leyenda manual de sentidos
     for sent in sentidos:
         fig.add_trace(go.Scatter(x=[None], y=[None], mode="lines",
                                  line=dict(color=cols.get(sent), width=2), name=sent))
@@ -80,7 +86,6 @@ tabs = st.tabs([
     "Itinerario", "Trenes de carga",
 ])
 
-# ---------------- Resumen ----------------
 with tabs[0]:
     st.subheader("Estado de los insumos")
     archivos = {
@@ -99,7 +104,6 @@ with tabs[0]:
     if not perfil.empty:
         st.metric("Servicios sobre capacidad (780 pax)", int(perfil["supera_capacidad"].sum()))
 
-# ---------------- Optimización ----------------
 with tabs[1]:
     st.subheader("Optimización de capacidad y flota — hora punta")
     res = load_json("optim_resumen.json")
@@ -122,21 +126,18 @@ with tabs[1]:
     if not fr.empty:
         st.dataframe(fr, use_container_width=True, hide_index=True)
 
-# ---------------- Marey L2 ----------------
 with tabs[2]:
     st.subheader("Diagrama de Marey — Línea 2 (Concepción ↔ Coronel)")
     st.caption("Día completo. Eje vertical: distancia (Concepción arriba, Coronel abajo). "
                "Cada línea es un tren; el cruce de colores opuestos = un cruzamiento.")
     marey("L2", "L2 — malla del día", origen_arriba=True)
 
-# ---------------- Marey L1 ----------------
 with tabs[3]:
     st.subheader("Diagrama de Marey — Línea 1 (Mercado ↔ Hualqui ↔ Laja)")
     st.caption("Día completo. Eje vertical: distancia (Mercado arriba, Laja abajo, "
                "Concepción intermedia). Cada línea es un tren.")
     marey("L1", "L1 — malla del día", origen_arriba=True)
 
-# ---------------- Mapa ----------------
 with tabs[4]:
     st.subheader("Mapa georreferenciado de la red")
     geo = load("estaciones_geo.csv")
@@ -162,21 +163,18 @@ with tabs[4]:
         st.caption("L1 (azul): Mercado–Concepción–Hualqui. L2 (rojo): Concepción–Coronel. "
                    "Corto Laja (Hualqui–Laja) pendiente de coordenadas.")
 
-# ---------------- Infraestructura ----------------
 with tabs[5]:
     st.subheader("Infraestructura por corredor")
     st.dataframe(load("infra_resumen_corredores.csv"), use_container_width=True, hide_index=True)
     with st.expander("Ver arcos (detalle)"):
         st.dataframe(load("infra_edges.csv"), use_container_width=True, hide_index=True)
 
-# ---------------- Material rodante ----------------
 with tabs[6]:
     st.subheader("Flota Biotren")
     mr = load("material_rodante.csv")
     if not mr.empty:
         st.dataframe(mr[mr["flota_biotren"]], use_container_width=True, hide_index=True)
 
-# ---------------- Demanda OD ----------------
 with tabs[7]:
     st.subheader("Demanda OD por franja")
     od = load("od_franjas.csv")
@@ -184,7 +182,6 @@ with tabs[7]:
         st.bar_chart(od.groupby("franja")["viajes"].sum())
         st.dataframe(od, use_container_width=True, hide_index=True)
 
-# ---------------- Perfil de carga ----------------
 with tabs[8]:
     st.subheader("Perfil de carga por servicio")
     perfil = load("perfil_carga.csv")
@@ -192,9 +189,11 @@ with tabs[8]:
         st.dataframe(perfil.sort_values("afluencia", ascending=False),
                      use_container_width=True, hide_index=True)
 
-# ---------------- Itinerario ----------------
 with tabs[9]:
     st.subheader("Tiempos del itinerario (referencia del motor)")
     st.dataframe(load("itinerario_tiempos.csv"), use_container_width=True, hide_index=True)
 
-# ---------------- Trenes de carga -----------
+with tabs[10]:
+    st.subheader("Caminos de trenes de carga (restricción fija)")
+    st.info("Extracción aproximada por coordenadas; validar contra el PDF.")
+    st.dataframe(load("carga_caminos.csv"), use_container_width=True, hide_index=True)
