@@ -37,8 +37,11 @@ def load_json(nombre):
 def marey(linea, titulo, origen_arriba=True):
     """Dibuja el diagrama de Marey de una linea (dia completo, ambos sentidos)."""
     malla = load("malla_marey.csv")
-    if malla.empty or "linea" not in malla.columns:
-        st.info("Falta malla_marey.csv. Genera con: python optimizador/generar_malla.py")
+    requeridas = {"linea", "tren_id", "sentido", "estacion", "dist_km", "hora_min"}
+    if malla.empty or not requeridas.issubset(malla.columns):
+        st.warning("El archivo malla_marey.csv está en un formato antiguo o falta. "
+                   "Regenera con `python optimizador/generar_malla.py` y vuelve a subirlo "
+                   "(git add datos/clean && git commit && git push).")
         return
     m = malla[malla.linea == linea]
     if m.empty:
@@ -194,8 +197,4 @@ with tabs[9]:
     st.subheader("Tiempos del itinerario (referencia del motor)")
     st.dataframe(load("itinerario_tiempos.csv"), use_container_width=True, hide_index=True)
 
-# ---------------- Trenes de carga ----------------
-with tabs[10]:
-    st.subheader("Caminos de trenes de carga (restricción fija)")
-    st.info("Extracción aproximada por coordenadas; validar contra el PDF.")
-    st.dataframe(load("carga_caminos.csv"), use_container_width=True, hide_index=True)
+# ---------------- Trenes de carga -----------
