@@ -167,7 +167,7 @@ def _hhmm(x):
 
 
 tabs = st.tabs([
-    "Resumen", "Horarios", "Marey L2", "Marey L1", "Red infraestructura", "Mapa",
+    "Resumen", "Horarios", "Simulación en vivo", "Marey L2", "Marey L1", "Red infraestructura", "Mapa",
     "Optimización", "Material rodante", "Demanda OD", "Perfil de carga",
 ])
 
@@ -225,18 +225,26 @@ with tabs[1]:
                          use_container_width=True, hide_index=True, height=520)
         st.caption("Tabla descargable con el ícono de la esquina superior derecha de la tabla.")
 
-# ---------- Marey L2 ----------
+# ---------- Simulación en vivo ----------
 with tabs[2]:
+    try:
+        import live_sim
+        live_sim.render()
+    except Exception as e:
+        st.error(f"Error en la simulación en vivo: {e}")
+
+# ---------- Marey L2 ----------
+with tabs[3]:
     st.subheader("Diagrama de Marey — Línea 2 (Concepción ↔ Coronel)")
     tab_marey("L2", "Concepción", "Coronel")
 
 # ---------- Marey L1 ----------
-with tabs[3]:
+with tabs[4]:
     st.subheader("Diagrama de Marey — Línea 1 (Mercado ↔ Hualqui ↔ Laja)")
     tab_marey("L1", "Mercado", "Laja")
 
 # ---------- Red ----------
-with tabs[4]:
+with tabs[5]:
     st.subheader("Red de infraestructura (esquema por corredor)")
     arcos = load("red_arcos.csv"); est = load("red_estaciones.csv"); sen = load("red_senales.csv")
     if arcos.empty:
@@ -288,7 +296,7 @@ with tabs[4]:
                                 "tipo", "limite"]], use_container_width=True, hide_index=True)
 
 # ---------- Mapa ----------
-with tabs[5]:
+with tabs[6]:
     st.subheader("Mapa georreferenciado de la red")
     geo = load("estaciones_geo.csv")
     if geo.empty or not {"lat", "lon", "linea"}.issubset(geo.columns):
@@ -309,7 +317,7 @@ with tabs[5]:
         st.caption("Corto Laja (Hualqui–Laja) pendiente de coordenadas.")
 
 # ---------- Optimización ----------
-with tabs[6]:
+with tabs[7]:
     st.subheader("Optimización de capacidad y flota — hora punta (Etapa 2)")
     res = load_json("optim_resumen.json"); fr = load("optim_frecuencias.csv")
     if res:
@@ -326,21 +334,21 @@ with tabs[6]:
         st.dataframe(fr, use_container_width=True, hide_index=True)
 
 # ---------- Material rodante ----------
-with tabs[7]:
+with tabs[8]:
     st.subheader("Flota Biotren")
     mr = load("material_rodante.csv")
     if not mr.empty:
         st.dataframe(mr[mr["flota_biotren"]], use_container_width=True, hide_index=True)
 
 # ---------- Demanda OD ----------
-with tabs[8]:
+with tabs[9]:
     st.subheader("Demanda OD por franja")
     od = load("od_franjas.csv")
     if not od.empty:
         st.bar_chart(od.groupby("franja")["viajes"].sum())
 
 # ---------- Perfil de carga ----------
-with tabs[9]:
+with tabs[10]:
     st.subheader("Perfil de carga por servicio (pasajeros)")
     perfil = load("perfil_carga.csv")
     if not perfil.empty:
