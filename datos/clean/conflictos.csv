@@ -1,8 +1,9 @@
 linea,segmento,tren_a,unidad_a,tren_b,unidad_b,dist_mid,hora_mid
-L2,Concepción–salida Túnel Chepe,L2-CC->CW-20001,SFE 1,L2-CW->CC-20281,,1.0,407.8
-L2,Concepción–salida Túnel Chepe,L2-CC->CW-20009,SFE 5,L2-CW->CC-20283,,1.0,447.8
-L2,Concepción–salida Túnel Chepe,L2-CC->CW-20015,SFE 8,L2-CW->CC-20285,,1.0,476.3
-L2,Concepción–salida Túnel Chepe,L2-CC->CW-20037,SFE 1,L2-CW->CC-20280,SFE 2,1.0,605.5
-L2,Concepción–salida Túnel Chepe,L2-CC->CW-20115,SFE 8,L2-CW->CC-20288,SFE 3,1.0,1261.0
-L1,Hualqui–La Leonera,L1-LJ->TH-20856,SFE B3,L1-TH->LJ-20316,UT 1,32.23,945.0
-L1,Hualqui–La Leonera,L1-LJ->TH-20862,SFE B1,L1-TH->LJ-20264,UT 1,32.23,1317.0
+L1,Hualqui–La Leonera,L1-LJ->TH-20309,UT 1,L1-TH->LJ-20364,SFE 10,32.23,513.0
+L1,Hualqui–La Leonera,L1-LJ->TH-20311,SFE 4,L1-TH->LJ-20308,UT 2,32.23,563.5
+L1,Hualqui–La Leonera,L1-LJ->TH-20371,SFE 7,L1-TH->LJ-20304,UT 1,32.23,505.0
+L1,Hualqui–La Leonera,L1-LJ->TH-20373,SFE 10,L1-TH->LJ-20865,SFE B3,32.23,535.0
+L1,Hualqui–La Leonera,L1-LJ->TH-20399,SFE 6,L1-TH->LJ-20326,SFE 11,32.23,1132.0
+L1,Hualqui–La Leonera,L1-LJ->TH-20842,SFE B1,L1-TH->LJ-20362,SFE 7,32.23,483.0
+L1,Hualqui–La Leonera,L1-LJ->TH-20842,SFE B1,L1-TH->LJ-20841,SFE B2,32.23,479.0
+L1,Hualqui–La Leonera,L1-LJ->TH-20862,SFE B1,L1-TH->LJ-20855,SFE B3,32.23,1312.0

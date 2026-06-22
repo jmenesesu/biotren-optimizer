@@ -86,7 +86,8 @@ def extraer(pdf_path):
                 continue
             dia = _tipo_dia(texto)
             R = _rows(words)
-            tren_rows = [(r[0]["top"], r) for r in R if len([w for w in r if SERV.fullmatch(w["text"])]) >= 5]
+            tren_rows = [(r[0]["top"], r) for r in R
+                          if len(set(w["text"] for w in r if SERV.fullmatch(w["text"]))) >= 8]
             tren_rows.sort()
             ys = [y for y, _ in tren_rows] + [1e9]
             for ti, (ytren, trow) in enumerate(tren_rows):

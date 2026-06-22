@@ -15,6 +15,7 @@ PASOS = [
     ("Itinerario", "parsers/parse_itinerary.py"),
     ("Trenes de carga", "parsers/parse_freight.py"),
     ("Geo estaciones (KML)", "parsers/parse_geo.py"),
+    ("Estaciones maestro (km OpenTrack)", "parsers/estaciones_maestro.py"),
     ("Red topologia (OTML)", "parsers/parse_red_topologia.py"),
     ("Salidas reales (itinerario)", "parsers/parse_itinerario_real.py"),
     ("Horarios base (estacion x servicio)", "optimizador/horarios.py"),

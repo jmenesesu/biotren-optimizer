@@ -50,7 +50,7 @@ def extraer(pdf_path, portador):
             cand = [r for r in R if r[0]["top"] < y_first_km and len([w for w in r if TREN.fullmatch(w["text"])]) >= 1]
             if not cand:
                 continue
-            header = max(cand, key=lambda r: len([w for w in r if TREN.fullmatch(w["text"])]))
+            header = max(cand, key=lambda r: len(set(w["text"] for w in r if TREN.fullmatch(w["text"]))))
             trenes = [(w["text"], (w["x0"] + w["x1"]) / 2) for w in header if TREN.fullmatch(w["text"])]
             if not trenes:
                 continue

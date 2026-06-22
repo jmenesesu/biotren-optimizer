@@ -164,48 +164,192 @@ pasajeros,EFE,L2,CC->CW,Lun-Vie,20023,SFE 1,False,CORONEL,13,550.0,550.0,09:10,0
 pasajeros,EFE,L2,CC->CW,Lun-Vie,20025,SFE 2,False,CORONEL,13,561.0,561.0,09:21,09:21
 pasajeros,EFE,L2,CC->CW,Lun-Vie,20027,SFE 3,False,CORONEL,13,573.0,573.0,09:33,09:33
 pasajeros,EFE,L2,CC->CW,Lun-Vie,20029,SFE 5,False,CORONEL,13,585.0,585.0,09:45,09:45
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,CORONEL,0,369.0,380.0,06:09,06:20
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,CORONEL,0,409.0,409.0,06:49,06:49
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,CORONEL,0,437.0,444.0,07:17,07:24
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Laguna Quiñenco,1,372.0,382.67,06:12,06:23
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Laguna Quiñenco,1,411.67,412.0,06:52,06:52
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Laguna Quiñenco,1,440.0,446.67,07:20,07:27
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Cristo Redentor,2,375.0,385.67,06:15,06:26
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Cristo Redentor,2,414.67,415.0,06:55,06:55
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Cristo Redentor,2,443.0,449.67,07:23,07:30
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Huinca,3,377.5,388.17,06:18,06:28
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Huinca,3,417.17,417.5,06:57,06:58
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Huinca,3,445.5,452.17,07:26,07:32
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Los Canelos,4,379.67,390.33,06:20,06:30
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Los Canelos,4,419.33,419.67,06:59,07:00
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Los Canelos,4,447.67,454.33,07:28,07:34
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Hito Galvarino,5,383.83,394.5,06:24,06:34
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Hito Galvarino,5,423.5,423.83,07:04,07:04
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Hito Galvarino,5,451.83,458.5,07:32,07:38
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Card. Raúl Silva Henriquez,6,390.25,400.92,06:30,06:41
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Card. Raúl Silva Henriquez,6,429.92,430.25,07:10,07:10
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Card. Raúl Silva Henriquez,6,458.25,464.92,07:38,07:45
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,LOMAS COLORADAS,7,393.58,404.08,06:34,06:44
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,LOMAS COLORADAS,7,433.08,433.58,07:13,07:14
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,LOMAS COLORADAS,7,461.58,468.08,07:42,07:48
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,El Parque,8,396.5,407.17,06:36,06:47
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,El Parque,8,436.17,436.5,07:16,07:16
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,El Parque,8,464.5,471.17,07:44,07:51
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Costa Mar,9,399.33,409.92,06:39,06:50
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Costa Mar,9,438.92,439.33,07:19,07:19
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Costa Mar,9,467.33,473.92,07:47,07:54
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Alborada,10,401.42,412.08,06:41,06:52
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Alborada,10,441.08,441.42,07:21,07:21
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Alborada,10,469.42,476.08,07:49,07:56
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Diagonal Bio Bio,11,404.5,415.17,06:44,06:55
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Diagonal Bio Bio,11,444.17,444.5,07:24,07:24
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Diagonal Bio Bio,11,472.5,479.17,07:52,07:59
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,Juan Pablo II,12,407.5,418.0,06:48,06:58
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,Juan Pablo II,12,447.0,447.5,07:27,07:28
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,Juan Pablo II,12,475.5,482.0,07:56,08:02
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20281,,False,CONCEPCIÓN,13,425.0,442.0,07:05,07:22
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20283,,False,CONCEPCIÓN,13,454.0,454.0,07:34,07:34
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20285,,False,CONCEPCIÓN,13,489.0,496.0,08:09,08:16
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,CORONEL,0,355.0,355.0,05:55,05:55
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,CORONEL,0,369.0,369.0,06:09,06:09
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,CORONEL,0,380.0,380.0,06:20,06:20
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,CORONEL,0,397.0,397.0,06:37,06:37
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,CORONEL,0,409.0,409.0,06:49,06:49
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,CORONEL,0,426.0,426.0,07:06,07:06
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,CORONEL,0,437.0,437.0,07:17,07:17
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,CORONEL,0,444.0,444.0,07:24,07:24
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,CORONEL,0,451.0,451.0,07:31,07:31
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,CORONEL,0,460.0,460.0,07:40,07:40
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,CORONEL,0,471.0,471.0,07:51,07:51
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,CORONEL,0,483.0,483.0,08:03,08:03
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Laguna Quiñenco,1,358.0,358.0,05:58,05:58
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Laguna Quiñenco,1,371.67,372.0,06:12,06:12
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Laguna Quiñenco,1,382.67,383.0,06:23,06:23
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Laguna Quiñenco,1,399.67,400.0,06:40,06:40
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Laguna Quiñenco,1,411.67,412.0,06:52,06:52
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Laguna Quiñenco,1,428.67,429.0,07:09,07:09
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Laguna Quiñenco,1,439.67,440.0,07:20,07:20
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Laguna Quiñenco,1,446.67,447.0,07:27,07:27
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Laguna Quiñenco,1,453.67,454.0,07:34,07:34
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Laguna Quiñenco,1,462.67,463.0,07:43,07:43
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Laguna Quiñenco,1,473.67,474.0,07:54,07:54
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Laguna Quiñenco,1,485.67,486.0,08:06,08:06
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Cristo Redentor,2,361.0,361.0,06:01,06:01
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Cristo Redentor,2,374.67,375.0,06:15,06:15
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Cristo Redentor,2,385.67,386.0,06:26,06:26
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Cristo Redentor,2,402.67,403.0,06:43,06:43
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Cristo Redentor,2,414.67,415.0,06:55,06:55
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Cristo Redentor,2,421.0,422.0,07:01,07:02
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Cristo Redentor,2,431.67,432.0,07:12,07:12
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Cristo Redentor,2,442.67,443.0,07:23,07:23
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Cristo Redentor,2,449.67,450.0,07:30,07:30
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Cristo Redentor,2,456.67,457.0,07:37,07:37
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Cristo Redentor,2,465.67,466.0,07:46,07:46
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Cristo Redentor,2,476.67,477.0,07:57,07:57
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Cristo Redentor,2,488.67,489.0,08:09,08:09
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Huinca,3,363.5,363.5,06:04,06:04
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Huinca,3,377.17,377.5,06:17,06:18
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Huinca,3,388.17,388.5,06:28,06:28
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Huinca,3,405.17,405.5,06:45,06:46
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Huinca,3,417.17,417.5,06:57,06:58
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Huinca,3,424.17,424.5,07:04,07:04
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Huinca,3,434.17,434.5,07:14,07:14
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Huinca,3,445.17,445.5,07:25,07:26
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Huinca,3,452.17,452.5,07:32,07:32
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Huinca,3,459.17,459.5,07:39,07:40
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Huinca,3,468.17,468.5,07:48,07:48
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Huinca,3,479.17,479.5,07:59,08:00
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Huinca,3,491.17,491.5,08:11,08:12
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Los Canelos,4,365.67,365.67,06:06,06:06
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Los Canelos,4,379.33,379.67,06:19,06:20
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Los Canelos,4,390.33,390.67,06:30,06:31
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Los Canelos,4,407.33,407.67,06:47,06:48
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Los Canelos,4,419.33,419.67,06:59,07:00
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Los Canelos,4,426.33,426.67,07:06,07:07
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Los Canelos,4,436.33,436.67,07:16,07:17
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Los Canelos,4,447.33,447.67,07:27,07:28
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Los Canelos,4,454.33,454.67,07:34,07:35
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Los Canelos,4,461.33,461.67,07:41,07:42
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Los Canelos,4,470.33,470.67,07:50,07:51
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Los Canelos,4,481.33,481.67,08:01,08:02
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Los Canelos,4,493.33,493.67,08:13,08:14
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Hito Galvarino,5,369.83,369.83,06:10,06:10
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Hito Galvarino,5,383.5,383.83,06:24,06:24
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Hito Galvarino,5,394.5,394.83,06:34,06:35
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Hito Galvarino,5,411.5,411.83,06:52,06:52
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Hito Galvarino,5,423.5,423.83,07:04,07:04
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Hito Galvarino,5,430.5,430.83,07:10,07:11
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Hito Galvarino,5,440.5,440.83,07:20,07:21
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Hito Galvarino,5,451.5,451.83,07:32,07:32
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Hito Galvarino,5,458.5,458.83,07:38,07:39
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Hito Galvarino,5,465.5,465.83,07:46,07:46
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Hito Galvarino,5,474.5,474.83,07:54,07:55
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Hito Galvarino,5,485.5,485.83,08:06,08:06
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Hito Galvarino,5,497.5,497.83,08:18,08:18
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Card. Raúl Silva Henriquez,6,376.25,376.25,06:16,06:16
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Card. Raúl Silva Henriquez,6,389.92,390.25,06:30,06:30
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Card. Raúl Silva Henriquez,6,400.92,401.25,06:41,06:41
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Card. Raúl Silva Henriquez,6,417.92,418.25,06:58,06:58
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Card. Raúl Silva Henriquez,6,429.92,430.25,07:10,07:10
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Card. Raúl Silva Henriquez,6,436.92,437.25,07:17,07:17
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Card. Raúl Silva Henriquez,6,446.92,447.25,07:27,07:27
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Card. Raúl Silva Henriquez,6,457.92,458.25,07:38,07:38
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Card. Raúl Silva Henriquez,6,464.92,465.25,07:45,07:45
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Card. Raúl Silva Henriquez,6,471.92,472.25,07:52,07:52
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Card. Raúl Silva Henriquez,6,480.92,481.25,08:01,08:01
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Card. Raúl Silva Henriquez,6,491.92,492.25,08:12,08:12
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Card. Raúl Silva Henriquez,6,503.92,504.25,08:24,08:24
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,LOMAS COLORADAS,7,379.58,379.58,06:20,06:20
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,LOMAS COLORADAS,7,393.08,393.58,06:33,06:34
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,LOMAS COLORADAS,7,404.08,404.58,06:44,06:45
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20196,SFE 4,False,LOMAS COLORADAS,7,411.0,411.0,06:51,06:51
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,LOMAS COLORADAS,7,421.08,421.58,07:01,07:02
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,LOMAS COLORADAS,7,433.08,433.58,07:13,07:14
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,LOMAS COLORADAS,7,440.08,440.58,07:20,07:21
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,LOMAS COLORADAS,7,450.08,450.58,07:30,07:31
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,LOMAS COLORADAS,7,461.08,461.58,07:41,07:42
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,LOMAS COLORADAS,7,468.08,468.58,07:48,07:49
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,LOMAS COLORADAS,7,475.08,475.58,07:55,07:56
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,LOMAS COLORADAS,7,484.08,484.58,08:04,08:05
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,LOMAS COLORADAS,7,495.08,495.58,08:15,08:16
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,LOMAS COLORADAS,7,507.08,507.58,08:27,08:28
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,El Parque,8,382.5,382.5,06:22,06:22
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,El Parque,8,396.17,396.5,06:36,06:36
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,El Parque,8,407.17,407.5,06:47,06:48
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20196,SFE 4,False,El Parque,8,414.17,414.5,06:54,06:54
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,El Parque,8,424.17,424.5,07:04,07:04
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,El Parque,8,436.17,436.5,07:16,07:16
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,El Parque,8,443.17,443.5,07:23,07:24
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,El Parque,8,453.17,453.5,07:33,07:34
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,El Parque,8,464.17,464.5,07:44,07:44
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,El Parque,8,471.17,471.5,07:51,07:52
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,El Parque,8,478.17,478.5,07:58,07:58
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,El Parque,8,487.17,487.5,08:07,08:08
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,El Parque,8,498.17,498.5,08:18,08:18
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,El Parque,8,510.17,510.5,08:30,08:30
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Costa Mar,9,385.33,385.33,06:25,06:25
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Costa Mar,9,398.92,399.33,06:39,06:39
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Costa Mar,9,409.92,410.33,06:50,06:50
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20196,SFE 4,False,Costa Mar,9,416.92,417.33,06:57,06:57
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Costa Mar,9,426.92,427.33,07:07,07:07
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Costa Mar,9,438.92,439.33,07:19,07:19
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Costa Mar,9,445.92,446.33,07:26,07:26
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Costa Mar,9,455.92,456.33,07:36,07:36
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Costa Mar,9,466.92,467.33,07:47,07:47
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Costa Mar,9,473.92,474.33,07:54,07:54
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Costa Mar,9,480.92,481.33,08:01,08:01
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Costa Mar,9,489.92,490.33,08:10,08:10
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Costa Mar,9,500.92,501.33,08:21,08:21
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Costa Mar,9,512.92,513.33,08:33,08:33
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Alborada,10,387.42,387.42,06:27,06:27
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Alborada,10,401.08,401.42,06:41,06:41
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Alborada,10,412.08,412.42,06:52,06:52
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20196,SFE 4,False,Alborada,10,419.08,419.42,06:59,06:59
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Alborada,10,429.08,429.42,07:09,07:09
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Alborada,10,441.08,441.42,07:21,07:21
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Alborada,10,448.08,448.42,07:28,07:28
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Alborada,10,458.08,458.42,07:38,07:38
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Alborada,10,469.08,469.42,07:49,07:49
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Alborada,10,476.08,476.42,07:56,07:56
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Alborada,10,483.08,483.42,08:03,08:03
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Alborada,10,492.08,492.42,08:12,08:12
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Alborada,10,503.08,503.42,08:23,08:23
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Alborada,10,515.08,515.42,08:35,08:35
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Diagonal Bio Bio,11,390.5,390.5,06:30,06:30
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Diagonal Bio Bio,11,404.17,404.5,06:44,06:44
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Diagonal Bio Bio,11,415.17,415.5,06:55,06:56
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20196,SFE 4,False,Diagonal Bio Bio,11,422.17,422.5,07:02,07:02
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Diagonal Bio Bio,11,432.17,432.5,07:12,07:12
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Diagonal Bio Bio,11,444.17,444.5,07:24,07:24
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Diagonal Bio Bio,11,451.17,451.5,07:31,07:32
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Diagonal Bio Bio,11,461.17,461.5,07:41,07:42
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Diagonal Bio Bio,11,472.17,472.5,07:52,07:52
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Diagonal Bio Bio,11,479.17,479.5,07:59,08:00
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Diagonal Bio Bio,11,486.17,486.5,08:06,08:06
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Diagonal Bio Bio,11,495.17,495.5,08:15,08:16
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Diagonal Bio Bio,11,506.17,506.5,08:26,08:26
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Diagonal Bio Bio,11,518.17,518.5,08:38,08:38
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20000,SFE 1,False,Juan Pablo II,12,393.5,393.5,06:34,06:34
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,Juan Pablo II,12,407.0,407.5,06:47,06:48
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,Juan Pablo II,12,418.0,418.5,06:58,06:58
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20196,SFE 4,False,Juan Pablo II,12,425.0,425.5,07:05,07:06
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,Juan Pablo II,12,435.0,435.5,07:15,07:16
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,Juan Pablo II,12,447.0,447.5,07:27,07:28
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,Juan Pablo II,12,454.0,454.5,07:34,07:34
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,Juan Pablo II,12,464.0,464.5,07:44,07:44
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,Juan Pablo II,12,475.0,475.5,07:55,07:56
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,Juan Pablo II,12,482.0,482.5,08:02,08:02
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,Juan Pablo II,12,489.0,489.5,08:09,08:10
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,Juan Pablo II,12,498.0,498.5,08:18,08:18
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,Juan Pablo II,12,509.0,509.5,08:29,08:30
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,Juan Pablo II,12,521.0,521.5,08:41,08:42
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20002,SFE 2,False,CONCEPCIÓN,13,414.0,414.0,06:54,06:54
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20004,SFE 3,False,CONCEPCIÓN,13,425.0,425.0,07:05,07:05
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20196,SFE 4,False,CONCEPCIÓN,13,432.0,432.0,07:12,07:12
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20008,SFE 5,False,CONCEPCIÓN,13,442.0,442.0,07:22,07:22
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20010,SFE 6,False,CONCEPCIÓN,13,454.0,454.0,07:34,07:34
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20198,SFE 7,False,CONCEPCIÓN,13,461.0,461.0,07:41,07:41
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20014,SFE 8,False,CONCEPCIÓN,13,471.0,471.0,07:51,07:51
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20016,SFE 9,False,CONCEPCIÓN,13,482.0,482.0,08:02,08:02
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20018,SFE 10,False,CONCEPCIÓN,13,489.0,489.0,08:09,08:09
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20020,SFE 11,False,CONCEPCIÓN,13,496.0,496.0,08:16,08:16
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20022,SFE 1,False,CONCEPCIÓN,13,505.0,505.0,08:25,08:25
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20024,SFE 2,False,CONCEPCIÓN,13,516.0,516.0,08:36,08:36
+pasajeros,EFE,L2,CW->CC,Lun-Vie,20026,SFE 3,False,CONCEPCIÓN,13,528.0,528.0,08:48,08:48
 pasajeros,EFE,L2,CC->CW,Lun-Vie,20031,SFE 6,False,CONCEPCIÓN,0,555.0,555.0,09:15,09:15
 pasajeros,EFE,L2,CC->CW,Lun-Vie,20033,SFE 8,False,CONCEPCIÓN,0,570.0,570.0,09:30,09:30
 pasajeros,EFE,L2,CC->CW,Lun-Vie,20035,SFE 9,False,CONCEPCIÓN,0,590.0,590.0,09:50,09:50
@@ -1229,131 +1373,6 @@ pasajeros,EFE,L2,CW->CC,Lun-Vie,20112,SFE 10,False,CONCEPCIÓN,13,1242.0,1242.0,
 pasajeros,EFE,L2,CW->CC,Lun-Vie,20114,SFE 8,False,CONCEPCIÓN,13,1256.0,1256.0,20:56,20:56
 pasajeros,EFE,L2,CW->CC,Lun-Vie,20116,SFE 9,False,CONCEPCIÓN,13,1272.0,1272.0,21:12,21:12
 pasajeros,EFE,L2,CW->CC,Lun-Vie,20120,SFE 5,False,CONCEPCIÓN,13,1287.0,1287.0,21:27,21:27
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,CONCEPCIÓN,0,1275.0,1275.0,21:15,21:15
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,CONCEPCIÓN,0,1290.0,1290.0,21:30,21:30
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,CONCEPCIÓN,0,1305.0,1305.0,21:45,21:45
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,CONCEPCIÓN,0,1345.0,1345.0,22:25,22:25
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,CONCEPCIÓN,0,1370.0,1370.0,22:50,22:50
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Juan Pablo II,1,1281.17,1281.17,21:21,21:21
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Juan Pablo II,1,1295.67,1296.17,21:36,21:36
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Juan Pablo II,1,1310.67,1311.17,21:51,21:51
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Juan Pablo II,1,1350.67,1351.17,22:31,22:31
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Juan Pablo II,1,1375.67,1376.17,22:56,22:56
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Diagonal Bio Bio,2,1283.92,1283.92,21:24,21:24
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Diagonal Bio Bio,2,1298.58,1298.92,21:39,21:39
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Diagonal Bio Bio,2,1313.58,1313.92,21:54,21:54
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Diagonal Bio Bio,2,1353.58,1353.92,22:34,22:34
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Diagonal Bio Bio,2,1378.58,1378.92,22:59,22:59
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Alborada,3,1286.75,1286.75,21:27,21:27
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Alborada,3,1301.42,1301.75,21:41,21:42
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Alborada,3,1316.42,1316.75,21:56,21:57
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Alborada,3,1356.42,1356.75,22:36,22:37
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Alborada,3,1381.42,1381.75,23:01,23:02
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Costa Mar,4,1288.75,1288.75,21:29,21:29
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Costa Mar,4,1303.33,1303.75,21:43,21:44
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Costa Mar,4,1318.33,1318.75,21:58,21:59
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Costa Mar,4,1358.33,1358.75,22:38,22:39
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Costa Mar,4,1383.33,1383.75,23:03,23:04
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,El Parque,5,1291.33,1291.33,21:31,21:31
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,El Parque,5,1306.0,1306.33,21:46,21:46
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,El Parque,5,1321.0,1321.33,22:01,22:01
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,El Parque,5,1361.0,1361.33,22:41,22:41
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,El Parque,5,1386.0,1386.33,23:06,23:06
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,LOMAS COLORADAS,6,1294.25,1294.25,21:34,21:34
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,LOMAS COLORADAS,6,1308.75,1309.25,21:49,21:49
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,LOMAS COLORADAS,6,1323.75,1324.25,22:04,22:04
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,LOMAS COLORADAS,6,1363.75,1364.25,22:44,22:44
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,LOMAS COLORADAS,6,1388.75,1389.25,23:09,23:09
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Card. Raúl Silva Henriquez,7,1297.17,1297.17,21:37,21:37
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Card. Raúl Silva Henriquez,7,1311.83,1312.17,21:52,21:52
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Card. Raúl Silva Henriquez,7,1326.83,1327.17,22:07,22:07
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Card. Raúl Silva Henriquez,7,1366.83,1367.17,22:47,22:47
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Card. Raúl Silva Henriquez,7,1391.83,1392.17,23:12,23:12
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Hito Galvarino,8,1303.33,1303.33,21:43,21:43
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Hito Galvarino,8,1318.0,1318.33,21:58,21:58
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Hito Galvarino,8,1333.0,1333.33,22:13,22:13
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Hito Galvarino,8,1373.0,1373.33,22:53,22:53
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Hito Galvarino,8,1398.0,1398.33,23:18,23:18
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Los Canelos,9,1307.33,1307.33,21:47,21:47
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Los Canelos,9,1322.0,1322.33,22:02,22:02
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Los Canelos,9,1337.0,1337.33,22:17,22:17
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Los Canelos,9,1377.0,1377.33,22:57,22:57
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Los Canelos,9,1402.0,1402.33,23:22,23:22
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Huinca,10,1309.33,1309.33,21:49,21:49
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Huinca,10,1324.0,1324.33,22:04,22:04
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Huinca,10,1339.0,1339.33,22:19,22:19
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Huinca,10,1379.0,1379.33,22:59,22:59
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Huinca,10,1404.0,1404.33,23:24,23:24
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Cristo Redentor,11,1311.67,1311.67,21:52,21:52
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Cristo Redentor,11,1326.33,1326.67,22:06,22:07
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Cristo Redentor,11,1341.33,1341.67,22:21,22:22
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Cristo Redentor,11,1381.33,1381.67,23:01,23:02
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Cristo Redentor,11,1406.33,1406.67,23:26,23:27
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20117,SFE 9,False,Laguna Quiñenco,12,1314.5,1314.5,21:54,21:54
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,Laguna Quiñenco,12,1329.17,1329.5,22:09,22:10
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,Laguna Quiñenco,12,1344.17,1344.5,22:24,22:24
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,Laguna Quiñenco,12,1384.17,1384.5,23:04,23:04
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,Laguna Quiñenco,12,1409.17,1409.5,23:29,23:30
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20121,SFE 5,False,CORONEL,13,1332.0,1332.0,22:12,22:12
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20123,SFE 1,False,CORONEL,13,1347.0,1347.0,22:27,22:27
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20127,SFE 10,False,CORONEL,13,1387.0,1387.0,23:07,23:07
-pasajeros,EFE,L2,CC->CW,Lun-Vie,20129,SFE 8,False,CORONEL,13,1412.0,1412.0,23:32,23:32
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,CORONEL,0,1260.0,1260.0,21:00,21:00
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20292,SFE 7,True,CORONEL,0,1280.0,1280.0,21:20,21:20
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,CORONEL,0,1295.0,1295.0,21:35,21:35
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,CORONEL,0,1315.0,1315.0,21:55,21:55
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20294,SFE 9,True,CORONEL,0,1328.0,1328.0,22:08,22:08
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20298,SFE 5,True,CORONEL,0,1370.0,1370.0,22:50,22:50
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Laguna Quiñenco,1,1262.75,1262.75,21:03,21:03
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Laguna Quiñenco,1,1297.42,1297.75,21:37,21:38
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Laguna Quiñenco,1,1317.42,1317.75,21:57,21:58
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Cristo Redentor,2,1265.5,1265.5,21:06,21:06
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20292,SFE 7,True,Cristo Redentor,2,1284.0,1284.0,21:24,21:24
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Cristo Redentor,2,1300.17,1300.5,21:40,21:40
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Cristo Redentor,2,1320.17,1320.5,22:00,22:00
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20294,SFE 9,True,Cristo Redentor,2,1332.0,1332.0,22:12,22:12
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20298,SFE 5,True,Cristo Redentor,2,1374.0,1374.0,22:54,22:54
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Huinca,3,1267.83,1267.83,21:08,21:08
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Huinca,3,1302.5,1302.83,21:42,21:43
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Huinca,3,1322.5,1322.83,22:02,22:03
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Los Canelos,4,1269.83,1269.83,21:10,21:10
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Los Canelos,4,1304.5,1304.83,21:44,21:45
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Los Canelos,4,1324.5,1324.83,22:04,22:05
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Hito Galvarino,5,1273.83,1273.83,21:14,21:14
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20292,SFE 7,True,Hito Galvarino,5,1290.0,1290.0,21:30,21:30
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Hito Galvarino,5,1308.5,1308.83,21:48,21:49
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Hito Galvarino,5,1328.5,1328.83,22:08,22:09
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20294,SFE 9,True,Hito Galvarino,5,1338.0,1338.0,22:18,22:18
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20298,SFE 5,True,Hito Galvarino,5,1380.0,1380.0,23:00,23:00
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Card. Raúl Silva Henriquez,6,1280.0,1280.0,21:20,21:20
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Card. Raúl Silva Henriquez,6,1314.67,1315.0,21:55,21:55
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Card. Raúl Silva Henriquez,6,1334.67,1335.0,22:15,22:15
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,LOMAS COLORADAS,7,1283.08,1283.08,21:23,21:23
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20292,SFE 7,True,LOMAS COLORADAS,7,1299.0,1299.0,21:39,21:39
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,LOMAS COLORADAS,7,1317.58,1318.08,21:58,21:58
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,LOMAS COLORADAS,7,1337.58,1338.08,22:18,22:18
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20294,SFE 9,True,LOMAS COLORADAS,7,1347.0,1347.0,22:27,22:27
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20298,SFE 5,True,LOMAS COLORADAS,7,1389.0,1389.0,23:09,23:09
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,El Parque,8,1285.83,1285.83,21:26,21:26
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,El Parque,8,1320.5,1320.83,22:00,22:01
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,El Parque,8,1340.5,1340.83,22:20,22:21
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Costa Mar,9,1288.5,1288.5,21:28,21:28
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Costa Mar,9,1323.08,1323.5,22:03,22:04
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Costa Mar,9,1343.08,1343.5,22:23,22:24
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Alborada,10,1290.5,1290.5,21:30,21:30
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Alborada,10,1325.17,1325.5,22:05,22:06
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Alborada,10,1345.17,1345.5,22:25,22:26
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20298,SFE 5,True,Alborada,10,1394.0,1394.0,23:14,23:14
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Diagonal Bio Bio,11,1293.33,1293.33,21:33,21:33
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Diagonal Bio Bio,11,1328.0,1328.33,22:08,22:08
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Diagonal Bio Bio,11,1348.0,1348.33,22:28,22:28
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20122,SFE 1,False,Juan Pablo II,12,1296.25,1296.25,21:36,21:36
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,Juan Pablo II,12,1330.75,1331.25,22:11,22:11
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,Juan Pablo II,12,1350.75,1351.25,22:31,22:31
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20298,SFE 5,True,Juan Pablo II,12,1399.0,1399.0,23:19,23:19
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20126,SFE 10,False,CONCEPCIÓN,13,1337.0,1337.0,22:17,22:17
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20128,SFE 8,False,CONCEPCIÓN,13,1357.0,1357.0,22:37,22:37
-pasajeros,EFE,L2,CW->CC,Lun-Vie,20298,SFE 5,True,CONCEPCIÓN,13,1405.0,1405.0,23:25,23:25
 pasajeros,EFE,L2,CC->CW,Sábado,20141,SFE 2,False,CONCEPCIÓN,0,405.0,405.0,06:45,06:45
 pasajeros,EFE,L2,CC->CW,Sábado,20143,SFE 1,False,CONCEPCIÓN,0,435.0,435.0,07:15,07:15
 pasajeros,EFE,L2,CC->CW,Sábado,20145,SFE 3,False,CONCEPCIÓN,0,465.0,465.0,07:45,07:45

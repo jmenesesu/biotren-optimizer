@@ -67,10 +67,13 @@ def marey(linea, archivo, titulo, con_carga=False):
         vistos = set()
         for tid, g in m.groupby("tren_id"):
             u = g["unidad"].iloc[0]
+            vac = bool(g["equipo_vacio"].iloc[0]) if "equipo_vacio" in g.columns else False
             fig.add_trace(go.Scatter(x=g["hora_min"], y=g["dist_km"], mode="lines",
-                                     line=dict(color=cmap.get(u, "#888"), width=1.4),
+                                     line=dict(color=cmap.get(u, "#888"), width=1.3,
+                                               dash="dot" if vac else "solid"),
                                      name=u, legendgroup=u, showlegend=(u not in vistos),
-                                     hovertext=[f"{u} · {e}" for e in (g["estacion"] if "estacion" in g else g["dist_km"])],
+                                     hovertext=[f"{u}{' (vacío)' if vac else ''} · {e}"
+                                                for e in (g["estacion"] if "estacion" in g else g["dist_km"])],
                                      hoverinfo="text+x"))
             vistos.add(u)
     else:
@@ -119,8 +122,8 @@ ARCH_MALLA = {"Itinerario actual": "malla_real.csv", "Simulada (fixed-block)": "
 def tab_marey(linea, top, bottom):
     fuente = st.radio("Malla", list(ARCH_MALLA), horizontal=True, key=f"src_{linea}")
     st.caption(f"Día completo. Distancia: {top} arriba, {bottom} abajo. Pasajeros: color por "
-               "automotor (línea continua). Carga: gris segmentado. Banda roja = vía única.")
-    marey(linea, ARCH_MALLA[fuente], f"{linea} — {fuente.lower()}", con_carga=(linea == "L1"))
+               "automotor (continua); equipo vacío punteado. Carga: gris segmentado. Banda roja = vía única.")
+    marey(linea, ARCH_MALLA[fuente], f"{linea} — {fuente.lower()}", con_carga=True)
     if fuente == "Simulada (fixed-block)":
         res = load_json("sim_resumen.json")
         if res and res.get("linea") == linea:
