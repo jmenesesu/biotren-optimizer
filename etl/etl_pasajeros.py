@@ -130,14 +130,28 @@ def extraer(pdf_path):
                            "Mercado": "TH->LJ", "LAJA": "LJ->TH",
                            "SAN ROSENDO": "LJ->TH"}.get(origen, "?")
                 orden = 0
+                centros = [c for _, c in servs]
+                n = len(servs)
                 for _, est, r, tms in est_rows:
-                    # asignar tiempos a columnas de servicio
+                    tms_sorted = sorted(tms, key=lambda w: w["x0"])
+                    xcs = [(w["x0"] + w["x1"]) / 2 for w in tms_sorted]
+                    # filas con ~1 tiempo por servicio (terminal) suelen estar
+                    # desplazadas ~media columna -> se estima el shift; las filas con
+                    # pares LLEGA/SALE (~2N) se emparejan por cercania (shift 0).
+                    if len(tms_sorted) <= 1.4 * n:
+                        mejor = (0.0, 1e18)
+                        for shift in range(-10, 56, 2):
+                            err = sum(min(abs((x - shift) - c) for c in centros) for x in xcs)
+                            if err < mejor[1]:
+                                mejor = (shift, err)
+                        shift = mejor[0]
+                    else:
+                        shift = 0.0
                     por_serv = {}
-                    for w in tms:
-                        xc = (w["x0"] + w["x1"]) / 2
-                        s = min(servs, key=lambda v: abs(v[1] - xc))
-                        if abs(s[1] - xc) < 30:
-                            por_serv.setdefault(s[0], []).append((w["x0"], w["text"]))
+                    for w, xc in zip(tms_sorted, xcs):
+                        sv = min(servs, key=lambda v: abs(v[1] - (xc - shift)))
+                        if abs(sv[1] - (xc - shift)) < 28:
+                            por_serv.setdefault(sv[0], []).append((w["x0"], w["text"]))
                     for serv, lst in por_serv.items():
                         lst.sort()
                         tiempos = [t for _, t in lst]

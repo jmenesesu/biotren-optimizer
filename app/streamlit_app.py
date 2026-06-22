@@ -68,12 +68,13 @@ def marey(linea, archivo, titulo, con_carga=False):
         for tid, g in m.groupby("tren_id"):
             u = g["unidad"].iloc[0]
             vac = bool(g["equipo_vacio"].iloc[0]) if "equipo_vacio" in g.columns else False
+            serv = str(tid).split("-")[-1]
             fig.add_trace(go.Scatter(x=g["hora_min"], y=g["dist_km"], mode="lines",
                                      line=dict(color=cmap.get(u, "#888"), width=1.3,
                                                dash="dot" if vac else "solid"),
                                      name=u, legendgroup=u, showlegend=(u not in vistos),
-                                     hovertext=[f"{u}{' (vacío)' if vac else ''} · {e}"
-                                                for e in (g["estacion"] if "estacion" in g else g["dist_km"])],
+                                     hovertext=[f"Servicio {serv}{' (vacío)' if vac else ''} · {u} · {e}"
+                                                for e in (g["estacion"] if "estacion" in g.columns else g["dist_km"])],
                                      hoverinfo="text+x"))
             vistos.add(u)
     else:
@@ -90,10 +91,12 @@ def marey(linea, archivo, titulo, con_carga=False):
             primero = True
             for tid, g in c.groupby("tren_id"):
                 g = g.sort_values("hora_min")
+                tnum = str(tid).replace("C-", "")
+                est_c = g["estacion"] if "estacion" in g.columns else [tid]*len(g)
                 fig.add_trace(go.Scatter(x=g["hora_min"], y=g["dist_km"], mode="lines",
                                          line=dict(color="#404040", width=1.3, dash="dash"),
                                          name="carga", legendgroup="carga", showlegend=primero,
-                                         hovertext=tid, hoverinfo="text+x"))
+                                         hovertext=[f"Carga {tnum} · {e}" for e in est_c], hoverinfo="text+x"))
                 primero = False
     # eje Y con estaciones
     if "estacion" in m.columns and m["estacion"].notna().any():
@@ -102,11 +105,12 @@ def marey(linea, archivo, titulo, con_carga=False):
         ref = load("malla_real.csv")
         ek = (ref[ref.linea == linea][["estacion", "dist_km"]].drop_duplicates().sort_values("dist_km")
               if not ref.empty else pd.DataFrame())
+    rev = "reversed" if linea == "L2" else True   # L2: Concepción arriba; L1: Mercado arriba
     if not ek.empty:
-        fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"], autorange="reversed",
+        fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"], autorange=rev,
                          showgrid=True, gridcolor="#eee")
     else:
-        fig.update_yaxes(autorange="reversed")
+        fig.update_yaxes(autorange=rev)
     ticks = list(range(0, 1441, 60))
     fig.update_xaxes(range=[0, 1440], tickvals=ticks, ticktext=[f"{t//60:02d}" for t in ticks],
                      showgrid=True, gridcolor="#f3f3f3")

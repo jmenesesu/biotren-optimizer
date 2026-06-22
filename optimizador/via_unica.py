@@ -25,10 +25,10 @@ from config import CLEAN  # noqa: E402
 # bloquea=True: bloque sin desvios intermedios -> cruce solo en extremos (se
 # detectan conflictos). bloquea=False: con desvios -> informativo.
 VIA_UNICA = {
-    "L2": [("Concepción–salida Túnel Chepe", 0.0, 2.0, True)],
-    "L1": [("Mercado–El Arenal", 0.0, 1.47, True),
-           ("Hualqui–La Leonera", 28.64, 35.82, True),
-           ("Hualqui–Laja (con desvíos)", 35.82, 80.42, False)],
+    "L2": [("Concepción–salida Túnel Chepe", 1.0, 3.0, True)],
+    "L1": [("Mercado–El Arenal", 82.79, 84.78, True),
+           ("Hualqui–La Leonera", 46.92, 55.32, True),
+           ("Hualqui–Laja (con desvíos)", 1.60, 46.92, False)],
 }
 
 
