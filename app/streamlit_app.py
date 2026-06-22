@@ -42,7 +42,7 @@ def load_json(nombre):
 
 def marey(linea, archivo, titulo, mostrar_via_unica=True, mostrar_conflictos=True):
     malla = load(archivo)
-    req = {"linea", "tren_id", "sentido", "estacion", "dist_km", "hora_min"}
+    req = {"linea", "tren_id", "dist_km", "hora_min"}
     if malla.empty or not req.issubset(malla.columns):
         st.warning(f"Falta o formato antiguo en {archivo}.")
         return
@@ -74,7 +74,7 @@ def marey(linea, archivo, titulo, mostrar_via_unica=True, mostrar_conflictos=Tru
                 x=g["hora_min"], y=g["dist_km"], mode="lines",
                 line=dict(color=cmap.get(u, "#888"), width=1.4),
                 name=u, legendgroup=u, showlegend=(u not in vistos),
-                hovertext=[f"{u} · {e}" for e in g["estacion"]], hoverinfo="text+x"))
+                hovertext=[f"{u} · {e}" for e in (g["estacion"] if "estacion" in g else g["dist_km"])], hoverinfo="text+x"))
             vistos.add(u)
     else:
         cols = {"CC->CW": "#1F3864", "CW->CC": "#C00000",
@@ -83,7 +83,7 @@ def marey(linea, archivo, titulo, mostrar_via_unica=True, mostrar_conflictos=Tru
             sent = g["sentido"].iloc[0]
             fig.add_trace(go.Scatter(x=g["hora_min"], y=g["dist_km"], mode="lines",
                                      line=dict(color=cols.get(sent, "#888"), width=1.1),
-                                     showlegend=False, hovertext=g["estacion"], hoverinfo="text+x"))
+                                     showlegend=False, hovertext=(g["estacion"] if "estacion" in g else g["dist_km"]), hoverinfo="text+x"))
 
     # conflictos (solo malla real)
     cf = load("conflictos.csv")
@@ -97,9 +97,17 @@ def marey(linea, archivo, titulo, mostrar_via_unica=True, mostrar_conflictos=Tru
                 hovertext=[f"{a} × {b}" for a, b in zip(c["tren_a"], c["tren_b"])],
                 hoverinfo="text"))
 
-    ek = m[["estacion", "dist_km"]].drop_duplicates().sort_values("dist_km")
-    fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"],
-                     autorange="reversed", showgrid=True, gridcolor="#eee")
+    if "estacion" in m.columns and m["estacion"].notna().any():
+        ek = m[["estacion", "dist_km"]].dropna().drop_duplicates().sort_values("dist_km")
+    else:
+        ref = load("malla_real.csv")
+        ek = (ref[ref.linea == linea][["estacion", "dist_km"]].drop_duplicates().sort_values("dist_km")
+              if not ref.empty else pd.DataFrame(columns=["estacion", "dist_km"]))
+    if not ek.empty:
+        fig.update_yaxes(tickvals=ek["dist_km"], ticktext=ek["estacion"], autorange="reversed",
+                         showgrid=True, gridcolor="#eee")
+    else:
+        fig.update_yaxes(autorange="reversed", showgrid=True, gridcolor="#eee")
     ticks = list(range(0, 1441, 60))
     fig.update_xaxes(range=[0, 1440], tickvals=ticks,
                      ticktext=[f"{t//60:02d}" for t in ticks], showgrid=True, gridcolor="#f3f3f3")
