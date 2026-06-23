@@ -103,5 +103,5 @@ L1,L1-B55,81.76,82.57,810.0,double,señal,km81.76 → km82.57
 L1,L1-B56,82.57,82.79,220.0,double,señal,km82.57 → El Arenal
 L1,L1-B57,82.79,83.38,590.0,single,estacion,El Arenal → km83.38
 L1,L1-B58,83.38,83.77,390.0,single,señal,km83.38 → km83.77
-L1,L1-B59,83.77,84.778,1008.0,single,señal,km83.77 → Mercado
-L1,L1-B60,84.778,84.78,2.0,single,estacion,Mercado → km84.78
+L1,L1-B59,83.77,84.78,1010.0,single,señal,km83.77 → km84.78
+L1,L1-B60,84.78,84.996,216.0,double,estacion,km84.78 → Mercado

@@ -14,7 +14,6 @@ import sys
 import unicodedata
 from pathlib import Path
 import pandas as pd
-from lxml import etree
 
 sys.path.append(str(Path(__file__).resolve().parent))
 from config import INFRA_DIR, STA_DIR, CLEAN  # noqa: E402
@@ -26,7 +25,7 @@ GRUPO_DOC = {"K01-BU-GO": "L1", "K02-TL-UN": "L1", "K03-QU-HQ": "L1",
 # alias (nombre normalizado) -> codigo. Cubre nombres de pasajeros y carga.
 ALIAS = {
     # L1 longitudinal
-    "MERCADO": "TH", "TALCAHUANO": "TH", "EL ARENAL": "EZ", "ARENAL": "EZ",
+    "MERCADO": "EZTH1", "TALCAHUANO": "TH", "EL ARENAL": "EZ", "ARENAL": "EZ",
     "HOSPITAL LAS HIGUERAS": "CCEZ4", "HIGUERAS": "CCEZ4", "HOSP HIGUERAS": "CCEZ4",
     "LOS CONDORES": "CCEZ3", "UTF SANTA MARIA": "CCEZ2", "UTFSM": "CCEZ2",
     "LORENZO ARENAS": "CCEZ1", "LZO ARENAS": "CCEZ1",
@@ -83,6 +82,7 @@ def resolver_km(nombre, linea):
 
 def construir():
     # tabla informativa codigo->nombre->km
+    from lxml import etree
     t = etree.parse(str(STA_DIR / "Export Stations (railML-Format) - Version 2.2.railml"))
     ns = {"r": "http://www.railml.org/schemas/2013"}
     nombre = {o.get("abbrevation") or o.get("code"): o.get("name") for o in t.findall(".//r:ocp", ns)}
@@ -119,3 +119,21 @@ def senales_principales_km(linea):
             if pd.notna(sig) and pd.notna(km) and sig in MAIN_SIG:
                 kms.append(round(float(km), 2))
     return sorted(set(kms))
+
+
+def senales_km(linea):
+    """DataFrame [km, tipo, principal] de TODAS las señales de la linea (Metrolinx)."""
+    TIPO_PPAL = {"Main Signal", "Main Signal 2 Aspect", "Main/Distant Sig. 3 Asp.",
+                 "Main/Distant Signal"}
+    DIST = {"Distant Signal", "Distant Signal 2 Aspect"}
+    e = pd.read_csv(CLEAN / "infra_edges.csv")
+    rows = []
+    for _, r in e.iterrows():
+        if GRUPO_DOC.get(r["document"]) != linea:
+            continue
+        for sig, km in [(r.get("v1_sig"), r.get("v1_km")), (r.get("v2_sig"), r.get("v2_km"))]:
+            if pd.notna(sig) and pd.notna(km) and (sig in TIPO_PPAL or sig in DIST):
+                rows.append({"km": round(float(km), 2), "tipo": sig,
+                             "principal": sig in TIPO_PPAL})
+    df = pd.DataFrame(rows).drop_duplicates(subset=["km", "principal"])
+    return df.sort_values("km").reset_index(drop=True)

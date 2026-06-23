@@ -17,6 +17,19 @@ sys.path.append(str(REPO / "parsers"))
 sys.path.append(str(REPO / "etl"))
 from config import ITIN_DIR, CLEAN  # noqa: E402
 import etl_pasajeros, etl_carga  # noqa: E402
+sys.path.append(str(REPO / "optimizador"))
+from ejes_distancia import ORDEN_L1, ORDEN_L2  # noqa: E402
+import unicodedata
+
+
+def _norm(x):
+    x = unicodedata.normalize("NFKD", str(x)).encode("ascii", "ignore").decode().upper()
+    return " ".join(x.split())
+
+
+_CANON = {}
+for _nm in ORDEN_L1 + ORDEN_L2:
+    _CANON[_norm(_nm)] = _nm
 
 PDF_PAX = ITIN_DIR / "2-410. Itinerario Pasajeros Concepción 30-mar-2026.pdf"
 PDF_FEPASA = ITIN_DIR / "2-416. Programa Resto del Año 2026 FEPASA V2.pdf"
@@ -37,6 +50,9 @@ def construir():
     fe = etl_carga.extraer(PDF_FEPASA, "FEPASA")
     tr = etl_carga.extraer(PDF_TRANSAP, "TRANSAP")
     df = pd.concat([pax, fe, tr], ignore_index=True)
+    # canonizar nombres de estacion (evita que 'EL ARENAL' y 'El Arenal' se traten
+    # como distintos y que una de las dos desaparezca al mapear km)
+    df["estacion"] = df["estacion"].map(lambda e: _CANON.get(_norm(e), e))
     df["llegada"] = df["llegada_min"].map(_hhmm)
     df["salida"] = df["salida_min"].map(_hhmm)
     df.to_csv(CLEAN / "horarios_limpios.csv", index=False)

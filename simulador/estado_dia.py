@@ -137,7 +137,5 @@ def prefill_cocheras(sobrescribir=False):
 
 if __name__ == "__main__":
     unidades, servicios = cargar()
-    coch = prefill_cocheras()
     g = grilla(120)
-    print(f"Automotores: {len(unidades)} | servicios: {len(servicios)} | "
-          f"cocheras: {len(coch)} | grilla: {len(g)} filas (paso 120 s)")
+    print(f"Automotores: {len(unidades)} | servicios: {len(servicios)} | grilla: {len(g)} filas (paso 120 s)")

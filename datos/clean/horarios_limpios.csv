@@ -2634,20 +2634,20 @@ pasajeros,EFE,L1,LJ->TH,Lun-Vie,20309,UT 1,False,Hospital Las Higueras,20,558.0,
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20373,SFE 10,False,Hospital Las Higueras,20,576.0,577.0,09:36,09:37
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20311,SFE 4,False,Hospital Las Higueras,20,603.0,604.0,10:03,10:04
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20377,SFE 11,False,Hospital Las Higueras,20,618.0,619.0,10:18,10:19
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20205,UT 2,True,EL ARENAL,21,378.0,378.0,06:18,06:18
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20207,SFE B2,True,EL ARENAL,21,413.0,413.0,06:53,06:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20301,UT 1,False,EL ARENAL,21,440.0,441.0,07:20,07:21
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20351,SFE 4,False,EL ARENAL,21,462.0,462.0,07:42,07:42
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20397,SFE B3,False,EL ARENAL,21,472.0,473.0,07:52,07:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20305,UT 2,False,EL ARENAL,21,502.0,503.0,08:22,08:23
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20353,SFE 11,False,EL ARENAL,21,520.0,520.0,08:40,08:40
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20842,SFE B1,False,EL ARENAL,21,532.0,533.0,08:52,08:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20371,SFE 7,False,EL ARENAL,21,550.0,550.0,09:10,09:10
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20309,UT 1,False,EL ARENAL,21,562.0,563.0,09:22,09:23
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20373,SFE 10,False,EL ARENAL,21,580.0,580.0,09:40,09:40
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20219,UT 1,True,EL ARENAL,21,595.0,595.0,09:55,09:55
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20311,SFE 4,False,EL ARENAL,21,607.0,608.0,10:07,10:08
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20377,SFE 11,False,EL ARENAL,21,622.0,622.0,10:22,10:22
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20205,UT 2,True,El Arenal,21,378.0,378.0,06:18,06:18
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20207,SFE B2,True,El Arenal,21,413.0,413.0,06:53,06:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20301,UT 1,False,El Arenal,21,440.0,441.0,07:20,07:21
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20351,SFE 4,False,El Arenal,21,462.0,462.0,07:42,07:42
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20397,SFE B3,False,El Arenal,21,472.0,473.0,07:52,07:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20305,UT 2,False,El Arenal,21,502.0,503.0,08:22,08:23
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20353,SFE 11,False,El Arenal,21,520.0,520.0,08:40,08:40
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20842,SFE B1,False,El Arenal,21,532.0,533.0,08:52,08:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20371,SFE 7,False,El Arenal,21,550.0,550.0,09:10,09:10
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20309,UT 1,False,El Arenal,21,562.0,563.0,09:22,09:23
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20373,SFE 10,False,El Arenal,21,580.0,580.0,09:40,09:40
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20219,UT 1,True,El Arenal,21,595.0,595.0,09:55,09:55
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20311,SFE 4,False,El Arenal,21,607.0,608.0,10:07,10:08
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20377,SFE 11,False,El Arenal,21,622.0,622.0,10:22,10:22
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20205,UT 2,True,Mercado,22,381.0,381.0,06:21,06:21
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20207,SFE B2,True,Mercado,22,416.0,416.0,06:56,06:56
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20301,UT 1,False,Mercado,22,444.0,444.0,07:24,07:24
@@ -2665,16 +2665,16 @@ pasajeros,EFE,L1,TH->LJ,Lun-Vie,20308,UT 2,False,Mercado,0,511.0,511.0,08:31,08:
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20310,SFE B1,False,Mercado,0,541.0,541.0,09:01,09:01
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20220,UT 1,True,Mercado,0,569.0,569.0,09:29,09:29
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20312,UT 1,False,Mercado,0,601.0,601.0,10:01,10:01
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20300,UT 2,False,EL ARENAL,1,394.0,395.0,06:34,06:35
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20841,SFE B2,False,EL ARENAL,1,424.0,425.0,07:04,07:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20304,UT 1,False,EL ARENAL,1,454.0,455.0,07:34,07:35
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20865,SFE B3,False,EL ARENAL,1,484.0,485.0,08:04,08:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20390,SFE 4,False,EL ARENAL,1,495.0,495.0,08:15,08:15
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20308,UT 2,False,EL ARENAL,1,514.0,515.0,08:34,08:35
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20374,SFE 11,False,EL ARENAL,1,525.0,525.0,08:45,08:45
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20310,SFE B1,False,EL ARENAL,1,544.0,545.0,09:04,09:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20220,UT 1,True,EL ARENAL,1,572.0,572.0,09:32,09:32
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20312,UT 1,False,EL ARENAL,1,604.0,605.0,10:04,10:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20300,UT 2,False,El Arenal,1,394.0,395.0,06:34,06:35
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20841,SFE B2,False,El Arenal,1,424.0,425.0,07:04,07:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20304,UT 1,False,El Arenal,1,454.0,455.0,07:34,07:35
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20865,SFE B3,False,El Arenal,1,484.0,485.0,08:04,08:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20390,SFE 4,False,El Arenal,1,495.0,495.0,08:15,08:15
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20308,UT 2,False,El Arenal,1,514.0,515.0,08:34,08:35
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20374,SFE 11,False,El Arenal,1,525.0,525.0,08:45,08:45
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20310,SFE B1,False,El Arenal,1,544.0,545.0,09:04,09:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20220,UT 1,True,El Arenal,1,572.0,572.0,09:32,09:32
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20312,UT 1,False,El Arenal,1,604.0,605.0,10:04,10:05
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20300,UT 2,False,Hospital Las Higueras,2,398.0,399.0,06:38,06:39
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20841,SFE B2,False,Hospital Las Higueras,2,428.0,429.0,07:08,07:09
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20304,UT 1,False,Hospital Las Higueras,2,458.0,459.0,07:38,07:39
@@ -2927,19 +2927,19 @@ pasajeros,EFE,L1,LJ->TH,Lun-Vie,20323,SFE B2,False,Hospital Las Higueras,20,1038
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20325,SFE 11,False,Hospital Las Higueras,20,1068.0,1069.0,17:48,17:49
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20379,SFE 10,False,Hospital Las Higueras,20,1096.0,1097.0,18:16,18:17
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20327,UT 1,False,Hospital Las Higueras,20,1128.0,1129.0,18:48,18:49
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20313,SFE B1,False,EL ARENAL,21,652.0,653.0,10:52,10:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20229,SFE B1,True,EL ARENAL,21,708.0,708.0,11:48,11:48
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20315,UT 1,False,EL ARENAL,21,753.0,754.0,12:33,12:34
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20844,SFE B2,False,EL ARENAL,21,789.0,790.0,13:09,13:10
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20239,UT 1,True,EL ARENAL,21,895.0,895.0,14:55,14:55
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20241,SFE B2,True,EL ARENAL,21,925.0,925.0,15:25,15:25
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20243,SFE 11,True,EL ARENAL,21,955.0,955.0,15:55,15:55
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20856,SFE B3,False,EL ARENAL,21,989.0,990.0,16:29,16:30
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20321,UT 1,False,EL ARENAL,21,1012.0,1013.0,16:52,16:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20323,SFE B2,False,EL ARENAL,21,1042.0,1043.0,17:22,17:23
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20325,SFE 11,False,EL ARENAL,21,1072.0,1073.0,17:52,17:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20379,SFE 10,False,EL ARENAL,21,1100.0,1100.0,18:20,18:20
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20327,UT 1,False,EL ARENAL,21,1132.0,1133.0,18:52,18:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20313,SFE B1,False,El Arenal,21,652.0,653.0,10:52,10:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20229,SFE B1,True,El Arenal,21,708.0,708.0,11:48,11:48
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20315,UT 1,False,El Arenal,21,753.0,754.0,12:33,12:34
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20844,SFE B2,False,El Arenal,21,789.0,790.0,13:09,13:10
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20239,UT 1,True,El Arenal,21,895.0,895.0,14:55,14:55
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20241,SFE B2,True,El Arenal,21,925.0,925.0,15:25,15:25
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20243,SFE 11,True,El Arenal,21,955.0,955.0,15:55,15:55
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20856,SFE B3,False,El Arenal,21,989.0,990.0,16:29,16:30
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20321,UT 1,False,El Arenal,21,1012.0,1013.0,16:52,16:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20323,SFE B2,False,El Arenal,21,1042.0,1043.0,17:22,17:23
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20325,SFE 11,False,El Arenal,21,1072.0,1073.0,17:52,17:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20379,SFE 10,False,El Arenal,21,1100.0,1100.0,18:20,18:20
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20327,UT 1,False,El Arenal,21,1132.0,1133.0,18:52,18:53
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20313,SFE B1,False,Mercado,22,656.0,656.0,10:56,10:56
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20229,SFE B1,True,Mercado,22,711.0,711.0,11:51,11:51
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20315,UT 1,False,Mercado,22,757.0,757.0,12:37,12:37
@@ -2962,18 +2962,18 @@ pasajeros,EFE,L1,TH->LJ,Lun-Vie,20318,SFE B2,False,Mercado,0,931.0,931.0,15:31,1
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20320,SFE 11,False,Mercado,0,961.0,961.0,16:01,16:01
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20248,SFE B3,True,Mercado,0,996.0,996.0,16:36,16:36
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20322,UT 1,False,Mercado,0,1021.0,1021.0,17:01,17:01
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20222,SFE 4,True,EL ARENAL,1,617.0,617.0,10:17,10:17
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20228,SFE B1,True,EL ARENAL,1,663.0,663.0,11:03,11:03
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20843,SFE B1,False,EL ARENAL,1,718.0,719.0,11:58,11:59
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20232,UT 1,True,EL ARENAL,1,763.0,763.0,12:43,12:43
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20234,SFE B2,True,EL ARENAL,1,799.0,799.0,13:19,13:19
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20316,UT 1,False,EL ARENAL,1,904.0,905.0,15:04,15:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20318,SFE B2,False,EL ARENAL,1,934.0,935.0,15:34,15:35
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20320,SFE 11,False,EL ARENAL,1,964.0,965.0,16:04,16:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20376,SFE 10,False,EL ARENAL,1,990.0,990.0,16:30,16:30
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20248,SFE B3,True,EL ARENAL,1,1002.0,1002.0,16:42,16:42
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20250,SFE 7,True,EL ARENAL,1,1005.0,1005.0,16:45,16:45
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20322,UT 1,False,EL ARENAL,1,1024.0,1025.0,17:04,17:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20222,SFE 4,True,El Arenal,1,617.0,617.0,10:17,10:17
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20228,SFE B1,True,El Arenal,1,663.0,663.0,11:03,11:03
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20843,SFE B1,False,El Arenal,1,718.0,719.0,11:58,11:59
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20232,UT 1,True,El Arenal,1,763.0,763.0,12:43,12:43
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20234,SFE B2,True,El Arenal,1,799.0,799.0,13:19,13:19
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20316,UT 1,False,El Arenal,1,904.0,905.0,15:04,15:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20318,SFE B2,False,El Arenal,1,934.0,935.0,15:34,15:35
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20320,SFE 11,False,El Arenal,1,964.0,965.0,16:04,16:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20376,SFE 10,False,El Arenal,1,990.0,990.0,16:30,16:30
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20248,SFE B3,True,El Arenal,1,1002.0,1002.0,16:42,16:42
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20250,SFE 7,True,El Arenal,1,1005.0,1005.0,16:45,16:45
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20322,UT 1,False,El Arenal,1,1024.0,1025.0,17:04,17:05
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20843,SFE B1,False,Hospital Las Higueras,2,722.0,723.0,12:02,12:03
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20316,UT 1,False,Hospital Las Higueras,2,908.0,909.0,15:08,15:09
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20318,SFE B2,False,Hospital Las Higueras,2,938.0,939.0,15:38,15:39
@@ -3133,12 +3133,12 @@ pasajeros,EFE,L1,LJ->TH,Lun-Vie,20331,SFE 11,False,Hospital Las Higueras,20,1188
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20333,UT 1,False,Hospital Las Higueras,20,1259.0,1260.0,20:59,21:00
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20335,SFE 11,False,Hospital Las Higueras,20,1308.0,1309.0,21:48,21:49
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20862,SFE B1,False,Hospital Las Higueras,20,1360.0,1361.0,22:40,22:41
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20329,SFE B2,False,EL ARENAL,21,1162.0,1163.0,19:22,19:23
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20331,SFE 11,False,EL ARENAL,21,1192.0,1193.0,19:52,19:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20261,SFE B3,True,EL ARENAL,21,1248.0,1248.0,20:48,20:48
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20333,UT 1,False,EL ARENAL,21,1263.0,1264.0,21:03,21:04
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20335,SFE 11,False,EL ARENAL,21,1312.0,1313.0,21:52,21:53
-pasajeros,EFE,L1,LJ->TH,Lun-Vie,20862,SFE B1,False,EL ARENAL,21,1364.0,1365.0,22:44,22:45
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20329,SFE B2,False,El Arenal,21,1162.0,1163.0,19:22,19:23
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20331,SFE 11,False,El Arenal,21,1192.0,1193.0,19:52,19:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20261,SFE B3,True,El Arenal,21,1248.0,1248.0,20:48,20:48
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20333,UT 1,False,El Arenal,21,1263.0,1264.0,21:03,21:04
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20335,SFE 11,False,El Arenal,21,1312.0,1313.0,21:52,21:53
+pasajeros,EFE,L1,LJ->TH,Lun-Vie,20862,SFE B1,False,El Arenal,21,1364.0,1365.0,22:44,22:45
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20329,SFE B2,False,Mercado,22,1166.0,1166.0,19:26,19:26
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20331,SFE 11,False,Mercado,22,1196.0,1196.0,19:56,19:56
 pasajeros,EFE,L1,LJ->TH,Lun-Vie,20261,SFE B3,True,Mercado,22,1251.0,1251.0,20:51,20:51
@@ -3155,17 +3155,17 @@ pasajeros,EFE,L1,TH->LJ,Lun-Vie,20264,UT 1,True,Mercado,0,1270.0,1270.0,21:10,21
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20266,SFE 11,True,Mercado,0,1319.0,1319.0,21:59,21:59
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20270,SFE 11,True,Mercado,0,1319.0,1319.0,21:59,21:59
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20272,SFE B1,True,Mercado,0,1370.0,1370.0,22:50,22:50
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20324,SFE B2,False,EL ARENAL,1,1054.0,1055.0,17:34,17:35
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20326,SFE 11,False,EL ARENAL,1,1084.0,1085.0,18:04,18:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20256,SFE 10,True,EL ARENAL,1,1125.0,1125.0,18:45,18:45
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20328,UT 1,False,EL ARENAL,1,1144.0,1145.0,19:04,19:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20330,SFE B2,False,EL ARENAL,1,1174.0,1175.0,19:34,19:35
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20332,SFE 11,False,EL ARENAL,1,1204.0,1205.0,20:04,20:05
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20855,SFE B3,False,EL ARENAL,1,1258.0,1259.0,20:58,20:59
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20264,UT 1,True,EL ARENAL,1,1273.0,1273.0,21:13,21:13
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20266,SFE 11,True,EL ARENAL,1,1322.0,1322.0,22:02,22:02
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20270,SFE 11,True,EL ARENAL,1,1322.0,1322.0,22:02,22:02
-pasajeros,EFE,L1,TH->LJ,Lun-Vie,20272,SFE B1,True,EL ARENAL,1,1373.0,1373.0,22:53,22:53
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20324,SFE B2,False,El Arenal,1,1054.0,1055.0,17:34,17:35
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20326,SFE 11,False,El Arenal,1,1084.0,1085.0,18:04,18:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20256,SFE 10,True,El Arenal,1,1125.0,1125.0,18:45,18:45
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20328,UT 1,False,El Arenal,1,1144.0,1145.0,19:04,19:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20330,SFE B2,False,El Arenal,1,1174.0,1175.0,19:34,19:35
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20332,SFE 11,False,El Arenal,1,1204.0,1205.0,20:04,20:05
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20855,SFE B3,False,El Arenal,1,1258.0,1259.0,20:58,20:59
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20264,UT 1,True,El Arenal,1,1273.0,1273.0,21:13,21:13
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20266,SFE 11,True,El Arenal,1,1322.0,1322.0,22:02,22:02
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20270,SFE 11,True,El Arenal,1,1322.0,1322.0,22:02,22:02
+pasajeros,EFE,L1,TH->LJ,Lun-Vie,20272,SFE B1,True,El Arenal,1,1373.0,1373.0,22:53,22:53
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20324,SFE B2,False,Hospital Las Higueras,2,1058.0,1059.0,17:38,17:39
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20326,SFE 11,False,Hospital Las Higueras,2,1088.0,1089.0,18:08,18:09
 pasajeros,EFE,L1,TH->LJ,Lun-Vie,20328,UT 1,False,Hospital Las Higueras,2,1148.0,1149.0,19:08,19:09
@@ -3377,18 +3377,18 @@ pasajeros,EFE,L1,LJ->TH,Sábado,20846,SFE B1,False,Hospital Las Higueras,20,1068
 pasajeros,EFE,L1,LJ->TH,Sábado,20327,SFE 5,False,Hospital Las Higueras,20,1128.0,1129.0,18:48,18:49
 pasajeros,EFE,L1,LJ->TH,Sábado,20331,SFE B1,False,Hospital Las Higueras,20,1188.0,1189.0,19:48,19:49
 pasajeros,EFE,L1,LJ->TH,Sábado,20848,SFE B2,False,Hospital Las Higueras,20,1278.0,1279.0,21:18,21:19
-pasajeros,EFE,L1,LJ->TH,Sábado,20213,SFE B2,True,EL ARENAL,21,504.0,504.0,08:24,08:24
-pasajeros,EFE,L1,LJ->TH,Sábado,20341,SFE 5,False,EL ARENAL,21,592.0,593.0,09:52,09:53
-pasajeros,EFE,L1,LJ->TH,Sábado,20850,SFE B1,False,EL ARENAL,21,619.0,620.0,10:19,10:20
-pasajeros,EFE,L1,LJ->TH,Sábado,20229,SFE B1,True,EL ARENAL,21,743.0,743.0,12:23,12:23
-pasajeros,EFE,L1,LJ->TH,Sábado,20844,SFE B2,False,EL ARENAL,21,789.0,790.0,13:09,13:10
-pasajeros,EFE,L1,LJ->TH,Sábado,20243,SFE B2,True,EL ARENAL,21,955.0,955.0,15:55,15:55
-pasajeros,EFE,L1,LJ->TH,Sábado,20321,SFE 5,False,EL ARENAL,21,1012.0,1013.0,16:52,16:53
-pasajeros,EFE,L1,LJ->TH,Sábado,20846,SFE B1,False,EL ARENAL,21,1072.0,1073.0,17:52,17:53
-pasajeros,EFE,L1,LJ->TH,Sábado,20327,SFE 5,False,EL ARENAL,21,1132.0,1133.0,18:52,18:53
-pasajeros,EFE,L1,LJ->TH,Sábado,20331,SFE B1,False,EL ARENAL,21,1192.0,1193.0,19:52,19:53
-pasajeros,EFE,L1,LJ->TH,Sábado,20263,SFE 5,True,EL ARENAL,21,1243.0,1243.0,20:43,20:43
-pasajeros,EFE,L1,LJ->TH,Sábado,20848,SFE B2,False,EL ARENAL,21,1282.0,1283.0,21:22,21:23
+pasajeros,EFE,L1,LJ->TH,Sábado,20213,SFE B2,True,El Arenal,21,504.0,504.0,08:24,08:24
+pasajeros,EFE,L1,LJ->TH,Sábado,20341,SFE 5,False,El Arenal,21,592.0,593.0,09:52,09:53
+pasajeros,EFE,L1,LJ->TH,Sábado,20850,SFE B1,False,El Arenal,21,619.0,620.0,10:19,10:20
+pasajeros,EFE,L1,LJ->TH,Sábado,20229,SFE B1,True,El Arenal,21,743.0,743.0,12:23,12:23
+pasajeros,EFE,L1,LJ->TH,Sábado,20844,SFE B2,False,El Arenal,21,789.0,790.0,13:09,13:10
+pasajeros,EFE,L1,LJ->TH,Sábado,20243,SFE B2,True,El Arenal,21,955.0,955.0,15:55,15:55
+pasajeros,EFE,L1,LJ->TH,Sábado,20321,SFE 5,False,El Arenal,21,1012.0,1013.0,16:52,16:53
+pasajeros,EFE,L1,LJ->TH,Sábado,20846,SFE B1,False,El Arenal,21,1072.0,1073.0,17:52,17:53
+pasajeros,EFE,L1,LJ->TH,Sábado,20327,SFE 5,False,El Arenal,21,1132.0,1133.0,18:52,18:53
+pasajeros,EFE,L1,LJ->TH,Sábado,20331,SFE B1,False,El Arenal,21,1192.0,1193.0,19:52,19:53
+pasajeros,EFE,L1,LJ->TH,Sábado,20263,SFE 5,True,El Arenal,21,1243.0,1243.0,20:43,20:43
+pasajeros,EFE,L1,LJ->TH,Sábado,20848,SFE B2,False,El Arenal,21,1282.0,1283.0,21:22,21:23
 pasajeros,EFE,L1,LJ->TH,Sábado,20213,SFE B2,True,Mercado,22,507.0,507.0,08:27,08:27
 pasajeros,EFE,L1,LJ->TH,Sábado,20341,SFE 5,False,Mercado,22,596.0,596.0,09:56,09:56
 pasajeros,EFE,L1,LJ->TH,Sábado,20850,SFE B1,False,Mercado,22,623.0,623.0,10:23,10:23
@@ -3411,17 +3411,17 @@ pasajeros,EFE,L1,TH->LJ,Sábado,20326,SFE B1,False,Mercado,0,1081.0,1081.0,18:01
 pasajeros,EFE,L1,TH->LJ,Sábado,20328,SFE 5,False,Mercado,0,1141.0,1141.0,19:01,19:01
 pasajeros,EFE,L1,TH->LJ,Sábado,20847,SFE B1,False,Mercado,0,1201.0,1201.0,20:01,20:01
 pasajeros,EFE,L1,TH->LJ,Sábado,20268,SFE B2,True,Mercado,0,1289.0,1289.0,21:29,21:29
-pasajeros,EFE,L1,TH->LJ,Sábado,20857,SFE B2,False,EL ARENAL,1,513.0,514.0,08:33,08:34
-pasajeros,EFE,L1,TH->LJ,Sábado,20312,SFE 5,False,EL ARENAL,1,604.0,605.0,10:04,10:05
-pasajeros,EFE,L1,TH->LJ,Sábado,20224,SFE B1,True,EL ARENAL,1,629.0,629.0,10:29,10:29
-pasajeros,EFE,L1,TH->LJ,Sábado,20859,SFE B1,False,EL ARENAL,1,753.0,754.0,12:33,12:34
-pasajeros,EFE,L1,TH->LJ,Sábado,20234,SFE B2,True,EL ARENAL,1,799.0,799.0,13:19,13:19
-pasajeros,EFE,L1,TH->LJ,Sábado,20845,SFE B2,False,EL ARENAL,1,964.0,965.0,16:04,16:05
-pasajeros,EFE,L1,TH->LJ,Sábado,20322,SFE 5,False,EL ARENAL,1,1024.0,1025.0,17:04,17:05
-pasajeros,EFE,L1,TH->LJ,Sábado,20326,SFE B1,False,EL ARENAL,1,1084.0,1085.0,18:04,18:05
-pasajeros,EFE,L1,TH->LJ,Sábado,20328,SFE 5,False,EL ARENAL,1,1144.0,1145.0,19:04,19:05
-pasajeros,EFE,L1,TH->LJ,Sábado,20847,SFE B1,False,EL ARENAL,1,1204.0,1205.0,20:04,20:05
-pasajeros,EFE,L1,TH->LJ,Sábado,20268,SFE B2,True,EL ARENAL,1,1292.0,1292.0,21:32,21:32
+pasajeros,EFE,L1,TH->LJ,Sábado,20857,SFE B2,False,El Arenal,1,513.0,514.0,08:33,08:34
+pasajeros,EFE,L1,TH->LJ,Sábado,20312,SFE 5,False,El Arenal,1,604.0,605.0,10:04,10:05
+pasajeros,EFE,L1,TH->LJ,Sábado,20224,SFE B1,True,El Arenal,1,629.0,629.0,10:29,10:29
+pasajeros,EFE,L1,TH->LJ,Sábado,20859,SFE B1,False,El Arenal,1,753.0,754.0,12:33,12:34
+pasajeros,EFE,L1,TH->LJ,Sábado,20234,SFE B2,True,El Arenal,1,799.0,799.0,13:19,13:19
+pasajeros,EFE,L1,TH->LJ,Sábado,20845,SFE B2,False,El Arenal,1,964.0,965.0,16:04,16:05
+pasajeros,EFE,L1,TH->LJ,Sábado,20322,SFE 5,False,El Arenal,1,1024.0,1025.0,17:04,17:05
+pasajeros,EFE,L1,TH->LJ,Sábado,20326,SFE B1,False,El Arenal,1,1084.0,1085.0,18:04,18:05
+pasajeros,EFE,L1,TH->LJ,Sábado,20328,SFE 5,False,El Arenal,1,1144.0,1145.0,19:04,19:05
+pasajeros,EFE,L1,TH->LJ,Sábado,20847,SFE B1,False,El Arenal,1,1204.0,1205.0,20:04,20:05
+pasajeros,EFE,L1,TH->LJ,Sábado,20268,SFE B2,True,El Arenal,1,1292.0,1292.0,21:32,21:32
 pasajeros,EFE,L1,TH->LJ,Sábado,20857,SFE B2,False,Hospital Las Higueras,2,517.0,518.0,08:37,08:38
 pasajeros,EFE,L1,TH->LJ,Sábado,20312,SFE 5,False,Hospital Las Higueras,2,608.0,609.0,10:08,10:09
 pasajeros,EFE,L1,TH->LJ,Sábado,20859,SFE B1,False,Hospital Las Higueras,2,757.0,758.0,12:37,12:38
@@ -3634,14 +3634,14 @@ pasajeros,EFE,L1,LJ->TH,Domingo,20850,SFE B1,False,Hospital Las Higueras,20,615.
 pasajeros,EFE,L1,LJ->TH,Domingo,20844,SFE B2,False,Hospital Las Higueras,20,785.0,786.0,13:05,13:06
 pasajeros,EFE,L1,LJ->TH,Domingo,20846,SFE B1,False,Hospital Las Higueras,20,1068.0,1069.0,17:48,17:49
 pasajeros,EFE,L1,LJ->TH,Domingo,20848,SFE B2,False,Hospital Las Higueras,20,1278.0,1279.0,21:18,21:19
-pasajeros,EFE,L1,LJ->TH,Domingo,20213,SFE B2,True,EL ARENAL,21,504.0,504.0,08:24,08:24
-pasajeros,EFE,L1,LJ->TH,Domingo,20850,SFE B1,False,EL ARENAL,21,619.0,620.0,10:19,10:20
-pasajeros,EFE,L1,LJ->TH,Domingo,20229,SFE B1,True,EL ARENAL,21,743.0,743.0,12:23,12:23
-pasajeros,EFE,L1,LJ->TH,Domingo,20844,SFE B2,False,EL ARENAL,21,789.0,790.0,13:09,13:10
-pasajeros,EFE,L1,LJ->TH,Domingo,20243,SFE B2,True,EL ARENAL,21,955.0,955.0,15:55,15:55
-pasajeros,EFE,L1,LJ->TH,Domingo,20846,SFE B1,False,EL ARENAL,21,1072.0,1073.0,17:52,17:53
-pasajeros,EFE,L1,LJ->TH,Domingo,20259,SFE B1,True,EL ARENAL,21,1195.0,1195.0,19:55,19:55
-pasajeros,EFE,L1,LJ->TH,Domingo,20848,SFE B2,False,EL ARENAL,21,1282.0,1283.0,21:22,21:23
+pasajeros,EFE,L1,LJ->TH,Domingo,20213,SFE B2,True,El Arenal,21,504.0,504.0,08:24,08:24
+pasajeros,EFE,L1,LJ->TH,Domingo,20850,SFE B1,False,El Arenal,21,619.0,620.0,10:19,10:20
+pasajeros,EFE,L1,LJ->TH,Domingo,20229,SFE B1,True,El Arenal,21,743.0,743.0,12:23,12:23
+pasajeros,EFE,L1,LJ->TH,Domingo,20844,SFE B2,False,El Arenal,21,789.0,790.0,13:09,13:10
+pasajeros,EFE,L1,LJ->TH,Domingo,20243,SFE B2,True,El Arenal,21,955.0,955.0,15:55,15:55
+pasajeros,EFE,L1,LJ->TH,Domingo,20846,SFE B1,False,El Arenal,21,1072.0,1073.0,17:52,17:53
+pasajeros,EFE,L1,LJ->TH,Domingo,20259,SFE B1,True,El Arenal,21,1195.0,1195.0,19:55,19:55
+pasajeros,EFE,L1,LJ->TH,Domingo,20848,SFE B2,False,El Arenal,21,1282.0,1283.0,21:22,21:23
 pasajeros,EFE,L1,LJ->TH,Domingo,20213,SFE B2,True,Mercado,22,507.0,507.0,08:27,08:27
 pasajeros,EFE,L1,LJ->TH,Domingo,20850,SFE B1,False,Mercado,22,623.0,623.0,10:23,10:23
 pasajeros,EFE,L1,LJ->TH,Domingo,20229,SFE B1,True,Mercado,22,746.0,746.0,12:26,12:26
@@ -3658,15 +3658,15 @@ pasajeros,EFE,L1,TH->LJ,Domingo,20845,SFE B2,False,Mercado,0,961.0,961.0,16:01,1
 pasajeros,EFE,L1,TH->LJ,Domingo,20254,SFE B1,True,Mercado,0,1079.0,1079.0,17:59,17:59
 pasajeros,EFE,L1,TH->LJ,Domingo,20847,SFE B1,False,Mercado,0,1201.0,1201.0,20:01,20:01
 pasajeros,EFE,L1,TH->LJ,Domingo,20268,SFE B2,True,Mercado,0,1289.0,1289.0,21:29,21:29
-pasajeros,EFE,L1,TH->LJ,Domingo,20857,SFE B2,False,EL ARENAL,1,513.0,514.0,08:33,08:34
-pasajeros,EFE,L1,TH->LJ,Domingo,20224,SFE B1,True,EL ARENAL,1,629.0,629.0,10:29,10:29
-pasajeros,EFE,L1,TH->LJ,Domingo,20859,SFE B1,False,EL ARENAL,1,753.0,754.0,12:33,12:34
-pasajeros,EFE,L1,TH->LJ,Domingo,20234,SFE B2,True,EL ARENAL,1,799.0,799.0,13:19,13:19
-pasajeros,EFE,L1,TH->LJ,Domingo,20845,SFE B2,False,EL ARENAL,1,964.0,965.0,16:04,16:05
-pasajeros,EFE,L1,TH->LJ,Domingo,20254,SFE B1,True,EL ARENAL,1,1082.0,1082.0,18:02,18:02
-pasajeros,EFE,L1,TH->LJ,Domingo,20262,SFE 5,True,EL ARENAL,1,1190.0,1190.0,19:50,19:50
-pasajeros,EFE,L1,TH->LJ,Domingo,20847,SFE B1,False,EL ARENAL,1,1204.0,1205.0,20:04,20:05
-pasajeros,EFE,L1,TH->LJ,Domingo,20268,SFE B2,True,EL ARENAL,1,1292.0,1292.0,21:32,21:32
+pasajeros,EFE,L1,TH->LJ,Domingo,20857,SFE B2,False,El Arenal,1,513.0,514.0,08:33,08:34
+pasajeros,EFE,L1,TH->LJ,Domingo,20224,SFE B1,True,El Arenal,1,629.0,629.0,10:29,10:29
+pasajeros,EFE,L1,TH->LJ,Domingo,20859,SFE B1,False,El Arenal,1,753.0,754.0,12:33,12:34
+pasajeros,EFE,L1,TH->LJ,Domingo,20234,SFE B2,True,El Arenal,1,799.0,799.0,13:19,13:19
+pasajeros,EFE,L1,TH->LJ,Domingo,20845,SFE B2,False,El Arenal,1,964.0,965.0,16:04,16:05
+pasajeros,EFE,L1,TH->LJ,Domingo,20254,SFE B1,True,El Arenal,1,1082.0,1082.0,18:02,18:02
+pasajeros,EFE,L1,TH->LJ,Domingo,20262,SFE 5,True,El Arenal,1,1190.0,1190.0,19:50,19:50
+pasajeros,EFE,L1,TH->LJ,Domingo,20847,SFE B1,False,El Arenal,1,1204.0,1205.0,20:04,20:05
+pasajeros,EFE,L1,TH->LJ,Domingo,20268,SFE B2,True,El Arenal,1,1292.0,1292.0,21:32,21:32
 pasajeros,EFE,L1,TH->LJ,Domingo,20857,SFE B2,False,Hospital Las Higueras,2,517.0,518.0,08:37,08:38
 pasajeros,EFE,L1,TH->LJ,Domingo,20859,SFE B1,False,Hospital Las Higueras,2,757.0,758.0,12:37,12:38
 pasajeros,EFE,L1,TH->LJ,Domingo,20845,SFE B2,False,Hospital Las Higueras,2,968.0,969.0,16:08,16:09
@@ -3768,28 +3768,28 @@ carga,FEPASA,carga,,,50011,,False,Turquía,9,35.0,35.0,00:35,00:35
 carga,FEPASA,carga,,,50012,,False,Turquía,5,924.0,924.0,15:24,15:24
 carga,FEPASA,carga,,,50011,,False,SAN ROSENDO,10,50.0,58.0,00:50,00:58
 carga,FEPASA,carga,,,50012,,False,SAN ROSENDO,6,938.0,970.0,15:38,16:10
-carga,FEPASA,carga,,,50011,,False,Buenuraqui,11,72.0,90.0,01:12,01:30
-carga,FEPASA,carga,,,50012,,False,Buenuraqui,7,982.0,982.0,16:22,16:22
-carga,FEPASA,carga,,,50011,,False,Gomero,12,102.0,102.0,01:42,01:42
-carga,FEPASA,carga,,,50012,,False,Gomero,8,1025.0,1025.0,17:05,17:05
-carga,FEPASA,carga,,,50011,,False,Talcamávida,13,115.0,127.0,01:55,02:07
-carga,FEPASA,carga,,,50012,,False,Talcamávida,9,1058.0,1058.0,17:38,17:38
-carga,FEPASA,carga,,,50011,,False,Unihue,14,137.0,137.0,02:17,02:17
-carga,FEPASA,carga,,,50011,,False,Quilacoya,15,150.0,150.0,02:30,02:30
-carga,FEPASA,carga,,,50012,,False,Quilacoya,10,1112.0,1112.0,18:32,18:32
-carga,FEPASA,carga,,,50011,,False,Hualqui,16,166.0,166.0,02:46,02:46
-carga,FEPASA,carga,,,50011,,False,La Leonera,17,179.0,179.0,02:59,02:59
-carga,FEPASA,carga,,,50012,,False,La Leonera,11,1121.0,1121.0,18:41,18:41
-carga,FEPASA,carga,,,50011,,False,Chiguayante,18,184.0,184.0,03:04,03:04
+carga,FEPASA,carga,,,50011,,False,BUENURAQUI,11,72.0,90.0,01:12,01:30
+carga,FEPASA,carga,,,50012,,False,BUENURAQUI,7,982.0,982.0,16:22,16:22
+carga,FEPASA,carga,,,50011,,False,GOMERO,12,102.0,102.0,01:42,01:42
+carga,FEPASA,carga,,,50012,,False,GOMERO,8,1025.0,1025.0,17:05,17:05
+carga,FEPASA,carga,,,50011,,False,TALCAMÁVIDA,13,115.0,127.0,01:55,02:07
+carga,FEPASA,carga,,,50012,,False,TALCAMÁVIDA,9,1058.0,1058.0,17:38,17:38
+carga,FEPASA,carga,,,50011,,False,UNIHUE,14,137.0,137.0,02:17,02:17
+carga,FEPASA,carga,,,50011,,False,QUILACOYA,15,150.0,150.0,02:30,02:30
+carga,FEPASA,carga,,,50012,,False,QUILACOYA,10,1112.0,1112.0,18:32,18:32
+carga,FEPASA,carga,,,50011,,False,HUALQUI,16,166.0,166.0,02:46,02:46
+carga,FEPASA,carga,,,50011,,False,LA LEONERA,17,179.0,179.0,02:59,02:59
+carga,FEPASA,carga,,,50012,,False,LA LEONERA,11,1121.0,1121.0,18:41,18:41
+carga,FEPASA,carga,,,50011,,False,CHIGUAYANTE,18,184.0,184.0,03:04,03:04
 carga,FEPASA,carga,,,50011,,False,CONCEPCIÓN,19,200.0,200.0,03:20,03:20
-carga,FEPASA,carga,,,50011,,False,EL ARENAL,20,222.0,222.0,03:42,03:42
+carga,FEPASA,carga,,,50011,,False,El Arenal,20,222.0,222.0,03:42,03:42
 carga,FEPASA,carga,,,50511,,False,CONCEPCIÓN,1,200.0,200.0,03:20,03:20
 carga,FEPASA,carga,,,50512,,False,CONCEPCIÓN,1,705.0,705.0,11:45,11:45
 carga,FEPASA,carga,,,50511,,False,Biobío,2,211.0,211.0,03:31,03:31
 carga,FEPASA,carga,,,50512,,False,Biobío,2,715.0,715.0,11:55,11:55
 carga,FEPASA,carga,,,50511,,False,Boca Sur,3,216.0,216.0,03:36,03:36
-carga,FEPASA,carga,,,50511,,False,Lomas Coloradas,4,221.0,221.0,03:41,03:41
-carga,FEPASA,carga,,,50512,,False,Lomas Coloradas,3,721.0,721.0,12:01,12:01
+carga,FEPASA,carga,,,50511,,False,LOMAS COLORADAS,4,221.0,221.0,03:41,03:41
+carga,FEPASA,carga,,,50512,,False,LOMAS COLORADAS,3,721.0,721.0,12:01,12:01
 carga,FEPASA,carga,,,50511,,False,Escuadrón,5,231.0,231.0,03:51,03:51
 carga,FEPASA,carga,,,50512,,False,Escuadrón,4,728.0,728.0,12:08,12:08
 carga,FEPASA,carga,,,50511,,False,Lagunillas,6,239.0,239.0,03:59,03:59
@@ -3816,16 +3816,16 @@ carga,FEPASA,carga,,,50009,,False,Monte Águila,7,415.0,415.0,06:55,06:55
 carga,FEPASA,carga,,,50009,,False,Yumbel,8,434.0,434.0,07:14,07:14
 carga,FEPASA,carga,,,50009,,False,Turquía,9,456.0,456.0,07:36,07:36
 carga,FEPASA,carga,,,50009,,False,SAN ROSENDO,10,471.0,695.0,07:51,11:35
-carga,FEPASA,carga,,,50009,,False,Buenuraqui,11,709.0,724.0,11:49,12:04
-carga,FEPASA,carga,,,50009,,False,Gomero,12,736.0,736.0,12:16,12:16
-carga,FEPASA,carga,,,50009,,False,Talcamávida,13,749.0,749.0,12:29,12:29
-carga,FEPASA,carga,,,50009,,False,Unihue,14,759.0,764.0,12:39,12:44
-carga,FEPASA,carga,,,50009,,False,Quilacoya,15,777.0,785.0,12:57,13:05
-carga,FEPASA,carga,,,50009,,False,Hualqui,16,801.0,801.0,13:21,13:21
-carga,FEPASA,carga,,,50009,,False,La Leonera,17,814.0,814.0,13:34,13:34
-carga,FEPASA,carga,,,50009,,False,Chiguayante,18,819.0,819.0,13:39,13:39
+carga,FEPASA,carga,,,50009,,False,BUENURAQUI,11,709.0,724.0,11:49,12:04
+carga,FEPASA,carga,,,50009,,False,GOMERO,12,736.0,736.0,12:16,12:16
+carga,FEPASA,carga,,,50009,,False,TALCAMÁVIDA,13,749.0,749.0,12:29,12:29
+carga,FEPASA,carga,,,50009,,False,UNIHUE,14,759.0,764.0,12:39,12:44
+carga,FEPASA,carga,,,50009,,False,QUILACOYA,15,777.0,785.0,12:57,13:05
+carga,FEPASA,carga,,,50009,,False,HUALQUI,16,801.0,801.0,13:21,13:21
+carga,FEPASA,carga,,,50009,,False,LA LEONERA,17,814.0,814.0,13:34,13:34
+carga,FEPASA,carga,,,50009,,False,CHIGUAYANTE,18,819.0,819.0,13:39,13:39
 carga,FEPASA,carga,,,50009,,False,CONCEPCIÓN,19,835.0,835.0,13:55,13:55
-carga,FEPASA,carga,,,50009,,False,EL ARENAL,20,857.0,857.0,14:17,14:17
+carga,FEPASA,carga,,,50009,,False,El Arenal,20,857.0,857.0,14:17,14:17
 carga,FEPASA,carga,,,50991,,False,CHILLÁN,1,558.0,558.0,09:18,09:18
 carga,FEPASA,carga,,,50982,,False,CHILLÁN,1,1424.0,1424.0,23:44,23:44
 carga,FEPASA,carga,,,50991,,False,Nebuco,2,579.0,579.0,09:39,09:39
@@ -3873,33 +3873,33 @@ carga,FEPASA,carga,,,50084,,False,COIGÜE,22,372.0,405.0,06:12,06:45
 carga,FEPASA,carga,,,50084,,False,Santa Fe,23,426.0,426.0,07:06,07:06
 carga,FEPASA,carga,,,50083,,False,Santa Fe,16,263.0,263.0,04:23,04:23
 carga,FEPASA,carga,,,50084,,False,Diuquín,24,450.0,450.0,07:30,07:30
-carga,FEPASA,carga,,,50084,,False,Laja,25,469.0,469.0,07:49,07:49
-carga,FEPASA,carga,,,50083,,False,Laja,17,273.0,273.0,04:33,04:33
+carga,FEPASA,carga,,,50084,,False,LAJA,25,469.0,469.0,07:49,07:49
+carga,FEPASA,carga,,,50083,,False,LAJA,17,273.0,273.0,04:33,04:33
 carga,FEPASA,carga,,,50084,,False,SAN ROSENDO,26,477.0,558.0,07:57,09:18
 carga,FEPASA,carga,,,50083,,False,SAN ROSENDO,18,294.0,294.0,04:54,04:54
-carga,FEPASA,carga,,,50084,,False,Buenuraqui,27,572.0,572.0,09:32,09:32
-carga,FEPASA,carga,,,50083,,False,Buenuraqui,19,313.0,313.0,05:13,05:13
-carga,FEPASA,carga,,,50084,,False,Gomero,28,584.0,591.0,09:44,09:51
-carga,FEPASA,carga,,,50083,,False,Gomero,20,338.0,338.0,05:38,05:38
-carga,FEPASA,carga,,,50084,,False,Talcamávida,29,604.0,604.0,10:04,10:04
-carga,FEPASA,carga,,,50083,,False,Talcamávida,21,372.0,372.0,06:12,06:12
-carga,FEPASA,carga,,,50084,,False,Unihue,30,614.0,614.0,10:14,10:14
-carga,FEPASA,carga,,,50083,,False,Unihue,22,388.0,470.0,06:28,07:50
-carga,FEPASA,carga,,,50084,,False,Quilacoya,31,627.0,627.0,10:27,10:27
-carga,FEPASA,carga,,,50084,,False,Hualqui,32,643.0,658.0,10:43,10:58
-carga,FEPASA,carga,,,50083,,False,Hualqui,23,494.0,494.0,08:14,08:14
-carga,FEPASA,carga,,,50084,,False,La Leonera,33,671.0,698.0,11:11,11:38
-carga,FEPASA,carga,,,50083,,False,La Leonera,24,518.0,518.0,08:38,08:38
-carga,FEPASA,carga,,,50084,,False,Chiguayante,34,703.0,703.0,11:43,11:43
-carga,FEPASA,carga,,,50083,,False,Chiguayante,25,548.0,548.0,09:08,09:08
+carga,FEPASA,carga,,,50084,,False,BUENURAQUI,27,572.0,572.0,09:32,09:32
+carga,FEPASA,carga,,,50083,,False,BUENURAQUI,19,313.0,313.0,05:13,05:13
+carga,FEPASA,carga,,,50084,,False,GOMERO,28,584.0,591.0,09:44,09:51
+carga,FEPASA,carga,,,50083,,False,GOMERO,20,338.0,338.0,05:38,05:38
+carga,FEPASA,carga,,,50084,,False,TALCAMÁVIDA,29,604.0,604.0,10:04,10:04
+carga,FEPASA,carga,,,50083,,False,TALCAMÁVIDA,21,372.0,372.0,06:12,06:12
+carga,FEPASA,carga,,,50084,,False,UNIHUE,30,614.0,614.0,10:14,10:14
+carga,FEPASA,carga,,,50083,,False,UNIHUE,22,388.0,470.0,06:28,07:50
+carga,FEPASA,carga,,,50084,,False,QUILACOYA,31,627.0,627.0,10:27,10:27
+carga,FEPASA,carga,,,50084,,False,HUALQUI,32,643.0,658.0,10:43,10:58
+carga,FEPASA,carga,,,50083,,False,HUALQUI,23,494.0,494.0,08:14,08:14
+carga,FEPASA,carga,,,50084,,False,LA LEONERA,33,671.0,698.0,11:11,11:38
+carga,FEPASA,carga,,,50083,,False,LA LEONERA,24,518.0,518.0,08:38,08:38
+carga,FEPASA,carga,,,50084,,False,CHIGUAYANTE,34,703.0,703.0,11:43,11:43
+carga,FEPASA,carga,,,50083,,False,CHIGUAYANTE,25,548.0,548.0,09:08,09:08
 carga,FEPASA,carga,,,50084,,False,CONCEPCIÓN,35,719.0,719.0,11:59,11:59
 carga,FEPASA,carga,,,50083,,False,CONCEPCIÓN,26,573.0,573.0,09:33,09:33
-carga,FEPASA,carga,,,50084,,False,EL ARENAL,36,741.0,741.0,12:21,12:21
+carga,FEPASA,carga,,,50084,,False,El Arenal,36,741.0,741.0,12:21,12:21
 carga,FEPASA,carga,,,50083,,False,con y llega a San Rosendo,27,691.0,691.0,11:31,11:31
 carga,FEPASA,carga,,,50484,,False,LA LEONERA,1,681.0,681.0,11:21,11:21
 carga,FEPASA,carga,,,50483,,False,LA LEONERA,1,1230.0,1230.0,20:30,20:30
-carga,FEPASA,carga,,,50484,,False,Chiguayante,2,686.0,686.0,11:26,11:26
-carga,FEPASA,carga,,,50483,,False,Chiguayante,2,1246.0,1246.0,20:46,20:46
+carga,FEPASA,carga,,,50484,,False,CHIGUAYANTE,2,686.0,686.0,11:26,11:26
+carga,FEPASA,carga,,,50483,,False,CHIGUAYANTE,2,1246.0,1246.0,20:46,20:46
 carga,FEPASA,carga,,,50484,,False,CONCEPCIÓN,3,702.0,702.0,11:42,11:42
 carga,FEPASA,carga,,,50484,,False,Cosmito,4,729.0,729.0,12:09,12:09
 carga,FEPASA,carga,,,50484,,False,Playa Negra,5,746.0,746.0,12:26,12:26
@@ -3908,16 +3908,16 @@ carga,FEPASA,carga,,,50484,,False,LIRQUÉN,6,762.0,762.0,12:42,12:42
 carga,FEPASA,carga,,,50483,,False,LIRQUÉN,4,1311.0,1311.0,21:51,21:51
 carga,FEPASA,carga,,,50484,,False,LA LEONERA,7,681.0,681.0,11:21,11:21
 carga,FEPASA,carga,,,50483,,False,LA LEONERA,5,1262.0,1262.0,21:02,21:02
-carga,FEPASA,carga,,,50484,,False,Chiguayante,8,686.0,686.0,11:26,11:26
-carga,FEPASA,carga,,,50483,,False,Chiguayante,6,1272.0,1272.0,21:12,21:12
+carga,FEPASA,carga,,,50484,,False,CHIGUAYANTE,8,686.0,686.0,11:26,11:26
+carga,FEPASA,carga,,,50483,,False,CHIGUAYANTE,6,1272.0,1272.0,21:12,21:12
 carga,FEPASA,carga,,,50484,,False,CONCEPCIÓN,9,702.0,709.0,11:42,11:49
 carga,FEPASA,carga,,,50483,,False,CONCEPCIÓN,7,1278.0,1278.0,21:18,21:18
 carga,FEPASA,carga,,,50484,,False,Biobío,10,722.0,722.0,12:02,12:02
 carga,FEPASA,carga,,,50483,,False,Biobío,8,1295.0,1295.0,21:35,21:35
 carga,FEPASA,carga,,,50484,,False,Boca Sur,11,727.0,727.0,12:07,12:07
 carga,FEPASA,carga,,,50483,,False,Boca Sur,9,1300.0,1300.0,21:40,21:40
-carga,FEPASA,carga,,,50484,,False,Lomas Coloradas,12,732.0,732.0,12:12,12:12
-carga,FEPASA,carga,,,50483,,False,Lomas Coloradas,10,1305.0,1305.0,21:45,21:45
+carga,FEPASA,carga,,,50484,,False,LOMAS COLORADAS,12,732.0,732.0,12:12,12:12
+carga,FEPASA,carga,,,50483,,False,LOMAS COLORADAS,10,1305.0,1305.0,21:45,21:45
 carga,FEPASA,carga,,,50484,,False,Escuadrón,13,742.0,742.0,12:22,12:22
 carga,FEPASA,carga,,,50484,,False,Lagunillas,14,748.0,748.0,12:28,12:28
 carga,FEPASA,carga,,,50483,,False,Lagunillas,11,1319.0,1319.0,21:59,21:59
@@ -3925,12 +3925,12 @@ carga,FEPASA,carga,,,50484,,False,CORONEL,15,755.0,755.0,12:35,12:35
 carga,FEPASA,carga,,,50483,,False,CORONEL,12,1335.0,1335.0,22:15,22:15
 carga,FEPASA,carga,,,50484,,False,PATIO SUR,16,765.0,765.0,12:45,12:45
 carga,FEPASA,carga,,,50483,,False,PATIO SUR,13,1340.0,1340.0,22:20,22:20
-carga,FEPASA,carga,,,50112,,False,EL ARENAL,1,620.0,620.0,10:20,10:20
-carga,FEPASA,carga,,,50585,,False,EL ARENAL,1,947.0,947.0,15:47,15:47
+carga,FEPASA,carga,,,50112,,False,El Arenal,1,620.0,620.0,10:20,10:20
+carga,FEPASA,carga,,,50585,,False,El Arenal,1,947.0,947.0,15:47,15:47
 carga,FEPASA,carga,,,50112,,False,CONCEPCIÓN,2,638.0,638.0,10:38,10:38
 carga,FEPASA,carga,,,50585,,False,CONCEPCIÓN,2,968.0,968.0,16:08,16:08
-carga,FEPASA,carga,,,50112,,False,Chiguayante,3,652.0,652.0,10:52,10:52
-carga,FEPASA,carga,,,50585,,False,Chiguayante,3,978.0,978.0,16:18,16:18
+carga,FEPASA,carga,,,50112,,False,CHIGUAYANTE,3,652.0,652.0,10:52,10:52
+carga,FEPASA,carga,,,50585,,False,CHIGUAYANTE,3,978.0,978.0,16:18,16:18
 carga,FEPASA,carga,,,50112,,False,LA LEONERA,4,657.0,657.0,10:57,10:57
 carga,FEPASA,carga,,,50585,,False,LA LEONERA,4,988.0,988.0,16:28,16:28
 carga,FEPASA,carga,,,50089,,False,NUEVA ALDEA,1,1020.0,1020.0,17:00,17:00
@@ -3951,37 +3951,37 @@ carga,FEPASA,carga,,,50089,,False,Turquía,8,1271.0,1271.0,21:11,21:11
 carga,FEPASA,carga,,,50091,,False,Turquía,8,756.0,756.0,12:36,12:36
 carga,FEPASA,carga,,,50089,,False,SAN ROSENDO,9,1286.0,1305.0,21:26,21:45
 carga,FEPASA,carga,,,50091,,False,SAN ROSENDO,9,771.0,771.0,12:51,12:51
-carga,FEPASA,carga,,,50089,,False,Buenuraqui,10,1319.0,1319.0,21:59,21:59
-carga,FEPASA,carga,,,50091,,False,Buenuraqui,10,808.0,785.0,13:28,13:05
-carga,FEPASA,carga,,,50089,,False,Gomero,11,1331.0,1331.0,22:11,22:11
-carga,FEPASA,carga,,,50091,,False,Gomero,11,824.0,820.0,13:44,13:40
-carga,FEPASA,carga,,,50089,,False,Talcamávida,12,1344.0,1351.0,22:24,22:31
-carga,FEPASA,carga,,,50091,,False,Talcamávida,12,837.0,833.0,13:57,13:53
-carga,FEPASA,carga,,,50089,,False,Unihue,13,1361.0,1361.0,22:41,22:41
-carga,FEPASA,carga,,,50091,,False,Unihue,13,847.0,854.0,14:07,14:14
-carga,FEPASA,carga,,,50089,,False,Quilacoya,14,1374.0,1374.0,22:54,22:54
-carga,FEPASA,carga,,,50091,,False,Quilacoya,14,871.0,867.0,14:31,14:27
-carga,FEPASA,carga,,,50089,,False,Hualqui,15,1390.0,1390.0,23:10,23:10
-carga,FEPASA,carga,,,50091,,False,Hualqui,15,893.0,891.0,14:53,14:51
-carga,FEPASA,carga,,,50089,,False,La Leonera,16,1403.0,1435.0,23:23,23:55
-carga,FEPASA,carga,,,50091,,False,La Leonera,16,932.0,908.0,15:32,15:08
-carga,FEPASA,carga,,,50089,,False,Chiguayante,17,0.0,0.0,00:00,00:00
-carga,FEPASA,carga,,,50091,,False,Chiguayante,17,937.0,937.0,15:37,15:37
+carga,FEPASA,carga,,,50089,,False,BUENURAQUI,10,1319.0,1319.0,21:59,21:59
+carga,FEPASA,carga,,,50091,,False,BUENURAQUI,10,808.0,785.0,13:28,13:05
+carga,FEPASA,carga,,,50089,,False,GOMERO,11,1331.0,1331.0,22:11,22:11
+carga,FEPASA,carga,,,50091,,False,GOMERO,11,824.0,820.0,13:44,13:40
+carga,FEPASA,carga,,,50089,,False,TALCAMÁVIDA,12,1344.0,1351.0,22:24,22:31
+carga,FEPASA,carga,,,50091,,False,TALCAMÁVIDA,12,837.0,833.0,13:57,13:53
+carga,FEPASA,carga,,,50089,,False,UNIHUE,13,1361.0,1361.0,22:41,22:41
+carga,FEPASA,carga,,,50091,,False,UNIHUE,13,847.0,854.0,14:07,14:14
+carga,FEPASA,carga,,,50089,,False,QUILACOYA,14,1374.0,1374.0,22:54,22:54
+carga,FEPASA,carga,,,50091,,False,QUILACOYA,14,871.0,867.0,14:31,14:27
+carga,FEPASA,carga,,,50089,,False,HUALQUI,15,1390.0,1390.0,23:10,23:10
+carga,FEPASA,carga,,,50091,,False,HUALQUI,15,893.0,891.0,14:53,14:51
+carga,FEPASA,carga,,,50089,,False,LA LEONERA,16,1403.0,1435.0,23:23,23:55
+carga,FEPASA,carga,,,50091,,False,LA LEONERA,16,932.0,908.0,15:32,15:08
+carga,FEPASA,carga,,,50089,,False,CHIGUAYANTE,17,0.0,0.0,00:00,00:00
+carga,FEPASA,carga,,,50091,,False,CHIGUAYANTE,17,937.0,937.0,15:37,15:37
 carga,FEPASA,carga,,,50089,,False,CONCEPCIÓN,18,15.0,15.0,00:15,00:15
 carga,FEPASA,carga,,,50091,,False,CONCEPCIÓN,18,952.0,952.0,15:52,15:52
-carga,FEPASA,carga,,,50089,,False,EL ARENAL,19,37.0,37.0,00:37,00:37
-carga,FEPASA,carga,,,50091,,False,EL ARENAL,19,974.0,974.0,16:14,16:14
-carga,FEPASA,carga,,,50089,,False,EL ARENAL,20,1355.0,1355.0,22:35,22:35
-carga,FEPASA,carga,,,50091,,False,EL ARENAL,20,862.0,862.0,14:22,14:22
+carga,FEPASA,carga,,,50089,,False,El Arenal,19,37.0,37.0,00:37,00:37
+carga,FEPASA,carga,,,50091,,False,El Arenal,19,974.0,974.0,16:14,16:14
+carga,FEPASA,carga,,,50089,,False,El Arenal,20,1355.0,1355.0,22:35,22:35
+carga,FEPASA,carga,,,50091,,False,El Arenal,20,862.0,862.0,14:22,14:22
 carga,FEPASA,carga,,,50089,,False,CONCEPCIÓN,21,1373.0,1373.0,22:53,22:53
 carga,FEPASA,carga,,,50091,,False,CONCEPCIÓN,21,880.0,880.0,14:40,14:40
-carga,FEPASA,carga,,,50089,,False,Chiguayante,22,1387.0,1387.0,23:07,23:07
-carga,FEPASA,carga,,,50091,,False,Chiguayante,22,894.0,894.0,14:54,14:54
+carga,FEPASA,carga,,,50089,,False,CHIGUAYANTE,22,1387.0,1387.0,23:07,23:07
+carga,FEPASA,carga,,,50091,,False,CHIGUAYANTE,22,894.0,894.0,14:54,14:54
 carga,FEPASA,carga,,,50089,,False,LA LEONERA,23,1393.0,1393.0,23:13,23:13
 carga,FEPASA,carga,,,50490,,False,LA LEONERA,1,1415.0,1415.0,23:35,23:35
 carga,FEPASA,carga,,,50492,,False,LA LEONERA,1,915.0,915.0,15:15,15:15
-carga,FEPASA,carga,,,50490,,False,Chiguayante,2,1421.0,1421.0,23:41,23:41
-carga,FEPASA,carga,,,50492,,False,Chiguayante,2,921.0,921.0,15:21,15:21
+carga,FEPASA,carga,,,50490,,False,CHIGUAYANTE,2,1421.0,1421.0,23:41,23:41
+carga,FEPASA,carga,,,50492,,False,CHIGUAYANTE,2,921.0,921.0,15:21,15:21
 carga,FEPASA,carga,,,50490,,False,CONCEPCIÓN,3,1437.0,1437.0,23:57,23:57
 carga,FEPASA,carga,,,50492,,False,CONCEPCIÓN,3,937.0,937.0,15:37,15:37
 carga,FEPASA,carga,,,50490,,False,Cosmito,4,24.0,24.0,00:24,00:24
@@ -3992,16 +3992,16 @@ carga,FEPASA,carga,,,50490,,False,LIRQUÉN,6,57.0,57.0,00:57,00:57
 carga,FEPASA,carga,,,50492,,False,LIRQUÉN,6,997.0,997.0,16:37,16:37
 carga,FEPASA,carga,,,50490,,False,LA LEONERA,7,1415.0,1415.0,23:35,23:35
 carga,FEPASA,carga,,,50492,,False,LA LEONERA,7,915.0,915.0,15:15,15:15
-carga,FEPASA,carga,,,50490,,False,Chiguayante,8,1421.0,1421.0,23:41,23:41
-carga,FEPASA,carga,,,50492,,False,Chiguayante,8,921.0,921.0,15:21,15:21
+carga,FEPASA,carga,,,50490,,False,CHIGUAYANTE,8,1421.0,1421.0,23:41,23:41
+carga,FEPASA,carga,,,50492,,False,CHIGUAYANTE,8,921.0,921.0,15:21,15:21
 carga,FEPASA,carga,,,50490,,False,CONCEPCIÓN,9,1437.0,3.0,23:57,00:03
 carga,FEPASA,carga,,,50492,,False,CONCEPCIÓN,9,937.0,937.0,15:37,15:37
 carga,FEPASA,carga,,,50490,,False,Biobío,10,14.0,14.0,00:14,00:14
 carga,FEPASA,carga,,,50492,,False,Biobío,10,948.0,948.0,15:48,15:48
 carga,FEPASA,carga,,,50490,,False,Boca Sur,11,19.0,19.0,00:19,00:19
 carga,FEPASA,carga,,,50492,,False,Boca Sur,11,953.0,953.0,15:53,15:53
-carga,FEPASA,carga,,,50490,,False,Lomas Coloradas,12,24.0,24.0,00:24,00:24
-carga,FEPASA,carga,,,50492,,False,Lomas Coloradas,12,958.0,958.0,15:58,15:58
+carga,FEPASA,carga,,,50490,,False,LOMAS COLORADAS,12,24.0,24.0,00:24,00:24
+carga,FEPASA,carga,,,50492,,False,LOMAS COLORADAS,12,958.0,958.0,15:58,15:58
 carga,FEPASA,carga,,,50490,,False,Escuadrón,13,34.0,34.0,00:34,00:34
 carga,FEPASA,carga,,,50492,,False,Escuadrón,13,968.0,968.0,16:08,16:08
 carga,FEPASA,carga,,,50490,,False,Lagunillas,14,40.0,40.0,00:40,00:40
@@ -4016,26 +4016,26 @@ carga,FEPASA,carga,,,50190,,False,RUCAPEQUÉN,2,854.0,854.0,14:14,14:14
 carga,FEPASA,carga,,,50192,,False,RUCAPEQUÉN,2,269.0,269.0,04:29,04:29
 carga,FEPASA,carga,,,50190,,False,RUCAPEQUÉN,3,865.0,865.0,14:25,14:25
 carga,FEPASA,carga,,,50190,,False,NUEVA ALDEA,4,939.0,939.0,15:39,15:39
-carga,FEPASA,carga,,,50090,,False,EL ARENAL,1,580.0,580.0,09:40,09:40
+carga,FEPASA,carga,,,50090,,False,El Arenal,1,580.0,580.0,09:40,09:40
 carga,FEPASA,carga,,,50092,,False,BIOBÍO,1,44.0,44.0,00:44,00:44
 carga,FEPASA,carga,,,50090,,False,CONCEPCIÓN,2,601.0,601.0,10:01,10:01
 carga,FEPASA,carga,,,50092,,False,CONCEPCIÓN,2,55.0,55.0,00:55,00:55
-carga,FEPASA,carga,,,50090,,False,Chiguayante,3,617.0,617.0,10:17,10:17
-carga,FEPASA,carga,,,50092,,False,Chiguayante,3,71.0,71.0,01:11,01:11
-carga,FEPASA,carga,,,50090,,False,La Leonera,4,624.0,624.0,10:24,10:24
-carga,FEPASA,carga,,,50092,,False,La Leonera,4,76.0,76.0,01:16,01:16
-carga,FEPASA,carga,,,50090,,False,Hualqui,5,637.0,645.0,10:37,10:45
-carga,FEPASA,carga,,,50092,,False,Hualqui,5,89.0,89.0,01:29,01:29
-carga,FEPASA,carga,,,50090,,False,Quilacoya,6,661.0,661.0,11:01,11:01
-carga,FEPASA,carga,,,50092,,False,Quilacoya,6,105.0,105.0,01:45,01:45
-carga,FEPASA,carga,,,50090,,False,Unihue,7,673.0,673.0,11:13,11:13
-carga,FEPASA,carga,,,50092,,False,Unihue,7,117.0,117.0,01:57,01:57
-carga,FEPASA,carga,,,50090,,False,Talcamávida,8,683.0,699.0,11:23,11:39
-carga,FEPASA,carga,,,50092,,False,Talcamávida,8,127.0,127.0,02:07,02:07
-carga,FEPASA,carga,,,50090,,False,Gomero,9,712.0,712.0,11:52,11:52
-carga,FEPASA,carga,,,50092,,False,Gomero,9,140.0,140.0,02:20,02:20
-carga,FEPASA,carga,,,50090,,False,Buenuraqui,10,724.0,724.0,12:04,12:04
-carga,FEPASA,carga,,,50092,,False,Buenuraqui,10,152.0,152.0,02:32,02:32
+carga,FEPASA,carga,,,50090,,False,CHIGUAYANTE,3,617.0,617.0,10:17,10:17
+carga,FEPASA,carga,,,50092,,False,CHIGUAYANTE,3,71.0,71.0,01:11,01:11
+carga,FEPASA,carga,,,50090,,False,LA LEONERA,4,624.0,624.0,10:24,10:24
+carga,FEPASA,carga,,,50092,,False,LA LEONERA,4,76.0,76.0,01:16,01:16
+carga,FEPASA,carga,,,50090,,False,HUALQUI,5,637.0,645.0,10:37,10:45
+carga,FEPASA,carga,,,50092,,False,HUALQUI,5,89.0,89.0,01:29,01:29
+carga,FEPASA,carga,,,50090,,False,QUILACOYA,6,661.0,661.0,11:01,11:01
+carga,FEPASA,carga,,,50092,,False,QUILACOYA,6,105.0,105.0,01:45,01:45
+carga,FEPASA,carga,,,50090,,False,UNIHUE,7,673.0,673.0,11:13,11:13
+carga,FEPASA,carga,,,50092,,False,UNIHUE,7,117.0,117.0,01:57,01:57
+carga,FEPASA,carga,,,50090,,False,TALCAMÁVIDA,8,683.0,699.0,11:23,11:39
+carga,FEPASA,carga,,,50092,,False,TALCAMÁVIDA,8,127.0,127.0,02:07,02:07
+carga,FEPASA,carga,,,50090,,False,GOMERO,9,712.0,712.0,11:52,11:52
+carga,FEPASA,carga,,,50092,,False,GOMERO,9,140.0,140.0,02:20,02:20
+carga,FEPASA,carga,,,50090,,False,BUENURAQUI,10,724.0,724.0,12:04,12:04
+carga,FEPASA,carga,,,50092,,False,BUENURAQUI,10,152.0,152.0,02:32,02:32
 carga,FEPASA,carga,,,50090,,False,SAN ROSENDO,11,738.0,790.0,12:18,13:10
 carga,FEPASA,carga,,,50092,,False,SAN ROSENDO,11,166.0,166.0,02:46,02:46
 carga,FEPASA,carga,,,50090,,False,Turquía,12,802.0,830.0,13:22,13:50
@@ -4062,7 +4062,7 @@ carga,FEPASA,carga,,,50090,,False,Cosmito,22,573.0,573.0,09:33,09:33
 carga,FEPASA,carga,,,50092,,False,Cosmito,22,1358.0,1358.0,22:38,22:38
 carga,FEPASA,carga,,,50090,,False,CONCEPCIÓN,23,600.0,600.0,10:00,10:00
 carga,FEPASA,carga,,,50092,,False,CONCEPCIÓN,23,1385.0,1395.0,23:05,23:15
-carga,FEPASA,carga,,,50092,,False,EL ARENAL,24,1415.0,1415.0,23:35,23:35
+carga,FEPASA,carga,,,50092,,False,El Arenal,24,1415.0,1415.0,23:35,23:35
 carga,FEPASA,carga,,,50590,,False,PATIO SUR,1,320.0,320.0,05:20,05:20
 carga,FEPASA,carga,,,50592,,False,PATIO SUR,1,1390.0,1390.0,23:10,23:10
 carga,FEPASA,carga,,,50590,,False,CORONEL,2,330.0,330.0,05:30,05:30
@@ -4071,25 +4071,25 @@ carga,FEPASA,carga,,,50590,,False,Lagunillas,3,336.0,336.0,05:36,05:36
 carga,FEPASA,carga,,,50592,,False,Lagunillas,3,1406.0,1406.0,23:26,23:26
 carga,FEPASA,carga,,,50590,,False,Escuadrón,4,343.0,343.0,05:43,05:43
 carga,FEPASA,carga,,,50592,,False,Escuadrón,4,1413.0,1413.0,23:33,23:33
-carga,FEPASA,carga,,,50590,,False,Lomas Coloradas,5,353.0,353.0,05:53,05:53
-carga,FEPASA,carga,,,50592,,False,Lomas Coloradas,5,1423.0,1423.0,23:43,23:43
+carga,FEPASA,carga,,,50590,,False,LOMAS COLORADAS,5,353.0,353.0,05:53,05:53
+carga,FEPASA,carga,,,50592,,False,LOMAS COLORADAS,5,1423.0,1423.0,23:43,23:43
 carga,FEPASA,carga,,,50590,,False,Boca Sur,6,358.0,358.0,05:58,05:58
 carga,FEPASA,carga,,,50592,,False,Boca Sur,6,1428.0,1428.0,23:48,23:48
 carga,FEPASA,carga,,,50590,,False,BIOBÍO,7,363.0,363.0,06:03,06:03
 carga,FEPASA,carga,,,50592,,False,BIOBÍO,7,1433.0,1433.0,23:53,23:53
 carga,FEPASA,carga,,,50590,,False,CONCEPCIÓN,8,373.0,373.0,06:13,06:13
-carga,FEPASA,carga,,,50590,,False,EL ARENAL,9,393.0,393.0,06:33,06:33
-carga,FEPASA,carga,,,50590,,False,EL ARENAL,10,1415.0,1415.0,23:35,23:35
+carga,FEPASA,carga,,,50590,,False,El Arenal,9,393.0,393.0,06:33,06:33
+carga,FEPASA,carga,,,50590,,False,El Arenal,10,1415.0,1415.0,23:35,23:35
 carga,FEPASA,carga,,,50590,,False,CONCEPCIÓN,11,1435.0,1435.0,23:55,23:55
 carga,FEPASA,carga,,,50590,,False,BIOBÍO,12,5.0,5.0,00:05,00:05
-carga,FEPASA,carga,,,50740,,False,EL ARENAL,1,30.0,30.0,00:30,00:30
+carga,FEPASA,carga,,,50740,,False,El Arenal,1,30.0,30.0,00:30,00:30
 carga,FEPASA,carga,,,50740,,False,CONCEPCIÓN,2,50.0,65.0,00:50,01:05
 carga,FEPASA,carga,,,50740,,False,Cosmito,3,88.0,88.0,01:28,01:28
 carga,FEPASA,carga,,,50740,,False,PLAYA NEGRA,4,103.0,103.0,01:43,01:43
 carga,FEPASA,carga,,,50740,,False,PLAYA NEGRA,5,120.0,120.0,02:00,02:00
 carga,FEPASA,carga,,,50740,,False,Cosmito,6,134.0,134.0,02:14,02:14
 carga,FEPASA,carga,,,50740,,False,CONCEPCIÓN,7,154.0,156.0,02:34,02:36
-carga,FEPASA,carga,,,50740,,False,EL ARENAL,8,174.0,174.0,02:54,02:54
+carga,FEPASA,carga,,,50740,,False,El Arenal,8,174.0,174.0,02:54,02:54
 carga,FEPASA,carga,,,50602,,False,HORCONES,1,30.0,30.0,00:30,00:30
 carga,FEPASA,carga,,,50634,,False,HORCONES,1,150.0,150.0,02:30,02:30
 carga,FEPASA,carga,,,50604,,False,HORCONES,1,175.0,175.0,02:55,02:55
@@ -4122,10 +4122,10 @@ carga,FEPASA,carga,,,50602,,False,Escuadrón,8,137.0,137.0,02:17,02:17
 carga,FEPASA,carga,,,50634,,False,Escuadrón,8,257.0,257.0,04:17,04:17
 carga,FEPASA,carga,,,50604,,False,Escuadrón,8,282.0,282.0,04:42,04:42
 carga,FEPASA,carga,,,50606,,False,Escuadrón,8,929.0,929.0,15:29,15:29
-carga,FEPASA,carga,,,50602,,False,Lomas Coloradas,9,147.0,147.0,02:27,02:27
-carga,FEPASA,carga,,,50634,,False,Lomas Coloradas,9,267.0,267.0,04:27,04:27
-carga,FEPASA,carga,,,50604,,False,Lomas Coloradas,9,292.0,292.0,04:52,04:52
-carga,FEPASA,carga,,,50606,,False,Lomas Coloradas,9,939.0,939.0,15:39,15:39
+carga,FEPASA,carga,,,50602,,False,LOMAS COLORADAS,9,147.0,147.0,02:27,02:27
+carga,FEPASA,carga,,,50634,,False,LOMAS COLORADAS,9,267.0,267.0,04:27,04:27
+carga,FEPASA,carga,,,50604,,False,LOMAS COLORADAS,9,292.0,292.0,04:52,04:52
+carga,FEPASA,carga,,,50606,,False,LOMAS COLORADAS,9,939.0,939.0,15:39,15:39
 carga,FEPASA,carga,,,50602,,False,Boca Sur,10,152.0,152.0,02:32,02:32
 carga,FEPASA,carga,,,50634,,False,Boca Sur,10,272.0,272.0,04:32,04:32
 carga,FEPASA,carga,,,50604,,False,Boca Sur,10,297.0,297.0,04:57,04:57
@@ -4138,9 +4138,9 @@ carga,FEPASA,carga,,,50602,,False,CONCEPCIÓN,12,167.0,167.0,02:47,02:47
 carga,FEPASA,carga,,,50634,,False,CONCEPCIÓN,12,287.0,287.0,04:47,04:47
 carga,FEPASA,carga,,,50604,,False,CONCEPCIÓN,12,312.0,312.0,05:12,05:12
 carga,FEPASA,carga,,,50606,,False,CONCEPCIÓN,12,959.0,959.0,15:59,15:59
-carga,FEPASA,carga,,,50602,,False,EL ARENAL,13,187.0,187.0,03:07,03:07
-carga,FEPASA,carga,,,50604,,False,EL ARENAL,13,332.0,332.0,05:32,05:32
-carga,FEPASA,carga,,,50606,,False,EL ARENAL,13,979.0,979.0,16:19,16:19
+carga,FEPASA,carga,,,50602,,False,El Arenal,13,187.0,187.0,03:07,03:07
+carga,FEPASA,carga,,,50604,,False,El Arenal,13,332.0,332.0,05:32,05:32
+carga,FEPASA,carga,,,50606,,False,El Arenal,13,979.0,979.0,16:19,16:19
 carga,FEPASA,carga,,,50602,,False,CONCEPCIÓN,14,167.0,167.0,02:47,02:47
 carga,FEPASA,carga,,,50634,,False,CONCEPCIÓN,13,287.0,287.0,04:47,04:47
 carga,FEPASA,carga,,,50604,,False,CONCEPCIÓN,14,959.0,959.0,15:59,15:59
@@ -4165,9 +4165,9 @@ carga,FEPASA,carga,,,50635,,False,Cosmito,3,1295.0,1295.0,21:35,21:35
 carga,FEPASA,carga,,,50631,,False,CONCEPCIÓN,4,646.0,646.0,10:46,10:46
 carga,FEPASA,carga,,,50633,,False,CONCEPCIÓN,4,853.0,853.0,14:13,14:13
 carga,FEPASA,carga,,,50635,,False,CONCEPCIÓN,4,1322.0,1322.0,22:02,22:02
-carga,FEPASA,carga,,,50631,,False,EL ARENAL,5,626.0,626.0,10:26,10:26
-carga,FEPASA,carga,,,50633,,False,EL ARENAL,5,833.0,833.0,13:53,13:53
-carga,FEPASA,carga,,,50635,,False,EL ARENAL,5,1302.0,1302.0,21:42,21:42
+carga,FEPASA,carga,,,50631,,False,El Arenal,5,626.0,626.0,10:26,10:26
+carga,FEPASA,carga,,,50633,,False,El Arenal,5,833.0,833.0,13:53,13:53
+carga,FEPASA,carga,,,50635,,False,El Arenal,5,1302.0,1302.0,21:42,21:42
 carga,FEPASA,carga,,,50631,,False,CONCEPCIÓN,6,646.0,646.0,10:46,10:46
 carga,FEPASA,carga,,,50633,,False,CONCEPCIÓN,6,853.0,853.0,14:13,14:13
 carga,FEPASA,carga,,,50635,,False,CONCEPCIÓN,6,1322.0,1322.0,22:02,22:02
@@ -4177,9 +4177,9 @@ carga,FEPASA,carga,,,50635,,False,Biobío,7,1332.0,1332.0,22:12,22:12
 carga,FEPASA,carga,,,50631,,False,Boca Sur,8,661.0,661.0,11:01,11:01
 carga,FEPASA,carga,,,50633,,False,Boca Sur,8,868.0,868.0,14:28,14:28
 carga,FEPASA,carga,,,50635,,False,Boca Sur,8,1337.0,1337.0,22:17,22:17
-carga,FEPASA,carga,,,50631,,False,Lomas Coloradas,9,666.0,666.0,11:06,11:06
-carga,FEPASA,carga,,,50633,,False,Lomas Coloradas,9,873.0,873.0,14:33,14:33
-carga,FEPASA,carga,,,50635,,False,Lomas Coloradas,9,1342.0,1342.0,22:22,22:22
+carga,FEPASA,carga,,,50631,,False,LOMAS COLORADAS,9,666.0,666.0,11:06,11:06
+carga,FEPASA,carga,,,50633,,False,LOMAS COLORADAS,9,873.0,873.0,14:33,14:33
+carga,FEPASA,carga,,,50635,,False,LOMAS COLORADAS,9,1342.0,1342.0,22:22,22:22
 carga,FEPASA,carga,,,50631,,False,Escuadrón,10,676.0,676.0,11:16,11:16
 carga,FEPASA,carga,,,50633,,False,Escuadrón,10,883.0,883.0,14:43,14:43
 carga,FEPASA,carga,,,50635,,False,Escuadrón,10,1352.0,1352.0,22:32,22:32
@@ -4209,16 +4209,16 @@ carga,FEPASA,carga,,,50621,,False,Lota,2,450.0,450.0,07:30,07:30
 carga,FEPASA,carga,,,50621,,False,Chivilingo,3,482.0,482.0,08:02,08:02
 carga,FEPASA,carga,,,50621,,False,Laraquete,4,492.0,492.0,08:12,08:12
 carga,FEPASA,carga,,,50621,,False,HORCONES,5,510.0,510.0,08:30,08:30
-carga,FEPASA,carga,,,50607,,False,EL ARENAL,1,590.0,590.0,09:50,09:50
-carga,FEPASA,carga,,,50608,,False,EL ARENAL,1,862.0,862.0,14:22,14:22
+carga,FEPASA,carga,,,50607,,False,El Arenal,1,590.0,590.0,09:50,09:50
+carga,FEPASA,carga,,,50608,,False,El Arenal,1,862.0,862.0,14:22,14:22
 carga,FEPASA,carga,,,50607,,False,CONCEPCIÓN,2,610.0,610.0,10:10,10:10
 carga,FEPASA,carga,,,50608,,False,CONCEPCIÓN,2,880.0,880.0,14:40,14:40
 carga,FEPASA,carga,,,50608,,False,Por variante,3,890.0,890.0,14:50,14:50
 carga,FEPASA,carga,,,50607,,False,Biobío,3,620.0,620.0,10:20,10:20
 carga,FEPASA,carga,,,50607,,False,Boca Sur,4,625.0,625.0,10:25,10:25
 carga,FEPASA,carga,,,50608,,False,Boca Sur,4,922.0,922.0,15:22,15:22
-carga,FEPASA,carga,,,50607,,False,Lomas Coloradas,5,630.0,630.0,10:30,10:30
-carga,FEPASA,carga,,,50608,,False,Lomas Coloradas,5,942.0,942.0,15:42,15:42
+carga,FEPASA,carga,,,50607,,False,LOMAS COLORADAS,5,630.0,630.0,10:30,10:30
+carga,FEPASA,carga,,,50608,,False,LOMAS COLORADAS,5,942.0,942.0,15:42,15:42
 carga,FEPASA,carga,,,50607,,False,Escuadrón,6,640.0,640.0,10:40,10:40
 carga,FEPASA,carga,,,50607,,False,Lagunillas,7,646.0,646.0,10:46,10:46
 carga,FEPASA,carga,,,50608,,False,Lagunillas,6,952.0,952.0,15:52,15:52
@@ -4337,31 +4337,31 @@ carga,FEPASA,carga,,,50051,,False,COIGÜE,3,878.0,878.0,14:38,14:38
 carga,FEPASA,carga,,,50050,,False,Santa Fe,4,118.0,118.0,01:58,01:58
 carga,FEPASA,carga,,,50050,,False,Diuquín,5,145.0,145.0,02:25,02:25
 carga,FEPASA,carga,,,50051,,False,Diuquín,4,908.0,924.0,15:08,15:24
-carga,FEPASA,carga,,,50050,,False,Laja,6,164.0,200.0,02:44,03:20
-carga,FEPASA,carga,,,50051,,False,Laja,5,936.0,936.0,15:36,15:36
+carga,FEPASA,carga,,,50050,,False,LAJA,6,164.0,200.0,02:44,03:20
+carga,FEPASA,carga,,,50051,,False,LAJA,5,936.0,936.0,15:36,15:36
 carga,FEPASA,carga,,,50050,,False,SAN ROSENDO,7,208.0,208.0,03:28,03:28
 carga,FEPASA,carga,,,50051,,False,SAN ROSENDO,6,958.0,958.0,15:58,15:58
-carga,FEPASA,carga,,,50050,,False,Buenuraqui,8,225.0,225.0,03:45,03:45
-carga,FEPASA,carga,,,50050,,False,Gomero,9,237.0,237.0,03:57,03:57
-carga,FEPASA,carga,,,50051,,False,Gomero,7,986.0,986.0,16:26,16:26
-carga,FEPASA,carga,,,50050,,False,Talcamávida,10,250.0,250.0,04:10,04:10
-carga,FEPASA,carga,,,50050,,False,Unihue,11,260.0,260.0,04:20,04:20
-carga,FEPASA,carga,,,50051,,False,Unihue,8,996.0,1038.0,16:36,17:18
-carga,FEPASA,carga,,,50050,,False,Quilacoya,12,272.0,272.0,04:32,04:32
-carga,FEPASA,carga,,,50051,,False,Quilacoya,9,1057.0,1057.0,17:37,17:37
-carga,FEPASA,carga,,,50050,,False,Hualqui,13,287.0,287.0,04:47,04:47
-carga,FEPASA,carga,,,50051,,False,Hualqui,10,1084.0,1084.0,18:04,18:04
-carga,FEPASA,carga,,,50050,,False,La Leonera,14,298.0,298.0,04:58,04:58
-carga,FEPASA,carga,,,50050,,False,Chiguayante,15,304.0,304.0,05:04,05:04
-carga,FEPASA,carga,,,50051,,False,Chiguayante,11,1105.0,1105.0,18:25,18:25
+carga,FEPASA,carga,,,50050,,False,BUENURAQUI,8,225.0,225.0,03:45,03:45
+carga,FEPASA,carga,,,50050,,False,GOMERO,9,237.0,237.0,03:57,03:57
+carga,FEPASA,carga,,,50051,,False,GOMERO,7,986.0,986.0,16:26,16:26
+carga,FEPASA,carga,,,50050,,False,TALCAMÁVIDA,10,250.0,250.0,04:10,04:10
+carga,FEPASA,carga,,,50050,,False,UNIHUE,11,260.0,260.0,04:20,04:20
+carga,FEPASA,carga,,,50051,,False,UNIHUE,8,996.0,1038.0,16:36,17:18
+carga,FEPASA,carga,,,50050,,False,QUILACOYA,12,272.0,272.0,04:32,04:32
+carga,FEPASA,carga,,,50051,,False,QUILACOYA,9,1057.0,1057.0,17:37,17:37
+carga,FEPASA,carga,,,50050,,False,HUALQUI,13,287.0,287.0,04:47,04:47
+carga,FEPASA,carga,,,50051,,False,HUALQUI,10,1084.0,1084.0,18:04,18:04
+carga,FEPASA,carga,,,50050,,False,LA LEONERA,14,298.0,298.0,04:58,04:58
+carga,FEPASA,carga,,,50050,,False,CHIGUAYANTE,15,304.0,304.0,05:04,05:04
+carga,FEPASA,carga,,,50051,,False,CHIGUAYANTE,11,1105.0,1105.0,18:25,18:25
 carga,FEPASA,carga,,,50050,,False,CONCEPCIÓN,16,318.0,318.0,05:18,05:18
 carga,FEPASA,carga,,,50050,,False,BIOBÍO,17,328.0,328.0,05:28,05:28
 carga,FEPASA,carga,,,50050,,False,BIOBÍO,18,385.0,385.0,06:25,06:25
 carga,FEPASA,carga,,,50051,,False,BIOBÍO,12,785.0,785.0,13:05,13:05
 carga,FEPASA,carga,,,50050,,False,Boca Sur,19,390.0,390.0,06:30,06:30
 carga,FEPASA,carga,,,50051,,False,Boca Sur,13,791.0,791.0,13:11,13:11
-carga,FEPASA,carga,,,50050,,False,Lomas Coloradas,20,395.0,395.0,06:35,06:35
-carga,FEPASA,carga,,,50051,,False,Lomas Coloradas,14,797.0,797.0,13:17,13:17
+carga,FEPASA,carga,,,50050,,False,LOMAS COLORADAS,20,395.0,395.0,06:35,06:35
+carga,FEPASA,carga,,,50051,,False,LOMAS COLORADAS,14,797.0,797.0,13:17,13:17
 carga,FEPASA,carga,,,50050,,False,Escuadrón,21,404.0,404.0,06:44,06:44
 carga,FEPASA,carga,,,50051,,False,Escuadrón,15,806.0,806.0,13:26,13:26
 carga,FEPASA,carga,,,50050,,False,Lagunillas,22,410.0,410.0,06:50,06:50
@@ -4386,10 +4386,10 @@ carga,FEPASA,carga,,,50450,,False,BIOBÍO,8,381.0,381.0,06:21,06:21
 carga,FEPASA,carga,,,50451,,False,BIOBÍO,8,785.0,785.0,13:05,13:05
 carga,FEPASA,carga,,,50450,,False,CONCEPCIÓN,9,391.0,391.0,06:31,06:31
 carga,FEPASA,carga,,,50451,,False,CONCEPCIÓN,9,808.0,808.0,13:28,13:28
-carga,FEPASA,carga,,,50450,,False,EL ARENAL,10,415.0,415.0,06:55,06:55
-carga,FEPASA,carga,,,50451,,False,EL ARENAL,10,818.0,818.0,13:38,13:38
-carga,FEPASA,carga,,,50450,,False,EL ARENAL,11,275.0,275.0,04:35,04:35
-carga,FEPASA,carga,,,50451,,False,EL ARENAL,11,880.0,880.0,14:40,14:40
+carga,FEPASA,carga,,,50450,,False,El Arenal,10,415.0,415.0,06:55,06:55
+carga,FEPASA,carga,,,50451,,False,El Arenal,10,818.0,818.0,13:38,13:38
+carga,FEPASA,carga,,,50450,,False,El Arenal,11,275.0,275.0,04:35,04:35
+carga,FEPASA,carga,,,50451,,False,El Arenal,11,880.0,880.0,14:40,14:40
 carga,FEPASA,carga,,,50450,,False,CONCEPCIÓN,12,293.0,293.0,04:53,04:53
 carga,FEPASA,carga,,,50451,,False,CONCEPCIÓN,12,890.0,890.0,14:50,14:50
 carga,FEPASA,carga,,,50450,,False,BIOBÍO,13,303.0,303.0,05:03,05:03
@@ -4402,57 +4402,57 @@ carga,FEPASA,carga,,,50052,,False,Santa Fe,3,391.0,391.0,06:31,06:31
 carga,FEPASA,carga,,,50053,,False,Santa Fe,3,1138.0,1138.0,18:58,18:58
 carga,FEPASA,carga,,,50052,,False,Diuquín,4,418.0,418.0,06:58,06:58
 carga,FEPASA,carga,,,50053,,False,Diuquín,4,1142.0,1167.0,19:02,19:27
-carga,FEPASA,carga,,,50052,,False,Laja,5,437.0,480.0,07:17,08:00
+carga,FEPASA,carga,,,50052,,False,LAJA,5,437.0,480.0,07:17,08:00
 carga,FEPASA,carga,,,50052,,False,SAN ROSENDO,6,488.0,510.0,08:08,08:30
 carga,FEPASA,carga,,,50053,,False,SAN ROSENDO,5,1210.0,1210.0,20:10,20:10
-carga,FEPASA,carga,,,50052,,False,Buenuraqui,7,527.0,541.0,08:47,09:01
-carga,FEPASA,carga,,,50053,,False,Buenuraqui,6,1222.0,1222.0,20:22,20:22
-carga,FEPASA,carga,,,50052,,False,Gomero,8,553.0,553.0,09:13,09:13
-carga,FEPASA,carga,,,50053,,False,Gomero,7,1244.0,1261.0,20:44,21:01
-carga,FEPASA,carga,,,50052,,False,Talcamávida,9,566.0,575.0,09:26,09:35
-carga,FEPASA,carga,,,50052,,False,Unihue,10,585.0,585.0,09:45,09:45
-carga,FEPASA,carga,,,50052,,False,Quilacoya,11,597.0,597.0,09:57,09:57
-carga,FEPASA,carga,,,50053,,False,Quilacoya,8,1294.0,1294.0,21:34,21:34
-carga,FEPASA,carga,,,50052,,False,Hualqui,12,612.0,612.0,10:12,10:12
-carga,FEPASA,carga,,,50053,,False,Hualqui,9,1304.0,1338.0,21:44,22:18
-carga,FEPASA,carga,,,50052,,False,La Leonera,13,623.0,655.0,10:23,10:55
-carga,FEPASA,carga,,,50053,,False,La Leonera,10,1357.0,1357.0,22:37,22:37
-carga,FEPASA,carga,,,50052,,False,Chiguayante,14,661.0,661.0,11:01,11:01
-carga,FEPASA,carga,,,50053,,False,Chiguayante,11,1405.0,1425.0,23:25,23:45
+carga,FEPASA,carga,,,50052,,False,BUENURAQUI,7,527.0,541.0,08:47,09:01
+carga,FEPASA,carga,,,50053,,False,BUENURAQUI,6,1222.0,1222.0,20:22,20:22
+carga,FEPASA,carga,,,50052,,False,GOMERO,8,553.0,553.0,09:13,09:13
+carga,FEPASA,carga,,,50053,,False,GOMERO,7,1244.0,1261.0,20:44,21:01
+carga,FEPASA,carga,,,50052,,False,TALCAMÁVIDA,9,566.0,575.0,09:26,09:35
+carga,FEPASA,carga,,,50052,,False,UNIHUE,10,585.0,585.0,09:45,09:45
+carga,FEPASA,carga,,,50052,,False,QUILACOYA,11,597.0,597.0,09:57,09:57
+carga,FEPASA,carga,,,50053,,False,QUILACOYA,8,1294.0,1294.0,21:34,21:34
+carga,FEPASA,carga,,,50052,,False,HUALQUI,12,612.0,612.0,10:12,10:12
+carga,FEPASA,carga,,,50053,,False,HUALQUI,9,1304.0,1338.0,21:44,22:18
+carga,FEPASA,carga,,,50052,,False,LA LEONERA,13,623.0,655.0,10:23,10:55
+carga,FEPASA,carga,,,50053,,False,LA LEONERA,10,1357.0,1357.0,22:37,22:37
+carga,FEPASA,carga,,,50052,,False,CHIGUAYANTE,14,661.0,661.0,11:01,11:01
+carga,FEPASA,carga,,,50053,,False,CHIGUAYANTE,11,1405.0,1425.0,23:25,23:45
 carga,FEPASA,carga,,,50052,,False,CONCEPCIÓN,15,675.0,675.0,11:15,11:15
 carga,FEPASA,carga,,,50053,,False,CONCEPCIÓN,12,5.0,5.0,00:05,00:05
-carga,FEPASA,carga,,,50052,,False,EL ARENAL,16,700.0,700.0,11:40,11:40
+carga,FEPASA,carga,,,50052,,False,El Arenal,16,700.0,700.0,11:40,11:40
 carga,FEPASA,carga,,,50052,,False,LA LEONERA,17,640.0,640.0,10:40,10:40
 carga,FEPASA,carga,,,50053,,False,LA LEONERA,13,990.0,990.0,16:30,16:30
-carga,FEPASA,carga,,,50052,,False,Chiguayante,18,646.0,646.0,10:46,10:46
-carga,FEPASA,carga,,,50053,,False,Chiguayante,14,996.0,996.0,16:36,16:36
+carga,FEPASA,carga,,,50052,,False,CHIGUAYANTE,18,646.0,646.0,10:46,10:46
+carga,FEPASA,carga,,,50053,,False,CHIGUAYANTE,14,996.0,996.0,16:36,16:36
 carga,FEPASA,carga,,,50052,,False,CONCEPCIÓN,19,660.0,660.0,11:00,11:00
 carga,FEPASA,carga,,,50053,,False,CONCEPCIÓN,15,1011.0,1011.0,16:51,16:51
 carga,FEPASA,carga,,,50052,,False,Biobío,20,670.0,670.0,11:10,11:10
 carga,FEPASA,carga,,,50053,,False,Biobío,16,1021.0,1021.0,17:01,17:01
 carga,FEPASA,carga,,,50052,,False,Boca Sur,21,675.0,675.0,11:15,11:15
-carga,FEPASA,carga,,,50052,,False,Lomas Coloradas,22,680.0,680.0,11:20,11:20
-carga,FEPASA,carga,,,50053,,False,Lomas Coloradas,17,1031.0,1031.0,17:11,17:11
+carga,FEPASA,carga,,,50052,,False,LOMAS COLORADAS,22,680.0,680.0,11:20,11:20
+carga,FEPASA,carga,,,50053,,False,LOMAS COLORADAS,17,1031.0,1031.0,17:11,17:11
 carga,FEPASA,carga,,,50052,,False,Escuadrón,23,689.0,689.0,11:29,11:29
 carga,FEPASA,carga,,,50052,,False,Lagunillas,24,695.0,695.0,11:35,11:35
 carga,FEPASA,carga,,,50053,,False,Lagunillas,18,1055.0,1055.0,17:35,17:35
 carga,FEPASA,carga,,,50052,,False,CORONEL,25,701.0,701.0,11:41,11:41
 carga,FEPASA,carga,,,50452,,False,LA LEONERA,1,635.0,635.0,10:35,10:35
 carga,FEPASA,carga,,,50453,,False,LA LEONERA,1,1080.0,1080.0,18:00,18:00
-carga,FEPASA,carga,,,50452,,False,Chiguayante,2,641.0,641.0,10:41,10:41
-carga,FEPASA,carga,,,50453,,False,Chiguayante,2,1096.0,1096.0,18:16,18:16
+carga,FEPASA,carga,,,50452,,False,CHIGUAYANTE,2,641.0,641.0,10:41,10:41
+carga,FEPASA,carga,,,50453,,False,CHIGUAYANTE,2,1096.0,1096.0,18:16,18:16
 carga,FEPASA,carga,,,50452,,False,CONCEPCIÓN,3,655.0,655.0,10:55,10:55
 carga,FEPASA,carga,,,50452,,False,Cosmito,4,678.0,678.0,11:18,11:18
 carga,FEPASA,carga,,,50452,,False,Playa Negra,5,692.0,692.0,11:32,11:32
 carga,FEPASA,carga,,,50453,,False,Playa Negra,3,1147.0,1147.0,19:07,19:07
 carga,FEPASA,carga,,,50452,,False,LIRQUÉN,6,708.0,708.0,11:48,11:48
 carga,FEPASA,carga,,,50453,,False,LIRQUÉN,4,1151.0,1151.0,19:11,19:11
-carga,FEPASA,carga,,,50452,,False,EL ARENAL,7,570.0,570.0,09:30,09:30
-carga,FEPASA,carga,,,50453,,False,EL ARENAL,5,1170.0,1170.0,19:30,19:30
+carga,FEPASA,carga,,,50452,,False,El Arenal,7,570.0,570.0,09:30,09:30
+carga,FEPASA,carga,,,50453,,False,El Arenal,5,1170.0,1170.0,19:30,19:30
 carga,FEPASA,carga,,,50452,,False,CONCEPCIÓN,8,588.0,588.0,09:48,09:48
 carga,FEPASA,carga,,,50453,,False,CONCEPCIÓN,6,1174.0,1174.0,19:34,19:34
-carga,FEPASA,carga,,,50452,,False,Chiguayante,9,599.0,599.0,09:59,09:59
-carga,FEPASA,carga,,,50453,,False,Chiguayante,7,1184.0,1184.0,19:44,19:44
+carga,FEPASA,carga,,,50452,,False,CHIGUAYANTE,9,599.0,599.0,09:59,09:59
+carga,FEPASA,carga,,,50453,,False,CHIGUAYANTE,7,1184.0,1184.0,19:44,19:44
 carga,FEPASA,carga,,,50452,,False,LA LEONERA,10,603.0,603.0,10:03,10:03
 carga,FEPASA,carga,,,50453,,False,LA LEONERA,8,1204.0,1204.0,20:04,20:04
 carga,FEPASA,carga,,,50054,,False,NACIMIENTO,1,595.0,595.0,09:55,09:55
@@ -4463,53 +4463,53 @@ carga,FEPASA,carga,,,50054,,False,Santa Fe,3,656.0,656.0,10:56,10:56
 carga,FEPASA,carga,,,50055,,False,Santa Fe,3,15.0,15.0,00:15,00:15
 carga,FEPASA,carga,,,50054,,False,Diuquín,4,683.0,683.0,11:23,11:23
 carga,FEPASA,carga,,,50055,,False,Diuquín,4,19.0,19.0,00:19,00:19
-carga,FEPASA,carga,,,50054,,False,Laja,5,702.0,735.0,11:42,12:15
+carga,FEPASA,carga,,,50054,,False,LAJA,5,702.0,735.0,11:42,12:15
 carga,FEPASA,carga,,,50054,,False,SAN ROSENDO,6,743.0,743.0,12:23,12:23
 carga,FEPASA,carga,,,50055,,False,SAN ROSENDO,5,45.0,45.0,00:45,00:45
-carga,FEPASA,carga,,,50054,,False,Buenuraqui,7,760.0,760.0,12:40,12:40
-carga,FEPASA,carga,,,50055,,False,Buenuraqui,6,67.0,67.0,01:07,01:07
-carga,FEPASA,carga,,,50054,,False,Gomero,8,772.0,772.0,12:52,12:52
-carga,FEPASA,carga,,,50055,,False,Gomero,7,79.0,79.0,01:19,01:19
-carga,FEPASA,carga,,,50054,,False,Talcamávida,9,785.0,785.0,13:05,13:05
-carga,FEPASA,carga,,,50055,,False,Talcamávida,8,90.0,90.0,01:30,01:30
-carga,FEPASA,carga,,,50054,,False,Unihue,10,795.0,802.0,13:15,13:22
-carga,FEPASA,carga,,,50055,,False,Unihue,9,107.0,107.0,01:47,01:47
-carga,FEPASA,carga,,,50054,,False,Quilacoya,11,814.0,814.0,13:34,13:34
-carga,FEPASA,carga,,,50055,,False,Quilacoya,10,117.0,175.0,01:57,02:55
-carga,FEPASA,carga,,,50054,,False,Hualqui,12,829.0,829.0,13:49,13:49
-carga,FEPASA,carga,,,50055,,False,Hualqui,11,194.0,194.0,03:14,03:14
-carga,FEPASA,carga,,,50054,,False,La Leonera,13,840.0,875.0,14:00,14:35
-carga,FEPASA,carga,,,50055,,False,La Leonera,12,221.0,221.0,03:41,03:41
-carga,FEPASA,carga,,,50054,,False,Chiguayante,14,881.0,881.0,14:41,14:41
+carga,FEPASA,carga,,,50054,,False,BUENURAQUI,7,760.0,760.0,12:40,12:40
+carga,FEPASA,carga,,,50055,,False,BUENURAQUI,6,67.0,67.0,01:07,01:07
+carga,FEPASA,carga,,,50054,,False,GOMERO,8,772.0,772.0,12:52,12:52
+carga,FEPASA,carga,,,50055,,False,GOMERO,7,79.0,79.0,01:19,01:19
+carga,FEPASA,carga,,,50054,,False,TALCAMÁVIDA,9,785.0,785.0,13:05,13:05
+carga,FEPASA,carga,,,50055,,False,TALCAMÁVIDA,8,90.0,90.0,01:30,01:30
+carga,FEPASA,carga,,,50054,,False,UNIHUE,10,795.0,802.0,13:15,13:22
+carga,FEPASA,carga,,,50055,,False,UNIHUE,9,107.0,107.0,01:47,01:47
+carga,FEPASA,carga,,,50054,,False,QUILACOYA,11,814.0,814.0,13:34,13:34
+carga,FEPASA,carga,,,50055,,False,QUILACOYA,10,117.0,175.0,01:57,02:55
+carga,FEPASA,carga,,,50054,,False,HUALQUI,12,829.0,829.0,13:49,13:49
+carga,FEPASA,carga,,,50055,,False,HUALQUI,11,194.0,194.0,03:14,03:14
+carga,FEPASA,carga,,,50054,,False,LA LEONERA,13,840.0,875.0,14:00,14:35
+carga,FEPASA,carga,,,50055,,False,LA LEONERA,12,221.0,221.0,03:41,03:41
+carga,FEPASA,carga,,,50054,,False,CHIGUAYANTE,14,881.0,881.0,14:41,14:41
 carga,FEPASA,carga,,,50054,,False,CONCEPCIÓN,15,895.0,895.0,14:55,14:55
-carga,FEPASA,carga,,,50054,,False,EL ARENAL,16,920.0,920.0,15:20,15:20
+carga,FEPASA,carga,,,50054,,False,El Arenal,16,920.0,920.0,15:20,15:20
 carga,FEPASA,carga,,,50054,,False,LA LEONERA,17,860.0,860.0,14:20,14:20
 carga,FEPASA,carga,,,50055,,False,LA LEONERA,13,1360.0,1360.0,22:40,22:40
-carga,FEPASA,carga,,,50054,,False,Chiguayante,18,866.0,866.0,14:26,14:26
-carga,FEPASA,carga,,,50055,,False,Chiguayante,14,1366.0,1366.0,22:46,22:46
+carga,FEPASA,carga,,,50054,,False,CHIGUAYANTE,18,866.0,866.0,14:26,14:26
+carga,FEPASA,carga,,,50055,,False,CHIGUAYANTE,14,1366.0,1366.0,22:46,22:46
 carga,FEPASA,carga,,,50054,,False,CONCEPCIÓN,19,880.0,880.0,14:40,14:40
 carga,FEPASA,carga,,,50055,,False,CONCEPCIÓN,15,1381.0,1381.0,23:01,23:01
 carga,FEPASA,carga,,,50054,,False,Biobío,20,891.0,891.0,14:51,14:51
 carga,FEPASA,carga,,,50054,,False,Boca Sur,21,897.0,897.0,14:57,14:57
-carga,FEPASA,carga,,,50054,,False,Lomas Coloradas,22,903.0,903.0,15:03,15:03
+carga,FEPASA,carga,,,50054,,False,LOMAS COLORADAS,22,903.0,903.0,15:03,15:03
 carga,FEPASA,carga,,,50054,,False,Escuadrón,23,913.0,913.0,15:13,15:13
 carga,FEPASA,carga,,,50054,,False,Lagunillas,24,920.0,920.0,15:20,15:20
 carga,FEPASA,carga,,,50054,,False,CORONEL,25,927.0,927.0,15:27,15:27
 carga,FEPASA,carga,,,50454,,False,LA LEONERA,1,860.0,860.0,14:20,14:20
 carga,FEPASA,carga,,,50455,,False,LA LEONERA,1,1345.0,1345.0,22:25,22:25
-carga,FEPASA,carga,,,50454,,False,Chiguayante,2,866.0,866.0,14:26,14:26
-carga,FEPASA,carga,,,50455,,False,Chiguayante,2,1361.0,1361.0,22:41,22:41
+carga,FEPASA,carga,,,50454,,False,CHIGUAYANTE,2,866.0,866.0,14:26,14:26
+carga,FEPASA,carga,,,50455,,False,CHIGUAYANTE,2,1361.0,1361.0,22:41,22:41
 carga,FEPASA,carga,,,50454,,False,CONCEPCIÓN,3,882.0,882.0,14:42,14:42
 carga,FEPASA,carga,,,50454,,False,Cosmito,4,905.0,905.0,15:05,15:05
 carga,FEPASA,carga,,,50454,,False,Playa Negra,5,919.0,919.0,15:19,15:19
 carga,FEPASA,carga,,,50455,,False,Playa Negra,3,1408.0,1408.0,23:28,23:28
 carga,FEPASA,carga,,,50454,,False,LIRQUÉN,6,935.0,935.0,15:35,15:35
-carga,FEPASA,carga,,,50454,,False,EL ARENAL,7,770.0,770.0,12:50,12:50
-carga,FEPASA,carga,,,50455,,False,EL ARENAL,4,1370.0,1370.0,22:50,22:50
+carga,FEPASA,carga,,,50454,,False,El Arenal,7,770.0,770.0,12:50,12:50
+carga,FEPASA,carga,,,50455,,False,El Arenal,4,1370.0,1370.0,22:50,22:50
 carga,FEPASA,carga,,,50454,,False,CONCEPCIÓN,8,788.0,788.0,13:08,13:08
 carga,FEPASA,carga,,,50455,,False,CONCEPCIÓN,5,1393.0,1393.0,23:13,23:13
-carga,FEPASA,carga,,,50454,,False,Chiguayante,9,799.0,799.0,13:19,13:19
-carga,FEPASA,carga,,,50455,,False,Chiguayante,6,1403.0,1403.0,23:23,23:23
+carga,FEPASA,carga,,,50454,,False,CHIGUAYANTE,9,799.0,799.0,13:19,13:19
+carga,FEPASA,carga,,,50455,,False,CHIGUAYANTE,6,1403.0,1403.0,23:23,23:23
 carga,FEPASA,carga,,,50454,,False,LA LEONERA,10,803.0,803.0,13:23,13:23
 carga,FEPASA,carga,,,50056,,False,MININCO,1,1020.0,1020.0,17:00,17:00
 carga,FEPASA,carga,,,50057,,False,MININCO,1,350.0,350.0,05:50,05:50
@@ -4520,32 +4520,32 @@ carga,FEPASA,carga,,,50057,,False,COIGÜE,3,388.0,388.0,06:28,06:28
 carga,FEPASA,carga,,,50056,,False,Santa Fe,4,1136.0,1136.0,18:56,18:56
 carga,FEPASA,carga,,,50057,,False,Santa Fe,4,403.0,416.0,06:43,06:56
 carga,FEPASA,carga,,,50056,,False,Diuquín,5,1163.0,1163.0,19:23,19:23
-carga,FEPASA,carga,,,50056,,False,Laja,6,1182.0,1182.0,19:42,19:42
-carga,FEPASA,carga,,,50057,,False,Laja,5,431.0,431.0,07:11,07:11
+carga,FEPASA,carga,,,50056,,False,LAJA,6,1182.0,1182.0,19:42,19:42
+carga,FEPASA,carga,,,50057,,False,LAJA,5,431.0,431.0,07:11,07:11
 carga,FEPASA,carga,,,50056,,False,SAN ROSENDO,7,1190.0,1255.0,19:50,20:55
-carga,FEPASA,carga,,,50056,,False,Buenuraqui,8,1272.0,1272.0,21:12,21:12
-carga,FEPASA,carga,,,50057,,False,Buenuraqui,6,476.0,476.0,07:56,07:56
-carga,FEPASA,carga,,,50056,,False,Gomero,9,1284.0,1284.0,21:24,21:24
-carga,FEPASA,carga,,,50056,,False,Talcamávida,10,1297.0,1297.0,21:37,21:37
-carga,FEPASA,carga,,,50057,,False,Talcamávida,7,504.0,504.0,08:24,08:24
-carga,FEPASA,carga,,,50056,,False,Unihue,11,1307.0,1307.0,21:47,21:47
-carga,FEPASA,carga,,,50057,,False,Unihue,8,514.0,530.0,08:34,08:50
-carga,FEPASA,carga,,,50056,,False,Quilacoya,12,1319.0,1327.0,21:59,22:07
-carga,FEPASA,carga,,,50056,,False,Hualqui,13,1342.0,1357.0,22:22,22:37
-carga,FEPASA,carga,,,50057,,False,Hualqui,9,576.0,576.0,09:36,09:36
-carga,FEPASA,carga,,,50056,,False,La Leonera,14,1368.0,1368.0,22:48,22:48
-carga,FEPASA,carga,,,50057,,False,La Leonera,10,597.0,597.0,09:57,09:57
-carga,FEPASA,carga,,,50056,,False,Chiguayante,15,1374.0,1374.0,22:54,22:54
+carga,FEPASA,carga,,,50056,,False,BUENURAQUI,8,1272.0,1272.0,21:12,21:12
+carga,FEPASA,carga,,,50057,,False,BUENURAQUI,6,476.0,476.0,07:56,07:56
+carga,FEPASA,carga,,,50056,,False,GOMERO,9,1284.0,1284.0,21:24,21:24
+carga,FEPASA,carga,,,50056,,False,TALCAMÁVIDA,10,1297.0,1297.0,21:37,21:37
+carga,FEPASA,carga,,,50057,,False,TALCAMÁVIDA,7,504.0,504.0,08:24,08:24
+carga,FEPASA,carga,,,50056,,False,UNIHUE,11,1307.0,1307.0,21:47,21:47
+carga,FEPASA,carga,,,50057,,False,UNIHUE,8,514.0,530.0,08:34,08:50
+carga,FEPASA,carga,,,50056,,False,QUILACOYA,12,1319.0,1327.0,21:59,22:07
+carga,FEPASA,carga,,,50056,,False,HUALQUI,13,1342.0,1357.0,22:22,22:37
+carga,FEPASA,carga,,,50057,,False,HUALQUI,9,576.0,576.0,09:36,09:36
+carga,FEPASA,carga,,,50056,,False,LA LEONERA,14,1368.0,1368.0,22:48,22:48
+carga,FEPASA,carga,,,50057,,False,LA LEONERA,10,597.0,597.0,09:57,09:57
+carga,FEPASA,carga,,,50056,,False,CHIGUAYANTE,15,1374.0,1374.0,22:54,22:54
 carga,FEPASA,carga,,,50056,,False,CONCEPCIÓN,16,1388.0,1388.0,23:08,23:08
-carga,FEPASA,carga,,,50056,,False,EL ARENAL,17,1413.0,1413.0,23:33,23:33
+carga,FEPASA,carga,,,50056,,False,El Arenal,17,1413.0,1413.0,23:33,23:33
 carga,FEPASA,carga,,,50056,,False,CONCEPCIÓN,18,1388.0,1388.0,23:08,23:08
 carga,FEPASA,carga,,,50057,,False,CONCEPCIÓN,11,320.0,320.0,05:20,05:20
 carga,FEPASA,carga,,,50056,,False,Biobío,19,1398.0,1398.0,23:18,23:18
 carga,FEPASA,carga,,,50057,,False,Biobío,12,326.0,326.0,05:26,05:26
 carga,FEPASA,carga,,,50056,,False,Boca Sur,20,1403.0,1403.0,23:23,23:23
 carga,FEPASA,carga,,,50057,,False,Boca Sur,13,332.0,332.0,05:32,05:32
-carga,FEPASA,carga,,,50056,,False,Lomas Coloradas,21,1408.0,1408.0,23:28,23:28
-carga,FEPASA,carga,,,50057,,False,Lomas Coloradas,14,341.0,341.0,05:41,05:41
+carga,FEPASA,carga,,,50056,,False,LOMAS COLORADAS,21,1408.0,1408.0,23:28,23:28
+carga,FEPASA,carga,,,50057,,False,LOMAS COLORADAS,14,341.0,341.0,05:41,05:41
 carga,FEPASA,carga,,,50056,,False,Escuadrón,22,1417.0,1417.0,23:37,23:37
 carga,FEPASA,carga,,,50057,,False,Escuadrón,15,346.0,346.0,05:46,05:46
 carga,FEPASA,carga,,,50056,,False,Lagunillas,23,1423.0,1423.0,23:43,23:43
@@ -4612,30 +4612,30 @@ carga,TRANSAP,carga,,,60511,,False,LAJA,1,1320.0,1320.0,22:00,22:00
 carga,TRANSAP,carga,,,60513,,False,LAJA,1,585.0,585.0,09:45,09:45
 carga,TRANSAP,carga,,,60511,,False,SAN ROSENDO,2,1328.0,1328.0,22:08,22:08
 carga,TRANSAP,carga,,,60513,,False,SAN ROSENDO,2,593.0,615.0,09:53,10:15
-carga,TRANSAP,carga,,,60511,,False,Buenuraqui,3,1345.0,1345.0,22:25,22:25
-carga,TRANSAP,carga,,,60513,,False,Buenuraqui,3,632.0,632.0,10:32,10:32
-carga,TRANSAP,carga,,,60511,,False,Gomero,4,1357.0,1365.0,22:37,22:45
-carga,TRANSAP,carga,,,60513,,False,Gomero,4,644.0,644.0,10:44,10:44
-carga,TRANSAP,carga,,,60511,,False,Talcamávida,5,1378.0,1396.0,22:58,23:16
-carga,TRANSAP,carga,,,60513,,False,Talcamávida,5,657.0,657.0,10:57,10:57
-carga,TRANSAP,carga,,,60511,,False,Unihue,6,1406.0,1406.0,23:26,23:26
-carga,TRANSAP,carga,,,60513,,False,Unihue,6,667.0,685.0,11:07,11:25
-carga,TRANSAP,carga,,,60511,,False,Quilacoya,7,1418.0,1431.0,23:38,23:51
-carga,TRANSAP,carga,,,60513,,False,Quilacoya,7,697.0,697.0,11:37,11:37
-carga,TRANSAP,carga,,,60511,,False,Hualqui,8,6.0,6.0,00:06,00:06
-carga,TRANSAP,carga,,,60513,,False,Hualqui,8,712.0,721.0,11:52,12:01
-carga,TRANSAP,carga,,,60511,,False,La Leonera,9,17.0,17.0,00:17,00:17
-carga,TRANSAP,carga,,,60513,,False,La Leonera,9,732.0,732.0,12:12,12:12
-carga,TRANSAP,carga,,,60511,,False,Chiguayante,10,22.0,22.0,00:22,00:22
-carga,TRANSAP,carga,,,60513,,False,Chiguayante,10,737.0,737.0,12:17,12:17
+carga,TRANSAP,carga,,,60511,,False,BUENURAQUI,3,1345.0,1345.0,22:25,22:25
+carga,TRANSAP,carga,,,60513,,False,BUENURAQUI,3,632.0,632.0,10:32,10:32
+carga,TRANSAP,carga,,,60511,,False,GOMERO,4,1357.0,1365.0,22:37,22:45
+carga,TRANSAP,carga,,,60513,,False,GOMERO,4,644.0,644.0,10:44,10:44
+carga,TRANSAP,carga,,,60511,,False,TALCAMÁVIDA,5,1378.0,1396.0,22:58,23:16
+carga,TRANSAP,carga,,,60513,,False,TALCAMÁVIDA,5,657.0,657.0,10:57,10:57
+carga,TRANSAP,carga,,,60511,,False,UNIHUE,6,1406.0,1406.0,23:26,23:26
+carga,TRANSAP,carga,,,60513,,False,UNIHUE,6,667.0,685.0,11:07,11:25
+carga,TRANSAP,carga,,,60511,,False,QUILACOYA,7,1418.0,1431.0,23:38,23:51
+carga,TRANSAP,carga,,,60513,,False,QUILACOYA,7,697.0,697.0,11:37,11:37
+carga,TRANSAP,carga,,,60511,,False,HUALQUI,8,6.0,6.0,00:06,00:06
+carga,TRANSAP,carga,,,60513,,False,HUALQUI,8,712.0,721.0,11:52,12:01
+carga,TRANSAP,carga,,,60511,,False,LA LEONERA,9,17.0,17.0,00:17,00:17
+carga,TRANSAP,carga,,,60513,,False,LA LEONERA,9,732.0,732.0,12:12,12:12
+carga,TRANSAP,carga,,,60511,,False,CHIGUAYANTE,10,22.0,22.0,00:22,00:22
+carga,TRANSAP,carga,,,60513,,False,CHIGUAYANTE,10,737.0,737.0,12:17,12:17
 carga,TRANSAP,carga,,,60511,,False,CONCEPCIÓN,11,36.0,36.0,00:36,00:36
 carga,TRANSAP,carga,,,60513,,False,CONCEPCIÓN,11,751.0,751.0,12:31,12:31
 carga,TRANSAP,carga,,,60511,,False,Biobío,12,48.0,48.0,00:48,00:48
 carga,TRANSAP,carga,,,60513,,False,Biobío,12,763.0,763.0,12:43,12:43
 carga,TRANSAP,carga,,,60511,,False,Boca Sur,13,53.0,53.0,00:53,00:53
 carga,TRANSAP,carga,,,60513,,False,Boca Sur,13,768.0,768.0,12:48,12:48
-carga,TRANSAP,carga,,,60511,,False,Lomas Coloradas,14,58.0,58.0,00:58,00:58
-carga,TRANSAP,carga,,,60513,,False,Lomas Coloradas,14,773.0,773.0,12:53,12:53
+carga,TRANSAP,carga,,,60511,,False,LOMAS COLORADAS,14,58.0,58.0,00:58,00:58
+carga,TRANSAP,carga,,,60513,,False,LOMAS COLORADAS,14,773.0,773.0,12:53,12:53
 carga,TRANSAP,carga,,,60511,,False,Escuadrón,15,67.0,67.0,01:07,01:07
 carga,TRANSAP,carga,,,60513,,False,Escuadrón,15,782.0,782.0,13:02,13:02
 carga,TRANSAP,carga,,,60511,,False,Lagunillas,16,73.0,73.0,01:13,01:13
@@ -4738,30 +4738,30 @@ carga,TRANSAP,carga,,,60510,,False,Lagunillas,7,636.0,636.0,10:36,10:36
 carga,TRANSAP,carga,,,60512,,False,Lagunillas,7,1346.0,1346.0,22:26,22:26
 carga,TRANSAP,carga,,,60510,,False,Escuadrón,8,642.0,642.0,10:42,10:42
 carga,TRANSAP,carga,,,60512,,False,Escuadrón,8,1352.0,1352.0,22:32,22:32
-carga,TRANSAP,carga,,,60510,,False,Lomas Coloradas,9,651.0,651.0,10:51,10:51
-carga,TRANSAP,carga,,,60512,,False,Lomas Coloradas,9,1361.0,1361.0,22:41,22:41
+carga,TRANSAP,carga,,,60510,,False,LOMAS COLORADAS,9,651.0,651.0,10:51,10:51
+carga,TRANSAP,carga,,,60512,,False,LOMAS COLORADAS,9,1361.0,1361.0,22:41,22:41
 carga,TRANSAP,carga,,,60510,,False,Boca Sur,10,656.0,656.0,10:56,10:56
 carga,TRANSAP,carga,,,60512,,False,Boca Sur,10,1366.0,1366.0,22:46,22:46
 carga,TRANSAP,carga,,,60510,,False,Biobío,11,661.0,661.0,11:01,11:01
 carga,TRANSAP,carga,,,60512,,False,Biobío,11,1371.0,1371.0,22:51,22:51
 carga,TRANSAP,carga,,,60510,,False,CONCEPCIÓN,12,673.0,690.0,11:13,11:30
 carga,TRANSAP,carga,,,60512,,False,CONCEPCIÓN,12,1383.0,1383.0,23:03,23:03
-carga,TRANSAP,carga,,,60510,,False,Chiguayante,13,704.0,704.0,11:44,11:44
-carga,TRANSAP,carga,,,60512,,False,Chiguayante,13,1397.0,1397.0,23:17,23:17
-carga,TRANSAP,carga,,,60510,,False,La Leonera,14,709.0,709.0,11:49,11:49
-carga,TRANSAP,carga,,,60512,,False,La Leonera,14,1402.0,1405.0,23:22,23:25
-carga,TRANSAP,carga,,,60510,,False,Hualqui,15,720.0,737.0,12:00,12:17
-carga,TRANSAP,carga,,,60512,,False,Hualqui,15,1416.0,1416.0,23:36,23:36
-carga,TRANSAP,carga,,,60510,,False,Quilacoya,16,752.0,752.0,12:32,12:32
-carga,TRANSAP,carga,,,60512,,False,Quilacoya,16,1431.0,1431.0,23:51,23:51
-carga,TRANSAP,carga,,,60510,,False,Unihue,17,764.0,764.0,12:44,12:44
-carga,TRANSAP,carga,,,60512,,False,Unihue,17,3.0,3.0,00:03,00:03
-carga,TRANSAP,carga,,,60510,,False,Talcamávida,18,774.0,785.0,12:54,13:05
-carga,TRANSAP,carga,,,60512,,False,Talcamávida,18,13.0,13.0,00:13,00:13
-carga,TRANSAP,carga,,,60510,,False,Gomero,19,797.0,797.0,13:17,13:17
-carga,TRANSAP,carga,,,60512,,False,Gomero,19,25.0,25.0,00:25,00:25
-carga,TRANSAP,carga,,,60510,,False,Buenuraqui,20,808.0,808.0,13:28,13:28
-carga,TRANSAP,carga,,,60512,,False,Buenuraqui,20,36.0,36.0,00:36,00:36
+carga,TRANSAP,carga,,,60510,,False,CHIGUAYANTE,13,704.0,704.0,11:44,11:44
+carga,TRANSAP,carga,,,60512,,False,CHIGUAYANTE,13,1397.0,1397.0,23:17,23:17
+carga,TRANSAP,carga,,,60510,,False,LA LEONERA,14,709.0,709.0,11:49,11:49
+carga,TRANSAP,carga,,,60512,,False,LA LEONERA,14,1402.0,1405.0,23:22,23:25
+carga,TRANSAP,carga,,,60510,,False,HUALQUI,15,720.0,737.0,12:00,12:17
+carga,TRANSAP,carga,,,60512,,False,HUALQUI,15,1416.0,1416.0,23:36,23:36
+carga,TRANSAP,carga,,,60510,,False,QUILACOYA,16,752.0,752.0,12:32,12:32
+carga,TRANSAP,carga,,,60512,,False,QUILACOYA,16,1431.0,1431.0,23:51,23:51
+carga,TRANSAP,carga,,,60510,,False,UNIHUE,17,764.0,764.0,12:44,12:44
+carga,TRANSAP,carga,,,60512,,False,UNIHUE,17,3.0,3.0,00:03,00:03
+carga,TRANSAP,carga,,,60510,,False,TALCAMÁVIDA,18,774.0,785.0,12:54,13:05
+carga,TRANSAP,carga,,,60512,,False,TALCAMÁVIDA,18,13.0,13.0,00:13,00:13
+carga,TRANSAP,carga,,,60510,,False,GOMERO,19,797.0,797.0,13:17,13:17
+carga,TRANSAP,carga,,,60512,,False,GOMERO,19,25.0,25.0,00:25,00:25
+carga,TRANSAP,carga,,,60510,,False,BUENURAQUI,20,808.0,808.0,13:28,13:28
+carga,TRANSAP,carga,,,60512,,False,BUENURAQUI,20,36.0,36.0,00:36,00:36
 carga,TRANSAP,carga,,,60510,,False,SAN ROSENDO,21,825.0,825.0,13:45,13:45
 carga,TRANSAP,carga,,,60512,,False,SAN ROSENDO,21,53.0,53.0,00:53,00:53
 carga,TRANSAP,carga,,,60510,,False,LAJA,22,835.0,835.0,13:55,13:55

@@ -10,9 +10,9 @@
   },
   "L1": {
     "linea": "L1",
-    "trenes": 55,
-    "esperas_via_unica": 5,
-    "espera_total_min": 32.4,
+    "trenes": 74,
+    "esperas_via_unica": 8,
+    "espera_total_min": 37.0,
     "espera_max_min": 14.5,
     "clearing_min": 1.5,
     "fuente": "horarios_limpios"

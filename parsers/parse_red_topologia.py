@@ -70,13 +70,23 @@ def parse():
             arcos.append({"corredor": a[0], "nombre": NOMBRE_CORR.get(a[0], a[0]),
                           "x1": a[1], "y1": a[2], "x2": b[1], "y2": b[2]})
     est = []
+    # mapa codigo -> nombre amigable (desde estaciones_maestro)
+    nom = {}
+    fm = CLEAN / "estaciones_maestro.csv"
+    if fm.exists():
+        em = pd.read_csv(fm)
+        for _, rr in em.iterrows():
+            nm = re.sub(r"\s*\(.*?\)", "", str(rr["nombre"])).strip()
+            if nm:
+                nom[str(rr["code"])] = nm
     for s in r.findall(".//station"):
         # ubicar estacion por su id (mismo espacio que nodos del corredor)
         c = _corr(s.get("id"))
         p = s.find("position")
         if c in yranges:
             lo, hi = yranges[c]
-            est.append({"corredor": c, "label": s.get("label"),
+            lab = s.get("label")
+            est.append({"corredor": c, "label": lab, "nombre": nom.get(lab, lab),
                         "x": float(p.get("x")), "y": (float(p.get("y")) - lo) + offset.get(c, 0)})
     # SEÑALES reales del OTML (element -> leaf -> posicion), encuadradas por corredor
     TIPO = {"1": "Principal", "24": "Principal 2 asp.", "25": "Principal/Distante 3 asp.",

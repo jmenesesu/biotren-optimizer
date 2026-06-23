@@ -261,7 +261,7 @@ with tabs[5]:
                                  hoverinfo="skip", showlegend=False))
         if not est.empty:
             fig.add_trace(go.Scatter(x=est["x"], y=est["y"], mode="markers+text",
-                                     marker=dict(color="#C00000", size=7), text=est["label"],
+                                     marker=dict(color="#C00000", size=7), text=(est["nombre"] if "nombre" in est.columns else est["label"]),
                                      textposition="top center", textfont=dict(size=8),
                                      hoverinfo="text", showlegend=False))
         if ver_sig and not sen.empty:
