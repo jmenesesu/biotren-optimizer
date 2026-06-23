@@ -1,5 +1,7 @@
 codigo,estacion,linea,km,capacidad,vias
+LJ,Laja,L1,1.6,2,LJ/B; LJ/A
 HQ,Hualqui,L1,46.92,2,HQ/4 (N); HQ/4 (S)
+OH,Omer Huet,L1,53.21,1,Taller OH
 ZW,La Leonera,L1,55.32,1,ZW/CM
 EZ,El Arenal,L1,82.79,8,EZ/1 (A); EZ/1 (B); EZ/1 (C); EZ/1 (D); EZ/1 (E); EZ/2 (A); EZ/2 (B); EZ/2 (C)
 CC,Concepción,L2,1.0,3,CC/8; CC/4 (N); CC/4 (S)

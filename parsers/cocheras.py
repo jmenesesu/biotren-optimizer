@@ -29,14 +29,29 @@ COCHERAS = {
                                "EZ/2 (A)", "EZ/2 (B)", "EZ/2 (C)"]),
     "ZW": ("La Leonera", "L1", ["ZW/CM"]),
     "HQ": ("Hualqui", "L1", ["HQ/4 (N)", "HQ/4 (S)"]),
+    # fuera de la zona Concepcion (no listadas en pags 20-21; capacidad estimada):
+    "LJ": ("Laja", "L1", ["LJ/B", "LJ/A"]),
+    "OH": ("Omer Huet", "L1", ["Taller OH"]),
+}
+
+# Disposicion INICIAL (pernoctacion) por automotor, del grafico de rotaciones
+# pagina 16 "LUNES A JUEVES". Codigo = cochera donde amanece cada automotor.
+DISPOSICION_INICIAL = {
+    "SFE 1": "CW", "SFE 2": "CW", "SFE 8": "CW", "SFE 9": "CW",
+    "SFE 3": "CC", "SFE 5": "CC",
+    "SFE 4": "LM", "SFE 6": "LM",
+    "SFE 7": "GU", "SFE 10": "GU", "SFE 11": "GU",
+    "SFE B1": "LJ", "SFE B2": "EZ", "UT 2": "EZ", "SFE B3": "HQ", "UT 1": "OH",
 }
 # estacion de fin de servicio -> cochera donde se estaciona (la mayoria coincide;
 # los servicios que terminan en Mercado estacionan en el patio de El Arenal).
 LAYOVER_A_COCHERA = {
     "Coronel": "CW", "CORONEL": "CW", "Concepción": "CC", "CONCEPCIÓN": "CC",
-    "Lagunillas": "GU", "Lomas Coloradas": "LM", "LOMAS COLORADAS": "LM",
+    "Lagunillas": "GU", "Cristo Redentor": "GU", "Laguna Quiñenco": "GU",
+    "Lomas Coloradas": "LM", "LOMAS COLORADAS": "LM",
     "El Arenal": "EZ", "EL ARENAL": "EZ", "Mercado": "EZ", "MERCADO": "EZ",
     "La Leonera": "ZW", "LA LEONERA": "ZW", "Hualqui": "HQ", "HUALQUI": "HQ",
+    "Omer Huet": "OH", "OMER HUET": "OH", "Laja": "LJ", "LAJA": "LJ",
 }
 
 
