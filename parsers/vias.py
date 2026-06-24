@@ -56,13 +56,41 @@ def _en(ivs, x):
     return any(a - 1e-6 <= x <= b + 1e-6 for a, b in ivs)
 
 
-def construir(linea="L2", km_min=None, km_max=None):
+def construir(linea="L2", km_min=None, km_max=None, metodo="envolvente"):
     e = pd.read_csv(CLEAN / "infra_edges.csv")
     ori = _cobertura(e, linea, "oriente")
     pon = _cobertura(e, linea, "poniente")
     bps = sorted(set([round(x, 2) for iv in ori + pon for x in iv]))
     if km_min is not None:
         bps = [b for b in bps if km_min - 0.5 <= b <= (km_max or 1e9) + 0.5]
+    if metodo == "secciones":
+        lo_lim = km_min if km_min is not None else min(bps)
+        hi_lim = km_max if km_max is not None else max(bps)
+        cortes = sorted(set([round(lo_lim, 2), round(hi_lim, 2)] +
+                            [b for b in bps if lo_lim - 0.5 <= b <= hi_lim + 0.5]))
+        filas = []
+        for i in range(len(cortes) - 1):
+            a, b = cortes[i], cortes[i + 1]
+            if b - a < 0.05:
+                continue
+            mid = (a + b) / 2
+            doble = _en(ori, mid) and _en(pon, mid)
+            filas.append({"linea": linea, "km_lo": a, "km_hi": b, "n_vias": 2 if doble else 1,
+                          "tipo": "doble" if doble else "única",
+                          "vias": "oriente; poniente" if doble else "única"})
+        # fusionar tramos contiguos del mismo tipo
+        fus = []
+        for r in filas:
+            if fus and fus[-1]["tipo"] == r["tipo"] and abs(fus[-1]["km_hi"] - r["km_lo"]) < 1e-6:
+                fus[-1]["km_hi"] = r["km_hi"]
+            else:
+                fus.append(dict(r))
+        e2 = pd.read_csv(CLEAN / "infra_edges.csv")
+        sub2 = e2[e2.document.map(GRUPO.get) == linea]
+        sw2 = sub2[(sub2.v1_switch_time.notna()) | (sub2.v2_switch_time.notna())]
+        ak2 = sorted(set(round(k, 1) for k in pd.concat([sw2.v1_km, sw2.v2_km]).dropna()
+                         if (km_min or -1) - 0.5 <= k <= (km_max or 1e9) + 0.5))
+        return pd.DataFrame(fus), pd.DataFrame({"linea": linea, "km": ak2, "n_agujas": 1})
     # envolvente de doble vía: km donde hay doble confirmada (oriente y poniente)
     dobles = [(round(bps[i], 2), round(bps[i + 1], 2)) for i in range(len(bps) - 1)
               if _en(ori, (bps[i] + bps[i + 1]) / 2) and _en(pon, (bps[i] + bps[i + 1]) / 2)
@@ -95,9 +123,8 @@ def construir(linea="L2", km_min=None, km_max=None):
 
 def main():
     tvs, enls = [], []
-    for ln in ["L2"]:
-        tv, enl = construir(ln, km_min=1, km_max=28)
-        tvs.append(tv); enls.append(enl)
+    tv, enl = construir("L2", km_min=1, km_max=28, metodo="envolvente"); tvs.append(tv); enls.append(enl)
+    tv, enl = construir("L1", km_min=1.6, km_max=85, metodo="secciones"); tvs.append(tv); enls.append(enl)
     pd.concat(tvs, ignore_index=True).to_csv(CLEAN / "tramos_via.csv", index=False)
     pd.concat(enls, ignore_index=True).to_csv(CLEAN / "enlaces.csv", index=False)
     return tvs[0], enls[0]

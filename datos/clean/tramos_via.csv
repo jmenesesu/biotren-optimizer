@@ -2,3 +2,10 @@ linea,km_lo,km_hi,n_vias,tipo,vias
 L2,1.0,3.1,1,única,única (tramo inicial)
 L2,3.1,27.71,2,doble,oriente; poniente
 L2,27.71,28.0,1,única,única (tramo final)
+L1,1.6,54.69,1,única,única
+L1,54.69,56.13,2,doble,oriente; poniente
+L1,56.13,59.43,1,única,única
+L1,59.43,61.27,2,doble,oriente; poniente
+L1,61.27,68.82,1,única,única
+L1,68.82,72.42,2,doble,oriente; poniente
+L1,72.42,85.0,1,única,única
