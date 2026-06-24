@@ -230,7 +230,27 @@ def render():
         rows += [{"estado": "cochera", "unidad": e["unidad"], "servicio": "", "tramo": e["linea"], "sentido": "",
                   "dist_km": e["dist_km"], "cochera": e["cochera"]} for e in estd["estacionados"] if e["linea"] == linea]
         df_t = pd.DataFrame(rows)
-        fig2 = go.Figure(data=_base(linea, est_ref, cocheras, tramos, enlaces, bl, g) + _dyn(df_t, tramos, bl, cocheras, g))
+        base2 = _base(linea, est_ref, cocheras, tramos, enlaces, bl, g)
+        # ASPECTOS de señal (RTF/CTC): rojo=cantón ocupado, amarillo=anterior, verde=libre
+        try:
+            import senalizacion as senal
+            pos = [x["dist_km"] for x in estd["trenes"] if x["tramo"] == linea]
+            COL = {"Rojo": "#C00000", "Amarillo": "#E8A000", "Verde": "#2E7D32"}
+            ax_, ay_, atx_, aco_ = [], [], [], []
+            for sent in ["creciente", "decreciente"]:
+                yy = g["der"] + 0.03 if sent == "creciente" else g["izq"] + 0.03
+                for a in senal.aspectos(linea, pos, sent):
+                    if a["km"] > g["xmax"]:
+                        continue
+                    ax_.append(a["km"]); ay_.append(yy)
+                    atx_.append(f"Señal km {a['km']} ({'→' if sent=='creciente' else '←'}): {a['aspecto']} · cantón {a['canton_lo']}–{a['canton_hi']}")
+                    aco_.append(COL[a["aspecto"]])
+            base2.append(go.Scatter(x=ax_, y=ay_, mode="markers", name="señales",
+                                    marker=dict(size=7, color=aco_, symbol="circle", line=dict(width=0.5, color="#333")),
+                                    hovertext=atx_, hoverinfo="text"))
+        except Exception:
+            pass
+        fig2 = go.Figure(data=base2 + _dyn(df_t, tramos, bl, cocheras, g))
         fig2.update_layout(height=420, margin=dict(l=10, r=10, t=30, b=10), title=f"{linea} a las {hh:02d}:{mm:02d}:{ss:02d}",
                            yaxis=dict(visible=False, range=[0.0, 1.06]),
                            xaxis=dict(title="km", range=[-0.5, g["xmax"]]), showlegend=False)
