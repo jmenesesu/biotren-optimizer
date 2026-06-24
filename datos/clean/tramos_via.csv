@@ -1,0 +1,8 @@
+linea,km_lo,km_hi,n_vias,tipo,vias
+L2,1.09,3.1,1,única,poniente
+L2,3.1,12.21,2,doble,oriente; poniente
+L2,12.21,18.23,1,no determinado,sin doble vía registrada
+L2,18.23,23.84,2,doble,oriente; poniente
+L2,23.84,26.62,1,única,oriente
+L2,26.62,27.71,2,doble,oriente; poniente
+L2,27.71,28.02,1,única,poniente
