@@ -61,6 +61,11 @@ def cargar():
     # asegurar que TODOS los automotores con disposicion inicial existan (aunque sin servicios)
     for u in cmod.DISPOSICION_INICIAL:
         unidades.setdefault(u, [])
+    global _HOLDS
+    try:
+        _HOLDS = _ocupacion(unidades)
+    except Exception:
+        _HOLDS = {}
     return unidades, servicios
 
 
@@ -82,6 +87,12 @@ def estado(t, unidades, coch=None):
         if run is not None:
             d = _pos(run, t)
             if d is not None:
+                # exclusividad de vía única: retener en el borde si un opuesto ocupa el bloque
+                tid = f"{run['sentido']}-{run['servicio']}-{u}"
+                for (lo, hi), (hu, entry) in _HOLDS.get(tid, {}).items():
+                    if lo - 1e-6 <= d <= hi + 1e-6 and t < hu:
+                        d = entry
+                        break
                 trenes.append({"unidad": u, "servicio": run["servicio"], "tramo": run["tramo"],
                                "sentido": run["sentido"], "dist_km": round(d, 3)})
                 continue
@@ -138,3 +149,68 @@ if __name__ == "__main__":
     print(f"Automotores: {len(unidades)} | servicios: {len(servicios)} | grilla: {len(g)} filas")
     print(f"Disposición 05:00 (debe ser CW=4, CC=2, LM=2, GU=3...): {dict(disp)}")
     print(f"Circulando 05:00: {len(st['trenes'])}, estacionados: {len(st['estacionados'])} (suma={len(st['trenes'])+len(st['estacionados'])})")
+
+def _bloques_unicos(linea, eje):
+    import pandas as _pd
+    tv = _pd.read_csv(CLEAN / "tramos_via.csv")
+    unicas = [(r.km_lo, r.km_hi) for r in tv[(tv.linea == linea) & (tv.tipo == "única")].itertuples()]
+    ests = sorted(eje.dist_km.tolist())
+    bloques = []
+    for lo, hi in unicas:
+        cortes = sorted(set([round(lo, 3)] + [round(k, 3) for k in ests if lo + 1e-3 < k < hi - 1e-3] + [round(hi, 3)]))
+        for i in range(len(cortes) - 1):
+            if cortes[i + 1] - cortes[i] > 0.05:
+                bloques.append((cortes[i], cortes[i + 1]))
+    return bloques
+
+
+def _t_en_pts(pts, d):
+    for i in range(len(pts) - 1):
+        (t0, d0, _), (t1, d1, _) = pts[i], pts[i + 1]
+        lo, hi = sorted([d0, d1])
+        if lo - 1e-9 <= d <= hi + 1e-9 and d1 != d0:
+            return t0 + (t1 - t0) * (d - d0) / (d1 - d0)
+    return None
+
+
+def _ocupacion(unidades):
+    """Por línea y bloque de vía única: retenciones por exclusividad (cruce opuesto).
+    Devuelve dict serv_tid -> {(lo,hi): hold_until} (tiempo hasta el que el tren
+    debe esperar en el borde de entrada por un opuesto que entró antes)."""
+    ejes = {"L1": eje_L1(), "L2": eje_L2()}
+    holds = {}
+    for linea in ["L2", "L1"]:
+        bloques = _bloques_unicos(linea, ejes[linea])
+        # ocupaciones (serv, sentido, t_in, t_out, entry_km) por bloque
+        items = {b: [] for b in bloques}
+        servicios = []
+        for u, sv in unidades.items():
+            for s in sv:
+                if s["tramo"] != linea:
+                    continue
+                tid = f"{s['sentido']}-{s['servicio']}-{u}"
+                servicios.append((tid, s))
+                for (lo, hi) in bloques:
+                    ta = _t_en_pts(s["pts"], lo); tb = _t_en_pts(s["pts"], hi)
+                    if ta is None or tb is None:
+                        continue
+                    t_in, t_out = min(ta, tb), max(ta, tb)
+                    entry = lo if ta <= tb else hi
+                    items[(lo, hi)].append([t_in, t_out, s["sentido"], tid, entry])
+        # primero en entrar tiene prioridad; el resto se retiene si hay opuesto antes
+        for b, lst in items.items():
+            lst.sort(key=lambda x: x[0])
+            for k in range(len(lst)):
+                t_in, t_out, sent, tid, entry = lst[k]
+                hu = 0.0
+                for j in range(k):
+                    z_in, z_out, zs, ztid, zent = lst[j]
+                    # opuesto que entró antes (o a la vez) y aún ocupa el bloque
+                    if zs != sent and z_out > t_in - 1e-6:
+                        hu = max(hu, z_out)
+                if hu > t_in + 0.01:
+                    holds.setdefault(tid, {})[b] = (hu, entry)
+    return holds
+
+
+_HOLDS = {}
