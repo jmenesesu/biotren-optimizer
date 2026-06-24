@@ -142,16 +142,19 @@ def _base(linea, est_ref, cocheras, tramos, enlaces, bl, g):
 
 def _dyn(df_t, tramos, bl, cocheras, g):
     cap = {r.codigo: int(r.capacidad) for r in cocheras.itertuples()}
-    tx, ty, ttxt, tcol, cx, cy = [], [], [], [], [], []
+    tx, ty, ttxt, tcol, cx, cy, tsz, tsy = [], [], [], [], [], [], [], []
     for r in df_t[df_t.estado == "circulando"].itertuples():
         y = _y_via(r.dist_km, r.sentido, tramos, g)
         ct = _canton(r.dist_km, bl)
         if ct:
             cx += [ct[0], ct[1], None]; cy += [y, y, None]
         tx.append(r.dist_km); ty.append(y)
-        ttxt.append(f"{r.unidad} · serv {r.servicio} · {r.sentido} · km {r.dist_km}")
+        es_doble = "+" in str(r.unidad)
+        ttxt.append(f"{'TREN DOBLE ' if es_doble else ''}{r.unidad} · serv {r.servicio} · {r.sentido} · km {r.dist_km}")
         tcol.append(AZUL if _inc(r.sentido) else ROJO)
-    trenes = go.Scatter(x=tx, y=ty, mode="markers", marker=dict(size=14, color=tcol, line=dict(width=1, color="white")),
+        tsz.append(20 if es_doble else 14); tsy.append("diamond-wide" if es_doble else "circle")
+    trenes = go.Scatter(x=tx, y=ty, mode="markers",
+                        marker=dict(size=tsz, color=tcol, symbol=tsy, line=dict(width=1.4, color="white")),
                         hovertext=ttxt, hoverinfo="text", name="circulando")
     cantones = go.Scatter(x=cx, y=cy, mode="lines", line=dict(color="rgba(192,0,0,0.28)", width=9), hoverinfo="skip")
     ex, ey, etxt, ecol = [], [], [], []

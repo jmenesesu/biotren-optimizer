@@ -1,11 +1,10 @@
 t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
-19800,SFE 3,20281,L2,CC->CW,1.0,circulando,
+19800,SFE 3+SFE 5,20281,L2,CC->CW,1.0,circulando,
 19800,SFE 1,,L2,,27.36,cochera,CW
 19800,SFE 10,,L2,,23.8,cochera,GU
 19800,SFE 11,,L2,,23.8,cochera,GU
 19800,SFE 2,,L2,,27.36,cochera,CW
 19800,SFE 4,,L2,,11.03,cochera,LM
-19800,SFE 5,,L2,,1.0,cochera,CC
 19800,SFE 6,,L2,,11.03,cochera,LM
 19800,SFE 7,,L2,,23.8,cochera,GU
 19800,SFE 8,,L2,,27.36,cochera,CW
@@ -15,13 +14,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 19800,SFE B3,,L1,,46.92,cochera,HQ
 19800,UT 1,,L1,,53.21,cochera,OH
 19800,UT 2,,L1,,82.79,cochera,EZ
-19920,SFE 3,20281,L2,CC->CW,1.933,circulando,
+19920,SFE 3+SFE 5,20281,L2,CC->CW,1.933,circulando,
 19920,SFE 1,,L2,,27.36,cochera,CW
 19920,SFE 10,,L2,,23.8,cochera,GU
 19920,SFE 11,,L2,,23.8,cochera,GU
 19920,SFE 2,,L2,,27.36,cochera,CW
 19920,SFE 4,,L2,,11.03,cochera,LM
-19920,SFE 5,,L2,,1.0,cochera,CC
 19920,SFE 6,,L2,,11.03,cochera,LM
 19920,SFE 7,,L2,,23.8,cochera,GU
 19920,SFE 8,,L2,,27.36,cochera,CW
@@ -31,13 +29,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 19920,SFE B3,,L1,,46.92,cochera,HQ
 19920,UT 1,,L1,,53.21,cochera,OH
 19920,UT 2,,L1,,82.79,cochera,EZ
-20040,SFE 3,20281,L2,CC->CW,2.906,circulando,
+20040,SFE 3+SFE 5,20281,L2,CC->CW,2.906,circulando,
 20040,SFE 1,,L2,,27.36,cochera,CW
 20040,SFE 10,,L2,,23.8,cochera,GU
 20040,SFE 11,,L2,,23.8,cochera,GU
 20040,SFE 2,,L2,,27.36,cochera,CW
 20040,SFE 4,,L2,,11.03,cochera,LM
-20040,SFE 5,,L2,,1.0,cochera,CC
 20040,SFE 6,,L2,,11.03,cochera,LM
 20040,SFE 7,,L2,,23.8,cochera,GU
 20040,SFE 8,,L2,,27.36,cochera,CW
@@ -47,13 +44,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20040,SFE B3,,L1,,46.92,cochera,HQ
 20040,UT 1,,L1,,53.21,cochera,OH
 20040,UT 2,,L1,,82.79,cochera,EZ
-20160,SFE 3,20281,L2,CC->CW,3.839,circulando,
+20160,SFE 3+SFE 5,20281,L2,CC->CW,3.839,circulando,
 20160,SFE 1,,L2,,27.36,cochera,CW
 20160,SFE 10,,L2,,23.8,cochera,GU
 20160,SFE 11,,L2,,23.8,cochera,GU
 20160,SFE 2,,L2,,27.36,cochera,CW
 20160,SFE 4,,L2,,11.03,cochera,LM
-20160,SFE 5,,L2,,1.0,cochera,CC
 20160,SFE 6,,L2,,11.03,cochera,LM
 20160,SFE 7,,L2,,23.8,cochera,GU
 20160,SFE 8,,L2,,27.36,cochera,CW
@@ -63,13 +59,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20160,SFE B3,,L1,,46.92,cochera,HQ
 20160,UT 1,,L1,,53.21,cochera,OH
 20160,UT 2,,L1,,82.79,cochera,EZ
-20280,SFE 3,20281,L2,CC->CW,4.847,circulando,
+20280,SFE 3+SFE 5,20281,L2,CC->CW,4.847,circulando,
 20280,SFE 1,,L2,,27.36,cochera,CW
 20280,SFE 10,,L2,,23.8,cochera,GU
 20280,SFE 11,,L2,,23.8,cochera,GU
 20280,SFE 2,,L2,,27.36,cochera,CW
 20280,SFE 4,,L2,,11.03,cochera,LM
-20280,SFE 5,,L2,,1.0,cochera,CC
 20280,SFE 6,,L2,,11.03,cochera,LM
 20280,SFE 7,,L2,,23.8,cochera,GU
 20280,SFE 8,,L2,,27.36,cochera,CW
@@ -79,14 +74,13 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20280,SFE B3,,L1,,46.92,cochera,HQ
 20280,UT 1,,L1,,53.21,cochera,OH
 20280,UT 2,,L1,,82.79,cochera,EZ
-20400,SFE 3,20281,L2,CC->CW,5.903,circulando,
+20400,SFE 3+SFE 5,20281,L2,CC->CW,5.903,circulando,
 20400,SFE B3,20200,L1,TH->LJ,46.917,circulando,
 20400,SFE 1,,L2,,27.36,cochera,CW
 20400,SFE 10,,L2,,23.8,cochera,GU
 20400,SFE 11,,L2,,23.8,cochera,GU
 20400,SFE 2,,L2,,27.36,cochera,CW
 20400,SFE 4,,L2,,11.03,cochera,LM
-20400,SFE 5,,L2,,1.0,cochera,CC
 20400,SFE 6,,L2,,11.03,cochera,LM
 20400,SFE 7,,L2,,23.8,cochera,GU
 20400,SFE 8,,L2,,27.36,cochera,CW
@@ -95,14 +89,13 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20400,SFE B2,,L1,,82.79,cochera,EZ
 20400,UT 1,,L1,,53.21,cochera,OH
 20400,UT 2,,L1,,82.79,cochera,EZ
-20520,SFE 3,20281,L2,CC->CW,6.959,circulando,
+20520,SFE 3+SFE 5,20281,L2,CC->CW,6.959,circulando,
 20520,SFE B3,20200,L1,TH->LJ,45.133,circulando,
 20520,SFE 1,,L2,,27.36,cochera,CW
 20520,SFE 10,,L2,,23.8,cochera,GU
 20520,SFE 11,,L2,,23.8,cochera,GU
 20520,SFE 2,,L2,,27.36,cochera,CW
 20520,SFE 4,,L2,,11.03,cochera,LM
-20520,SFE 5,,L2,,1.0,cochera,CC
 20520,SFE 6,,L2,,11.03,cochera,LM
 20520,SFE 7,,L2,,23.8,cochera,GU
 20520,SFE 8,,L2,,27.36,cochera,CW
@@ -111,14 +104,13 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20520,SFE B2,,L1,,82.79,cochera,EZ
 20520,UT 1,,L1,,53.21,cochera,OH
 20520,UT 2,,L1,,82.79,cochera,EZ
-20640,SFE 3,20281,L2,CC->CW,7.992,circulando,
+20640,SFE 3+SFE 5,20281,L2,CC->CW,7.992,circulando,
 20640,SFE B3,20200,L1,TH->LJ,43.185,circulando,
 20640,SFE 1,,L2,,27.36,cochera,CW
 20640,SFE 10,,L2,,23.8,cochera,GU
 20640,SFE 11,,L2,,23.8,cochera,GU
 20640,SFE 2,,L2,,27.36,cochera,CW
 20640,SFE 4,,L2,,11.03,cochera,LM
-20640,SFE 5,,L2,,1.0,cochera,CC
 20640,SFE 6,,L2,,11.03,cochera,LM
 20640,SFE 7,,L2,,23.8,cochera,GU
 20640,SFE 8,,L2,,27.36,cochera,CW
@@ -127,7 +119,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20640,SFE B2,,L1,,82.79,cochera,EZ
 20640,UT 1,,L1,,53.21,cochera,OH
 20640,UT 2,,L1,,82.79,cochera,EZ
-20760,SFE 3,20281,L2,CC->CW,9.232,circulando,
+20760,SFE 3+SFE 5,20281,L2,CC->CW,9.232,circulando,
 20760,SFE B3,20200,L1,TH->LJ,41.236,circulando,
 20760,UT 1,20202,L1,TH->LJ,52.686,circulando,
 20760,SFE 1,,L2,,27.36,cochera,CW
@@ -135,7 +127,6 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20760,SFE 11,,L2,,23.8,cochera,GU
 20760,SFE 2,,L2,,27.36,cochera,CW
 20760,SFE 4,,L2,,11.03,cochera,LM
-20760,SFE 5,,L2,,1.0,cochera,CC
 20760,SFE 6,,L2,,11.03,cochera,LM
 20760,SFE 7,,L2,,23.8,cochera,GU
 20760,SFE 8,,L2,,27.36,cochera,CW
@@ -143,7 +134,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20760,SFE B1,,L1,,1.6,cochera,LJ
 20760,SFE B2,,L1,,82.79,cochera,EZ
 20760,UT 2,,L1,,82.79,cochera,EZ
-20880,SFE 3,20281,L2,CC->CW,10.473,circulando,
+20880,SFE 3+SFE 5,20281,L2,CC->CW,10.473,circulando,
 20880,SFE B3,20200,L1,TH->LJ,39.288,circulando,
 20880,UT 1,20202,L1,TH->LJ,51.521,circulando,
 20880,SFE 1,,L2,,27.36,cochera,CW
@@ -151,7 +142,6 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20880,SFE 11,,L2,,23.8,cochera,GU
 20880,SFE 2,,L2,,27.36,cochera,CW
 20880,SFE 4,,L2,,11.03,cochera,LM
-20880,SFE 5,,L2,,1.0,cochera,CC
 20880,SFE 6,,L2,,11.03,cochera,LM
 20880,SFE 7,,L2,,23.8,cochera,GU
 20880,SFE 8,,L2,,27.36,cochera,CW
@@ -159,7 +149,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 20880,SFE B1,,L1,,1.6,cochera,LJ
 20880,SFE B2,,L1,,82.79,cochera,EZ
 20880,UT 2,,L1,,82.79,cochera,EZ
-21000,SFE 3,20281,L2,CC->CW,11.425,circulando,
+21000,SFE 3+SFE 5,20281,L2,CC->CW,11.425,circulando,
 21000,SFE B3,20200,L1,TH->LJ,37.339,circulando,
 21000,UT 1,20202,L1,TH->LJ,50.355,circulando,
 21000,SFE 1,,L2,,27.36,cochera,CW
@@ -167,7 +157,6 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21000,SFE 11,,L2,,23.8,cochera,GU
 21000,SFE 2,,L2,,27.36,cochera,CW
 21000,SFE 4,,L2,,11.03,cochera,LM
-21000,SFE 5,,L2,,1.0,cochera,CC
 21000,SFE 6,,L2,,11.03,cochera,LM
 21000,SFE 7,,L2,,23.8,cochera,GU
 21000,SFE 8,,L2,,27.36,cochera,CW
@@ -175,7 +164,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21000,SFE B1,,L1,,1.6,cochera,LJ
 21000,SFE B2,,L1,,82.79,cochera,EZ
 21000,UT 2,,L1,,82.79,cochera,EZ
-21120,SFE 3,20281,L2,CC->CW,12.288,circulando,
+21120,SFE 3+SFE 5,20281,L2,CC->CW,12.288,circulando,
 21120,SFE B3,20200,L1,TH->LJ,35.751,circulando,
 21120,UT 1,20202,L1,TH->LJ,49.189,circulando,
 21120,SFE 1,,L2,,27.36,cochera,CW
@@ -183,7 +172,6 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21120,SFE 11,,L2,,23.8,cochera,GU
 21120,SFE 2,,L2,,27.36,cochera,CW
 21120,SFE 4,,L2,,11.03,cochera,LM
-21120,SFE 5,,L2,,1.0,cochera,CC
 21120,SFE 6,,L2,,11.03,cochera,LM
 21120,SFE 7,,L2,,23.8,cochera,GU
 21120,SFE 8,,L2,,27.36,cochera,CW
@@ -191,7 +179,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21120,SFE B1,,L1,,1.6,cochera,LJ
 21120,SFE B2,,L1,,82.79,cochera,EZ
 21120,UT 2,,L1,,82.79,cochera,EZ
-21240,SFE 3,20281,L2,CC->CW,13.15,circulando,
+21240,SFE 3+SFE 5,20281,L2,CC->CW,13.15,circulando,
 21240,SFE B3,20200,L1,TH->LJ,33.893,circulando,
 21240,UT 1,20202,L1,TH->LJ,48.024,circulando,
 21240,SFE 1,,L2,,27.36,cochera,CW
@@ -199,7 +187,6 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21240,SFE 11,,L2,,23.8,cochera,GU
 21240,SFE 2,,L2,,27.36,cochera,CW
 21240,SFE 4,,L2,,11.03,cochera,LM
-21240,SFE 5,,L2,,1.0,cochera,CC
 21240,SFE 6,,L2,,11.03,cochera,LM
 21240,SFE 7,,L2,,23.8,cochera,GU
 21240,SFE 8,,L2,,27.36,cochera,CW
@@ -208,14 +195,13 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21240,SFE B2,,L1,,82.79,cochera,EZ
 21240,UT 2,,L1,,82.79,cochera,EZ
 21360,SFE 1,20000,L2,CW->CC,26.714,circulando,
-21360,SFE 3,20281,L2,CC->CW,14.013,circulando,
+21360,SFE 3+SFE 5,20281,L2,CC->CW,14.013,circulando,
 21360,SFE B3,20200,L1,TH->LJ,32.034,circulando,
 21360,UT 1,20202,L1,TH->LJ,46.917,circulando,
 21360,SFE 10,,L2,,23.8,cochera,GU
 21360,SFE 11,,L2,,23.8,cochera,GU
 21360,SFE 2,,L2,,27.36,cochera,CW
 21360,SFE 4,,L2,,11.03,cochera,LM
-21360,SFE 5,,L2,,1.0,cochera,CC
 21360,SFE 6,,L2,,11.03,cochera,LM
 21360,SFE 7,,L2,,23.8,cochera,GU
 21360,SFE 8,,L2,,27.36,cochera,CW
@@ -224,13 +210,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21360,SFE B2,,L1,,82.79,cochera,EZ
 21360,UT 2,,L1,,82.79,cochera,EZ
 21480,SFE 1,20000,L2,CW->CC,25.58,circulando,
-21480,SFE 3,20281,L2,CC->CW,14.875,circulando,
+21480,SFE 3+SFE 5,20281,L2,CC->CW,14.875,circulando,
 21480,SFE B3,20200,L1,TH->LJ,30.176,circulando,
 21480,SFE 10,,L2,,23.8,cochera,GU
 21480,SFE 11,,L2,,23.8,cochera,GU
 21480,SFE 2,,L2,,27.36,cochera,CW
 21480,SFE 4,,L2,,11.03,cochera,LM
-21480,SFE 5,,L2,,1.0,cochera,CC
 21480,SFE 6,,L2,,11.03,cochera,LM
 21480,SFE 7,,L2,,23.8,cochera,GU
 21480,SFE 8,,L2,,27.36,cochera,CW
@@ -240,13 +225,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21480,UT 1,,L1,,46.92,cochera,HQ
 21480,UT 2,,L1,,82.79,cochera,EZ
 21600,SFE 1,20000,L2,CW->CC,24.203,circulando,
-21600,SFE 3,20281,L2,CC->CW,15.738,circulando,
+21600,SFE 3+SFE 5,20281,L2,CC->CW,15.738,circulando,
 21600,SFE B3,20200,L1,TH->LJ,28.741,circulando,
 21600,SFE 10,,L2,,23.8,cochera,GU
 21600,SFE 11,,L2,,23.8,cochera,GU
 21600,SFE 2,,L2,,27.36,cochera,CW
 21600,SFE 4,,L2,,11.03,cochera,LM
-21600,SFE 5,,L2,,1.0,cochera,CC
 21600,SFE 6,,L2,,11.03,cochera,LM
 21600,SFE 7,,L2,,23.8,cochera,GU
 21600,SFE 8,,L2,,27.36,cochera,CW
@@ -256,13 +240,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21600,UT 1,,L1,,46.92,cochera,HQ
 21600,UT 2,,L1,,82.79,cochera,EZ
 21720,SFE 1,20000,L2,CW->CC,22.66,circulando,
-21720,SFE 3,20281,L2,CC->CW,16.965,circulando,
+21720,SFE 3+SFE 5,20281,L2,CC->CW,16.965,circulando,
 21720,SFE B3,20200,L1,TH->LJ,27.23,circulando,
 21720,SFE 10,,L2,,23.8,cochera,GU
 21720,SFE 11,,L2,,23.8,cochera,GU
 21720,SFE 2,,L2,,27.36,cochera,CW
 21720,SFE 4,,L2,,11.03,cochera,LM
-21720,SFE 5,,L2,,1.0,cochera,CC
 21720,SFE 6,,L2,,11.03,cochera,LM
 21720,SFE 7,,L2,,23.8,cochera,GU
 21720,SFE 8,,L2,,27.36,cochera,CW
@@ -272,13 +255,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21720,UT 1,,L1,,46.92,cochera,HQ
 21720,UT 2,,L1,,82.79,cochera,EZ
 21840,SFE 1,20000,L2,CW->CC,20.55,circulando,
-21840,SFE 3,20281,L2,CC->CW,18.969,circulando,
+21840,SFE 3+SFE 5,20281,L2,CC->CW,18.969,circulando,
 21840,SFE B3,20200,L1,TH->LJ,25.72,circulando,
 21840,SFE 10,,L2,,23.8,cochera,GU
 21840,SFE 11,,L2,,23.8,cochera,GU
 21840,SFE 2,,L2,,27.36,cochera,CW
 21840,SFE 4,,L2,,11.03,cochera,LM
-21840,SFE 5,,L2,,1.0,cochera,CC
 21840,SFE 6,,L2,,11.03,cochera,LM
 21840,SFE 7,,L2,,23.8,cochera,GU
 21840,SFE 8,,L2,,27.36,cochera,CW
@@ -288,13 +270,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21840,UT 1,,L1,,46.92,cochera,HQ
 21840,UT 2,,L1,,82.79,cochera,EZ
 21960,SFE 1,20000,L2,CW->CC,18.546,circulando,
-21960,SFE 3,20281,L2,CC->CW,20.972,circulando,
+21960,SFE 3+SFE 5,20281,L2,CC->CW,20.972,circulando,
 21960,SFE B3,20200,L1,TH->LJ,24.209,circulando,
 21960,SFE 10,,L2,,23.8,cochera,GU
 21960,SFE 11,,L2,,23.8,cochera,GU
 21960,SFE 2,,L2,,27.36,cochera,CW
 21960,SFE 4,,L2,,11.03,cochera,LM
-21960,SFE 5,,L2,,1.0,cochera,CC
 21960,SFE 6,,L2,,11.03,cochera,LM
 21960,SFE 7,,L2,,23.8,cochera,GU
 21960,SFE 8,,L2,,27.36,cochera,CW
@@ -304,13 +285,12 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 21960,UT 1,,L1,,46.92,cochera,HQ
 21960,UT 2,,L1,,82.79,cochera,EZ
 22080,SFE 1,20000,L2,CW->CC,17.119,circulando,
-22080,SFE 3,20281,L2,CC->CW,22.976,circulando,
+22080,SFE 3+SFE 5,20281,L2,CC->CW,22.976,circulando,
 22080,SFE B3,20200,L1,TH->LJ,22.798,circulando,
 22080,SFE 10,,L2,,23.8,cochera,GU
 22080,SFE 11,,L2,,23.8,cochera,GU
 22080,SFE 2,,L2,,27.36,cochera,CW
 22080,SFE 4,,L2,,11.03,cochera,LM
-22080,SFE 5,,L2,,1.0,cochera,CC
 22080,SFE 6,,L2,,11.03,cochera,LM
 22080,SFE 7,,L2,,23.8,cochera,GU
 22080,SFE 8,,L2,,27.36,cochera,CW
@@ -321,11 +301,10 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 22080,UT 2,,L1,,82.79,cochera,EZ
 22200,SFE 1,20000,L2,CW->CC,16.096,circulando,
 22200,SFE 2,20002,L2,CW->CC,26.714,circulando,
-22200,SFE 3,20281,L2,CC->CW,24.456,circulando,
+22200,SFE 3+SFE 5,20281,L2,CC->CW,24.456,circulando,
 22200,SFE 10,,L2,,23.8,cochera,GU
 22200,SFE 11,,L2,,23.8,cochera,GU
 22200,SFE 4,,L2,,11.03,cochera,LM
-22200,SFE 5,,L2,,1.0,cochera,CC
 22200,SFE 6,,L2,,11.03,cochera,LM
 22200,SFE 7,,L2,,23.8,cochera,GU
 22200,SFE 8,,L2,,27.36,cochera,CW
@@ -337,11 +316,10 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 22200,UT 2,,L1,,82.79,cochera,EZ
 22320,SFE 1,20000,L2,CW->CC,15.235,circulando,
 22320,SFE 2,20002,L2,CW->CC,25.58,circulando,
-22320,SFE 3,20281,L2,CC->CW,25.954,circulando,
+22320,SFE 3+SFE 5,20281,L2,CC->CW,25.954,circulando,
 22320,SFE 10,,L2,,23.8,cochera,GU
 22320,SFE 11,,L2,,23.8,cochera,GU
 22320,SFE 4,,L2,,11.03,cochera,LM
-22320,SFE 5,,L2,,1.0,cochera,CC
 22320,SFE 6,,L2,,11.03,cochera,LM
 22320,SFE 7,,L2,,23.8,cochera,GU
 22320,SFE 8,,L2,,27.36,cochera,CW
@@ -353,11 +331,10 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 22320,UT 2,,L1,,82.79,cochera,EZ
 22440,SFE 1,20000,L2,CW->CC,14.375,circulando,
 22440,SFE 2,20002,L2,CW->CC,24.203,circulando,
-22440,SFE 3,20281,L2,CC->CW,27.355,circulando,
+22440,SFE 3+SFE 5,20281,L2,CC->CW,27.355,circulando,
 22440,SFE 10,,L2,,23.8,cochera,GU
 22440,SFE 11,,L2,,23.8,cochera,GU
 22440,SFE 4,,L2,,11.03,cochera,LM
-22440,SFE 5,,L2,,1.0,cochera,CC
 22440,SFE 6,,L2,,11.03,cochera,LM
 22440,SFE 7,,L2,,23.8,cochera,GU
 22440,SFE 8,,L2,,27.36,cochera,CW
@@ -374,7 +351,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 22560,SFE 11,,L2,,23.8,cochera,GU
 22560,SFE 3,,L2,,27.36,cochera,CW
 22560,SFE 4,,L2,,11.03,cochera,LM
-22560,SFE 5,,L2,,1.0,cochera,CC
+22560,SFE 5,,L2,,27.36,cochera,CW
 22560,SFE 7,,L2,,23.8,cochera,GU
 22560,SFE 8,,L2,,27.36,cochera,CW
 22560,SFE 9,,L2,,27.36,cochera,CW
@@ -392,7 +369,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 22680,SFE 11,,L2,,23.8,cochera,GU
 22680,SFE 3,,L2,,27.36,cochera,CW
 22680,SFE 4,,L2,,11.03,cochera,LM
-22680,SFE 5,,L2,,1.0,cochera,CC
+22680,SFE 5,,L2,,27.36,cochera,CW
 22680,SFE 7,,L2,,23.8,cochera,GU
 22680,SFE 8,,L2,,27.36,cochera,CW
 22680,SFE 9,,L2,,27.36,cochera,CW
@@ -409,7 +386,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 22800,SFE 10,,L2,,23.8,cochera,GU
 22800,SFE 11,,L2,,23.8,cochera,GU
 22800,SFE 4,,L2,,11.03,cochera,LM
-22800,SFE 5,,L2,,1.0,cochera,CC
+22800,SFE 5,,L2,,27.36,cochera,CW
 22800,SFE 7,,L2,,23.8,cochera,GU
 22800,SFE 8,,L2,,27.36,cochera,CW
 22800,SFE 9,,L2,,27.36,cochera,CW
@@ -424,7 +401,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 22920,SFE 10,,L2,,23.8,cochera,GU
 22920,SFE 11,,L2,,23.8,cochera,GU
 22920,SFE 4,,L2,,11.03,cochera,LM
-22920,SFE 5,,L2,,1.0,cochera,CC
+22920,SFE 5,,L2,,27.36,cochera,CW
 22920,SFE 7,,L2,,23.8,cochera,GU
 22920,SFE 8,,L2,,27.36,cochera,CW
 22920,SFE 9,,L2,,27.36,cochera,CW
@@ -440,7 +417,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 23040,SFE 10,,L2,,23.8,cochera,GU
 23040,SFE 11,,L2,,23.8,cochera,GU
 23040,SFE 4,,L2,,11.03,cochera,LM
-23040,SFE 5,,L2,,1.0,cochera,CC
+23040,SFE 5,,L2,,27.36,cochera,CW
 23040,SFE 7,,L2,,23.8,cochera,GU
 23040,SFE 8,,L2,,27.36,cochera,CW
 23040,SFE 9,,L2,,27.36,cochera,CW
@@ -456,7 +433,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 23160,SFE 10,,L2,,23.8,cochera,GU
 23160,SFE 11,,L2,,23.8,cochera,GU
 23160,SFE 4,,L2,,11.03,cochera,LM
-23160,SFE 5,,L2,,1.0,cochera,CC
+23160,SFE 5,,L2,,27.36,cochera,CW
 23160,SFE 7,,L2,,23.8,cochera,GU
 23160,SFE 8,,L2,,27.36,cochera,CW
 23160,SFE 9,,L2,,27.36,cochera,CW
@@ -472,7 +449,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 23280,SFE 10,,L2,,23.8,cochera,GU
 23280,SFE 11,,L2,,23.8,cochera,GU
 23280,SFE 4,,L2,,11.03,cochera,LM
-23280,SFE 5,,L2,,1.0,cochera,CC
+23280,SFE 5,,L2,,27.36,cochera,CW
 23280,SFE 7,,L2,,23.8,cochera,GU
 23280,SFE 8,,L2,,27.36,cochera,CW
 23280,SFE 9,,L2,,27.36,cochera,CW
@@ -488,7 +465,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 23400,SFE 10,,L2,,23.8,cochera,GU
 23400,SFE 11,,L2,,23.8,cochera,GU
 23400,SFE 4,,L2,,11.03,cochera,LM
-23400,SFE 5,,L2,,1.0,cochera,CC
+23400,SFE 5,,L2,,27.36,cochera,CW
 23400,SFE 7,,L2,,23.8,cochera,GU
 23400,SFE 8,,L2,,27.36,cochera,CW
 23400,SFE 9,,L2,,27.36,cochera,CW
@@ -505,7 +482,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 23520,SFE 10,,L2,,23.8,cochera,GU
 23520,SFE 11,,L2,,23.8,cochera,GU
 23520,SFE 4,,L2,,11.03,cochera,LM
-23520,SFE 5,,L2,,1.0,cochera,CC
+23520,SFE 5,,L2,,27.36,cochera,CW
 23520,SFE 7,,L2,,23.8,cochera,GU
 23520,SFE 8,,L2,,27.36,cochera,CW
 23520,SFE 9,,L2,,27.36,cochera,CW
@@ -521,7 +498,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 23640,SFE 10,,L2,,23.8,cochera,GU
 23640,SFE 11,,L2,,23.8,cochera,GU
 23640,SFE 4,,L2,,11.03,cochera,LM
-23640,SFE 5,,L2,,1.0,cochera,CC
+23640,SFE 5,,L2,,27.36,cochera,CW
 23640,SFE 7,,L2,,23.8,cochera,GU
 23640,SFE 8,,L2,,27.36,cochera,CW
 23640,SFE 9,,L2,,27.36,cochera,CW
@@ -537,7 +514,7 @@ t_s,unidad,servicio,tramo,sentido,dist_km,estado,cochera
 23760,SFE 10,,L2,,23.8,cochera,GU
 23760,SFE 11,,L2,,23.8,cochera,GU
 23760,SFE 4,,L2,,11.03,cochera,LM
-23760,SFE 5,,L2,,1.0,cochera,CC
+23760,SFE 5,,L2,,27.36,cochera,CW
 23760,SFE 7,,L2,,23.8,cochera,GU
 23760,SFE 8,,L2,,27.36,cochera,CW
 23760,SFE 9,,L2,,27.36,cochera,CW

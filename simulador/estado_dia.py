@@ -61,6 +61,19 @@ def cargar():
     # asegurar que TODOS los automotores con disposicion inicial existan (aunque sin servicios)
     for u in cmod.DISPOSICION_INICIAL:
         unidades.setdefault(u, [])
+    # TRENES DOBLES: la 2a unidad viaja acoplada (copiar el recorrido del titular)
+    global _DOBLES
+    _DOBLES = {}
+    fdb = CLEAN / "trenes_dobles.csv"
+    if fdb.exists():
+        import pandas as _pd
+        for r in _pd.read_csv(fdb).itertuples():
+            _DOBLES[str(r.servicio)] = (r.unidad_a, r.unidad_b)
+            base = next((x for x in unidades.get(r.unidad_a, []) if x["servicio"] == str(r.servicio)), None)
+            if base is not None and not any(x["servicio"] == str(r.servicio) for x in unidades.get(r.unidad_b, [])):
+                cop = dict(base); cop["doble"] = True
+                unidades.setdefault(r.unidad_b, []).append(cop)
+                unidades[r.unidad_b].sort(key=lambda x: x["ini"])
     global _HOLDS
     try:
         _HOLDS = _ocupacion(unidades)
@@ -121,8 +134,16 @@ def estado(t, unidades, coch=None):
     for u, sv in unidades.items():
         run = next((s for s in sv if s["ini"] - 1e-9 <= t <= s["fin"] + 1e-9), None)
         if run is not None:
+            par = _DOBLES.get(str(run["servicio"]))
+            if par and u == par[1]:
+                continue   # 2a unidad del doble: representada por la titular
             d = _pos(run, t)
             if d is not None:
+                if par and u == par[0]:
+                    trenes.append({"unidad": f"{par[0]}+{par[1]}", "servicio": run["servicio"],
+                                   "tramo": run["tramo"], "sentido": run["sentido"],
+                                   "dist_km": round(d, 3), "doble": True})
+                    continue
                 # exclusividad de vía única: retener en el borde si un opuesto ocupa el bloque
                 tid = f"{run['sentido']}-{run['servicio']}-{u}"
                 for (lo, hi), (hu, entry) in _HOLDS.get(tid, {}).items():
@@ -250,3 +271,4 @@ def _ocupacion(unidades):
 
 
 _HOLDS = {}
+_DOBLES = {}
