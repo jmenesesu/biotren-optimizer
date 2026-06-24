@@ -69,12 +69,36 @@ def cargar():
     return unidades, servicios
 
 
+def _perfil(d0, d1, t0, t1, t):
+    """Posición con perfil trapezoidal: acelera al salir, crucero, frena al llegar.
+    Reemplaza la interpolación lineal (velocidad constante)."""
+    T = t1 - t0
+    D = d1 - d0
+    if T <= 1e-9:
+        return d1
+    x = t - t0
+    ta = min(0.7, T / 2.0)   # min acelerando
+    td = min(0.7, T / 2.0)   # min frenando
+    base = T - (ta + td) / 2.0
+    vp = D / base if abs(base) > 1e-9 else D / T   # velocidad de crucero (km/min)
+    if x <= ta:
+        s = 0.5 * (vp / ta) * x * x
+    elif x <= T - td:
+        s = 0.5 * vp * ta + vp * (x - ta)
+    else:
+        tau = x - (T - td)
+        s = 0.5 * vp * ta + vp * (T - ta - td) + vp * tau - 0.5 * (vp / td) * tau * tau
+    return d0 + s
+
+
 def _pos(serv, t):
     pts = serv["pts"]
     for i in range(len(pts) - 1):
         (t0, d0, _), (t1, d1, _) = pts[i], pts[i + 1]
         if t0 - 1e-9 <= t <= t1 + 1e-9:
-            return d0 if t1 == t0 else d0 + (d1 - d0) * (t - t0) / (t1 - t0)
+            if d1 == d0 or t1 == t0:      # detención en estación: queda quieto
+                return d0
+            return _perfil(d0, d1, t0, t1, t)
     return None
 
 

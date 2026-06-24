@@ -20,10 +20,17 @@ for p in ["parsers", "optimizador", "simulador"]:
     sys.path.append(str(REPO / p))
 
 AZUL, ROJO, VERDE = "#1F3864", "#C00000", "#2E7D32"
+# der = vía a la DERECHA del sentido creciente de km (abajo en pantalla);
+# izq = vía del sentido decreciente (arriba). Circulación por la derecha.
 GEO = {
-    "L2": dict(pon=0.82, ori=0.60, sin=0.71, coch=0.34, xmax=28.5),
-    "L1": dict(pon=0.74, ori=0.58, sin=0.66, coch=0.30, xmax=86.0),
+    "L2": dict(der=0.60, izq=0.82, sin=0.71, coch=0.34, xmax=28.5),
+    "L1": dict(der=0.58, izq=0.78, sin=0.68, coch=0.30, xmax=86.0),
 }
+
+
+def _inc(sentido):
+    """¿el tren avanza en sentido de km CRECIENTE (hacia la derecha en pantalla)?"""
+    return sentido in ("CC->CW", "LJ->TH")
 
 
 def _hhmmss(s):
@@ -76,7 +83,7 @@ def _via_unica(linea):
 def _y_via(km, sentido, tramos, g):
     row = tramos[(tramos.km_lo <= km) & (tramos.km_hi >= km)]
     if len(row) and row.iloc[0].tipo == "doble":
-        return g["pon"] if _ida(sentido) else g["ori"]
+        return g["der"] if _inc(sentido) else g["izq"]
     return g["sin"]
 
 
@@ -92,7 +99,7 @@ def _base(linea, est_ref, cocheras, tramos, enlaces, bl, g):
     # vías: doble = dos líneas; única = una línea gris
     for r in tramos.itertuples():
         if r.tipo == "doble":
-            for y in (g["pon"], g["ori"]):
+            for y in (g["der"], g["izq"]):
                 base.append(go.Scatter(x=[r.km_lo, r.km_hi], y=[y, y], mode="lines",
                                        line=dict(color="#777", width=2.4), hoverinfo="skip", showlegend=False))
         else:
@@ -107,7 +114,7 @@ def _base(linea, est_ref, cocheras, tramos, enlaces, bl, g):
     # enlaces (agujas)
     ex, ey = [], []
     for k in enlaces.km:
-        ex += [k, k + (0.18 if linea == "L2" else 0.5), None]; ey += [g["ori"], g["pon"], None]
+        ex += [k, k + (0.18 if linea == "L2" else 0.5), None]; ey += [g["der"], g["izq"], None]
     if ex:
         base.append(go.Scatter(x=ex, y=ey, mode="lines", line=dict(color=VERDE, width=0.8),
                                hoverinfo="skip", showlegend=False))
@@ -121,7 +128,7 @@ def _base(linea, est_ref, cocheras, tramos, enlaces, bl, g):
     if not sg.empty:
         sg = sg[(sg.km >= 0) & (sg.km <= g["xmax"])]
         pp = sg[sg.principal]
-        base.append(go.Scatter(x=pp.km, y=[g["pon"] + 0.05] * len(pp), mode="markers",
+        base.append(go.Scatter(x=pp.km, y=[g["izq"] + 0.05] * len(pp), mode="markers",
                                marker=dict(symbol="triangle-up", size=6, color=VERDE),
                                hovertext=pp.tipo, hoverinfo="text", showlegend=False))
     for r in cocheras.itertuples():
@@ -143,7 +150,7 @@ def _dyn(df_t, tramos, bl, cocheras, g):
             cx += [ct[0], ct[1], None]; cy += [y, y, None]
         tx.append(r.dist_km); ty.append(y)
         ttxt.append(f"{r.unidad} · serv {r.servicio} · {r.sentido} · km {r.dist_km}")
-        tcol.append(AZUL if _ida(r.sentido) else ROJO)
+        tcol.append(AZUL if _inc(r.sentido) else ROJO)
     trenes = go.Scatter(x=tx, y=ty, mode="markers", marker=dict(size=14, color=tcol, line=dict(width=1, color="white")),
                         hovertext=ttxt, hoverinfo="text", name="circulando")
     cantones = go.Scatter(x=cx, y=cy, mode="lines", line=dict(color="rgba(192,0,0,0.28)", width=9), hoverinfo="skip")
@@ -165,10 +172,11 @@ def _dyn(df_t, tramos, bl, cocheras, g):
 def render():
     st.subheader("Simulación en vivo — operación por vía (los 16 automotores siempre visibles)")
     linea = st.radio("Línea", ["L2", "L1"], horizontal=True, key="sim_linea")
-    st.caption(f"{linea} a ancho completo. Dos vías físicas (poniente arriba / oriente abajo) donde hay "
-               "doble vía; una línea donde es única (roja = cuello de botella operacional). Los trenes "
-               "circulan por la vía DERECHA según el sentido y se resalta el cantón ocupado. Verde = enlaces "
-               "(agujas). Cuadros = cocheras. Disposición inicial y de fin de día del gráfico de rotaciones.")
+    st.caption(f"{linea} a ancho completo. Circulación por la DERECHA: el sentido de km creciente "
+               "(→, azul) va por la vía de ABAJO; el decreciente (←, rojo) por la de ARRIBA. Una línea "
+               "donde es vía única (roja = cuello de botella). Verde = enlaces (agujas) reales. Se resalta "
+               "el cantón ocupado. Cuadros = cocheras. En vía única, dos trenes opuestos nunca coinciden: "
+               "uno espera en la estación. Perfil de velocidad con aceleración y frenado.")
     g = GEO[linea]
     grid = _load("estado_grilla.csv", _mt("estado_grilla.csv"))
     cocheras = _load("cocheras.csv", _mt("cocheras.csv"))
@@ -229,7 +237,7 @@ def render():
             if x["tramo"] != linea:
                 continue
             y = _y_via(x["dist_km"], x["sentido"], tramos, g)
-            via = "poniente" if y == g["pon"] else ("oriente" if y == g["ori"] else "única")
+            via = "derecha" if y == g["der"] else ("izquierda" if y == g["izq"] else "única")
             ct = _canton(x["dist_km"], bl)
             via += f" · cantón {ct[0]:.1f}–{ct[1]:.1f} km" if ct else ""
             filas.append({"unidad": x["unidad"], "servicio": x["servicio"], "sentido": x["sentido"],
