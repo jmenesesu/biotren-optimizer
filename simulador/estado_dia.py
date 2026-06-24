@@ -88,9 +88,13 @@ def estado(t, unidades, coch=None):
         # estacionado: antes del primer servicio -> disposicion inicial;
         # despues -> cochera de la estacion donde termino el ultimo servicio.
         if not sv or t < sv[0]["ini"]:
-            code = cmod.DISPOSICION_INICIAL.get(u)
+            code = cmod.DISPOSICION_INICIAL.get(u)          # amanecida
+        elif t > sv[-1]["fin"]:
+            code = (cmod.DISPOSICION_FINAL.get(u)           # fin de día
+                    or cmod.LAYOVER_A_COCHERA.get(sv[-1]["est_fin"])
+                    or cmod.DISPOSICION_INICIAL.get(u))
         else:
-            prev = [s for s in sv if s["fin"] <= t]
+            prev = [s for s in sv if s["fin"] <= t]         # entre servicios
             est = prev[-1]["est_fin"] if prev else sv[0]["est_ini"]
             code = cmod.LAYOVER_A_COCHERA.get(est) or cmod.DISPOSICION_INICIAL.get(u)
         if code and code in coch:

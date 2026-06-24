@@ -1,11 +1,11 @@
-"""Vista 'Simulación en vivo' — fiel al modelo, con operación por vía en L2.
+"""Vista 'Simulación en vivo' — fiel al modelo, una línea a ancho completo.
 
-L2 se dibuja con sus DOS vías físicas (Principal oriente/poniente) donde hay doble
-vía y una sola donde hay vía única (clasificacion desde OpenTrack). Los trenes
-circulan por la vía DERECHA segun el sentido (sur=poniente, norte=oriente) y se
-resalta el CANTON que ocupa cada tren. Los enlaces (agujas) se marcan entre vías.
-L1 se muestra en un carril simple (ida/vuelta). Los 16 automotores estan SIEMPRE
-visibles (en cochera cuando no circulan). Disposicion inicial: grafico pag. 16.
+Selector de línea (L2 / L1). L2 se dibuja con sus DOS vías físicas (Principal
+oriente/poniente) donde hay doble vía y una sola en vía única; los trenes circulan
+por la vía DERECHA según el sentido (sur=poniente, norte=oriente) y se resalta el
+cantón ocupado. Enlaces (agujas) reales entre vías. L1 en carril simple. Los 16
+automotores están SIEMPRE visibles (en cochera cuando no circulan). Disposición
+inicial y de fin de día del gráfico de rotaciones (pág. 16).
 """
 import sys
 from pathlib import Path
@@ -19,9 +19,11 @@ for p in ["parsers", "optimizador", "simulador"]:
     sys.path.append(str(REPO / p))
 
 AZUL, ROJO, VERDE, NARANJA = "#1F3864", "#C00000", "#2E7D32", "#FF8C00"
-PON_Y, ORI_Y, SIN_Y = 1.12, 0.92, 1.02     # vías L2 (poniente arriba, oriente abajo)
-L1_Y = 0.0
-COCH_Y = {"L2": 0.72, "L1": -0.22}
+# geometría vertical (normalizada 0..1) por línea
+GEO = {
+    "L2": dict(pon=0.82, ori=0.60, sin=0.71, lane=None, coch=0.34, xmax=28.5),
+    "L1": dict(pon=None, ori=None, sin=None, lane=0.66, coch=0.34, xmax=86.0),
+}
 
 
 def _hhmmss(s):
@@ -46,36 +48,31 @@ def _senales(linea, _mt):
     return em.senales_km(linea)
 
 
-def _ref():
+def _ref(linea):
     r = _load("malla_real.csv", _mt("malla_real.csv"))
-    out = {}
-    for ln in ["L2", "L1"]:
-        out[ln] = (r[r.linea == ln][["estacion", "dist_km"]].drop_duplicates()
-                   .sort_values("dist_km").reset_index(drop=True)) if not r.empty else pd.DataFrame(columns=["estacion", "dist_km"])
-    return out
+    if r.empty:
+        return pd.DataFrame(columns=["estacion", "dist_km"])
+    return (r[r.linea == linea][["estacion", "dist_km"]].drop_duplicates()
+            .sort_values("dist_km").reset_index(drop=True))
 
 
 def _ida(s):
     return ("->CW" in s) or ("->LJ" in s)
 
 
-def _tramos_l2():
+def _tramos(linea):
     tv = _load("tramos_via.csv", _mt("tramos_via.csv"))
-    return tv[tv.linea == "L2"] if not tv.empty else pd.DataFrame()
+    return tv[tv.linea == linea] if not tv.empty else pd.DataFrame()
 
 
-def _y_l2(km, sentido, tramos):
-    """vía (y) de un tren L2 segun su km y sentido (vía derecha)."""
+def _y_via(km, sentido, tramos, g):
+    """y de un tren según km/sentido (vía derecha) en L2; en L1 = carril."""
+    if g["lane"] is not None:
+        return g["lane"] + (0.06 if _ida(sentido) else -0.06)
     row = tramos[(tramos.km_lo <= km) & (tramos.km_hi >= km)]
-    if len(row):
-        r = row.iloc[0]
-        if r.tipo == "doble":
-            return PON_Y if _ida(sentido) else ORI_Y     # sur=poniente, norte=oriente
-        if "oriente" in r.vias:
-            return ORI_Y
-        if "poniente" in r.vias:
-            return PON_Y
-    return SIN_Y
+    if len(row) and row.iloc[0].tipo == "doble":
+        return g["pon"] if _ida(sentido) else g["ori"]
+    return g["sin"]
 
 
 def _canton(km, bl):
@@ -85,158 +82,152 @@ def _canton(km, bl):
     return None
 
 
-def _base(est_ref, cocheras, tramos, enlaces, bl2):
+def _base(linea, est_ref, cocheras, tramos, enlaces, g):
     base = []
-    # --- L2: dos vías físicas ---
-    for r in tramos.itertuples():
-        if "poniente" in r.vias:
-            base.append(go.Scatter(x=[r.km_lo, r.km_hi], y=[PON_Y, PON_Y], mode="lines",
-                                   line=dict(color="#777", width=2.2), hoverinfo="skip", showlegend=False))
-        if "oriente" in r.vias:
-            base.append(go.Scatter(x=[r.km_lo, r.km_hi], y=[ORI_Y, ORI_Y], mode="lines",
-                                   line=dict(color="#777", width=2.2), hoverinfo="skip", showlegend=False))
-        if r.tipo == "no determinado":
-            base.append(go.Scatter(x=[r.km_lo, r.km_hi], y=[SIN_Y, SIN_Y], mode="lines",
-                                   line=dict(color="#bbb", width=1.5, dash="dash"),
-                                   hovertext="sin doble vía registrada", hoverinfo="text", showlegend=False))
-    # enlaces (agujas) L2: conector entre vías
-    ex, ey = [], []
-    for k in enlaces.km:
-        ex += [k, k + 0.25, None]; ey += [ORI_Y, PON_Y, None]
-    if ex:
-        base.append(go.Scatter(x=ex, y=ey, mode="lines", line=dict(color=VERDE, width=0.7),
-                               hoverinfo="skip", showlegend=False))
-    # estaciones y señales L2
-    er = est_ref["L2"]
-    if not er.empty:
-        base.append(go.Scatter(x=er.dist_km, y=[SIN_Y] * len(er), mode="markers",
-                               marker=dict(symbol="line-ns-open", size=22, color="#aaa"),
-                               hovertext=er.estacion, hoverinfo="text", showlegend=False))
-    sg = _senales("L2", _mt("infra_edges.csv"))
-    if not sg.empty:
-        sg = sg[(sg.km >= 0) & (sg.km <= 28)]
-        pp = sg[sg.principal]
-        base.append(go.Scatter(x=pp.km, y=[PON_Y + 0.05] * len(pp), mode="markers",
-                               marker=dict(symbol="triangle-up", size=6, color=VERDE),
-                               hovertext=pp.tipo, hoverinfo="text", showlegend=False))
-    # --- L1: carril simple ---
-    er1 = est_ref["L1"]
-    if not er1.empty:
-        base.append(go.Scatter(x=[er1.dist_km.min(), er1.dist_km.max()], y=[L1_Y, L1_Y], mode="lines",
-                               line=dict(color="#999", width=2.2), hoverinfo="skip", showlegend=False))
-        base.append(go.Scatter(x=er1.dist_km, y=[L1_Y] * len(er1), mode="markers",
-                               marker=dict(symbol="line-ns-open", size=15, color="#aaa"),
-                               hovertext=er1.estacion, hoverinfo="text", showlegend=False))
+    if g["lane"] is None:   # L2 dos vías
+        for r in tramos.itertuples():
+            if r.tipo == "doble":
+                for y in (g["pon"], g["ori"]):
+                    base.append(go.Scatter(x=[r.km_lo, r.km_hi], y=[y, y], mode="lines",
+                                           line=dict(color="#777", width=2.4), hoverinfo="skip", showlegend=False))
+            else:
+                base.append(go.Scatter(x=[r.km_lo, r.km_hi], y=[g["sin"], g["sin"]], mode="lines",
+                                       line=dict(color=ROJO, width=3.5),
+                                       hovertext=f"vía única {r.km_lo:.1f}–{r.km_hi:.1f}", hoverinfo="text", showlegend=False))
+        ex, ey = [], []
+        for k in enlaces.km:
+            ex += [k, k + 0.18, None]; ey += [g["ori"], g["pon"], None]
+        if ex:
+            base.append(go.Scatter(x=ex, y=ey, mode="lines", line=dict(color=VERDE, width=0.8),
+                                   hoverinfo="skip", showlegend=False))
+        sy = g["sin"]
+    else:                   # L1 carril simple
+        if not est_ref.empty:
+            base.append(go.Scatter(x=[est_ref.dist_km.min(), est_ref.dist_km.max()], y=[g["lane"], g["lane"]],
+                                   mode="lines", line=dict(color="#888", width=2.4), hoverinfo="skip", showlegend=False))
         try:
             from via_unica import VIA_UNICA
             for n, lo, hi, bq in VIA_UNICA.get("L1", []):
                 if bq:
-                    base.append(go.Scatter(x=[lo, hi], y=[L1_Y, L1_Y], mode="lines",
+                    base.append(go.Scatter(x=[lo, hi], y=[g["lane"], g["lane"]], mode="lines",
                                            line=dict(color=ROJO, width=4), hovertext=f"vía única {n}",
                                            hoverinfo="text", showlegend=False))
         except Exception:
             pass
-    # cocheras (cuadros con codigo y capacidad)
+        sy = g["lane"]
+    # estaciones (etiqueta) y señales
+    if not est_ref.empty:
+        base.append(go.Scatter(x=est_ref.dist_km, y=[sy] * len(est_ref), mode="markers+text",
+                               marker=dict(symbol="line-ns-open", size=26, color="#aaa"),
+                               text=est_ref.estacion, textposition="top center", textfont=dict(size=8, color="#777"),
+                               hovertext=est_ref.estacion, hoverinfo="text", showlegend=False))
+    sg = _senales(linea, _mt("infra_edges.csv"))
+    if not sg.empty:
+        sg = sg[(sg.km >= 0) & (sg.km <= g["xmax"])]
+        pp = sg[sg.principal]
+        ytop = (g["pon"] if g["lane"] is None else g["lane"]) + 0.05
+        base.append(go.Scatter(x=pp.km, y=[ytop] * len(pp), mode="markers",
+                               marker=dict(symbol="triangle-up", size=6, color=VERDE),
+                               hovertext=pp.tipo, hoverinfo="text", showlegend=False))
     for r in cocheras.itertuples():
-        y = COCH_Y.get(r.linea, -0.22)
-        base.append(go.Scatter(x=[r.km], y=[y], mode="markers+text",
-                               marker=dict(symbol="square-open", size=15, color="#999"),
-                               text=[r.codigo], textposition="bottom center", textfont=dict(size=7, color="#999"),
+        base.append(go.Scatter(x=[r.km], y=[g["coch"]], mode="markers+text",
+                               marker=dict(symbol="square-open", size=16, color="#999"),
+                               text=[r.codigo], textposition="bottom center", textfont=dict(size=8, color="#999"),
                                hovertext=f"Cochera {r.codigo} ({r.estacion}) cap {int(r.capacidad)}",
                                hoverinfo="text", showlegend=False))
     return base
 
 
-def _dyn(df_t, tramos, bl2, cocheras):
-    """traces dinamicas: trenes, cantones ocupados (L2), estacionados."""
+def _dyn(df_t, linea, tramos, bl, cocheras, g):
     cap = {r.codigo: int(r.capacidad) for r in cocheras.itertuples()}
-    coch_y = {r.codigo: COCH_Y.get(r.linea, -0.22) for r in cocheras.itertuples()}
-    tx, ty, ttxt, tcol = [], [], [], []
-    cx, cy = [], []      # cantones ocupados (segmentos)
+    tx, ty, ttxt, tcol, cx, cy = [], [], [], [], [], []
     run = df_t[df_t.estado == "circulando"]
     for r in run.itertuples():
-        ida = _ida(r.sentido)
-        if r.tramo == "L2":
-            y = _y_l2(r.dist_km, r.sentido, tramos)
-            ct = _canton(r.dist_km, bl2)
+        y = _y_via(r.dist_km, r.sentido, tramos, g)
+        if g["lane"] is None:
+            ct = _canton(r.dist_km, bl)
             if ct:
                 cx += [ct[0], ct[1], None]; cy += [y, y, None]
-        else:
-            y = L1_Y + (0.09 if ida else -0.09)
         tx.append(r.dist_km); ty.append(y)
         ttxt.append(f"{r.unidad} · serv {r.servicio} · {r.sentido} · km {r.dist_km}")
-        tcol.append(AZUL if ida else ROJO)
+        tcol.append(AZUL if _ida(r.sentido) else ROJO)
     trenes = go.Scatter(x=tx, y=ty, mode="markers", name="circulando",
-                        marker=dict(size=12, color=tcol, line=dict(width=1, color="white")),
+                        marker=dict(size=14, color=tcol, line=dict(width=1, color="white")),
                         hovertext=ttxt, hoverinfo="text")
-    cantones = go.Scatter(x=cx, y=cy, mode="lines", name="cantón ocupado",
-                          line=dict(color="rgba(192,0,0,0.28)", width=8), hoverinfo="skip")
-    # estacionados
+    cantones = go.Scatter(x=cx, y=cy, mode="lines", line=dict(color="rgba(192,0,0,0.28)", width=9), hoverinfo="skip")
     es = df_t[df_t.estado == "cochera"]
     ex, ey, etxt, ecol = [], [], [], []
-    for code, g in es.groupby("cochera"):
-        units = sorted(g.unidad)
-        km = g.dist_km.iloc[0]
+    for code, gg in es.groupby("cochera"):
+        units = sorted(gg.unidad); km = gg.dist_km.iloc[0]
         if pd.isna(km):
             continue
-        y0 = coch_y.get(code, -0.22)
         sobre = len(units) > cap.get(code, 99)
         for i, u in enumerate(units):
-            ex.append(km); ey.append(y0 - 0.05 - 0.05 * i)
+            ex.append(km); ey.append(g["coch"] - 0.05 - 0.045 * i)
             etxt.append(f"{u} en cochera {code} ({len(units)}/{cap.get(code,'?')})")
             ecol.append(ROJO if sobre else "#444")
     estac = go.Scatter(x=ex, y=ey, mode="markers", name="en cochera",
-                       marker=dict(size=9, color=ecol, line=dict(width=1, color="white")),
+                       marker=dict(size=10, color=ecol, line=dict(width=1, color="white")),
                        hovertext=etxt, hoverinfo="text")
     return [trenes, cantones, estac]
 
 
-def _layout(fig, titulo=None):
-    fig.update_layout(height=620, margin=dict(l=10, r=10, t=42 if titulo else 26, b=10), title=titulo,
-                      yaxis=dict(tickvals=[PON_Y, ORI_Y, L1_Y], ticktext=["L2 pon.", "L2 ori.", "L1"],
-                                 range=[-0.75, 1.32]),
-                      xaxis=dict(title="km", showgrid=True, gridcolor="#f4f4f4"), showlegend=False)
+def _fig(linea, df0_or_grid, est_ref, cocheras, tramos, enlaces, bl, g, animar=None):
+    base = _base(linea, est_ref, cocheras, tramos, enlaces, g)
+    fig = go.Figure(data=base + _dyn(df0_or_grid, linea, tramos, bl, cocheras, g))
+    fig.update_layout(height=560, margin=dict(l=10, r=10, t=30, b=10),
+                      yaxis=dict(visible=False, range=[0.0, 1.02]),
+                      xaxis=dict(title="km", range=[-0.5, g["xmax"]], showgrid=True, gridcolor="#f4f4f4"),
+                      showlegend=False)
+    return fig, len(base)
 
 
 def render():
-    st.subheader("Simulación en vivo — operación por vía (L2 con vía derecha y enlaces)")
-    st.caption("Fiel al modelo. L2: dos vías físicas (Principal poniente arriba / oriente abajo); "
-               "los trenes circulan por la vía DERECHA según el sentido (sur→poniente, norte→oriente) "
-               "y se resalta el cantón ocupado (barra roja). Verde = enlaces (agujas) reales; línea "
-               "punteada = tramo sin doble vía registrada. L1 en carril simple. Cuadros = cocheras.")
+    st.subheader("Simulación en vivo — operación por vía (los 16 automotores siempre visibles)")
+    linea = st.radio("Línea", ["L2", "L1"], horizontal=True, key="sim_linea")
+    if linea == "L2":
+        st.caption("L2 a ancho completo. Dos vías físicas (Principal poniente arriba / oriente abajo); "
+                   "los trenes circulan por la vía DERECHA (sur→poniente, norte→oriente) y se resalta el "
+                   "cantón ocupado (rojo). Verde = enlaces (agujas) reales; rojo grueso = vía única (Chepe). "
+                   "Cuadros = cocheras. Disposición inicial y de fin de día del gráfico de rotaciones.")
+    else:
+        st.caption("L1 en carril simple (ida arriba / vuelta abajo). Rojo = vía única "
+                   "(Hualqui–La Leonera, Mercado–El Arenal). Cuadros = cocheras.")
+    g = GEO[linea]
     grid = _load("estado_grilla.csv", _mt("estado_grilla.csv"))
     cocheras = _load("cocheras.csv", _mt("cocheras.csv"))
-    tramos = _tramos_l2()
+    cocheras = cocheras[cocheras.linea == linea] if not cocheras.empty else cocheras
+    tramos = _tramos(linea)
     enlaces = _load("enlaces.csv", _mt("enlaces.csv"))
-    enlaces = enlaces[(enlaces.linea == "L2") & (enlaces.km <= 28)] if not enlaces.empty else pd.DataFrame({"km": []})
+    enlaces = enlaces[(enlaces.linea == linea) & (enlaces.km <= g["xmax"])] if not enlaces.empty else pd.DataFrame({"km": []})
     bl = _load("bloques.csv", _mt("bloques.csv"))
-    bl2 = bl[bl.linea == "L2"] if not bl.empty else pd.DataFrame(columns=["dist_lo", "dist_hi"])
-    est_ref = _ref()
-    if grid.empty or cocheras.empty or tramos.empty:
-        st.info("Faltan datos (estado_grilla / cocheras / tramos_via). Corre run_all.py.")
+    bl = bl[bl.linea == linea] if not bl.empty else pd.DataFrame(columns=["dist_lo", "dist_hi"])
+    est_ref = _ref(linea)
+    if grid.empty or cocheras.empty:
+        st.info("Faltan datos. Corre run_all.py.")
         return
+    grid = grid[grid.tramo == linea]
 
     tiempos = sorted(grid.t_s.unique())
-    base = _base(est_ref, cocheras, tramos, enlaces, bl2)
+    base = _base(linea, est_ref, cocheras, tramos, enlaces, g)
     nb = len(base)
-    g0 = grid[grid.t_s == tiempos[0]]
-    fig = go.Figure(data=base + _dyn(g0, tramos, bl2, cocheras))
-    frames = []
-    for ts in tiempos:
-        frames.append(go.Frame(data=_dyn(grid[grid.t_s == ts], tramos, bl2, cocheras),
-                               traces=[nb, nb + 1, nb + 2], name=_hhmmss(ts)[:5]))
-    fig.frames = frames
+    fig = go.Figure(data=base + _dyn(grid[grid.t_s == tiempos[0]], linea, tramos, bl, cocheras, g))
+    fig.frames = [go.Frame(data=_dyn(grid[grid.t_s == ts], linea, tramos, bl, cocheras, g),
+                           traces=[nb, nb + 1, nb + 2], name=_hhmmss(ts)[:5]) for ts in tiempos]
     pasos = [dict(method="animate", label=_hhmmss(ts)[:5],
                   args=[[_hhmmss(ts)[:5]], dict(mode="immediate", frame=dict(duration=0, redraw=True),
                         transition=dict(duration=0))]) for ts in tiempos]
     fig.update_layout(
-        updatemenus=[dict(type="buttons", showactive=False, x=0.0, y=1.14, xanchor="left", buttons=[
+        height=560, margin=dict(l=10, r=10, t=46, b=10),
+        yaxis=dict(visible=False, range=[0.0, 1.06]),
+        xaxis=dict(title="km", range=[-0.5, g["xmax"]], showgrid=True, gridcolor="#f4f4f4"),
+        updatemenus=[dict(type="buttons", showactive=False, x=0.0, y=1.12, xanchor="left", buttons=[
             dict(label="▶ Reproducir", method="animate",
                  args=[None, dict(frame=dict(duration=140, redraw=True), fromcurrent=True, transition=dict(duration=0))]),
             dict(label="⏸ Pausa", method="animate",
                  args=[[None], dict(mode="immediate", frame=dict(duration=0, redraw=False))])])],
-        sliders=[dict(active=0, x=0.08, len=0.9, currentvalue=dict(prefix="Hora: "), steps=pasos)])
-    _layout(fig)
+        sliders=[dict(active=0, x=0.06, len=0.92, currentvalue=dict(prefix="Hora: "), steps=pasos)],
+        showlegend=False)
     st.plotly_chart(fig, use_container_width=True)
 
     st.divider()
@@ -248,25 +239,28 @@ def render():
         unidades, _ = estado_dia.cargar()
         estd = estado_dia.estado(hh * 60 + mm + ss / 60.0, unidades)
         rows = [{"estado": "circulando", "unidad": x["unidad"], "servicio": x["servicio"], "tramo": x["tramo"],
-                 "sentido": x["sentido"], "dist_km": x["dist_km"], "cochera": ""} for x in estd["trenes"]]
-        rows += [{"estado": "cochera", "unidad": e["unidad"], "servicio": "", "tramo": e["linea"],
-                  "sentido": "", "dist_km": e["dist_km"], "cochera": e["cochera"]} for e in estd["estacionados"]]
+                 "sentido": x["sentido"], "dist_km": x["dist_km"], "cochera": ""} for x in estd["trenes"] if x["tramo"] == linea]
+        rows += [{"estado": "cochera", "unidad": e["unidad"], "servicio": "", "tramo": e["linea"], "sentido": "",
+                  "dist_km": e["dist_km"], "cochera": e["cochera"]} for e in estd["estacionados"] if e["linea"] == linea]
         df_t = pd.DataFrame(rows)
-        fig2 = go.Figure(data=_base(est_ref, cocheras, tramos, enlaces, bl2) + _dyn(df_t, tramos, bl2, cocheras))
-        _layout(fig2, titulo=f"Estado a las {hh:02d}:{mm:02d}:{ss:02d}")
+        fig2 = go.Figure(data=_base(linea, est_ref, cocheras, tramos, enlaces, g) + _dyn(df_t, linea, tramos, bl, cocheras, g))
+        fig2.update_layout(height=420, margin=dict(l=10, r=10, t=30, b=10), title=f"{linea} a las {hh:02d}:{mm:02d}:{ss:02d}",
+                           yaxis=dict(visible=False, range=[0.0, 1.06]),
+                           xaxis=dict(title="km", range=[-0.5, g["xmax"]]), showlegend=False)
         st.plotly_chart(fig2, use_container_width=True)
-        # tabla: tren, vía y cantón ocupado (L2)
         filas = []
         for x in estd["trenes"]:
+            if x["tramo"] != linea:
+                continue
             via = ""
-            if x["tramo"] == "L2":
-                y = _y_l2(x["dist_km"], x["sentido"], tramos)
-                via = "poniente" if y == PON_Y else ("oriente" if y == ORI_Y else "única/n.d.")
-                ct = _canton(x["dist_km"], bl2)
+            if linea == "L2":
+                y = _y_via(x["dist_km"], x["sentido"], tramos, g)
+                via = "poniente" if y == g["pon"] else ("oriente" if y == g["ori"] else "única")
+                ct = _canton(x["dist_km"], bl)
                 via += f" · cantón {ct[0]:.1f}–{ct[1]:.1f} km" if ct else ""
-            filas.append({"unidad": x["unidad"], "servicio": x["servicio"], "línea": x["tramo"],
-                          "sentido": x["sentido"], "km": x["dist_km"], "vía / cantón": via})
-        st.markdown("**Trenes circulando — vía y cantón ocupado**")
+            filas.append({"unidad": x["unidad"], "servicio": x["servicio"], "sentido": x["sentido"],
+                          "km": x["dist_km"], "vía / cantón": via})
+        st.markdown(f"**Trenes circulando en {linea} — vía y cantón**")
         st.dataframe(pd.DataFrame(filas), use_container_width=True, hide_index=True)
     except Exception as e:
         st.warning(f"No se pudo calcular el instante exacto: {e}")

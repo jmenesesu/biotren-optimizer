@@ -63,20 +63,27 @@ def construir(linea="L2", km_min=None, km_max=None):
     bps = sorted(set([round(x, 2) for iv in ori + pon for x in iv]))
     if km_min is not None:
         bps = [b for b in bps if km_min - 0.5 <= b <= (km_max or 1e9) + 0.5]
+    # envolvente de doble vía: km donde hay doble confirmada (oriente y poniente)
+    dobles = [(round(bps[i], 2), round(bps[i + 1], 2)) for i in range(len(bps) - 1)
+              if _en(ori, (bps[i] + bps[i + 1]) / 2) and _en(pon, (bps[i] + bps[i + 1]) / 2)
+              and bps[i + 1] - bps[i] >= 0.05]
+    if dobles:
+        env_lo, env_hi = min(a for a, b in dobles), max(b for a, b in dobles)
+    else:
+        env_lo = env_hi = None
+    # cortes del eje: rango pasajeros
+    lo_lim = km_min if km_min is not None else (env_lo or min(bps))
+    hi_lim = km_max if km_max is not None else (env_hi or max(bps))
     filas = []
-    for i in range(len(bps) - 1):
-        lo, hi = bps[i], bps[i + 1]
-        if hi - lo < 0.05:
-            continue
-        mid = (lo + hi) / 2
-        o, p = _en(ori, mid), _en(pon, mid)
-        if o and p:
-            tipo, n, vias = "doble", 2, "oriente; poniente"
-        elif o or p:
-            tipo, n, vias = "única", 1, ("oriente" if o else "poniente")
-        else:
-            tipo, n, vias = "no determinado", 1, "sin doble vía registrada"
-        filas.append({"linea": linea, "km_lo": lo, "km_hi": hi, "n_vias": n, "tipo": tipo, "vias": vias})
+    if env_lo is not None:
+        if lo_lim < env_lo - 0.05:
+            filas.append({"linea": linea, "km_lo": round(lo_lim, 2), "km_hi": env_lo,
+                          "n_vias": 1, "tipo": "única", "vias": "única (tramo inicial)"})
+        filas.append({"linea": linea, "km_lo": env_lo, "km_hi": env_hi,
+                      "n_vias": 2, "tipo": "doble", "vias": "oriente; poniente"})
+        if hi_lim > env_hi + 0.05:
+            filas.append({"linea": linea, "km_lo": env_hi, "km_hi": round(hi_lim, 2),
+                          "n_vias": 1, "tipo": "única", "vias": "única (tramo final)"})
     tv = pd.DataFrame(filas)
     # enlaces (agujas) agrupados
     sub = e[e.document.map(GRUPO.get) == linea]

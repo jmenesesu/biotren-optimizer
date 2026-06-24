@@ -43,6 +43,17 @@ DISPOSICION_INICIAL = {
     "SFE 7": "GU", "SFE 10": "GU", "SFE 11": "GU",
     "SFE B1": "LJ", "SFE B2": "EZ", "UT 2": "EZ", "SFE B3": "HQ", "UT 1": "OH",
 }
+
+# Disposicion de FIN de día (pernoctacion al cierre), grafico de rotaciones pag. 16
+# "LUNES A JUEVES (continuacion)". Distribuida (CW=4, GU=3, LM=2, CC=2), no toda
+# en Coronel.
+DISPOSICION_FINAL = {
+    "SFE 1": "CW", "SFE 5": "CW", "SFE 8": "CW", "SFE 10": "CW",
+    "SFE 2": "GU", "SFE 3": "GU", "SFE 4": "GU",
+    "SFE 7": "LM", "SFE 9": "LM",
+    "SFE 6": "CC", "SFE 11": "CC",
+    "SFE B1": "EZ",
+}
 # estacion de fin de servicio -> cochera donde se estaciona (la mayoria coincide;
 # los servicios que terminan en Mercado estacionan en el patio de El Arenal).
 LAYOVER_A_COCHERA = {
