@@ -1,0 +1,11 @@
+linea,estacion,km,agujas,tipo,via_origen,via_destino,sentido
+L2,Concepción/Chepe,3.1,Ag.1 (PK 2/58),comunicación,der,izq,der
+L2,Concepción/Chepe,3.1,Ag.1 (PK 2/58),comunicación,izq,der,izq
+L2,Boca Sur,7.44,E.A. PK 4/21-4/22,comunicación,der,izq,der
+L2,Boca Sur,7.44,E.A. PK 4/21-4/22,comunicación,izq,der,izq
+L2,Lomas Coloradas,11.03,E.A. PK 9/5-9/6,comunicación,der,izq,der
+L2,Lomas Coloradas,11.03,E.A. PK 9/5-9/6,comunicación,izq,der,izq
+L2,Escuadrón,19.4,Ag.2/Ag.4,comunicación,der,izq,der
+L2,Escuadrón,19.4,Ag.2/Ag.4,comunicación,izq,der,izq
+L2,Coronel,27.36,Ag.9/Ag.11,terminal,der,izq,der
+L2,Coronel,27.36,Ag.9/Ag.11,terminal,izq,der,izq
