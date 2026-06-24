@@ -69,26 +69,38 @@ def cargar():
     return unidades, servicios
 
 
+# Calibración del perfil de velocidad (motor): aceleración y deceleración de
+# servicio reales. 0,8 m/s² = 2,88 km/min². dec_servicio del motor = 0,8 m/s².
+A_ACEL = 2.88   # km/min²  (aceleración de servicio)
+A_FREN = 2.88   # km/min²  (deceleración de servicio, motor.dec_servicio)
+
+
 def _perfil(d0, d1, t0, t1, t):
-    """Posición con perfil trapezoidal: acelera al salir, crucero, frena al llegar.
-    Reemplaza la interpolación lineal (velocidad constante)."""
+    """Posición con perfil cinemático real: arranca a A_ACEL, crucero, frena a
+    A_FREN hasta la próxima estación. La velocidad de crucero se ajusta para cubrir
+    la distancia del tramo en el tiempo del itinerario (parando en ambos extremos)."""
     T = t1 - t0
-    D = d1 - d0
-    if T <= 1e-9:
+    D = abs(d1 - d0)
+    sign = 1.0 if d1 >= d0 else -1.0
+    if T <= 1e-9 or D < 1e-9:
         return d1
     x = t - t0
-    ta = min(0.7, T / 2.0)   # min acelerando
-    td = min(0.7, T / 2.0)   # min frenando
-    base = T - (ta + td) / 2.0
-    vp = D / base if abs(base) > 1e-9 else D / T   # velocidad de crucero (km/min)
+    k = 1.0 / (2.0 * A_ACEL) + 1.0 / (2.0 * A_FREN)
+    disc = T * T - 4.0 * k * D
+    if disc <= 0:
+        # tramo demasiado corto en tiempo para parar/arrancar a tasa real: lineal
+        return d0 + sign * D * (x / T)
+    vc = (T - disc ** 0.5) / (2.0 * k)        # velocidad de crucero (km/min)
+    ta = vc / A_ACEL
+    td = vc / A_FREN
     if x <= ta:
-        s = 0.5 * (vp / ta) * x * x
+        s = 0.5 * A_ACEL * x * x
     elif x <= T - td:
-        s = 0.5 * vp * ta + vp * (x - ta)
+        s = 0.5 * A_ACEL * ta * ta + vc * (x - ta)
     else:
         tau = x - (T - td)
-        s = 0.5 * vp * ta + vp * (T - ta - td) + vp * tau - 0.5 * (vp / td) * tau * tau
-    return d0 + s
+        s = 0.5 * A_ACEL * ta * ta + vc * (T - ta - td) + vc * tau - 0.5 * A_FREN * tau * tau
+    return d0 + sign * min(s, D)
 
 
 def _pos(serv, t):
